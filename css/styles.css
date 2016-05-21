@@ -1,16 +1,17 @@
 /*
-Error: File to import not found or unreadable: icons.
+Error: File to import not found or unreadable: footer.
        Load path: C:/Users/rasha_000/Documents/GitHub/Flight-Site/scss
-        on line 5 of scss/elements/_index.scss
-        from line 2 of scss/application.scss
+        on line 3 of scss/desktop/_index.scss
+        from line 1 of scss/styles.scss
 
-1: @import 'base/index';
+1: @import 'desktop/index';
 2: @import 'elements/index';
-3: @import 'layout/index';
+3: @import 'mobile/index';
+4: @import 'tablets/index';
 
 Backtrace:
-scss/elements/_index.scss:5
-scss/application.scss:2
+scss/desktop/_index.scss:3
+scss/styles.scss:1
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -64,4 +65,4 @@ C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: icons.\A        Load path: C:/Users/rasha_000/Documents/GitHub/Flight-Site/scss\A         on line 5 of scss/elements/_index.scss\A         from line 2 of scss/application.scss\A \A 1: @import 'base/index';\A 2: @import 'elements/index';\A 3: @import 'layout/index';"; }
+  content: "Error: File to import not found or unreadable: footer.\A        Load path: C:/Users/rasha_000/Documents/GitHub/Flight-Site/scss\A         on line 3 of scss/desktop/_index.scss\A         from line 1 of scss/styles.scss\A \A 1: @import 'desktop/index';\A 2: @import 'elements/index';\A 3: @import 'mobile/index';\A 4: @import 'tablets/index';"; }
