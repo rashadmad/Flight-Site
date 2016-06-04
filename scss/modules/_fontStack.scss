@@ -1,0 +1,29 @@
+//place where all of my fonts and font familys get turned into simple varibles
+
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic);
+
+$default-font: 'Lora', serif;
+
+@mixin text($size, $l-height: 1, $weight: 100, $color: black){
+
+    font-size: $size + 0em !important;
+    line-height: $l-height !important;
+    font-weight: $weight !important;
+    color: $color !important;
+
+}
+
+@mixin font($name: $default-font){
+
+//Font pairings, fonts for body elements and headers
+
+  @if $name == font_a {
+    font-family:'Open Sans', sans-serif;
+  }
+
+  @else if $name == font_b {
+    font-family:'Lora', serif;
+  }
+}

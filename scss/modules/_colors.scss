@@ -1,0 +1,11 @@
+//colors to be used trough out rest of program, background colors, rollovers as well
+$yellow: #FFFF00;
+
+$main_color: $yellow;
+
+@mixin background_colors($color) {
+  -webkit-background-color: $color;
+  -moz-background-color: $color;
+  -ms-background-color: $color;
+  background-color: $color;
+}

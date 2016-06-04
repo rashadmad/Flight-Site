@@ -1,0 +1,41 @@
+//helpers and utilities or commonly called placeholder rules.
+
+
+//my go-to to make sure my selectors are working
+%no-display {
+  display: none;
+}
+
+//positioning helpers good for quik adjusments on the fly
+%text-center {
+  text-align: center;
+}
+%margin-center {
+  margin: 0 auto;
+}
+%text-left {
+  text-align: left;
+}
+%text-right {
+  text-align: right;
+}
+
+//floats
+%left {
+  float: left;
+}
+%right {
+  float: right;
+}
+%clear-fix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//asset pathing
+$img-path: "../img";
+$css-path: "../css";
+$js-path: "../js";
