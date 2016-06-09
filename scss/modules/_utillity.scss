@@ -5,6 +5,15 @@
 %no-display {
   display: none;
 }
+%inline {
+  display: inline;
+}
+%block {
+  display: block;
+}
+%inline_block {
+  display: block;
+}
 
 //positioning helpers good for quik adjusments on the fly
 %text-center {
@@ -12,6 +21,9 @@
 }
 %margin-center {
   margin: 0 auto;
+}
+%no-margin {
+  margin: 0;
 }
 %text-left {
   text-align: left;
@@ -34,6 +46,13 @@
     clear: both;
   }
 }
+
+//everything flex box
+%flex {
+  display: flex;
+}
+
+
 
 //asset pathing
 $img-path: "../img";

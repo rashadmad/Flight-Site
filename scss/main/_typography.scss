@@ -1,0 +1,15 @@
+header {
+  h1 {
+    @include text(2.5, $color:black);
+    @include font(font_a_slim);
+
+  }
+}
+
+footer {
+  h1 {
+    @include text(.8, $color:black);
+    @include font(font_b);
+    @extend %text-center;
+  }
+}

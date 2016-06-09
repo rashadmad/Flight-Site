@@ -6,11 +6,10 @@
 
 $default-font: 'Lora', serif;
 
-@mixin text($size, $l-height: 1, $weight: 100, $color: black){
+@mixin text($size, $l-height: 1, $color: black){
 
     font-size: $size + 0em !important;
     line-height: $l-height !important;
-    font-weight: $weight !important;
     color: $color !important;
 
 }
@@ -21,6 +20,23 @@ $default-font: 'Lora', serif;
 
   @if $name == font_a {
     font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  @else if $name == font_a_Bold {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 800;
+  }
+
+  @else if $name == font_a_slim {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 100;
+  }
+
+  @else if $name == font_a_em {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
   }
 
   @else if $name == font_b {

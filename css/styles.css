@@ -1,11 +1,49 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic);
-h1 {
-  font-size: 4em !important;
+li {
+  display: inline; }
+
+footer h1 {
+  text-align: center; }
+
+header, header h1 {
+  margin: 0; }
+
+header h1 {
+  text-align: right; }
+
+header .logo {
+  float: left; }
+
+header {
+  -webkit-background-color: #FFFF00;
+  -moz-background-color: #FFFF00;
+  -ms-background-color: #FFFF00;
+  background-color: #FFFF00;
+  height: 65px; }
+  header h1 {
+    padding: 10px;
+    padding-top: 15px;
+    padding-right: 10px; }
+
+footer {
+  -webkit-background-color: #FFFF00;
+  -moz-background-color: #FFFF00;
+  -ms-background-color: #FFFF00;
+  background-color: #FFFF00; }
+
+header h1 {
+  font-size: 2.5em !important;
   line-height: 1 !important;
-  font-weight: 100 !important;
   color: black !important;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+
+footer h1 {
+  font-size: 0.8em !important;
+  line-height: 1 !important;
+  color: black !important;
+  font-family: 'Lora', serif; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

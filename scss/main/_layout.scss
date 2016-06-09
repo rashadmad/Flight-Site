@@ -1,0 +1,29 @@
+//imports for all mixins + global project variables
+header {
+  @include background-color($yellow);
+  @extend %no-margin;
+  height: $header-height;
+
+  h1 {
+    @extend %text-right;
+    @extend %no-margin;
+      padding: $h1-header-padding;
+      padding-top: $h1-header-top-padding;
+      padding-right: $h1-header-right;
+  }
+
+  .logo {
+    @extend %left;
+  }
+
+}
+
+//nav
+li{
+  @extend %inline;
+}
+
+//footer
+footer {
+  @include background-color($yellow);
+}
