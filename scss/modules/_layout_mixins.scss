@@ -1,0 +1,15 @@
+
+@mixin sticky-footer($parent) {
+    @if ($parent == body) {
+      margin: 0 0 100px; /* bottom = footer height */
+  } @else if ($parent == footer) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+  } @else if ($parent == html) {
+      position: relative;
+      min-height: 100%;
+  }
+}

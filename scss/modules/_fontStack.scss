@@ -1,6 +1,5 @@
 //place where all of my fonts and font familys get turned into simple varibles
 
-
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic);
 
@@ -40,6 +39,10 @@ $default-font: 'Lora', serif;
   }
 
   @else if $name == font_b {
+    font-family:'Lora', serif;
+  }
+
+  @else if $name == font_b_italic {
     font-family:'Lora', serif;
   }
 }

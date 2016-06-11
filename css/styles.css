@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic);
-li {
+ul li {
   display: inline; }
 
 footer h1 {
   text-align: center; }
 
-header, header h1 {
+header, header h1, ul {
   margin: 0; }
 
 header h1 {
@@ -14,6 +14,13 @@ header h1 {
 
 header .logo {
   float: left; }
+
+ul {
+  display: flex; }
+
+html {
+  position: relative;
+  min-height: 100%; }
 
 header {
   -webkit-background-color: #FFFF00;
@@ -25,12 +32,30 @@ header {
     padding: 10px;
     padding-top: 15px;
     padding-right: 10px; }
+  header .logo {
+    padding: 10px; }
+
+ul {
+  -webkit-background-color: #000;
+  -moz-background-color: #000;
+  -ms-background-color: #000;
+  background-color: #000;
+  height: 120px; }
+
+body {
+  margin: 0 0 100px;
+  /* bottom = footer height */ }
 
 footer {
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
-  background-color: #FFFF00; }
+  background-color: #FFFF00;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%; }
 
 header h1 {
   font-size: 2.5em !important;

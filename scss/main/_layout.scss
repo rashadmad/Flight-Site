@@ -1,8 +1,12 @@
+html {
+  @include sticky-footer(html);
+}
+
 //imports for all mixins + global project variables
 header {
-  @include background-color($yellow);
+  @include background-color($maincolor);
   @extend %no-margin;
-  height: $header-height;
+    height: $header-height;
 
   h1 {
     @extend %text-right;
@@ -14,16 +18,32 @@ header {
 
   .logo {
     @extend %left;
+      padding: $logo-header-padding;
   }
 
 }
 
 //nav
-li{
-  @extend %inline;
+ul{
+  @include background-color($black);
+  @extend %no-margin;
+  @extend %flex;
+    height: $ul-height;
+
+  li{
+    @extend %inline;
+  }
+
 }
+
+body{
+  @include sticky-footer(body);
+}
+
+
 
 //footer
 footer {
-  @include background-color($yellow);
+  @include background-color($maincolor);
+  @include sticky-footer(footer);
 }
