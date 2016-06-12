@@ -55,10 +55,16 @@
   flex-direction: row-reverse;
 }
 %flex-stack {
-  flex-direction: column;
+  flex-direction: column; //works similar to display block
 }
 %flex-wrap {
-  flex-wrap: wrap;
+  flex-wrap: wrap; //for responsive displays wraps to the next line
+}
+%flex-center {
+  justify-content: center;
+}
+%flex-space-between {
+  justify-content: space-between;
 }
 
 

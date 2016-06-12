@@ -25,13 +25,15 @@ header {
 
 //nav
 ul{
-  @include background-color($black);
+  @include background-color($maincolor);
   @extend %no-margin;
+  @extend %flex-center;
   @extend %flex;
     height: $ul-height;
 
   li{
-    @extend %inline;
+    @include background-color($maincolor);
+
   }
 
 }

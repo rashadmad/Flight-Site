@@ -14,3 +14,9 @@
       min-height: 100%;
   }
 }
+//for ul tags, makes it perform how i like, wit out bullets
+@mixin bye-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
