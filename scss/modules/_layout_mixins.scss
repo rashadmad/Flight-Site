@@ -1,4 +1,5 @@
-
+//this mixin works to make sure the footer stays at the bottom of the page
+//it effects the body, footer and html elements
 @mixin sticky-footer($parent) {
     @if ($parent == body) {
       margin: 0 0 100px; /* bottom = footer height */
@@ -6,7 +7,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      height: 100px;
+      height: $footer-height;
       width: 100%;
   } @else if ($parent == html) {
       position: relative;

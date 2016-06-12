@@ -51,6 +51,15 @@
 %flex {
   display: flex;
 }
+%flex-reverse {
+  flex-direction: row-reverse;
+}
+%flex-stack {
+  flex-direction: column;
+}
+%flex-wrap {
+  flex-wrap: wrap;
+}
 
 
 

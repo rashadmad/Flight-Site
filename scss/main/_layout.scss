@@ -1,8 +1,8 @@
+//imports for all mixins + global project variables
 html {
   @include sticky-footer(html);
 }
 
-//imports for all mixins + global project variables
 header {
   @include background-color($maincolor);
   @extend %no-margin;
@@ -39,8 +39,6 @@ ul{
 body{
   @include sticky-footer(body);
 }
-
-
 
 //footer
 footer {
