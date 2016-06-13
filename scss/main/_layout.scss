@@ -25,15 +25,24 @@ header {
 
 //nav
 ul{
-  @include background-color($maincolor);
+  @include bye-bullets;
+  @include background-color($black);
   @extend %no-margin;
-  @extend %flex-center;
+  @extend %flex-space-between;
   @extend %flex;
     height: $ul-height;
 
   li{
     @include background-color($maincolor);
-
+    @extend %center;
+    @extend %flex;
+    @extend %flex-center;
+      width: $li-width;
+      button{
+        @include clear-button-defaults;
+        @include background-color($black);
+        width: 100%;
+      }
   }
 
 }

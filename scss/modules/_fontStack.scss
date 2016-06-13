@@ -13,7 +13,7 @@ $default-font: 'Lora', serif;
 
 }
 
-@mixin font($name: $default-font){
+@mixin font($name){
 
 //Font pairings, fonts for body elements and headers
 

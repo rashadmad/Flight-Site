@@ -20,3 +20,8 @@
     margin: 0;
     padding: 0;
 }
+//makes my buttons clear, in other words gets rid of default styleing of button
+@mixin clear-button-defaults{
+    border: none;
+      
+}

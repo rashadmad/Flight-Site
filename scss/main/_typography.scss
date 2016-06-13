@@ -1,15 +1,22 @@
 header {
   h1 {
-    @include text(2.5, $color:black);
+    @include text(2.5, $color:$black);
     @include font(font_a_slim);
 
   }
 }
 
+li {
+  button {
+    @include font(font_a_Bold);
+    @include text(0.8, $color:$white);
+  }
+}
+
 footer {
   h1 {
-    @include text(.8, $color:black);
+    @include text(.8, $color:$black);
     @include font(font_b);
-    @extend %text-center;
+    @extend %center;
   }
 }

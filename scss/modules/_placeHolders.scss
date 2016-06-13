@@ -16,7 +16,7 @@
 }
 
 //positioning helpers good for quik adjusments on the fly
-%text-center {
+%center {
   text-align: center;
 }
 %margin-center {
@@ -62,6 +62,9 @@
 }
 %flex-center {
   justify-content: center;
+}
+%flex-vertical-center{
+  margin: auto;
 }
 %flex-space-between {
   justify-content: space-between;
