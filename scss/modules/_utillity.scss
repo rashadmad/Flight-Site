@@ -23,5 +23,5 @@
 //makes my buttons clear, in other words gets rid of default styleing of button
 @mixin clear-button-defaults{
     border: none;
-      
+    outline: none;  
 }

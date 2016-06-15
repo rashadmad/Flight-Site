@@ -15,7 +15,8 @@
   display: block;
 }
 
-//positioning helpers good for quik adjusments on the fly
+
+//positioning helpers good for quick adjusments on the fly
 %center {
   text-align: center;
 }
@@ -30,6 +31,9 @@
 }
 %text-right {
   text-align: right;
+}
+%full_screen {
+  width: 100%;
 }
 
 //floats
@@ -64,15 +68,8 @@
   justify-content: center;
 }
 %flex-vertical-center{
-  margin: auto;
+  align-items: center;
 }
 %flex-space-between {
   justify-content: space-between;
 }
-
-
-
-//asset pathing
-$img-path: "../img";
-$css-path: "../css";
-$js-path: "../js";

@@ -1,6 +1,6 @@
 header {
   h1 {
-    @include text(2.5, $color:$black);
+    @include text(2, $color:$black);
     @include font(font_a_slim);
 
   }
@@ -14,9 +14,13 @@ li {
 }
 
 footer {
-  h1 {
-    @include text(.8, $color:$black);
-    @include font(font_b);
-    @extend %center;
+  @extend %flex;
+    div.wrapper {
+      margin-top: $wrapper-top-margin;
+      h1 {
+        @include text(.8, $color:$black);
+        @include font(font_b);
+        @extend %center;
+    }
   }
 }
