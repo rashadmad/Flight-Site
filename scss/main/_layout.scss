@@ -4,8 +4,8 @@ html {
 }
 
 header {
-  @include background-color($maincolor);
   @extend %no-margin;
+  @include background-color($maincolor);
     height: $header-height;
 
   h1 {
@@ -25,26 +25,26 @@ header {
 
 //nav
 ul{
-  @include bye-bullets;
-  @include background-color($black);
   @extend %no-margin;
   @extend %flex-space-between;
   @extend %flex;
+  @include bye-bullets;
+  @include background-color($black);
     height: $ul-height;
 
   li{
-    @include background-color($maincolor);
     @extend %center;
     @extend %flex;
     @extend %flex-center;
+    @include background-color($maincolor);
       width: $li-width;
       color: black;
 
       button{
+        @extend %full_width;
         @include clear-button-defaults;
         @include background-color($black);
         @include flat-ui-buttons;
-        @extend %full_width;
 
          button:target{
            @extend %full_width;
@@ -56,15 +56,19 @@ ul{
           margin-top: $img-margin-bottom;
           min-width: $img-min-size;
           max-width: $img-max-size;
-        }
       }
+    }
   }
+}
 
+.wrapper {
+  @include easy-margins(10px,10px);
 }
 
 body{
   @include sticky-footer(body);
 }
+
 
 //footer
 footer {

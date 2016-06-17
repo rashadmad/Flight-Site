@@ -23,5 +23,18 @@
 //makes my buttons clear, in other words gets rid of default styleing of button
 @mixin clear-button-defaults{
     border: none;
-    outline: none;  
+    outline: none;
+}
+
+@mixin easy-margins($N-S, $E-W) {
+  margin-top: $N-S;
+  margin-right: $E-W;
+  margin-bottom: $N-S;
+  margin-left: $E-W;
+}
+@mixin easy-padding($N-S, $E-W) {
+  padding-top: $N-S;
+  padding-right: $E-W;
+  padding-bottom: $N-S;
+  padding-left: $E-W;
 }
