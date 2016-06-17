@@ -9,7 +9,7 @@ header, header h1, ul {
 header h1 {
   text-align: right; }
 
-ul li button {
+ul li button, ul li button button:target {
   width: 100%; }
 
 header .logo {
@@ -49,13 +49,14 @@ ul {
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
   background-color: #1a1a1a;
-  height: 120px; }
+  height: 85px; }
   ul li {
     -webkit-background-color: #FFFF00;
     -moz-background-color: #FFFF00;
     -ms-background-color: #FFFF00;
     background-color: #FFFF00;
-    width: 100%; }
+    width: 100%;
+    color: black; }
     ul li button {
       border: none;
       outline: none;
@@ -65,15 +66,24 @@ ul {
       background-color: #1a1a1a;
       cursor: pointer; }
       ul li button:visited {
-        background-color: white;
-        border-bottom: 5px solid #FFFF00; }
+        -webkit-background-color: #fff;
+        -moz-background-color: #fff;
+        -ms-background-color: #fff;
+        background-color: #fff;
+        border-bottom: 5px solid #FFFF00;
+        color: #1a1a1a; }
       ul li button:active {
-        background-color: white;
-        border-bottom: 5px solid #FFFF00; }
+        -webkit-background-color: #fff;
+        -moz-background-color: #fff;
+        -ms-background-color: #fff;
+        background-color: #fff;
+        border-bottom: 5px solid #FFFF00;
+        color: #1a1a1a; }
       ul li button .logo {
         width: 80%;
-        margin: 10px;
-        min-width: 50px;
+        margin: 0px;
+        margin-top: 5px;
+        min-width: 30px;
         max-width: 50px; }
 
 body {
@@ -101,9 +111,11 @@ header h1 {
 li button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 0.8em !important;
+  font-size: 0.7em !important;
   line-height: 1 !important;
   color: #fff !important; }
+  li button img {
+    margin: 0; }
 
 footer div.wrapper {
   margin-top: 40px; }

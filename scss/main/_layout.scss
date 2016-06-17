@@ -38,16 +38,22 @@ ul{
     @extend %flex;
     @extend %flex-center;
       width: $li-width;
+      color: black;
 
       button{
         @include clear-button-defaults;
         @include background-color($black);
         @include flat-ui-buttons;
-        @extend %full_screen;
+        @extend %full_width;
+
+         button:target{
+           @extend %full_width;
+         }
 
         .logo{
           width: $img-shrink;
           margin: $img-margin;
+          margin-top: $img-margin-bottom;
           min-width: $img-min-size;
           max-width: $img-max-size;
         }

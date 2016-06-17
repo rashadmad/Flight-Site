@@ -9,7 +9,10 @@ header {
 li {
   button {
     @include font(font_a_Bold);
-    @include text(0.8, $color:$white);
+    @include text(0.7, $color:$white);
+    img {
+      margin: 0;
+    }
   }
 }
 
