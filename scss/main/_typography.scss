@@ -39,9 +39,9 @@ footer {
     div.wrapper {
       margin-top: $wrapper-top-margin;
       h1 {
+        @extend %center;
         @include text(.8, $color:$black);
         @include font(font_b);
-        @extend %center;
     }
   }
 }
