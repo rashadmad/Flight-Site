@@ -33,23 +33,41 @@
               <td><input type="text" name="arrival" placeholder="Mar 13"></td>
             </tr>
             <tr>
-              <td><input type="text" name="arrival" placeholder="Adults"></td>
-              <td><input type="text" name="arrival" placeholder="Economy"></td>
+              <td>
+                <select>
+                  <option value="one">fare/1 Adult</option>
+                  <option value="two">2 Adults</option>
+                  <option value="three">3 Adults</option>
+                  <option value="four">4 Adults</option>
+                  <option value="five">5 Adults</option>
+                  <option value="six">6 Adults</option>
+                  <option value="seven">7 Adults</option>
+                  <option value="eight">8 Adults</option>
+                </select>
+             </td>
+              <td>
+              <select>
+                <option value="volvo">Economy/Coach</option>
+                <option value="saab">Premium</option>
+                <option value="mercedes">Business</option>
+                <option value="audi">First</option>
+              </select>
+             </td>
             </tr>
             <tr>
-              <td><input type="radio" name="gender" value="male"> Male<br></td>
+              <td><input type="checkbox" name="one_way" value="one_way"><label>One way</label><br></td>
             </tr>
             <tr>
-              <td><input type="radio" name="gender" value="female"> Female<br></td>
-              <td><button> Search</button></td>
+              <td><input type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label><br></td>
             </tr>
+
+
           </table>
+          <button>Search</button>
         </form>
 
-        <div class="callout">From LA to Australia we have all
-the flights you need for the prices
-you can afford.</div>
-    </div>
+        <div class="callout">From LA to Australia we have all the flights you need for the pricesyou can afford.</div>
+      </div>
 
     <footer>
       <div class='wrapper'>

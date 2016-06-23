@@ -7,7 +7,6 @@ header {
   @extend %no-margin;
   @include background-color($maincolor);
     height: $header-height;
-
   h1 {
     @extend %text-right;
     @extend %no-margin;

@@ -12,7 +12,7 @@
   display: block;
 }
 %inline_block {
-  display: block;
+  display: inline-block;
 }
 
 
@@ -73,7 +73,10 @@
 %flex-space-between {
   justify-content: space-between;
 }
-//input field placeholders
+//input field styleing
 %bold-borders {
   border: solid $black 5px;
+}
+%no-outline {
+  outline: 0;
 }

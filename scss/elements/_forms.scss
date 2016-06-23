@@ -7,15 +7,40 @@ form{
   }
   table{
     @extend %margin-center;
-    @extend %center;
     tr{
       @include easy-margins(0px,0px);
-      input{
+      input[type="text"],button{
+        @extend %no-outline;
         @extend %bold-borders;
-        @include easy-margins(3px,0px);
+        @include easy-margins(3px,3px);
         @include easy-padding(5px,4px);
-          width: $input-width;
+          color: $white;
+          max-width: $input-width-max;
+          min-width: $input-width-min;
+      }select{
+        @extend %bold-borders;
+        @include easy-margins(3px,3px);
+        @include easy-padding(5px,4px);
+          max-width: $select-width-max;
+          min-width: $select-width-min;
       }
     }
   }
+}
+
+input:focus {
+  @include background-color($black);
+  @include placeholder_color($white);
+  color: $white;
+}
+
+input[type="checkbox"] {
+  @extend %inline;
+}
+
+button{
+  @extend %bold-borders;
+  @extend %text-right;
+  @include background-color($white);
+
 }

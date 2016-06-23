@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic);
-form table, ul li, .callout, footer div.wrapper h1 {
+input[type="checkbox"] {
+  display: inline; }
+
+ul li, .callout, footer div.wrapper h1 {
   text-align: center; }
 
 form, form table {
@@ -9,7 +12,7 @@ form, form table {
 header, header h1, ul {
   margin: 0; }
 
-header h1 {
+button, header h1 {
   text-align: right; }
 
 ul li button, ul li button button:target {
@@ -27,8 +30,11 @@ ul li {
 ul {
   justify-content: space-between; }
 
-form table tr input {
+form table tr input[type="text"], form table tr button, form table tr select, button {
   border: solid #1a1a1a 5px; }
+
+form table tr input[type="text"], form table tr button {
+  outline: 0; }
 
 form {
   padding-top: 8px;
@@ -49,16 +55,52 @@ form {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px; }
-    form table tr input {
+    form table tr input[type="text"], form table tr button {
       margin-top: 3px;
-      margin-right: 0px;
+      margin-right: 3px;
       margin-bottom: 3px;
-      margin-left: 0px;
+      margin-left: 3px;
       padding-top: 5px;
       padding-right: 4px;
       padding-bottom: 5px;
       padding-left: 4px;
-      width: 80%; }
+      color: #fff;
+      max-width: 115px;
+      min-width: 115px; }
+    form table tr select {
+      margin-top: 3px;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      margin-left: 3px;
+      padding-top: 5px;
+      padding-right: 4px;
+      padding-bottom: 5px;
+      padding-left: 4px;
+      max-width: 132px;
+      min-width: 132px; }
+
+input:focus {
+  -webkit-background-color: #1a1a1a;
+  -moz-background-color: #1a1a1a;
+  -ms-background-color: #1a1a1a;
+  background-color: #1a1a1a;
+  color: #fff; }
+  input:focus ::-webkit-input-placeholder {
+    color: #fff; }
+  input:focus :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff; }
+  input:focus ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff; }
+  input:focus :-ms-input-placeholder {
+    color: #fff; }
+
+button {
+  -webkit-background-color: #fff;
+  -moz-background-color: #fff;
+  -ms-background-color: #fff;
+  background-color: #fff; }
 
 html {
   position: relative;
@@ -166,15 +208,16 @@ form h1 {
   line-height: 1 !important;
   color: #1a1a1a !important; }
 form input {
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   font-size: 0.9em !important;
   line-height: 1 !important;
   color: black !important; }
 
 .callout {
-  margin-top: 15px;
+  margin-top: 8px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   margin-left: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
