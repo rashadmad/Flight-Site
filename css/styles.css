@@ -96,6 +96,12 @@ input:focus {
   input:focus :-ms-input-placeholder {
     color: #fff; }
 
+input[type="checkbox"] {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px; }
+
 button {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
