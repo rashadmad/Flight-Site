@@ -1,32 +1,37 @@
-//styleing hrefs and buttons through out the site
-@mixin flat-ui-buttons{
-    cursor: pointer;
-    &:visited {
-      @include background-color($white);
-      border-bottom: 5px solid $maincolor;
-      color: $black;
+
+input:focus {
+  @include background-color($black);
+  color: $white;
+}
+
+input[type="checkbox"] {
+  @extend %inline;
+  @extend %no-display;
+  @include easy-margins(5px,5px);
+}
+
+button{
+  @extend %bold-borders;
+  @include background-color($white);
+  @include easy-padding(5px,6px);
+  text-align: right;
+}
+
+form {
+  button{
+    @extend %text-right;
+    @extend %no-outline;
+    @include easy-dropShadow(3px,3px,0px,$black);
+    @include easy-margins(3px,3px);
+    &:visited{
+      @include background-color($black);
+        color: $white;
     }
-    &:active {
-      @include background-color($white);
-      border-bottom: 5px solid $maincolor;
-      color: $black;
+    &:active{
+      @include background-color($black);
+      @include easy-dropShadow(0px,0px,0px,$black);
+        color: $white;
     }
-}
+  }
 
-@mixin placeholder_color($color){
-  ::-webkit-input-placeholder {
-   color: $color;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: $color;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: $color;
-}
-
-:-ms-input-placeholder {
-   color: $color;
-}
 }

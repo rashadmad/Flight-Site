@@ -37,7 +37,7 @@ ul{
     @extend %flex-center;
     @include background-color($maincolor);
       width: $li-width;
-      color: black;
+      color: $black;
 
       button{
         @extend %full_width;

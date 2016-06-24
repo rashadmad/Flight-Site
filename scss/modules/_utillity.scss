@@ -38,3 +38,23 @@
   padding-bottom: $N-S;
   padding-left: $E-W;
 }
+@mixin easy-dropShadow($N,$W,$blur,$color) {
+
+  -webkit-box-shadow: $N $W $blur $color;
+  -moz-box-shadow: $N $W $blur $color;
+  -o-box-shadow: $N $W $blur $color;
+}
+//styleing hrefs and buttons through out the site
+@mixin flat-ui-buttons{
+    cursor: pointer;
+    &:visited {
+      @include background-color($white);
+      border-bottom: 5px solid $maincolor;
+      color: $black;
+    }
+    &:active {
+      @include background-color($white);
+      border-bottom: 5px solid $maincolor;
+      color: $black;
+    }
+}
