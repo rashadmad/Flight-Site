@@ -15,7 +15,7 @@ form, form table {
 header, header h1, ul {
   margin: 0; }
 
-form button, header h1 {
+header h1 {
   text-align: right; }
 
 ul li button, ul li button button:target {
@@ -24,10 +24,13 @@ ul li button, ul li button button:target {
 header .logo {
   float: left; }
 
-ul, ul li, footer {
+.flex-wrapper, ul, ul li, footer {
   display: flex; }
 
-ul li {
+.flex-wrapper button {
+  flex-direction: row-reverse; }
+
+.flex-wrapper, ul li {
   justify-content: center; }
 
 ul {
@@ -36,7 +39,7 @@ ul {
 button, form table tr input[type="text"], form table tr button, form table tr select {
   border: solid #1a1a1a 5px; }
 
-form button, form table tr input[type="text"], form table tr button {
+form button[type="submit"], form table tr input[type="text"], form table tr button {
   outline: 0; }
 
 input:focus {
@@ -60,10 +63,9 @@ button {
   padding-top: 5px;
   padding-right: 6px;
   padding-bottom: 5px;
-  padding-left: 6px;
-  text-align: right; }
+  padding-left: 6px; }
 
-form button {
+form button[type="submit"] {
   -webkit-box-shadow: 3px 3px 0px #1a1a1a;
   -moz-box-shadow: 3px 3px 0px #1a1a1a;
   -o-box-shadow: 3px 3px 0px #1a1a1a;
@@ -71,13 +73,13 @@ form button {
   margin-right: 3px;
   margin-bottom: 3px;
   margin-left: 3px; }
-  form button:visited {
+  form button[type="submit"]:visited {
     -webkit-background-color: #1a1a1a;
     -moz-background-color: #1a1a1a;
     -ms-background-color: #1a1a1a;
     background-color: #1a1a1a;
     color: #fff; }
-  form button:active {
+  form button[type="submit"]:active {
     -webkit-background-color: #1a1a1a;
     -moz-background-color: #1a1a1a;
     -ms-background-color: #1a1a1a;

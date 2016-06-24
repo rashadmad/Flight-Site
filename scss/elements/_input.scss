@@ -14,12 +14,10 @@ button{
   @extend %bold-borders;
   @include background-color($white);
   @include easy-padding(5px,6px);
-  text-align: right;
 }
 
 form {
-  button{
-    @extend %text-right;
+  button[type="submit"]{
     @extend %no-outline;
     @include easy-dropShadow(3px,3px,0px,$black);
     @include easy-margins(3px,3px);
@@ -33,5 +31,4 @@ form {
         color: $white;
     }
   }
-
 }

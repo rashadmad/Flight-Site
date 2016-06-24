@@ -28,3 +28,10 @@ form{
     }
   }
 }
+.flex-wrapper{
+  @extend %flex;
+  @extend %flex-center;
+  button{
+    @extend %flex-reverse;
+  }
+}
