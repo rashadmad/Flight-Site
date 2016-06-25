@@ -1,7 +1,7 @@
 form{
   @extend %clear-fix;
   @extend %margin-center;
-  @include easy-padding(8px,7px);
+  @include easy-padding(8px,5px);
   @include background-color($maincolor);
   h1{
     @include easy-margins(3px,8px);
