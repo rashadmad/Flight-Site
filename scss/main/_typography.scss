@@ -29,9 +29,10 @@ form{
 
 .callout{
   @extend %center;
-  @include easy-margins(8px, 10px);
+  @include easy-margins(10px, 10px);
   @include font(font_a_Bold);
-  @include text(1.3, $color:$black);
+  @include text(1.3, 1.3,$black);
+  @include width-minNmax(276px,276px);
 }
 
 footer {

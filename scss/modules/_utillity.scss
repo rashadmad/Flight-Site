@@ -58,3 +58,8 @@
       color: $black;
     }
 }
+
+@mixin width-minNmax($min,$max){
+  min-width: $min;
+  max-width: $max;
+}
