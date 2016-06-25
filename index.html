@@ -26,15 +26,29 @@
           <table>
             <h1>Flights At Low Rates</h1>
             <tr>
-              <td><input type="text" name="departing" placeholder="Departing"></td>
-              <td><input type="text" name="arrival" placeholder="Arrival"><td>
+              <td>
+                <label>Departing City</label>
+                <input type="text" name="departing" placeholder="Departing">
+              </td>
+              <td>
+                <label>Ariving City</label>
+                <input type="text" name="arrival" placeholder="Arrival">
+              <td>
             </tr>
             <tr>
-              <td><input type="text" name="arrival" placeholder="Mar 12"></td>
-              <td><input type="text" name="arrival" placeholder="Mar 13"></td>
+
+              <td>
+                <label>Departure Date</label>
+                <input type="number" name="arrival_date" placeholder="Mar 12">
+              </td>
+              <td>
+                <label>Arrival Date</label>
+                <input type="number" name="arrival_date" placeholder="Mar 13">
+              </td>
             </tr>
             <tr>
               <td>
+                <label>Passengers</label>
                 <select>
                   <option value="one">fare/1 Adult</option>
                   <option value="two">2 Adults</option>
@@ -47,6 +61,7 @@
                 </select>
              </td>
               <td>
+              <label>Economy</label>
               <select>
                 <option value="volvo">Economy/Coach</option>
                 <option value="saab">Premium</option>
@@ -55,17 +70,15 @@
               </select>
              </td>
             </tr>
-
-          </table>
-        <div class"flex-wrapper">
-          <input type="checkbox" name="one_way" value="one_way"><label>One way</label><br>
-          <input type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label><br>
-          <button type="submit" value="Submit">Search</button>
-        </td>
-        </form>
-
-        <div class="callout">From LA to Australia we have all the flights you need for the pricesyou can afford.</div>
+        </table>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" name="one_way" value="one_way"><label>One way</label><br>
+        <input type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label><br>
       </div>
+      <button type"submit">Search</button>
+    </form>
+      <div class="callout">From LA to Australia we have all the flights you need for the pricesyou can afford.</div>
+
 
     <footer>
       <div class='wrapper'>

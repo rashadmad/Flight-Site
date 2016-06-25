@@ -3,32 +3,3 @@ input:focus {
   @include background-color($black);
   color: $white;
 }
-
-input[type="checkbox"] {
-  @extend %inline;
-  @extend %no-display;
-  @include easy-margins(5px,5px);
-}
-
-button{
-  @extend %bold-borders;
-  @include background-color($white);
-  @include easy-padding(5px,6px);
-}
-
-form {
-  button[type="submit"]{
-    @extend %no-outline;
-    @include easy-dropShadow(3px,3px,0px,$black);
-    @include easy-margins(3px,3px);
-    &:visited{
-      @include background-color($black);
-        color: $white;
-    }
-    &:active{
-      @include background-color($black);
-      @include easy-dropShadow(0px,0px,0px,$black);
-        color: $white;
-    }
-  }
-}

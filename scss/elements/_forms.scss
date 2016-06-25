@@ -1,4 +1,5 @@
 form{
+  @extend %clear-fix;
   @extend %margin-center;
   @include easy-padding(8px,7px);
   @include background-color($maincolor);
@@ -10,7 +11,12 @@ form{
     @extend %center;
     tr{
       @include easy-margins(0px,0px);
-      input[type="text"],button{
+      label{
+        @extend %left;
+        @extend %hide;
+        @include easy-margins(3px,3px);
+      }
+      input[type="text"],input[type="number"]{
         @extend %no-outline;
         @extend %bold-borders;
         @include easy-margins(3px,3px);
@@ -27,11 +33,31 @@ form{
       }
     }
   }
-}
-.flex-wrapper{
-  @extend %flex;
-  @extend %flex-center;
   button{
-    @extend %flex-reverse;
+    @extend %right;
+    @extend %bold-borders;
+    @extend %no-outline;
+    @include easy-dropShadow(3px,3px,0px,$black);
+    @include background-color($white);
+    @include easy-padding(3px,8px);
+    @include easy-margins(3px,3px);
+      margin-top: $button-top-margin;
+    &:visited{
+      @include background-color($black);
+        color: $white;
+    }
+    &:active{
+      @include background-color($black);
+      @include easy-dropShadow(0px,0px,0px,$black);
+        color: $white;
+    }
   }
+  .checkbox-wrapper{
+    @extend %clear-fix;
+    @extend %left;
+    input[type="checkbox"]{
+      @include easy-margins(5px,10px);
+    }
+  }
+
 }
