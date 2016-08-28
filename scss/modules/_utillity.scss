@@ -32,12 +32,44 @@
   margin-bottom: $N-S;
   margin-left: $E-W;
 }
+
+@mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
+
+  margin: $all-side * 1px;
+
+    @if $top {
+    margin-top: $top * 1px;
+  } @if $right {
+    margin-right: $right * 1px;
+  } @if $bottom {
+    margin-bottom: $bottom * 1px;
+  } @if $left {
+    margin-left: $left * 1px;
+  }
+}
+
 @mixin easy-padding($N-S, $E-W) {
   padding-top: $N-S;
   padding-right: $E-W;
   padding-bottom: $N-S;
   padding-left: $E-W;
 }
+
+@mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
+
+  padding: $all-side * 1px;
+
+    @if $top {
+    padding-top: $top * 1px;
+  } @if $right {
+    padding-right: $right * 1px;
+  } @if $bottom {
+    padding-bottom: $bottom * 1px;
+  } @if $left {
+    padding-left: $left * 1px;
+  }
+}
+
 @mixin easy-dropShadow($N,$W,$blur,$color) {
 
   -webkit-box-shadow: $N $W $blur $color;

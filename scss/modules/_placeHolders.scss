@@ -5,6 +5,7 @@
 %no-display {
   display: none;
 }
+//hideing things but keeping them there for accessibility purposes
 %hide {
    position: absolute !important;
    top: -9999px !important;
@@ -25,17 +26,17 @@
 %center {
   text-align: center;
 }
-%margin-center {
-  margin: 0 auto;
-}
-%no-margin {
-  margin: 0;
-}
 %text-left {
   text-align: left;
 }
 %text-right {
   text-align: right;
+}
+%margin-center {
+  margin: 0 auto;
+}
+%no-margin {
+  margin: 0;
 }
 %full_width {
   width: 100%;
@@ -54,6 +55,12 @@
     display: table;
     clear: both;
   }
+}
+%clear-left {
+  clear: left;
+}
+%clear-right {
+  clear: right;
 }
 
 //everything flex box
