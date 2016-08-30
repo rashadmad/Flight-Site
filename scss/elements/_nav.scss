@@ -18,7 +18,7 @@ ul{
       //ui buttons at the top of the page
       button{
         @extend %full_width;
-        @include clear-button-defaults;
+        @extend %clear-button-defaults;
         @include background-color($black);
         @include flat-ui-buttons;
 

@@ -96,7 +96,7 @@
   max-width: $max;
 }
 
-@mixin media-querie($screen-type, $tablet:768px,$desktop:1024px) {
+@mixin media-query($screen-type, $tablet:768px,$desktop:1024px) {
 
   @if $screen-type == "mobile" {
     @media (max-width: #{$tablet}) {

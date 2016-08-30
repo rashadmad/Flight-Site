@@ -85,10 +85,15 @@
 %flex-space-between {
   justify-content: space-between;
 }
+
 //input field styleing
 %bold-borders {
   border: solid $black 5px;
 }
 %no-outline {
   outline: 0;
+}
+%clear-button-defaults {
+  border: none;
+  outline: none;
 }
