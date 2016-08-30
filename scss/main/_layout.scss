@@ -15,7 +15,7 @@ header {
       padding-right: $h1-header-right;
   }
 
-  .logo {
+   .main-logo,.logo {
     @extend %left;
       padding: $logo-header-padding;
   }
