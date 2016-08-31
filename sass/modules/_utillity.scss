@@ -101,16 +101,18 @@
   @if $screen-type == "mobile" {
     @media (max-width: #{$tablet}) {
       @content;
+      }
     }
     @if $screen-type == "tablet" {
       @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
         @content;
+        }
       }
       @if $screen-type == "desktop" {
         @media (min-width: #{$desktop}) {
           @content;
-        } @else {
+          }
+        } else {
           @debug "The varible screen-type equals #{$screen-type} when it should either equal mobile, tablet or desktop";
-        }
     }
 }

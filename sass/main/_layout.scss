@@ -1,6 +1,7 @@
 //imports for all mixins + global project variables
 html {
   @include sticky-footer(html);
+  
 }
 
 header {
