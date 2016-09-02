@@ -1,52 +1,57 @@
 form{
   @extend %clear-fix;
-  @extend %margin-center;
-  @include easy-padding(8px,5px);
+  @include padding-system(5);
+  @include padding-system(10);
   @include background-color($maincolor);
-  @include width-minNmax(276px,276px);
+  @include width-minNmax($mobile-width);
   h1{
-    @include easy-margins(3px,8px);
+    @include margin-system(compass, $N-S:3, $E-W:8);
     margin-bottom: $h1-bottom-margin;
   }
   table{
 
     tr{
-      @include easy-margins(0px,0px);
+      @include margin-system(0);
       label{
         @extend %left;
         @extend %hide;
-        @include easy-margins(3px,3px);
+        @include margin-system(compass, $N-S:3, $E-W:3);
       }
       input[type="text"],input[type="number"]{
         @extend %no-outline;
         @extend %bold-borders;
-        @include easy-margins(3px,3px);
+        @include margin-system(compass, $N-S:5, $E-W:5);
         @include easy-padding(5px,4px);
+        @include width-minNmax(105);
           color: $white;
-          max-width: $input-width-max;
-          min-width: $input-width-min;
           &:focus{
             @include background-color($black);
             color: $white !important;
           }
       }select{
         @extend %bold-borders;
-        @include easy-margins(3px,3px);
+        @include margin-system(compass, $N-S:5, $E-W:5);
         @include easy-padding(5px,4px);
-          max-width: $select-width-max;
-          min-width: $select-width-min;
+        @include width-minNmax(124);
+
       }
     }
   }
+
+  button[type=submit]{
+    @include padding-system(7,$left:13,$right:13);
+  }
+
   button{
     @extend %right;
     @extend %bold-borders;
     @extend %no-outline;
+    @include width-minNmax(256);
     @include easy-dropShadow(3px,3px,0px,$black);
     @include background-color($white);
     @include easy-padding(3px,8px);
-    @include easy-margins(3px,3px);
       margin-top: $button-top-margin;
+
     &:visited{
       @include background-color($black);
         color: $white;
@@ -60,9 +65,9 @@ form{
   .checkbox-wrapper{
     @extend %clear-fix;
     @extend %left;
+    @include margin-system(5);
     input[type="checkbox"]{
-      @include easy-margins(5px,10px);
+      @include margin-system(compass, $N-S:5, $E-W:10);
     }
   }
-
 }

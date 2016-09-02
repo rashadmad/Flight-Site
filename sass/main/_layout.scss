@@ -1,41 +1,28 @@
 //imports for all mixins + global project variables
 html {
   @include sticky-footer(html);
-  
 }
-
-header {
-  @extend %no-margin;
-  @include background-color($maincolor);
-    height: $header-height;
-  h1 {
-    @extend %text-right;
-    @extend %no-margin;
-      padding: $h1-header-padding;
-      padding-top: $h1-header-top-padding;
-      padding-right: $h1-header-right;
-  }
-
-   .main-logo,.logo {
-    @extend %left;
-      padding: $logo-header-padding;
-  }
-
-}
-
 
 .wrapper {
-  @include easy-margins(10px,10px);
+  @include margin-system(10);
 }
-
 
 body{
   @include sticky-footer(body);
 }
 
-
-//footer
-footer {
-  @include background-color($maincolor);
-  @include sticky-footer(footer);
+#discount {
+  @include width-minNmax($mobile-width);
+  p.callout {
+    @extend %full_width;
+    @include margin-system(compass,$N-S:20,$E-W:0);
+  }
+  button {
+    @extend %no-outline;
+    @extend %full_width;
+    @extend %margin-center;
+    @include border-system(solid,black,6);
+    @include background-color($maincolor);
+    @include padding-system(30);
+  }
 }

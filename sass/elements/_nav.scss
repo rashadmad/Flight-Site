@@ -3,7 +3,7 @@ ul{
   @extend %no-margin;
   @extend %flex-space-between;
   @extend %flex;
-  @include bye-bullets;
+  @extend %bye-bullets;
   @include background-color($black);
     height: $ul-height;
 

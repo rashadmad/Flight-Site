@@ -1,0 +1,18 @@
+header {
+  @extend %no-margin;
+  @include background-color($maincolor);
+    height: $header-height;
+  h1 {
+    @extend %text-right;
+    @extend %no-margin;
+      padding: $h1-header-padding;
+      padding-top: $h1-header-top-padding;
+      padding-right: $h1-header-right;
+  }
+
+   .main-logo,.logo {
+    @extend %left;
+      padding: $logo-header-padding;
+  }
+
+}

@@ -14,39 +14,36 @@
       min-height: 100%;
   }
 }
-//for ul tags, makes it perform how i like, wit out bullets
-@mixin bye-bullets {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 //makes my buttons clear, in other words gets rid of default styleing of button
 @mixin clear-button-defaults{
     border: none;
     outline: none;
 }
 
-@mixin easy-margins($N-S, $E-W) {
-  margin-top: $N-S;
-  margin-right: $E-W;
-  margin-bottom: $N-S;
-  margin-left: $E-W;
-}
+@mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null, $N-S: null, $E-W: null) {
 
-@mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
+  @if $all-side == 'compass'{
+    margin-top: $N-S * $pixels;
+    margin-bottom: $N-S * $pixels;
+    margin-left: $E-W * $pixels;
+    margin-right: $E-W * $pixels;
+    } @else {
+      margin: $all-side * $pixels;
 
-  margin: $all-side * 1px;
-
-    @if $top {
-    margin-top: $top * 1px;
-  } @if $right {
-    margin-right: $right * 1px;
-  } @if $bottom {
-    margin-bottom: $bottom * 1px;
-  } @if $left {
-    margin-left: $left * 1px;
+        @if $top {
+        margin-top: $top * $pixels;
+      } @if $right {
+        margin-right: $right * $pixels;
+      } @if $bottom {
+        margin-bottom: $bottom * $pixels;
+      } @if $left {
+        margin-left: $left * $pixels;
+      }
+    }
   }
-}
+
+
 
 @mixin easy-padding($N-S, $E-W) {
   padding-top: $N-S;
@@ -57,16 +54,16 @@
 
 @mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
 
-  padding: $all-side * 1px;
+  padding: $all-side * $pixels;
 
     @if $top {
-    padding-top: $top * 1px;
+    padding-top: $top * $pixels;
   } @if $right {
-    padding-right: $right * 1px;
+    padding-right: $right * $pixels;
   } @if $bottom {
-    padding-bottom: $bottom * 1px;
+    padding-bottom: $bottom * $pixels;
   } @if $left {
-    padding-left: $left * 1px;
+    padding-left: $left * $pixels;
   }
 }
 
@@ -91,9 +88,23 @@
     }
 }
 
-@mixin width-minNmax($min,$max){
-  min-width: $min;
-  max-width: $max;
+@mixin width-minNmax($max,$min:null){
+
+    @if is-percentage($max){
+      max-width: $max;
+      min-width: $min;
+    } @else {
+        max-width: $max * $pixels;
+      @if $min {
+        min-width: $min * $pixels;
+      } @else {
+        $min: $max;
+      }
+    }
+  }
+
+@mixin border-system($style,$color,$width) {
+  border: $style $color $width * $pixels;
 }
 
 @mixin media-query($screen-type, $tablet:768px,$desktop:1024px) {
@@ -104,7 +115,7 @@
       }
     }
     @if $screen-type == "tablet" {
-      @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+      @media (min-width: #{$tablet}) and (max-width: #{$desktop - $pixels}) {
         @content;
         }
       }
