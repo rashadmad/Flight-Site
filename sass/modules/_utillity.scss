@@ -107,10 +107,15 @@
   border: $style $color $width * $pixels;
 }
 
-@mixin media-query($screen-type, $tablet:768px,$desktop:1024px) {
+@mixin media-query($screen-type, $mobile:480, $tablet:768px,$desktop:1024px) {
 
+  @if $screen-type == "min-mobile" {
+    @media (max-width: #{$mobile}) {
+      @content;
+      }
+    }
   @if $screen-type == "mobile" {
-    @media (max-width: #{$tablet}) {
+    @media (min-width: #{$mobile}) {
       @content;
       }
     }

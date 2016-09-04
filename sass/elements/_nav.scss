@@ -21,6 +21,9 @@ ul{
         @extend %clear-button-defaults;
         @include background-color($black);
         @include flat-ui-buttons;
+          p{
+            @include margin-system(5);
+          }
 
          button:target{
            @extend %full_width;

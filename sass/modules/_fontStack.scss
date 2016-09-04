@@ -13,7 +13,7 @@ $default-font: 'Lora', serif;
 
 }
 
-@mixin font($name){
+@mixin font-family($name){
 
 //Font pairings, fonts for body elements and headers
 
@@ -40,7 +40,7 @@ $default-font: 'Lora', serif;
 
   @else if $name == font_b {
     font-family:'Lora', serif;
-    
+
   }
 
   @else if $name == font_b_italic {

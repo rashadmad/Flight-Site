@@ -76,3 +76,11 @@ $picas: 1pc;
 @function is-position($value) {
   @return is-length($value) or is-percentage($value) or index('top' 'right' 'bottom' 'left' 'center', $value) != null;
 }
+
+@function half($value) {
+  @return $value / 2;
+}
+
+@function quarter($value) {
+  @return $value / 4;
+}

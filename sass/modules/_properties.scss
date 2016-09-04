@@ -6,7 +6,7 @@ $h1-header-right: 10px;
 $logo-header-padding: 10px;
 
 //nav
-$ul-height: 85px;
+$ul-height: 70px;
 $li-width: 100%;
 
 //footer
@@ -28,4 +28,5 @@ $button-top-margin: 10px;
 $h1-bottom-margin: 10px;
 
 //dimesions
-$mobile-width: 247;
+$mobile-width-MAX: 480;
+$mobile-width-MIN: 200;

@@ -11,18 +11,20 @@ body{
 }
 
 #discount {
-  @include width-minNmax($mobile-width);
+  @include width-minNmax($mobile-width-MAX,$mobile-width-MIN);
   p.callout {
     @extend %full_width;
-    @include margin-system(compass,$N-S:20,$E-W:0);
+    @include margin-system(compass,$N-S:15,$E-W:0);
+    margin-bottom: 10px;
   }
   button {
-    @extend %no-outline;
     @extend %full_width;
-    @extend %margin-center;
+    @extend %no-outline;
+    @extend %center;
+    @include width-minNmax($mobile-width-MAX);
     @include border-system(solid,black,6);
     @include background-color($maincolor);
-      @include margin-system(compass,$N-S:24,$E-W:0);
-    @include padding-system(30);
+    @include margin-system(compass,$N-S:5,$E-W:0);
+    @include padding-system(25);
   }
 }
