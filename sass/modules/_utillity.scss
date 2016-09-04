@@ -97,7 +97,7 @@
         max-width: $max * $pixels;
       @if $min {
         min-width: $min * $pixels;
-      } @else {
+      } @else if $min == null {
         $min: $max;
       }
     }

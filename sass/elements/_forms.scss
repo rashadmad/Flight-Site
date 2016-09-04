@@ -22,7 +22,7 @@ form{
         @extend %bold-borders;
         @include margin-system(compass, $N-S:5, $E-W:5);
         @include easy-padding(5px,4px);
-        @include width-minNmax(105);
+        @include width-minNmax(98);
           color: $white;
           &:focus{
             @include background-color($black);
@@ -32,8 +32,9 @@ form{
         @extend %bold-borders;
         @include margin-system(compass, $N-S:5, $E-W:5);
         @include easy-padding(5px,4px);
-        @include width-minNmax(124);
-
+        @include width-minNmax(117);
+      }#passengers-selection{
+          @extend select;
       }
     }
   }
@@ -70,4 +71,8 @@ form{
       @include margin-system(compass, $N-S:5, $E-W:10);
     }
   }
+}
+
+#passengers-selection{
+    width:1000px;
 }

@@ -2,7 +2,6 @@
 html {
   @include sticky-footer(html);
 }
-
 .wrapper {
   @include margin-system(10);
 }
@@ -23,6 +22,7 @@ body{
     @extend %margin-center;
     @include border-system(solid,black,6);
     @include background-color($maincolor);
+      @include margin-system(compass,$N-S:24,$E-W:0);
     @include padding-system(30);
   }
 }

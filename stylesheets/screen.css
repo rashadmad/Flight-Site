@@ -4,6 +4,14 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic);
+/* line 5, ../sass/screen.scss */
+body {
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 /* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -148,7 +156,7 @@ ul {
 }
 
 /* line 90, ../sass/modules/_placeHolders.scss */
-form table tr input[type="text"], form table tr input[type="number"], form table tr select, form button {
+form table tr input[type="text"], form table tr input[type="number"], form table tr select, form table tr #passengers-selection, form button {
   border: solid #1a1a1a 5px;
 }
 
@@ -178,7 +186,7 @@ form {
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  max-width: 260px;
+  max-width: 247px;
 }
 /* line 7, ../sass/elements/_forms.scss */
 form h1 {
@@ -209,7 +217,7 @@ form table tr input[type="text"], form table tr input[type="number"] {
   padding-right: 4px;
   padding-bottom: 5px;
   padding-left: 4px;
-  max-width: 105px;
+  max-width: 98px;
   color: #fff;
 }
 /* line 27, ../sass/elements/_forms.scss */
@@ -221,7 +229,7 @@ form table tr input[type="text"]:focus, form table tr input[type="number"]:focus
   color: #fff !important;
 }
 /* line 31, ../sass/elements/_forms.scss */
-form table tr select {
+form table tr select, form table tr #passengers-selection {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
@@ -230,15 +238,15 @@ form table tr select {
   padding-right: 4px;
   padding-bottom: 5px;
   padding-left: 4px;
-  max-width: 124px;
+  max-width: 117px;
 }
-/* line 41, ../sass/elements/_forms.scss */
+/* line 42, ../sass/elements/_forms.scss */
 form button[type=submit] {
   padding: 7px;
   padding-right: 13px;
   padding-left: 13px;
 }
-/* line 45, ../sass/elements/_forms.scss */
+/* line 46, ../sass/elements/_forms.scss */
 form button {
   max-width: 256px;
   -webkit-box-shadow: 3px 3px 0px #1a1a1a;
@@ -254,7 +262,7 @@ form button {
   padding-left: 8px;
   margin-top: 10px;
 }
-/* line 55, ../sass/elements/_forms.scss */
+/* line 56, ../sass/elements/_forms.scss */
 form button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -262,7 +270,7 @@ form button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 59, ../sass/elements/_forms.scss */
+/* line 60, ../sass/elements/_forms.scss */
 form button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -273,16 +281,21 @@ form button:active {
   -o-box-shadow: 0px 0px 0px #1a1a1a;
   color: #fff;
 }
-/* line 65, ../sass/elements/_forms.scss */
+/* line 66, ../sass/elements/_forms.scss */
 form .checkbox-wrapper {
   margin: 5px;
 }
-/* line 69, ../sass/elements/_forms.scss */
+/* line 70, ../sass/elements/_forms.scss */
 form .checkbox-wrapper input[type="checkbox"] {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* line 76, ../sass/elements/_forms.scss */
+#passengers-selection {
+  width: 1000px;
 }
 
 /* line 2, ../sass/elements/_nav.scss */
@@ -343,35 +356,39 @@ html {
   min-height: 100%;
 }
 
-/* line 6, ../sass/main/_layout.scss */
+/* line 5, ../sass/main/_layout.scss */
 .wrapper {
   margin: 10px;
 }
 
-/* line 10, ../sass/main/_layout.scss */
+/* line 9, ../sass/main/_layout.scss */
 body {
   margin: 0 0 100px;
   /* bottom = footer height */
 }
 
-/* line 14, ../sass/main/_layout.scss */
+/* line 13, ../sass/main/_layout.scss */
 #discount {
-  max-width: 260px;
+  max-width: 247px;
 }
-/* line 16, ../sass/main/_layout.scss */
+/* line 15, ../sass/main/_layout.scss */
 #discount p.callout {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 0px;
   margin-right: 0px;
 }
-/* line 20, ../sass/main/_layout.scss */
+/* line 19, ../sass/main/_layout.scss */
 #discount button {
   border: solid black 6px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 30px;
 }
 
