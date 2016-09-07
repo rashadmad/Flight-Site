@@ -1,6 +1,7 @@
 //this mixin works to make sure the footer stays at the bottom of the page
 //it effects the body, footer and html elements
-@mixin sticky-footer($parent) {
+
+@mixin sticky_footer($parent) {
     @if ($parent == body) {
       margin: 0 0 100px; /* bottom = footer height */
   } @else if ($parent == footer) {
@@ -11,25 +12,25 @@
       width: 100%;
   } @else if ($parent == html) {
       position: relative;
-      min-height: 100%;
+      min_height: 100%;
   }
 }
 
 //makes my buttons clear, in other words gets rid of default styleing of button
-@mixin clear-button-defaults{
+@mixin clear_button_defaults{
     border: none;
     outline: none;
 }
 
-@mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null, $N-S: null, $E-W: null) {
+@mixin margin_system($all_side, $top: null, $left: null, $bottom: null, $right: null, $N_S: null, $E_W: null) {
 
-  @if $all-side == 'compass'{
-    margin-top: $N-S * $pixels;
-    margin-bottom: $N-S * $pixels;
-    margin-left: $E-W * $pixels;
-    margin-right: $E-W * $pixels;
+  @if $all_side == 'compass'{
+    margin-top: $N_S * $pixels;
+    margin-bottom: $N_S * $pixels;
+    margin-left: $E_W * $pixels;
+    margin-right: $E_W * $pixels;
     } @else {
-      margin: $all-side * $pixels;
+      margin: $all_side * $pixels;
 
         @if $top {
         margin-top: $top * $pixels;
@@ -43,54 +44,52 @@
     }
   }
 
+@mixin padding_system($all_side, $top: null, $left: null, $bottom: null, $right: null, $N_S: null, $E_W: null) {
 
+  @if $all_side == 'compass'{
+    padding-top: $N_S * $pixels;
+    padding-bottom: $N_S * $pixels;
+    padding-left: $E_W * $pixels;
+    padding-right: $E_W * $pixels;
+    } @else {
+      padding: $all_side * $pixels;
 
-@mixin easy-padding($N-S, $E-W) {
-  padding-top: $N-S;
-  padding-right: $E-W;
-  padding-bottom: $N-S;
-  padding-left: $E-W;
-}
-
-@mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
-
-  padding: $all-side * $pixels;
-
-    @if $top {
-    padding-top: $top * $pixels;
-  } @if $right {
-    padding-right: $right * $pixels;
-  } @if $bottom {
-    padding-bottom: $bottom * $pixels;
-  } @if $left {
-    padding-left: $left * $pixels;
+        @if $top {
+        padding-top: $top * $pixels;
+      } @if $right {
+        padding-right: $right * $pixels;
+      } @if $bottom {
+        padding-bottom: $bottom * $pixels;
+      } @if $left {
+        padding-left: $left * $pixels;
+      }
+    }
   }
-}
 
-@mixin easy-dropShadow($N,$W,$blur,$color) {
+@mixin easy_dropShadow($N,$W,$blur,$color) {
 
   -webkit-box-shadow: $N $W $blur $color;
   -moz-box-shadow: $N $W $blur $color;
   -o-box-shadow: $N $W $blur $color;
 }
 //styleing hrefs and buttons through out the site
-@mixin flat-ui-buttons{
+@mixin flat_ui_buttons{
     cursor: pointer;
     &:visited {
-      @include background-color($white);
+      @include background_color($white);
       border-bottom: 5px solid $maincolor;
       color: $black;
     }
     &:active {
-      @include background-color($white);
+      @include background_color($white);
       border-bottom: 5px solid $maincolor;
       color: $black;
     }
 }
 
-@mixin width-minNmax($max,$min:null){
+@mixin width_maxNmin($max,$min:null){
 
-    @if is-percentage($max){
+    @if is_percentage($max){
       max-width: $max;
       min-width: $min;
     } @else {
@@ -103,28 +102,23 @@
     }
   }
 
-@mixin border-system($style,$color,$width) {
+@mixin border_system($style,$color,$width) {
   border: $style $color $width * $pixels;
 }
 
-@mixin media-query($screen-type, $mobile:480, $tablet:768px,$desktop:1024px) {
+@mixin media_query($screen_type, $mobile:480px, $tablet:768px,$desktop:1024px) {
 
-  @if $screen-type == "min-mobile" {
-    @media (max-width: #{$mobile}) {
-      @content;
-      }
-    }
-  @if $screen-type == "mobile" {
+  @if $screen_type == "mobile" {
     @media (min-width: #{$mobile}) {
       @content;
       }
     }
-    @if $screen-type == "tablet" {
+    @if $screen_type == "tablet" {
       @media (min-width: #{$tablet}) and (max-width: #{$desktop - $pixels}) {
         @content;
         }
       }
-      @if $screen-type == "desktop" {
+      @if $screen_type == "desktop" {
         @media (min-width: #{$desktop}) {
           @content;
           }

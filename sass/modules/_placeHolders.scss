@@ -1,8 +1,16 @@
 //helpers and utilities or commonly called placeholder rules.
 
 
-//my go-to to make sure my selectors are working
-%no-display {
+%border_box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//my go_to to make sure my selectors are working
+%no_display {
   display: none;
 }
 //hideing things but keeping them there for accessibility purposes
@@ -26,16 +34,16 @@
 %center {
   text-align: center;
 }
-%text-left {
+%text_left {
   text-align: left;
 }
-%text-right {
+%text_right {
   text-align: right;
 }
-%margin-center {
+%margin_center {
   margin: 0 auto;
 }
-%no-margin {
+%no_margin {
   margin: 0;
 }
 %full_width {
@@ -49,17 +57,17 @@
 %right {
   float: right;
 }
-%clear-fix {
+%clear_fix {
   &:after {
     content: "";
     display: table;
     clear: both;
   }
 }
-%clear-left {
+%clear_left {
   clear: left;
 }
-%clear-right {
+%clear_right {
   clear: right;
 }
 
@@ -67,38 +75,38 @@
 %flex {
   display: flex;
 }
-%flex-reverse {
+%flex_reverse {
   flex-direction: row-reverse;
 }
-%flex-stack {
+%flex_stack {
   flex-direction: column; //works similar to display block
 }
-%flex-wrap {
+%flex_wrap {
   flex-wrap: wrap; //for responsive displays wraps to the next line
 }
-%flex-center {
+%flex_center {
   justify-content: center;
 }
-%flex-vertical-center{
+%flex_vertical_center{
   align-items: center;
 }
-%flex-space-between {
+%flex_space_between {
   justify-content: space-between;
 }
 
 //input field styleing
-%bold-borders {
+%bold_borders {
   border: solid $black 5px;
 }
-%no-outline {
+%no_outline {
   outline: 0;
 }
-%bye-bullets {
+%bye_bullets {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-%clear-button-defaults {
+%clear_button_defaults {
   border: none;
   outline: none;
 }

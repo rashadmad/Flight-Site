@@ -1,28 +1,28 @@
 //nav
 ul{
-  @extend %no-margin;
-  @extend %flex-space-between;
+  @extend %no_margin;
+  @extend %flex_space_between;
   @extend %flex;
-  @extend %bye-bullets;
-  @include background-color($black);
-    height: $ul-height;
+  @extend %bye_bullets;
+  @include background_color($black);
+    height: $ul_height;
 
   li{
     @extend %center;
     @extend %flex;
-    @extend %flex-center;
-    @include background-color($maincolor);
-      width: $li-width;
+    @extend %flex_center;
+    @include background_color($maincolor);
+      width: $li_width;
       color: $black;
 
       //ui buttons at the top of the page
       button{
         @extend %full_width;
-        @extend %clear-button-defaults;
-        @include background-color($black);
-        @include flat-ui-buttons;
+        @extend %clear_button_defaults;
+        @include background_color($black);
+        @include flat_ui_buttons;
           p{
-            @include margin-system(5);
+            @include margin_system(5);
           }
 
          button:target{
@@ -30,11 +30,11 @@ ul{
          }
 
         .logo{
-          width: $img-shrink;
-          margin: $img-margin;
-          margin-top: $img-margin-bottom;
-          min-width: $img-min-size;
-          max-width: $img-max-size;
+          width: $img_shrink;
+          margin: $img_margin;
+          margin-top: $img_margin_bottom;
+          min-width: $img_min_size;
+          max-width: $img_max_size;
       }
     }
   }

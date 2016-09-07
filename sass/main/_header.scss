@@ -1,18 +1,18 @@
 header {
-  @extend %no-margin;
-  @include background-color($maincolor);
-    height: $header-height;
+  @extend %no_margin;
+  @include background_color($maincolor);
+    height: $header_height;
   h1 {
-    @extend %text-right;
-    @extend %no-margin;
-      padding: $h1-header-padding;
-      padding-top: $h1-header-top-padding;
-      padding-right: $h1-header-right;
+    @extend %text_right;
+    @extend %no_margin;
+      padding: $h1_header_padding;
+      padding-top: $h1_header_top_padding;
+      padding-right: $h1_header_right;
   }
 
    .main-logo,.logo {
     @extend %left;
-      padding: $logo-header-padding;
+      padding: $logo_header_padding;
   }
 
 }

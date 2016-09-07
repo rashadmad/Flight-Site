@@ -1,9 +1,9 @@
 
 footer {
-  @include background-color($maincolor);
-  @include sticky-footer(footer);
+  @include background_color($maincolor);
+  @include sticky_footer(footer);
 
   h1 {
-    @extend %no-display;
+    @extend %no_display;
   }
 }

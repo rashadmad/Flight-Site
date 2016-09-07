@@ -1,79 +1,104 @@
 form{
-  @extend %clear-fix;
-  @include padding-system(2);
-  @include padding-system(10);
-  @include background-color($maincolor);
-  @include width-minNmax($mobile-width-MAX,$mobile-width-MIN);
+  @extend %clear_fix;
+  @include padding_system(2);
+  @include padding_system(10);
+  @include background_color($maincolor);
+  @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
+    @include media_query(mobile){
+      margin: 0 auto;
+    }
   h1{
-    @include margin-system(compass, $N-S:3, $E-W:8);
-    margin-bottom: $h1-bottom-margin;
+    @include margin_system(compass, $N_S:3, $E_W:8);
+    margin-bottom: $h1_bottom_margin;
   }
   table{
 
+    @include media_query(mobile){
+
+    }
+    td{
+      @include margin_system(4);
+      @include padding_system(4);
+    }
     tr{
-      @include margin-system(0);
+      @include margin_system(compass, $N_S:5, $E_W:5);
+      @include padding_system(compass, $N_S:5, $E_W:5);
       label{
         @extend %left;
         @extend %hide;
-        @include margin-system(compass, $N-S:3, $E-W:3);
+        @include margin_system(compass, $N_S:3, $E_W:3);
       }
       input[type="text"],input[type="number"]{
-        @extend %no-outline;
-        @extend %bold-borders;
-        @include margin-system(compass, $N-S:5, $E-W:5);
-        @include easy-padding(5px,4px);
-        @include width-minNmax(103);
-        @include media-query();
+        @extend %no_outline;
+        @extend %bold_borders;
+        @extend %border_box;
+        @include margin_system(compass, $N_S:5, $E_W:5);
+        @include padding_system(compass, $N_S:5, $E_W:5);
+        @include width_maxNmin(180);
+          width: 100%;
           color: $white;
+
+          @include media_query(mobile){
+            @include width_maxNmin(180);
+          }
+
           &:focus{
-            @include background-color($black);
+            @include background_color($black);
             color: $white !important;
           }
       }select{
-        @extend %bold-borders;
-        @include margin-system(compass, $N-S:5, $E-W:5);
-        @include easy-padding(5px,4px);
-        @include width-minNmax(120);
-      }#passengers-selection{
-          @extend select;
+        @extend %bold_borders;
+        @include margin_system(compass, $N_S:5, $E_W:5);
+        @include padding_system(compass, $N_S:5, $E_W:5);
+
+      }#passengers_selection,#economy_selection{
+        @include margin_system(compass, $N_S:5, $E_W:5);
+        @include padding_system(compass, $N_S:5, $E_W:5);
+        @include width_maxNmin(180);
+          width: 100%;
+
+          @include media_query(mobile){
+            @include width_maxNmin(180);
+          }
       }
     }
   }
 
   button[type=submit]{
-    @include padding-system(7,$left:13,$right:13);
+    @include padding_system(7,$left:13,$right:13);
   }
 
   button{
     @extend %right;
-    @extend %bold-borders;
-    @extend %no-outline;
-    @include width-minNmax(256);
-    @include easy-dropShadow(3px,3px,0px,$black);
-    @include background-color($white);
-    @include easy-padding(3px,8px);
-      margin-top: $button-top-margin;
+    @extend %bold_borders;
+    @extend %no_outline;
+    @include width_maxNmin(256);
+    @include easy_dropShadow(3px,3px,0px,$black);
+    @include background_color($white);
+    @include padding_system(compass, $N_S:3, $E_W:8);
+    @include margin_system(compass, $N_S:10, $E_W:5);
 
     &:visited{
-      @include background-color($black);
+      @include background_color($black);
         color: $white;
     }
     &:active{
-      @include background-color($black);
-      @include easy-dropShadow(0px,0px,0px,$black);
+      @include background_color($black);
+      @include easy_dropShadow(0px,0px,0px,$black);
         color: $white;
     }
   }
-  .checkbox-wrapper{
-    @extend %clear-fix;
+  .checkbox_wrapper{
     @extend %left;
-    @include margin-system(5);
+    @extend %inline;
+    @include margin_system(compass, $N_S:5, $E_W:5);
+
     input[type="checkbox"]{
-      @include margin-system(compass, $N-S:5, $E-W:10);
+      @include margin_system(compass, $N_S:5, $E_W:10);
     }
   }
 }
 
-#passengers-selection{
+#passengers_selection{
     width:1000px;
 }

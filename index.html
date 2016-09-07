@@ -54,7 +54,7 @@
             <tr>
               <td>
                 <label>Passengers</label>
-                <select id="passengers-selection">
+                <select id="passengers_selection">
                   <option value="one">fare/1 Adult</option>
                   <option value="two">2 Adults</option>
                   <option value="three">3 Adults</option>
@@ -67,7 +67,7 @@
              </td>
               <td>
               <label>Economy</label>
-              <select>
+              <select id="economy_selection">
                 <option value="volvo">Economy/Coach</option>
                 <option value="saab">Premium</option>
                 <option value="mercedes">Business</option>
@@ -76,11 +76,11 @@
              </td>
             </tr>
         </table>
-      <div class="checkbox-wrapper">
-        <input type="checkbox" name="one_way" value="one_way"><label>One way</label><br>
-        <input type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label><br>
+      <div class="checkbox_wrapper">
+        <input type="checkbox" name="one_way" value="one_way" class="form_checkbox"><label>One way</label><br>
+        <input type="checkbox" name="non_stop" value="non_stop" class="form_checkbox"><label>Non-stop</label><br>
       </div>
-      <button type="submit">Search</button>
+        <button type="submit">Search</button>
     </form>
       <div id="discount" class="wrapper">
         <p class="callout">From LA to Australia we have all the flights you need for the prices you can afford.</p>

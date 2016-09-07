@@ -1,30 +1,33 @@
 //imports for all mixins + global project variables
 html {
-  @include sticky-footer(html);
+  @include sticky_footer(html);
 }
 .wrapper {
-  @include margin-system(10);
+  @include margin_system(10);
 }
 
 body{
-  @include sticky-footer(body);
+  @include sticky_footer(body);
 }
 
 #discount {
-  @include width-minNmax($mobile-width-MAX,$mobile-width-MIN);
+  @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
+  @include media_query(mobile){
+    margin: 0 auto;
+  }
   p.callout {
     @extend %full_width;
-    @include margin-system(compass,$N-S:15,$E-W:0);
+    @include margin_system(compass,$N_S:15,$E_W:0);
     margin-bottom: 10px;
   }
   button {
-    @extend %full_width;
-    @extend %no-outline;
+    @extend %no_outline;
     @extend %center;
-    @include width-minNmax($mobile-width-MAX);
-    @include border-system(solid,black,6);
-    @include background-color($maincolor);
-    @include margin-system(compass,$N-S:5,$E-W:0);
-    @include padding-system(25);
+    @include width_maxNmin($mobile_width_MAX);
+    @include border_system(solid,black,6);
+    @include background_color($maincolor);
+    @include margin_system(compass,$N_S:5,$E_W:0);
+    @include padding_system(25);
+      width: 100%;
   }
 }
