@@ -11,23 +11,29 @@ body{
 }
 
 #discount {
+
+  @extend %margin_center;
   @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
   @include media_query(mobile){
     margin: 0 auto;
   }
   p.callout {
     @extend %full_width;
-    @include margin_system(compass,$N_S:15,$E_W:0);
-    margin-bottom: 10px;
+    @include margin_system(compass,$N_S:15);
+      margin-bottom: 10px;
+  }
+  .discount_button {
+    @extend %center;
+    @extend %full_width;
   }
   button {
     @extend %no_outline;
-    @extend %center;
-    @include width_maxNmin($mobile_width_MAX);
+    @extend %full_width;
     @include border_system(solid,black,6);
     @include background_color($maincolor);
-    @include margin_system(compass,$N_S:5,$E_W:0);
-    @include padding_system(25);
-      width: 100%;
+    @include margin_system(compass,$N_S:5,$bottom:10);
+    @include padding_system(compass,$N_S:30);
+
+
   }
 }

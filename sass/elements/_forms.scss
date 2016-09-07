@@ -1,9 +1,10 @@
 form{
   @extend %clear_fix;
-  @include padding_system(2);
+  @extend %margin_center;
   @include padding_system(10);
   @include background_color($maincolor);
   @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
+
     @include media_query(mobile){
       margin: 0 auto;
     }
@@ -32,8 +33,8 @@ form{
         @extend %no_outline;
         @extend %bold_borders;
         @extend %border_box;
-        @include margin_system(compass, $N_S:5, $E_W:5);
-        @include padding_system(compass, $N_S:5, $E_W:5);
+        @include margin_system(compass, $N_S:1, $E_W:5);
+        @include padding_system(compass, $N_S:7, $E_W:7);
         @include width_maxNmin(180);
           width: 100%;
           color: $white;
@@ -48,12 +49,12 @@ form{
           }
       }select{
         @extend %bold_borders;
-        @include margin_system(compass, $N_S:5, $E_W:5);
-        @include padding_system(compass, $N_S:5, $E_W:5);
+        @include margin_system(compass, $N_S:1, $E_W:5);
+        @include padding_system(compass, $N_S:7, $E_W:7);
 
       }#passengers_selection,#economy_selection{
-        @include margin_system(compass, $N_S:5, $E_W:5);
-        @include padding_system(compass, $N_S:5, $E_W:5);
+        @include margin_system(compass, $N_S:1, $E_W:5);
+        @include padding_system(compass, $N_S:7, $E_W:7);
         @include width_maxNmin(180);
           width: 100%;
 

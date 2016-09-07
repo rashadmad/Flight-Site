@@ -25,10 +25,13 @@
 @mixin margin_system($all_side, $top: null, $left: null, $bottom: null, $right: null, $N_S: null, $E_W: null) {
 
   @if $all_side == 'compass'{
-    margin-top: $N_S * $pixels;
-    margin-bottom: $N_S * $pixels;
-    margin-left: $E_W * $pixels;
-    margin-right: $E_W * $pixels;
+      @if $N_S{
+        margin-top: $N_S * $pixels;
+        margin-bottom: $N_S * $pixels;
+      } @if $E_W{
+        margin-left: $E_W * $pixels;
+        margin-right: $E_W * $pixels;
+      }
     } @else {
       margin: $all_side * $pixels;
 
@@ -47,10 +50,13 @@
 @mixin padding_system($all_side, $top: null, $left: null, $bottom: null, $right: null, $N_S: null, $E_W: null) {
 
   @if $all_side == 'compass'{
-    padding-top: $N_S * $pixels;
-    padding-bottom: $N_S * $pixels;
-    padding-left: $E_W * $pixels;
-    padding-right: $E_W * $pixels;
+      @if $N_S{
+        padding-top: $N_S * $pixels;
+        padding-bottom: $N_S * $pixels;
+      } @if $E_W{
+        padding-left: $E_W * $pixels;
+        padding-right: $E_W * $pixels;
+      }
     } @else {
       padding: $all_side * $pixels;
 
