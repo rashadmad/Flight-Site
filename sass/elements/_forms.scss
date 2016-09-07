@@ -22,7 +22,7 @@ form{
       @include padding_system(4);
     }
     tr{
-      @include margin_system(compass, $N_S:5, $E_W:5);
+      @include margin_system(compass, $N_S:2, $E_W:5);
       @include padding_system(compass, $N_S:5, $E_W:5);
       label{
         @extend %left;
