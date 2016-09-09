@@ -12,6 +12,15 @@ body{
 
 #discount {
 
+
+    button:before{
+      content: "\f155";
+      font-family: 'FontAwesome';
+      font-size: 50px;
+      float:left;
+      margin:10px;
+      top: 0; left: 0
+      }
   @extend %margin_center;
   @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
   @include media_query(mobile){
@@ -26,13 +35,18 @@ body{
     @extend %center;
     @extend %full_width;
   }
+
   button {
     @extend %no_outline;
     @extend %full_width;
     @include border_system(solid,black,6);
     @include background_color($maincolor);
     @include margin_system(compass,$N_S:5,$bottom:10);
-    @include padding_system(compass,$N_S:30);
-
+      p {
+        float:right;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+    }
   }
 }

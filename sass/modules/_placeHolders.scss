@@ -40,6 +40,10 @@
 %text_right {
   text-align: right;
 }
+%text_no_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+}
 %margin_center {
   margin: 0 auto;
 }
@@ -74,6 +78,9 @@
 //everything flex box
 %flex {
   display: flex;
+}
+%flex_flow {
+  flex-flow: row wrap;
 }
 %flex_reverse {
   flex-direction: row-reverse;
