@@ -14,11 +14,11 @@ body{
 
 
     button:before{
+      @extend %text_left;
+      @include margin_system(20);
       content: "\f155";
       font-family: 'FontAwesome';
-      font-size: 50px;
-      float:left;
-      margin:10px;
+      font-size: 3em;
       top: 0; left: 0
       }
   @extend %margin_center;
@@ -28,7 +28,7 @@ body{
   }
   p.callout {
     @extend %full_width;
-    @include margin_system(compass,$N_S:15);
+    @include margin_system($N_S:15);
       margin-bottom: 10px;
   }
   .discount_button {
@@ -41,12 +41,11 @@ body{
     @extend %full_width;
     @include border_system(solid,black,6);
     @include background_color($maincolor);
-    @include margin_system(compass,$N_S:5,$bottom:10);
+    @include margin_system($N_S:5,$bottom:10);
       p {
-        float:right;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 30px;
+        @extend %right;
+        @extend %text_break;
+        @include padding_system(10,$top:25);
     }
   }
 }

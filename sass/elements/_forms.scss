@@ -16,7 +16,7 @@ form{
     }
 
   h1{
-    @include margin_system(compass, $N_S:3, $E_W:8);
+    @include margin_system($N_S:3, $E_W:8);
     margin-bottom: $h1_bottom_margin;
   }
   table{
@@ -29,19 +29,19 @@ form{
       @include padding_system(4);
     }
     tr{
-      @include margin_system(compass, $N_S:5, $E_W:5);
-      @include padding_system(compass, $N_S:5, $E_W:5);
+      @include margin_system($N_S:5, $E_W:5);
+      @include padding_system($N_S:5, $E_W:5);
       label{
         @extend %left;
         @extend %hide;
-        @include margin_system(compass, $N_S:3, $E_W:3);
+        @include margin_system($N_S:3, $E_W:3);
       }
       input[type="text"],input[type="number"]{
         @extend %no_outline;
         @extend %bold_borders;
         @extend %border_box;
-        @include margin_system(compass, $N_S:1, $E_W:5);
-        @include padding_system(compass, $N_S:7, $E_W:7);
+        @include margin_system($N_S:1, $E_W:5);
+        @include padding_system($N_S:7, $E_W:7);
         @include width_maxNmin(180);
           width: 100%;
           color: $white;
@@ -56,12 +56,12 @@ form{
           }
       }select{
         @extend %bold_borders;
-        @include margin_system(compass, $N_S:1, $E_W:5);
-        @include padding_system(compass, $N_S:7, $E_W:7);
+        @include margin_system($N_S:1, $E_W:5);
+        @include padding_system( $N_S:7, $E_W:7);
 
       }#passengers_selection,#economy_selection{
-        @include margin_system(compass, $N_S:1, $E_W:5);
-        @include padding_system(compass, $N_S:7, $E_W:7);
+        @include margin_system($N_S:1, $E_W:5);
+        @include padding_system($N_S:7, $E_W:7);
         @include width_maxNmin(180);
           width: 100%;
 
@@ -83,8 +83,8 @@ form{
     @include width_maxNmin(256);
     @include easy_dropShadow(3px,3px,0px,$black);
     @include background_color($white);
-    @include padding_system(compass, $N_S:3, $E_W:8);
-    @include margin_system(compass, $N_S:10, $E_W:5);
+    @include padding_system($N_S:3, $E_W:8);
+    @include margin_system($N_S:10, $E_W:5);
 
     &:visited{
       @include background_color($black);
@@ -99,10 +99,10 @@ form{
   .checkbox_wrapper{
     @extend %left;
     @extend %inline;
-    @include margin_system(compass, $N_S:5, $E_W:5);
+    @include margin_system($N_S:5, $E_W:5);
 
     input[type="checkbox"]{
-      @include margin_system(compass, $N_S:5, $E_W:10);
+      @include margin_system($N_S:5, $E_W:10);
     }
   }
 }
