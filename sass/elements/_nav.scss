@@ -4,6 +4,7 @@ ul{
   @extend %flex_space_between;
   @extend %flex;
   @extend %bye_bullets;
+  @extend %full_width;
   @include background_color($black);
     height: $ul_height;
 

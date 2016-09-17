@@ -4,6 +4,7 @@ html {
 }
 .wrapper {
   @include margin_system(10);
+  height: auto;
 }
 
 body{
@@ -11,14 +12,12 @@ body{
 }
 
 #discount {
-
-
     button:before{
       @extend %text_left;
-      @include margin_system(20);
+      @include margin_system(5);
       content: "\f155";
       font-family: 'FontAwesome';
-      font-size: 3em;
+      font-size: 2em;
       top: 0; left: 0
       }
   @extend %margin_center;
@@ -27,25 +26,51 @@ body{
     margin: 0 auto;
   }
   p.callout {
-    @extend %full_width;
-    @include margin_system($N_S:15);
-      margin-bottom: 10px;
+    @extend %inline_block;
+    @extend %overflow_hidden;
+    @extend %resize_none;
+    @extend %margin_center;
+    @include text(1,1.3);
+    @include margin_system($top:10);
+    @include width_maxNmin(300,300);
+      height:4em;
+
+    @include media_query(min-mobile){
+      @include width_maxNmin(100%,$callout_width_MIN);
+        height:4em;
+    }
+    @include media_query(mobile){
+      @include width_maxNmin(100%,$callout_width_MIN);
+        height:2.5em;
+    }
+
+
   }
   .discount_button {
     @extend %center;
-    @extend %full_width;
+
+
   }
 
   button {
+    @extend %block;
     @extend %no_outline;
     @extend %full_width;
     @include border_system(solid,black,6);
     @include background_color($maincolor);
-    @include margin_system($N_S:5,$bottom:10);
+    @include padding_system(10,$N_S:15);
+    @include margin_system($N_S:5,$bottom:10,$E_W:0);
+    @include width_maxNmin(100%,$callout_width_MIN);
+
+    @include media_query(min-mobile){
+      @include width_maxNmin(100%,$callout_width_MIN);
+        height:6em;
+    }
+
       p {
         @extend %right;
         @extend %text_break;
-        @include padding_system(10,$top:25);
+        @include padding_system(10);
     }
   }
 }

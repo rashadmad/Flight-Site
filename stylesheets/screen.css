@@ -108,177 +108,225 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline;
 }
 
-/* line 34, ../sass/modules/_placeHolders.scss */
-ul li, #discount .discount_button, .callout, footer div.wrapper h1 {
+/* line 25, ../sass/modules/_placeHolders.scss */
+#discount button {
+  display: block;
+}
+
+/* line 28, ../sass/modules/_placeHolders.scss */
+#discount p.callout {
+  display: inline-block;
+}
+
+/* line 36, ../sass/modules/_placeHolders.scss */
+#discount p.callout {
+  overflow: hidden;
+}
+
+/* line 55, ../sass/modules/_placeHolders.scss */
+.wrapper form table tbody, ul li, #discount .discount_button, .callout, footer div.wrapper h1 {
   text-align: center;
 }
 
-/* line 37, ../sass/modules/_placeHolders.scss */
+/* line 58, ../sass/modules/_placeHolders.scss */
 #discount button:before {
   text-align: left;
 }
 
-/* line 40, ../sass/modules/_placeHolders.scss */
+/* line 61, ../sass/modules/_placeHolders.scss */
 header h1 {
   text-align: right;
 }
 
-/* line 43, ../sass/modules/_placeHolders.scss */
+/* line 64, ../sass/modules/_placeHolders.scss */
 #discount button p {
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 47, ../sass/modules/_placeHolders.scss */
+/* line 68, ../sass/modules/_placeHolders.scss */
 #discount button p {
   word-wrap: break-word;
 }
 
-/* line 50, ../sass/modules/_placeHolders.scss */
-.wrapper form, #discount, footer h1 {
+/* line 71, ../sass/modules/_placeHolders.scss */
+.wrapper form, #discount, #discount p.callout, footer h1 {
   margin: 0 auto;
 }
 
-/* line 53, ../sass/modules/_placeHolders.scss */
+/* line 74, ../sass/modules/_placeHolders.scss */
 ul, header, header h1 {
   margin: 0;
 }
 
-/* line 56, ../sass/modules/_placeHolders.scss */
-ul li button, ul li button button:target, #discount p.callout, #discount .discount_button, #discount button {
+/* line 77, ../sass/modules/_placeHolders.scss */
+ul, ul li button, ul li button button:target, #discount button {
   width: 100%;
 }
 
-/* line 61, ../sass/modules/_placeHolders.scss */
+/* line 80, ../sass/modules/_placeHolders.scss */
+#discount p.callout {
+  resize: none;
+}
+
+/* line 85, ../sass/modules/_placeHolders.scss */
 .wrapper form table tr label, .wrapper form .checkbox_wrapper, header .main-logo, header .logo {
   float: left;
 }
 
-/* line 64, ../sass/modules/_placeHolders.scss */
+/* line 88, ../sass/modules/_placeHolders.scss */
 .wrapper form button, #discount button p {
   float: right;
 }
 
-/* line 68, ../sass/modules/_placeHolders.scss */
+/* line 92, ../sass/modules/_placeHolders.scss */
 .wrapper form:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 82, ../sass/modules/_placeHolders.scss */
+/* line 106, ../sass/modules/_placeHolders.scss */
 ul, ul li, footer {
   display: flex;
 }
 
-/* line 97, ../sass/modules/_placeHolders.scss */
+/* line 121, ../sass/modules/_placeHolders.scss */
 ul li {
   justify-content: center;
 }
 
-/* line 103, ../sass/modules/_placeHolders.scss */
+/* line 127, ../sass/modules/_placeHolders.scss */
 ul {
   justify-content: space-between;
 }
 
-/* line 108, ../sass/modules/_placeHolders.scss */
+/* line 132, ../sass/modules/_placeHolders.scss */
 .wrapper form table tr input[type="text"], .wrapper form table tr input[type="number"], .wrapper form table tr select, .wrapper form button {
   border: solid #1a1a1a 5px;
 }
 
-/* line 111, ../sass/modules/_placeHolders.scss */
+/* line 135, ../sass/modules/_placeHolders.scss */
 .wrapper form table tr input[type="text"], .wrapper form table tr input[type="number"], .wrapper form button, #discount button {
   outline: 0;
 }
 
-/* line 114, ../sass/modules/_placeHolders.scss */
+/* line 138, ../sass/modules/_placeHolders.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 119, ../sass/modules/_placeHolders.scss */
+/* line 143, ../sass/modules/_placeHolders.scss */
 ul li button {
   border: none;
   outline: none;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* line 1, ../sass/elements/_forms.scss */
+@media (min-width: 700px) and (max-width: 1000px) {
+  /* line 2, ../sass/elements/_forms.scss */
   .wrapper {
     float: left;
-    margin: 0 auto;
+    margin-left: 20%;
   }
 }
-/* line 7, ../sass/elements/_forms.scss */
+/* line 8, ../sass/elements/_forms.scss */
 .wrapper form {
   padding: 10px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  max-width: 380px;
-  min-width: 250px;
+  max-width: 370px;
 }
-@media (min-width: 480px) {
-  /* line 7, ../sass/elements/_forms.scss */
+@media (min-width: 400px) and (max-width: 700px) {
+  /* line 8, ../sass/elements/_forms.scss */
   .wrapper form {
     margin: 0 auto;
   }
 }
-/* line 18, ../sass/elements/_forms.scss */
+/* line 19, ../sass/elements/_forms.scss */
 .wrapper form h1 {
-  margin-top: 3 * 1px;
-  margin-bottom: 3 * 1px;
-  margin-left: 8 * 1px;
-  margin-right: 8 * 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+/* line 22, ../sass/elements/_forms.scss */
+.wrapper form table {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 27, ../sass/elements/_forms.scss */
-.wrapper form table td {
-  margin: 4px;
-  padding: 4px;
+@media (min-width: 300px) {
+  /* line 22, ../sass/elements/_forms.scss */
+  .wrapper form table {
+    margin: 0 auto;
+  }
 }
-/* line 31, ../sass/elements/_forms.scss */
-.wrapper form table tr {
-  margin-top: 5 * 1px;
-  margin-bottom: 5 * 1px;
-  margin-left: 5 * 1px;
-  margin-right: 5 * 1px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-/* line 34, ../sass/elements/_forms.scss */
-.wrapper form table tr label {
-  margin-top: 3 * 1px;
-  margin-bottom: 3 * 1px;
-  margin-left: 3 * 1px;
-  margin-right: 3 * 1px;
-}
-/* line 39, ../sass/elements/_forms.scss */
-.wrapper form table tr input[type="text"], .wrapper form table tr input[type="number"] {
-  margin-top: 1 * 1px;
-  margin-bottom: 1 * 1px;
-  margin-left: 5 * 1px;
-  margin-right: 5 * 1px;
+/* line 28, ../sass/elements/_forms.scss */
+.wrapper form table tbody {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 7px;
   padding-right: 7px;
-  max-width: 180px;
-  width: 100%;
-  color: #fff;
+  margin: 4px;
 }
-@media (min-width: 480px) {
-  /* line 39, ../sass/elements/_forms.scss */
-  .wrapper form table tr input[type="text"], .wrapper form table tr input[type="number"] {
-    max-width: 180px;
+/* line 33, ../sass/elements/_forms.scss */
+.wrapper form table tbody td {
+  margin: 4px;
+  padding: 4px;
+  max-width: 115px;
+}
+@media (min-width: 300px) {
+  /* line 33, ../sass/elements/_forms.scss */
+  .wrapper form table tbody td {
+    max-width: 118px;
   }
 }
+@media (min-width: 400px) and (max-width: 700px) {
+  /* line 33, ../sass/elements/_forms.scss */
+  .wrapper form table tbody td {
+    max-width: 170px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  /* line 33, ../sass/elements/_forms.scss */
+  .wrapper form table tbody td {
+    max-width: 250px;
+  }
+}
+/* line 49, ../sass/elements/_forms.scss */
+.wrapper form table tr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 100px;
+}
 /* line 53, ../sass/elements/_forms.scss */
+.wrapper form table tr label {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+/* line 58, ../sass/elements/_forms.scss */
+.wrapper form table tr input[type="text"], .wrapper form table tr input[type="number"] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  max-width: 100%;
+  min-width: 100%;
+  color: #fff;
+}
+/* line 66, ../sass/elements/_forms.scss */
 .wrapper form table tr input[type="text"]:focus, .wrapper form table tr input[type="number"]:focus {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -286,43 +334,26 @@ ul li button {
   background-color: #1a1a1a;
   color: #fff !important;
 }
-/* line 57, ../sass/elements/_forms.scss */
-.wrapper form table tr select {
-  margin-top: 1 * 1px;
-  margin-bottom: 1 * 1px;
-  margin-left: 5 * 1px;
-  margin-right: 5 * 1px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 7px;
-  padding-right: 7px;
-}
-/* line 62, ../sass/elements/_forms.scss */
+/* line 74, ../sass/elements/_forms.scss */
 .wrapper form table tr #passengers_selection, .wrapper form table tr #economy_selection {
-  margin-top: 1 * 1px;
-  margin-bottom: 1 * 1px;
-  margin-left: 5 * 1px;
-  margin-right: 5 * 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 7px;
   padding-right: 7px;
-  max-width: 180px;
+  max-width: 100%;
   width: 100%;
 }
-@media (min-width: 480px) {
-  /* line 62, ../sass/elements/_forms.scss */
+@media (min-width: 400px) and (max-width: 700px) {
+  /* line 74, ../sass/elements/_forms.scss */
   .wrapper form table tr #passengers_selection, .wrapper form table tr #economy_selection {
     max-width: 180px;
   }
 }
-/* line 75, ../sass/elements/_forms.scss */
-.wrapper form button[type=submit] {
-  padding: 7px;
-  padding-right: 13px;
-  padding-left: 13px;
-}
-/* line 79, ../sass/elements/_forms.scss */
+/* line 87, ../sass/elements/_forms.scss */
 .wrapper form button {
   max-width: 256px;
   -webkit-box-shadow: 3px 3px 0px #1a1a1a;
@@ -332,16 +363,17 @@ ul li button {
   -moz-background-color: #fff;
   -ms-background-color: #fff;
   background-color: #fff;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-top: 10 * 1px;
-  margin-bottom: 10 * 1px;
-  margin-left: 5 * 1px;
-  margin-right: 5 * 1px;
+  margin: 10px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 7px;
+  padding-right: 13px;
+  padding-left: 13px;
 }
-/* line 89, ../sass/elements/_forms.scss */
+/* line 97, ../sass/elements/_forms.scss */
 .wrapper form button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -349,7 +381,7 @@ ul li button {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 93, ../sass/elements/_forms.scss */
+/* line 101, ../sass/elements/_forms.scss */
 .wrapper form button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -360,21 +392,22 @@ ul li button {
   -o-box-shadow: 0px 0px 0px #1a1a1a;
   color: #fff;
 }
-/* line 99, ../sass/elements/_forms.scss */
+/* line 107, ../sass/elements/_forms.scss */
 .wrapper form .checkbox_wrapper {
-  margin-top: 5 * 1px;
-  margin-bottom: 5 * 1px;
-  margin-left: 5 * 1px;
-  margin-right: 5 * 1px;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-/* line 104, ../sass/elements/_forms.scss */
+/* line 112, ../sass/elements/_forms.scss */
 .wrapper form .checkbox_wrapper input[type="checkbox"] {
-  margin-top: 5 * 1px;
-  margin-bottom: 5 * 1px;
-  margin-left: 10 * 1px;
-  margin-right: 10 * 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-/* line 110, ../sass/elements/_forms.scss */
+/* line 118, ../sass/elements/_forms.scss */
 .wrapper #passengers_selection {
   width: 1000px;
 }
@@ -387,16 +420,16 @@ ul {
   background-color: #1a1a1a;
   height: 70px;
 }
-/* line 10, ../sass/elements/_nav.scss */
+/* line 11, ../sass/elements/_nav.scss */
 ul li {
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  width: 100%;
+  width: 100px;
   color: #1a1a1a;
 }
-/* line 19, ../sass/elements/_nav.scss */
+/* line 20, ../sass/elements/_nav.scss */
 ul li button {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -404,7 +437,7 @@ ul li button {
   background-color: #1a1a1a;
   cursor: pointer;
 }
-/* line 77, ../sass/modules/_utillity.scss */
+/* line 79, ../sass/modules/_utillity.scss */
 ul li button:visited {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
@@ -413,7 +446,7 @@ ul li button:visited {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a;
 }
-/* line 82, ../sass/modules/_utillity.scss */
+/* line 84, ../sass/modules/_utillity.scss */
 ul li button:active {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
@@ -422,13 +455,13 @@ ul li button:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a;
 }
-/* line 24, ../sass/elements/_nav.scss */
+/* line 25, ../sass/elements/_nav.scss */
 ul li button p {
   margin: 5px;
 }
-/* line 32, ../sass/elements/_nav.scss */
+/* line 33, ../sass/elements/_nav.scss */
 ul li button .logo {
-  width: 80%;
+  width: 50%;
   margin: 0px;
   margin-top: 5px;
   min-width: 30px;
@@ -444,55 +477,88 @@ html {
 /* line 5, ../sass/main/_layout.scss */
 .wrapper {
   margin: 10px;
+  height: auto;
 }
 
-/* line 9, ../sass/main/_layout.scss */
+/* line 10, ../sass/main/_layout.scss */
 body {
   margin: 0 0 100px;
   /* bottom = footer height */
 }
 
-/* line 13, ../sass/main/_layout.scss */
+/* line 14, ../sass/main/_layout.scss */
 #discount {
-  max-width: 380px;
-  min-width: 250px;
+  max-width: 370px;
 }
-/* line 16, ../sass/main/_layout.scss */
+/* line 15, ../sass/main/_layout.scss */
 #discount button:before {
-  margin: 20px;
+  margin: 5px;
   content: "\f155";
   font-family: 'FontAwesome';
-  font-size: 3em;
+  font-size: 2em;
   top: 0;
   left: 0;
 }
-@media (min-width: 480px) {
-  /* line 13, ../sass/main/_layout.scss */
+@media (min-width: 400px) and (max-width: 700px) {
+  /* line 14, ../sass/main/_layout.scss */
   #discount {
     margin: 0 auto;
   }
 }
-/* line 29, ../sass/main/_layout.scss */
+/* line 28, ../sass/main/_layout.scss */
 #discount p.callout {
-  margin-top: 15 * 1px;
-  margin-bottom: 15 * 1px;
-  margin-bottom: 10px;
+  font-size: 1em !important;
+  line-height: 1.3 !important;
+  color: black !important;
+  margin-top: 10px;
+  max-width: 300px;
+  height: 4em;
 }
-/* line 39, ../sass/main/_layout.scss */
+@media (min-width: 300px) {
+  /* line 28, ../sass/main/_layout.scss */
+  #discount p.callout {
+    max-width: 100%;
+    min-width: 250;
+    height: 4em;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  /* line 28, ../sass/main/_layout.scss */
+  #discount p.callout {
+    max-width: 100%;
+    min-width: 250;
+    height: 2.5em;
+  }
+}
+/* line 55, ../sass/main/_layout.scss */
 #discount button {
   border: solid black 6px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  margin-bottom: 10 * 1px;
-  margin-top: 5 * 1px;
-  margin-bottom: 5 * 1px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 100%;
+  min-width: 250;
 }
-/* line 45, ../sass/main/_layout.scss */
+@media (min-width: 300px) {
+  /* line 55, ../sass/main/_layout.scss */
+  #discount button {
+    max-width: 100%;
+    min-width: 250;
+    height: 6em;
+  }
+}
+/* line 70, ../sass/main/_layout.scss */
 #discount button p {
   padding: 10px;
-  padding-top: 25px;
 }
 
 /* line 2, ../sass/main/_typography.scss */
@@ -551,7 +617,7 @@ form input {
   line-height: 1 !important;
   color: #1a1a1a !important;
 }
-@media (min-width: 480px) {
+@media (min-width: 400px) and (max-width: 700px) {
   /* line 40, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.4em !important;
@@ -578,15 +644,17 @@ header {
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
+  max-width: 100%;
+  min-width: 100%;
   height: 65px;
 }
-/* line 5, ../sass/main/_header.scss */
+/* line 6, ../sass/main/_header.scss */
 header h1 {
   padding: 10px;
   padding-top: 15px;
   padding-right: 10px;
 }
-/* line 13, ../sass/main/_header.scss */
+/* line 14, ../sass/main/_header.scss */
 header .main-logo, header .logo {
   padding: 10px;
 }

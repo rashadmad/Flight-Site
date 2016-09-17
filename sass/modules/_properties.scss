@@ -7,13 +7,13 @@ $logo_header_padding: 10px;
 
 //nav
 $ul_height: 70px;
-$li_width: 100%;
+$li_width: 100px;
 
 //footer
 $wrapper_top_margin: 40px;
 
 //img
-$img_shrink: 80%;
+$img_shrink: 50%;
 $img_margin: 0px;
 $img_margin_bottom: 5px;
 $img_min_size: 30px;
@@ -24,8 +24,12 @@ $form_margin: 15px;
 $input_margin: 5px;
 $input_height: 400px;
 $button_top_margin: 0;
-$h1_bottom_margin: 10px;
+$form_min_width: 220;
+
+//layout
+$callout_width_MIN: 250;
+$callout_width_MAX: 250;
 
 //dimesions
-$mobile_width_MAX: 380;
-$mobile_width_MIN: 250;
+$mobile_width_MAX: 370;
+$mobile_width_MIN: 345;

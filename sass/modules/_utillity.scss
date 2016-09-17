@@ -24,22 +24,24 @@
 
 @mixin margin_system($all_side: null, $top: null, $left: null, $bottom: null, $right: null, $N_S: null, $E_W: null) {
 
+$arguments: $all_side, $top, $left, $bottom, $right, $N_S, $E_W;
+
   @if $all_side {
     margin: #{$all_side * $pixels};
   } @if $top {
-    margin-top: #{$top} * $pixels;
+    margin-top: $top * $pixels;
   } @if $right {
-    margin-right: #{$right} * $pixels;
+    margin-right: $right * $pixels;
   } @if $bottom {
-    margin-bottom: #{$bottom} * $pixels;
+    margin-bottom: $bottom * $pixels;
   } @if $left {
-    margin-left: #{$left} * $pixels;
+    margin-left: $left * $pixels;
   } @if $N_S{
-    margin-top: #{$N_S} * $pixels;
-    margin-bottom: #{$N_S} * $pixels;
+    margin-top: $N_S * $pixels;
+    margin-bottom: $N_S * $pixels;
   } @if $E_W{
-    margin-left: #{$E_W} * $pixels;
-    margin-right: #{$E_W} * $pixels;
+    margin-left: $E_W * $pixels;
+    margin-right: $E_W * $pixels;
   }
 }
 
@@ -86,34 +88,37 @@
     }
 }
 
-@mixin width_maxNmin($max,$min:null){
+@mixin width_maxNmin($max:null,$min:null){
 
     @if is_percentage($max){
       max-width: $max;
       min-width: $min;
-    } @else {
+    } @else if $max{
         max-width: $max * $pixels;
-      @if $min {
+    } @else if $min {
         min-width: $min * $pixels;
-      } @else if $min == null {
-        $min: $max;
       }
     }
-  }
 
 @mixin border_system($style,$color,$width) {
   border: $style $color $width * $pixels;
 }
 
-@mixin media_query($screen_type, $mobile:480px, $tablet:768px,$desktop:1024px) {
+@mixin media_query($screen_type, $min_mobile:300px, $mobile:400px, $tablet:700px,$desktop:1000px) {
+
+@if $screen_type == "min-mobile" {
+  @media (min-width: #{$min_mobile}) {
+    @content;
+  }
+}
 
   @if $screen_type == "mobile" {
-    @media (min-width: #{$mobile}) {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet}) {
       @content;
       }
     }
     @if $screen_type == "tablet" {
-      @media (min-width: #{$tablet}) and (max-width: #{$desktop - $pixels}) {
+      @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
         @content;
         }
       }
