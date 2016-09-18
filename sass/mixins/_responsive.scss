@@ -1,0 +1,37 @@
+@mixin media_query($screen_type, $min_mobile:300px, $mobile:400px, $tablet:700px,$desktop:1000px) {
+
+@if $screen_type == "min-mobile" {
+  @media (min-width: #{$min_mobile}) {
+    @content;
+  }
+}
+  @if $screen_type == "mobile" {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet}) {
+      @content;
+      }
+    }
+    @if $screen_type == "tablet" {
+      @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+        @content;
+        }
+      }
+      @if $screen_type == "desktop" {
+        @media (min-width: #{$desktop}) {
+          @content;
+          }
+        } @else {
+          @debug "The varible screen-type equals #{$screen-type} when it should either equal mobile, tablet or desktop";
+    }
+  }
+
+  @mixin width_maxNmin($max:null,$min:null){
+
+      @if is_percentage($max){
+        max-width: $max;
+        min-width: $min;
+      } @else if $max{
+          max-width: $max * $pixels;
+      } @else if $min {
+          min-width: $min * $pixels;
+        }
+      }

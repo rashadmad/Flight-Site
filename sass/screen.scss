@@ -10,7 +10,8 @@ body{
 }
 
 @import "compass/reset";
-@import 'modules/index';
+@import 'mixins/index';
+@import 'properties/index';
 @import 'elements/index';
 @import 'main/index';
 @import 'font_awesome/font-awesome';

@@ -1,0 +1,30 @@
+//styleing hrefs and buttons through out the site
+@mixin flat_ui_buttons{
+    cursor: pointer;
+    &:visited {
+      @include background_color($white);
+      border-bottom: 5px solid $maincolor;
+      color: $black;
+    }
+    &:active {
+      @include background_color($white);
+      border-bottom: 5px solid $maincolor;
+      color: $black;
+    }
+}
+
+
+@mixin sticky_footer($parent,$footer_height:null) {
+    @if ($parent == body) {
+      margin: 0 0 100px; /* bottom = footer height */
+  } @else if ($parent == footer) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: $footer-height * $pixels;
+      width: 100%;
+  } @else if ($parent == html) {
+      position: relative;
+      min_height: 100%;
+  }
+}

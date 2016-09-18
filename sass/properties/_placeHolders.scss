@@ -132,6 +132,8 @@
 %bold_borders {
   border: solid $black 5px;
 }
+
+//clearing
 %no_outline {
   outline: 0;
 }
@@ -140,6 +142,7 @@
     margin: 0;
     padding: 0;
 }
+//makes my buttons clear, in other words gets rid of default styleing of button
 %clear_button_defaults {
   border: none;
   outline: none;

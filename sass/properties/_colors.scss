@@ -7,10 +7,3 @@ $black: #1a1a1a;
 $white: #fff;
 
 $maincolor: $yellow;
-
-@mixin background-color($maincolor) {
-  -webkit-background-color: $maincolor ;
-  -moz-background-color: $maincolor ;
-  -ms-background-color: $maincolor ;
-   background-color: $maincolor ;
-}
