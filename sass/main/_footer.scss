@@ -1,5 +1,6 @@
 
 footer {
+  @extend %sticky_footer_height;
   @include background_color($maincolor);
   @include sticky_footer(footer,85);
 

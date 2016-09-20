@@ -3,10 +3,15 @@ html {
   @include sticky_footer(html);
 }
 
-.wrapper {
-  height: auto;
+section[role="main"] {
   @include margin_system(10);
-  @include sticky_footer(body);
+  @include sticky_footer(main);
+    height: auto;
+}
+
+section[role="main"]:after {
+  @extend %content_clear;
+  @extend %block;
 }
 
 body{

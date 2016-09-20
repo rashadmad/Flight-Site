@@ -61,8 +61,8 @@ form{
       }
       input[type="text"],input[type="number"]{
         @extend %no_outline;
-        @extend %bold_borders;
         @extend %border_box;
+        @include border_system(solid,$black,5);
         @include padding_system(8);
         @include width_maxNmin(100%,100%);
           color: $white;
@@ -72,7 +72,8 @@ form{
             color: $white !important;
           }
       }select{
-        @extend %bold_borders;
+
+        @include border_system(solid,$black,5)
 
 
       }#passengers_selection,#economy_selection{
@@ -90,8 +91,8 @@ form{
 
   button{
     @extend %right;
-    @extend %bold_borders;
     @extend %no_outline;
+    @include border_system(solid,$black,5);
     @include width_maxNmin(256);
     @include easy_dropShadow(3px,3px,0px,$black);
     @include background_color($white);

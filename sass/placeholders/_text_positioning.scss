@@ -1,0 +1,29 @@
+//positioning helpers good for quick adjusments on the fly
+%center {
+  text-align: center;
+}
+%text_left {
+  text-align: left;
+}
+%text_right {
+  text-align: right;
+}
+%text_no_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+}
+%text_break {
+  word-wrap: break-word;
+}
+%margin_center {
+  margin: 0 auto;
+}
+%no_margin {
+  margin: 0;
+}
+%full_width {
+  width: 100%;
+}
+%resize_none {
+  resize:none;
+}

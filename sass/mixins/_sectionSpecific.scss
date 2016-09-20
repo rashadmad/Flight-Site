@@ -15,8 +15,8 @@
 
 
 @mixin sticky_footer($parent,$footer_height:null) {
-  @if ($parent == body) {
-      margin: 0 0 100px; /* bottom = footer height */
+  @if ($parent == html&body) {
+      height: 100%;
   } @else if ($parent == main) {
       min-height: 100%;
       /* equal to footer height */
@@ -27,8 +27,9 @@
       bottom: 0;
       height: $footer-height * $pixels;
       width: 100%;
-  } @else if ($parent == html) {
-      position: relative;
-      min_height: 100%;
   }
+}
+
+%sticky_footer_height {
+  height: 142px; 
 }

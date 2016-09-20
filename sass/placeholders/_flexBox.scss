@@ -1,0 +1,28 @@
+//everything flex box
+%flex {
+  display: flex;
+}
+%flex_flow {
+  flex-flow: row wrap;
+}
+%flex_reverse {
+  flex-direction: row-reverse;
+}
+%flex_stack {
+  flex-direction: column; //works similar to display block
+}
+%flex_wrap {
+  flex-wrap: wrap; //for responsive displays wraps to the next line
+}
+%flex_center {
+  justify-content: center;
+}
+%flex_vertical_center{
+  align-items: center;
+}
+%flex_space_between {
+  justify-content: space-between;
+}
+%flex_end {
+  justify-content: flex-end;
+}
