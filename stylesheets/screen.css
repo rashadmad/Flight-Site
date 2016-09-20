@@ -274,7 +274,7 @@ section[role="main"] form table tbody td {
 @media (min-width: 350px) {
   /* line 35, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
-    max-width: 152px;
+    max-width: 143px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {

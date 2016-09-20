@@ -39,7 +39,7 @@ form{
         @include width_maxNmin(115);
 
           @include media_query(min-mobile){
-            @include width_maxNmin(152);
+            @include width_maxNmin(143);
           } @include media_query(mobile){
             @include width_maxNmin(175);
           } @include media_query(tablet){
