@@ -2,9 +2,11 @@
 html {
   @include sticky_footer(html);
 }
+
 .wrapper {
-  @include margin_system(10);
   height: auto;
+  @include margin_system(10);
+
 }
 
 body{
@@ -12,45 +14,53 @@ body{
 }
 
 #discount {
-    button:before{
-      @extend %text_left;
-      @include margin_system(5);
-      content: "\f155";
-      font-family: 'FontAwesome';
-      font-size: 2em;
-      top: 0; left: 0
-      }
+
   @extend %margin_center;
   @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
-  @include media_query(mobile){
-    margin: 0 auto;
-  }
-  p.callout {
+    @include media_query(mobile){
+      margin: 0 auto;
+    } @include media_query(tablet){
+       @include margin_system($left:14);
+    }
+
+p.callout {
     @extend %inline_block;
     @extend %overflow_hidden;
     @extend %resize_none;
     @extend %margin_center;
     @include text(1,1.3);
-    @include margin_system($top:10);
+    @include margin_system($N_S:10);
     @include width_maxNmin(300,300);
-      height:4em;
+      height:3.5em;
 
-    @include media_query(min-mobile){
+    @include media_query(min-mobile) {
       @include width_maxNmin(100%,$callout_width_MIN);
-        height:4em;
+
     }
-    @include media_query(mobile){
+    @include media_query(mobile) {
       @include width_maxNmin(100%,$callout_width_MIN);
-        height:2.5em;
+
     }
-
-
-  }
+}
   .discount_button {
     @extend %center;
-
-
   }
+
+  .discount_p {
+    @extend %right;
+    @extend %inline_block;
+    width: 50px;
+  }
+
+
+    button:before {
+      @extend %left;
+      @include margin_system(5,$left:10);
+        content: "\f155";
+        font-family: 'FontAwesome';
+        font-size: 2.5em;
+        top: 0; left: 0;
+    }
 
   button {
     @extend %block;
@@ -67,9 +77,10 @@ body{
         height:6em;
     }
 
+
+
       p {
         @extend %right;
-        @extend %text_break;
         @include padding_system(10);
     }
   }

@@ -1,19 +1,30 @@
 //nav
 ul{
   @extend %no_margin;
-  @extend %flex_space_between;
-  @extend %flex;
   @extend %bye_bullets;
   @extend %full_width;
+  @extend %flex;
   @include background_color($black);
     height: $ul_height;
 
+    @include media_query(min-mobile){
+        justify-content: space-between;
+    }
+    @include media_query(tablet){
+        justify-content: flex-start;
+    }
+    @include media_query(tablet){
+        justify-content: flex-start;
+    }
   li{
     @extend %center;
     @extend %flex;
     @extend %flex_center;
     @include background_color($maincolor);
-      width: $li_width;
+    @include width_maxNmin(150);
+    @include media_query(tablet){
+        @include margin_system($left:5);
+    }
       color: $black;
 
       //ui buttons at the top of the page
@@ -31,12 +42,19 @@ ul{
          }
 
         .logo{
-          width: $img_shrink;
-          margin: $img_margin;
-          margin-top: $img_margin_bottom;
-          min-width: $img_min_size;
-          max-width: $img_max_size;
+          @include width_maxNmin($img_max_size,$img_min_size);
+          @include margin_system($img_margin,$top:$img_margin_bottom);
+          @include media_query(tablet){
+              @include width_maxNmin(64);
+          }
+            width: $img_shrink;
       }
     }
   }
+
+      li:first-child {
+        @include media_query(tablet){
+            @include margin_system($left:10);
+        }
+      }
 }
