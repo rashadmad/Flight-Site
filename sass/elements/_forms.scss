@@ -1,5 +1,5 @@
 
-.wrapper{
+section[role="main"]{
   @include media_query(tablet){
     margin-left: 50px;
     float:left;
