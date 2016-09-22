@@ -1,8 +1,7 @@
 
 section[role="main"]{
   @include media_query(tablet){
-    margin-left: 50px;
-    float:left;
+    margin-left: 5px;
   }
 
 form{
@@ -13,6 +12,9 @@ form{
   @include background_color($maincolor);
   @include width_maxNmin($mobile_width_MAX,$form_min_width);
 
+    @include media_query(landscape){
+    
+    }
     @include media_query(tablet){
       @include margin_system($left:5);
     }

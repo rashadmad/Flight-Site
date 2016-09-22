@@ -1,10 +1,11 @@
 
 footer {
-  @extend %sticky_footer_height;
   @include background_color($maincolor);
-  @include sticky_footer(footer,85);
+  @include sticky_footer(footer);
+  
 
   h1 {
-    @include margin_system($left:50%);
+    @extend %margin_center;
+    @include margin_system($top:20);
   }
 }

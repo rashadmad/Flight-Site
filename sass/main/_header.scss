@@ -6,9 +6,12 @@ header {
   h1 {
     @extend %text_right;
     @extend %no_margin;
-      padding: $h1_header_padding;
-      padding-top: $h1_header_top_padding;
-      padding-right: $h1_header_right;
+    @include padding_system(10,15);
+      @include media_query(min-mobile){
+
+      }
+
+
   }
 
    .main-logo,.logo {

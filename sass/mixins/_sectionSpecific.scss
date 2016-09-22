@@ -13,23 +13,14 @@
     }
 }
 
-
 @mixin sticky_footer($parent,$footer_height:null) {
   @if ($parent == html&body) {
       height: 100%;
   } @else if ($parent == main) {
       min-height: 100%;
       /* equal to footer height */
-      margin-bottom: -142px;
-  } @else if ($parent == footer) {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: $footer-height * $pixels;
-      width: 100%;
+      margin-bottom: -10px;
+  } @else if $parent == main_after or $parent == footer {
+      height: 10px;
   }
-}
-
-%sticky_footer_height {
-  height: 142px; 
 }

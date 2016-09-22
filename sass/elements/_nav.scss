@@ -4,6 +4,7 @@ ul{
   @extend %bye_bullets;
   @extend %full_width;
   @extend %flex;
+  @extend %flex_center;
   @include background_color($black);
     height: $ul_height;
 
@@ -11,6 +12,7 @@ ul{
         justify-content: space-between;
     }
     @include media_query(tablet){
+        justify-content: space-between;
         justify-content: flex-start;
     }
     @include media_query(tablet){
@@ -21,9 +23,10 @@ ul{
     @extend %flex;
     @extend %flex_center;
     @include background_color($maincolor);
-    @include width_maxNmin(150);
+    @include width_maxNmin(56);
     @include media_query(tablet){
-        @include margin_system($left:5);
+        @include margin_system($left:25);
+        @include width_maxNmin(60);
     }
       color: $black;
 
@@ -44,10 +47,11 @@ ul{
         .logo{
           @include width_maxNmin($img_max_size,$img_min_size);
           @include margin_system($img_margin,$top:$img_margin_bottom);
-          @include media_query(tablet){
-              @include width_maxNmin(64);
-          }
-            width: $img_shrink;
+              width: $img_shrink;
+            @include media_query(tablet){
+                @include width_maxNmin(64);
+                  width: 80%;
+        }
       }
     }
   }

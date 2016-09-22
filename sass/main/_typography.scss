@@ -48,10 +48,10 @@ form{
 footer {
   @extend %flex;
     div.wrapper {
-      @include margin_system($top:40);
+      
       h1 {
         @extend %center;
-        @include text(.8, $color:$black, $family:font_b);
+        @include text(.5, $color:$black, $family:font_b);
     }
   }
 }
