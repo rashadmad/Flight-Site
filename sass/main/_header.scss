@@ -3,6 +3,10 @@ header {
   @include background_color($maincolor);
   @include width_maxNmin(100%,100%);
     height: $header_height;
+
+    @include media_query(landscape){
+        height: 50px;
+    }
   h1 {
     @extend %text_right;
     @extend %no_margin;
@@ -10,8 +14,6 @@ header {
       @include media_query(min-mobile){
 
       }
-
-
   }
 
    .main-logo,.logo {

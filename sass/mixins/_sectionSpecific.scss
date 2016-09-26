@@ -12,15 +12,3 @@
       color: $black;
     }
 }
-
-@mixin sticky_footer($parent,$footer_height:null) {
-  @if ($parent == html&body) {
-      height: 100%;
-  } @else if ($parent == main) {
-      min-height: 100%;
-      /* equal to footer height */
-      margin-bottom: -10px;
-  } @else if $parent == main_after or $parent == footer {
-      height: 10px;
-  }
-}

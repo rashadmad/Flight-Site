@@ -1,19 +1,44 @@
 //imports for all mixins + global project variables
+* {
+  margin: 0;
+}
+
 
 body,html {
-  height:100%;
-  margin:0;
+  height: 100%;
+}
+
+.page-wrap{
+
+
+  @include media_query(tablet){
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+  }
+  @include media_query(desktop){
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+  }
+
+}
+
+.page-wrap:after {
+  @extend %content_clear;
+  @extend %block;
 }
 
 section[role="main"] {
   @include margin_system(10);
-  @include sticky_footer(main);
+
+    @include media_query(landscape){
+      justify-content: flex-start;
+      display: flex;
+    }
 }
 
 section[role="main"]:after {
-  @extend %content_clear;
-  @extend %block;
-  @include sticky_footer(main_after);
   @include background_color($white);
 }
 
@@ -25,6 +50,9 @@ section[role="main"]:after {
       margin: 0 auto;
     } @include media_query(tablet){
        @include margin_system($left:14);
+    } @include media_query(landscape){
+       @include margin_system($left:10);
+       width: 300px;
     }
 
 p.callout {
@@ -39,31 +67,45 @@ p.callout {
 
     @include media_query(min-mobile) {
       @include width_maxNmin(100%,$callout_width_MIN);
-
     }
     @include media_query(mobile) {
       @include width_maxNmin(100%,$callout_width_MIN);
-
+    }
+    @include media_query(landscape){
+      @include margin_system(10);
+      @include text(1.1,2);
+      text-align: justify;
+      height: 7em;
     }
 }
   .discount_button {
     @extend %center;
+
   }
 
   .discount_p {
     @extend %right;
     @extend %inline_block;
-    width: 50px;
+    @include margin_system($bottom:10);
+      width: 50px;
   }
 
 
     button:before {
       @extend %left;
+      @extend %no_display;
       @include margin_system(5,$left:10);
         content: "\f155";
         font-family: 'FontAwesome';
         font-size: 2.5em;
         top: 0; left: 0;
+        @include media_query(min-mobile) {
+          @include width_maxNmin(100%,$callout_width_MIN);
+          display: inline;
+        }
+        @include media_query(landscape){
+          display: none;
+        }
     }
 
   button {
@@ -73,11 +115,14 @@ p.callout {
     @include border_system(solid,black,6);
     @include background_color($maincolor);
     @include padding_system(10,$N_S:15);
-    @include margin_system($N_S:5,$bottom:10,$E_W:0);
+    @include margin_system($N_S:5,$bottom:20,$E_W:0);
     @include width_maxNmin(100%,$callout_width_MIN);
-    @include media_query(min-mobile){
-      @include width_maxNmin(100%,$callout_width_MIN);
+
+      @include media_query(min-mobile){
+        @include width_maxNmin(100%,$callout_width_MIN);
         height:6em;
+    } @include media_query(landscape){
+        margin-top: 10px;
     }
 
 
@@ -85,6 +130,9 @@ p.callout {
       p {
         @extend %right;
         @include padding_system(10);
+          @include media_query(min-mobile){
+            text-align: right;
+      }
     }
   }
 }

@@ -18,6 +18,10 @@ ul{
     @include media_query(tablet){
         justify-content: flex-start;
     }
+    @include media_query(landscape){
+      justify-content: flex-start;
+      height: 52px;
+    }
   li{
     @extend %center;
     @extend %flex;
@@ -27,6 +31,10 @@ ul{
     @include media_query(tablet){
         @include margin_system($left:25);
         @include width_maxNmin(60);
+    }
+    @include media_query(landscape){
+
+      margin-left: 8px;
     }
       color: $black;
 

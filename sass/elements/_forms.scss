@@ -1,5 +1,6 @@
 
 section[role="main"]{
+  @extend %flex_center;
   @include media_query(tablet){
     margin-left: 5px;
   }
@@ -13,7 +14,10 @@ form{
   @include width_maxNmin($mobile_width_MAX,$form_min_width);
 
     @include media_query(landscape){
-    
+      @include margin_system($top:0,$right:0,$left:5);
+      @include width_maxNmin(280);
+        height: 218px;
+        margin-right: 0;
     }
     @include media_query(tablet){
       @include margin_system($left:5);
@@ -48,7 +52,9 @@ form{
             @include width_maxNmin(175);
           } @include media_query(desktop){
             @include width_maxNmin(175);
-          }
+          } @include media_query(landscape){
+            @include width_maxNmin(130);
+        }
       }
     }
 
@@ -69,13 +75,18 @@ form{
         @include width_maxNmin(100%,100%);
           color: $white;
 
+          @include media_query(landscape){
+            @include padding_system(3);
+
+          }
+
           &:focus{
             @include background_color($black);
             color: $white !important;
           }
       }select{
 
-        @include border_system(solid,$black,5)
+        @include border_system(solid,$black,5);
 
 
       }#passengers_selection,#economy_selection{
@@ -86,7 +97,11 @@ form{
 
           @include media_query(mobile){
             @include width_maxNmin(180);
+          }@include media_query(landscape){
+            @include padding_system(3);
+            @include border_system(solid,$black,5);
           }
+
       }
     }
   }

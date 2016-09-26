@@ -1,28 +1,24 @@
-@mixin media_query($screen_type, $min_mobile:350px, $mobile:480px, $tablet:768px, $desktop:1200px, $landscape:730px) {
+@mixin media_query($screen_type, $min_mobile:350px, $mobile:480px, $tablet:768px, $desktop:1200px, $landscape:360px) {
 
 @if $screen_type == "min-mobile" {
   @media (min-width: #{$min_mobile}){
     @content;
   }
-}
-  @if $screen_type == "mobile" {
-    @media (min-width: #{$mobile}) and (max-width: #{$tablet}){
-      @content;
-      }
-    }
-    @if $screen_type == "tablet" {
-      @media (min-width: #{$tablet}) and (max-width: #{$desktop}){
+} @else if $screen_type == "mobile" {
+  @media (min-width: #{$mobile}) and (max-width: #{$tablet}){
         @content;
-        }
       }
-      @if $screen_type == "landscape" {
-        @media (min-width: #{$landscape}) and (min-height: 412px){
+    } @else if $screen_type == "tablet" {
+      @media (min-width: #{$tablet}) and (max-width: #{$desktop}){
           @content;
-          }
         }
-      @if $screen_type == "desktop" {
-        @media (min-width: #{$desktop}) {
-          @content;
+      } @else if $screen_type == "landscape" {
+        @media (orientation: landscape){
+            @content;
+          }
+        } @else if $screen_type == "desktop" {
+          @media (min-width: #{$desktop}) and (orientation: portrait) {
+            @content;
           }
         } @else {
           @debug "The varible screen-type equals #{$screen-type} when it should either equal mobile, tablet or desktop";
@@ -39,5 +35,5 @@
           max-width: $max * $pixels;
       } @else if $min {
           min-width: $min * $pixels;
-        }
-      }
+  }
+}
