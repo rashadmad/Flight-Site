@@ -9,7 +9,7 @@ form{
   @extend %clear_fix;
   @extend %margin_center;
   @include padding_system(10);
-  @include margin_system($top:5);
+  @include margin_system($top:5,$bottom:7);
   @include background_color($maincolor);
   @include width_maxNmin($mobile_width_MAX,$form_min_width);
 
@@ -21,6 +21,8 @@ form{
     }
     @include media_query(tablet){
       @include margin_system($left:5);
+    } @include media_query(tablet){
+        @include margin_system($left:5);
     }
 
   h1{
@@ -76,6 +78,7 @@ form{
           color: $white;
 
           @include media_query(landscape){
+            @include border_system(solid,$black,3);
             @include padding_system(3);
 
           }
@@ -88,6 +91,11 @@ form{
 
         @include border_system(solid,$black,5);
 
+        @include media_query(landscape){
+          @include border_system(solid,$black,3);
+          @include padding_system(3);
+
+        }
 
       }#passengers_selection,#economy_selection{
         @include margin_system($N_S:1, $E_W:5);
@@ -99,7 +107,7 @@ form{
             @include width_maxNmin(180);
           }@include media_query(landscape){
             @include padding_system(3);
-            @include border_system(solid,$black,5);
+            @include border_system(solid,$black,3);
           }
 
       }
@@ -115,6 +123,12 @@ form{
     @include background_color($white);
     @include margin_system(10, $N_S:5, $E_W:5, $right:1);
     @include padding_system(7,$left:13,$right:13);
+
+    @include media_query(landscape){
+      @include padding_system(6);
+      @include border_system(solid,$black,3);
+      @include margin_system($right:5);
+    }
 
     &:visited{
       @include background_color($black);

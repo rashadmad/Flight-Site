@@ -5,7 +5,6 @@ ul{
   @extend %full_width;
   @extend %flex;
   @extend %flex_center;
-  @include background_color($black);
     height: $ul_height;
 
     @include media_query(min-mobile){
@@ -22,30 +21,44 @@ ul{
       justify-content: flex-start;
       height: 52px;
     }
+    @include media_query(desktop){
+      justify-content: flex-start;
+      height: 52px;
+    }
   li{
     @extend %center;
     @extend %flex;
     @extend %flex_center;
+    @extend %full_width;
     @include background_color($maincolor);
     @include width_maxNmin(56);
+        color: $black;
     @include media_query(tablet){
         @include margin_system($left:25);
         @include width_maxNmin(60);
     }
     @include media_query(landscape){
-
       margin-left: 8px;
     }
-      color: $black;
+    @include media_query(desktop){
+      margin-left: 8px;
+    }
+
+    #active {
+        color: black !important;
+        @include flat_ui_buttons($white, 5px, $black, $auto_active:true);
+
+    }
+
 
       //ui buttons at the top of the page
       button{
         @extend %full_width;
         @extend %clear_button_defaults;
         @include background_color($black);
-        @include flat_ui_buttons;
+        @include flat_ui_buttons($white, 5px, $black);
           p{
-            @include margin_system(5);
+            @include margin_system($N_S:6);
           }
 
          button:target{
@@ -57,8 +70,9 @@ ul{
           @include margin_system($img_margin,$top:$img_margin_bottom);
               width: $img_shrink;
             @include media_query(tablet){
-                @include width_maxNmin(64);
-                  width: 80%;
+                @include width_maxNmin(80%);
+        }   @include media_query(desktop){
+              @include width_maxNmin(80%);
         }
       }
     }

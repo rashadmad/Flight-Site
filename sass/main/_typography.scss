@@ -38,6 +38,7 @@ form{
 #discount{
   button{
     p{
+      @extend %center;
       @extend %text_no_wrap;
       @include margin_system(0);
       @include text(1.2, $color:$black, $family:font_a_Bold);

@@ -4,10 +4,10 @@ footer {
   height: 142px;
   @include media_query(tablet){
     height: 142px;
-  }
-  @include media_query(desktop){
-    height: 142px;
-  }
+  }   @include media_query(desktop){
+      height: 142px;
+    }  
+
   h1 {
     @extend %margin_center;
     @include margin_system($top:25);

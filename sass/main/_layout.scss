@@ -35,7 +35,11 @@ section[role="main"] {
     @include media_query(landscape){
       justify-content: flex-start;
       display: flex;
-    }
+    }   @include media_query(desktop){
+        justify-content: flex-start;
+        display: flex;
+      }
+
 }
 
 section[role="main"]:after {
@@ -43,17 +47,19 @@ section[role="main"]:after {
 }
 
 #discount {
-
-  @extend %margin_center;
-  @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
-    @include media_query(mobile){
-      margin: 0 auto;
-    } @include media_query(tablet){
-       @include margin_system($left:14);
-    } @include media_query(landscape){
-       @include margin_system($left:10);
-       width: 300px;
-    }
+    @extend %margin_center;
+    @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
+      @include media_query(mobile){
+        margin: 0 auto;
+      } @include media_query(tablet){
+         @include margin_system($left:14);
+      } @include media_query(landscape){
+         @include margin_system($left:10);
+         width: 300px;
+      } @include media_query(desktop){
+         @include margin_system($left:10);
+         width: 300px;
+      }
 
 p.callout {
     @extend %inline_block;
@@ -61,8 +67,8 @@ p.callout {
     @extend %resize_none;
     @extend %margin_center;
     @include text(1,1.3);
-    @include margin_system($N_S:10,$top:40);
-    @include width_maxNmin(300,300);
+    @include margin_system($N_S:10);
+    @include width_maxNmin(100%);
       height:3.5em;
 
     @include media_query(min-mobile) {

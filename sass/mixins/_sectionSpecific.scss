@@ -1,14 +1,21 @@
 //styleing hrefs and buttons through out the site
-@mixin flat_ui_buttons{
+@mixin flat_ui_buttons($bg_color, $border, $color, $auto_active:false){
     cursor: pointer;
+
+    @if $auto_active{
+      @include background_color($bg_color);
+      border-bottom: $border solid $maincolor;
+      color: $color !important;
+    }
+
     &:visited {
-      @include background_color($white);
-      border-bottom: 5px solid $maincolor;
-      color: $black;
+      @include background_color($bg_color);
+      border-bottom: $border solid $maincolor;
+      color: $color !important;
     }
     &:active {
-      @include background_color($white);
-      border-bottom: 5px solid $maincolor;
-      color: $black;
+      @include background_color($bg_color);
+      border-bottom: $border solid $maincolor;
+      color: $color !important;
     }
 }

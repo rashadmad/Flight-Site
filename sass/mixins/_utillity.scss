@@ -133,10 +133,27 @@
   -webkit-box-shadow: $N $W $blur $color;
   -moz-box-shadow: $N $W $blur $color;
   -o-box-shadow: $N $W $blur $color;
+
 }
 
-@mixin border_system($style,$color,$width) {
-  border: $style $color $width * $pixels;
+@mixin border_system($style,$color,$width,$N:null,$E:null,$S:null,$W:null){
+
+  $border: $style $color $width * $pixels;
+  $compass: $N, $E, $S, $W;
+
+  @if $N == true or $E == true or $S == true or $W == true {
+        @if $N {
+        border-top: $border;
+      } @if $E {
+        border-right: $border;
+      } @if $S {
+        border-bottom: $border;
+      } @if $W {
+        border-left: $border;
+    }
+  } @else {
+    border:$border
+  }
 }
 
 @mixin background-color($maincolor) {

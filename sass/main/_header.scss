@@ -11,9 +11,7 @@ header {
     @extend %text_right;
     @extend %no_margin;
     @include padding_system(10,15);
-      @include media_query(min-mobile){
 
-      }
   }
 
    .main-logo,.logo {
