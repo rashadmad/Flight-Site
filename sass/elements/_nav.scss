@@ -5,12 +5,13 @@ ul{
   @extend %full_width;
   @extend %flex;
   @extend %flex_center;
+  background-color: $black;
     height: $ul_height;
 
     @include media_query(min-mobile){
         justify-content: space-between;
     }
-    @include media_query(tablet){
+    @include media_query(mobile){
         justify-content: space-between;
         justify-content: flex-start;
     }
@@ -25,13 +26,14 @@ ul{
       justify-content: flex-start;
       height: 52px;
     }
+
   li{
     @extend %center;
     @extend %flex;
     @extend %flex_center;
     @extend %full_width;
+    @include margin_system(0);
     @include background_color($maincolor);
-    @include width_maxNmin(56);
         color: $black;
     @include media_query(tablet){
         @include margin_system($left:25);
@@ -66,13 +68,20 @@ ul{
          }
 
         .logo{
-          @include width_maxNmin($img_max_size,$img_min_size);
+          @include width_maxNmin(70%);
           @include margin_system($img_margin,$top:$img_margin_bottom);
-              width: $img_shrink;
-            @include media_query(tablet){
-                @include width_maxNmin(80%);
-        }   @include media_query(desktop){
-              @include width_maxNmin(80%);
+          @include media_query(min-mobile){
+             @include width_maxNmin(60%);
+         } @include media_query(mobile){
+             @include width_maxNmin(37%);
+         } @include media_query(landscape){
+             @include width_maxNmin(60%);
+         } @include media_query(tablet){
+             @include width_maxNmin(60%);
+         } @include media_query(desktop){
+              @include width_maxNmin(20%);
+        } @include media_query(huge){
+             @include width_maxNmin(20%);
         }
       }
     }
@@ -81,6 +90,6 @@ ul{
       li:first-child {
         @include media_query(tablet){
             @include margin_system($left:10);
-        }
       }
-}
+    }
+  }

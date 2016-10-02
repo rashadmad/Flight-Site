@@ -139,7 +139,6 @@
 @mixin border_system($style,$color,$width,$N:null,$E:null,$S:null,$W:null){
 
   $border: $style $color $width * $pixels;
-  $compass: $N, $E, $S, $W;
 
   @if $N == true or $E == true or $S == true or $W == true {
         @if $N {

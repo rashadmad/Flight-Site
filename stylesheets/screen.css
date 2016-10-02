@@ -470,6 +470,7 @@ body {
 
 /* line 2, ../sass/elements/_nav.scss */
 ul {
+  background-color: #1a1a1a;
   height: 70px;
 }
 @media (min-width: 350px) {
@@ -478,7 +479,7 @@ ul {
     justify-content: space-between;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 480px) and (max-width: 768px) {
   /* line 2, ../sass/elements/_nav.scss */
   ul {
     justify-content: space-between;
@@ -505,35 +506,35 @@ ul {
     height: 52px;
   }
 }
-/* line 28, ../sass/elements/_nav.scss */
+/* line 30, ../sass/elements/_nav.scss */
 ul li {
+  margin: 0px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  max-width: 56px;
   color: #1a1a1a;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 28, ../sass/elements/_nav.scss */
+  /* line 30, ../sass/elements/_nav.scss */
   ul li {
     margin-left: 25px;
     max-width: 60px;
   }
 }
 @media (orientation: landscape) {
-  /* line 28, ../sass/elements/_nav.scss */
+  /* line 30, ../sass/elements/_nav.scss */
   ul li {
     margin-left: 8px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 28, ../sass/elements/_nav.scss */
+  /* line 30, ../sass/elements/_nav.scss */
   ul li {
     margin-left: 8px;
   }
 }
-/* line 47, ../sass/elements/_nav.scss */
+/* line 49, ../sass/elements/_nav.scss */
 ul li #active {
   color: black !important;
   cursor: pointer;
@@ -562,7 +563,7 @@ ul li #active:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 55, ../sass/elements/_nav.scss */
+/* line 57, ../sass/elements/_nav.scss */
 ul li button {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -588,32 +589,55 @@ ul li button:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 60, ../sass/elements/_nav.scss */
+/* line 62, ../sass/elements/_nav.scss */
 ul li button p {
   margin-top: 6px;
   margin-bottom: 6px;
 }
-/* line 68, ../sass/elements/_nav.scss */
+/* line 70, ../sass/elements/_nav.scss */
 ul li button .logo {
-  max-width: 70px;
+  max-width: 70%;
   margin: 0px;
   margin-top: 5px;
-  width: 65%;
+}
+@media (min-width: 350px) {
+  /* line 70, ../sass/elements/_nav.scss */
+  ul li button .logo {
+    max-width: 60%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 70, ../sass/elements/_nav.scss */
+  ul li button .logo {
+    max-width: 37%;
+  }
+}
+@media (orientation: landscape) {
+  /* line 70, ../sass/elements/_nav.scss */
+  ul li button .logo {
+    max-width: 60%;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 68, ../sass/elements/_nav.scss */
+  /* line 70, ../sass/elements/_nav.scss */
   ul li button .logo {
-    max-width: 80%;
+    max-width: 60%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 68, ../sass/elements/_nav.scss */
+  /* line 70, ../sass/elements/_nav.scss */
   ul li button .logo {
-    max-width: 80%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1200px) and (orientation: portrait) {
+  /* line 70, ../sass/elements/_nav.scss */
+  ul li button .logo {
+    max-width: 20%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 81, ../sass/elements/_nav.scss */
+  /* line 90, ../sass/elements/_nav.scss */
   ul li:first-child {
     margin-left: 10px;
   }
