@@ -3,6 +3,10 @@ section[role="main"]{
   @extend %flex_center;
   @include media_query(tablet){
     margin-left: 5px;
+  }@include media_query(desktop){
+    margin-left: 5px;
+  }@include media_query(huge){
+    margin-left: 5px;
   }
 
 form{
@@ -18,10 +22,11 @@ form{
       @include width_maxNmin(280);
         height: 218px;
         margin-right: 0;
-    }
-    @include media_query(tablet){
-      @include margin_system($left:5);
     } @include media_query(tablet){
+        @include margin_system($left:5);
+    } @include media_query(desktop){
+        @include margin_system($left:5);
+    } @include media_query(huge){
         @include margin_system($left:5);
     }
 
@@ -80,7 +85,6 @@ form{
           @include media_query(landscape){
             @include border_system(solid,$black,3);
             @include padding_system(3);
-
           }
 
           &:focus{

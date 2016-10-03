@@ -6,7 +6,9 @@ footer {
     height: 142px;
   }   @include media_query(desktop){
       height: 142px;
-    }  
+    }  @include media_query(hugr){
+        height: 142px;
+      }
 
   h1 {
     @extend %margin_center;

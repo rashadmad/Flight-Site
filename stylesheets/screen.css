@@ -221,7 +221,19 @@ ul, ul li, ul li button, ul li button button:target, #discount button {
     margin-left: 5px;
   }
 }
-/* line 8, ../sass/elements/_forms.scss */
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
+  /* line 2, ../sass/elements/_forms.scss */
+  section[role="main"] {
+    margin-left: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 2, ../sass/elements/_forms.scss */
+  section[role="main"] {
+    margin-left: 5px;
+  }
+}
+/* line 12, ../sass/elements/_forms.scss */
 section[role="main"] form {
   padding: 10px;
   margin-top: 5px;
@@ -232,8 +244,8 @@ section[role="main"] form {
   background-color: #FFFF00;
   max-width: 370px;
 }
-@media (orientation: landscape) {
-  /* line 8, ../sass/elements/_forms.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 12, ../sass/elements/_forms.scss */
   section[role="main"] form {
     margin-top: 0px;
     margin-left: 5px;
@@ -244,18 +256,24 @@ section[role="main"] form {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 8, ../sass/elements/_forms.scss */
+  /* line 12, ../sass/elements/_forms.scss */
   section[role="main"] form {
     margin-left: 5px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  /* line 8, ../sass/elements/_forms.scss */
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
+  /* line 12, ../sass/elements/_forms.scss */
   section[role="main"] form {
     margin-left: 5px;
   }
 }
-/* line 28, ../sass/elements/_forms.scss */
+@media (min-width: 1200px) {
+  /* line 12, ../sass/elements/_forms.scss */
+  section[role="main"] form {
+    margin-left: 5px;
+  }
+}
+/* line 33, ../sass/elements/_forms.scss */
 section[role="main"] form h1 {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -263,62 +281,62 @@ section[role="main"] form h1 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-/* line 31, ../sass/elements/_forms.scss */
+/* line 36, ../sass/elements/_forms.scss */
 section[role="main"] form table {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 @media (min-width: 350px) {
-  /* line 31, ../sass/elements/_forms.scss */
+  /* line 36, ../sass/elements/_forms.scss */
   section[role="main"] form table {
     margin: 0 auto;
   }
 }
-/* line 38, ../sass/elements/_forms.scss */
+/* line 43, ../sass/elements/_forms.scss */
 section[role="main"] form table tbody {
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
   margin: 4px;
 }
-/* line 43, ../sass/elements/_forms.scss */
+/* line 48, ../sass/elements/_forms.scss */
 section[role="main"] form table tbody td {
   margin: 4px;
   padding: 4px;
   max-width: 115px;
 }
 @media (min-width: 350px) {
-  /* line 43, ../sass/elements/_forms.scss */
+  /* line 48, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 143px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 43, ../sass/elements/_forms.scss */
+  /* line 48, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 175px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 43, ../sass/elements/_forms.scss */
+  /* line 48, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 175px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 43, ../sass/elements/_forms.scss */
+  /* line 48, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 175px;
   }
 }
-@media (orientation: landscape) {
-  /* line 43, ../sass/elements/_forms.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 48, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 130px;
   }
 }
-/* line 63, ../sass/elements/_forms.scss */
+/* line 68, ../sass/elements/_forms.scss */
 section[role="main"] form table tr {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -326,18 +344,18 @@ section[role="main"] form table tr {
   margin-bottom: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   max-width: 100px;
 }
-/* line 67, ../sass/elements/_forms.scss */
+/* line 72, ../sass/elements/_forms.scss */
 section[role="main"] form table tr label {
   margin-top: 3px;
   margin-bottom: 3px;
   margin-top: 3px;
   margin-bottom: 3px;
 }
-/* line 72, ../sass/elements/_forms.scss */
+/* line 77, ../sass/elements/_forms.scss */
 section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"] {
   border: solid #1a1a1a 5px;
   padding: 8px;
@@ -345,14 +363,14 @@ section[role="main"] form table tr input[type="text"], section[role="main"] form
   min-width: 100%;
   color: #fff;
 }
-@media (orientation: landscape) {
-  /* line 72, ../sass/elements/_forms.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 77, ../sass/elements/_forms.scss */
   section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"] {
     border: solid #1a1a1a 3px;
     padding: 3px;
   }
 }
-/* line 86, ../sass/elements/_forms.scss */
+/* line 90, ../sass/elements/_forms.scss */
 section[role="main"] form table tr input[type="text"]:focus, section[role="main"] form table tr input[type="number"]:focus {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -360,18 +378,18 @@ section[role="main"] form table tr input[type="text"]:focus, section[role="main"
   background-color: #1a1a1a;
   color: #fff !important;
 }
-/* line 90, ../sass/elements/_forms.scss */
+/* line 94, ../sass/elements/_forms.scss */
 section[role="main"] form table tr select {
   border: solid #1a1a1a 5px;
 }
-@media (orientation: landscape) {
-  /* line 90, ../sass/elements/_forms.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 94, ../sass/elements/_forms.scss */
   section[role="main"] form table tr select {
     border: solid #1a1a1a 3px;
     padding: 3px;
   }
 }
-/* line 100, ../sass/elements/_forms.scss */
+/* line 104, ../sass/elements/_forms.scss */
 section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
   margin-top: 1px;
   margin-bottom: 1px;
@@ -379,25 +397,25 @@ section[role="main"] form table tr #passengers_selection, section[role="main"] f
   margin-bottom: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
   max-width: 100%;
   width: 100%;
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 100, ../sass/elements/_forms.scss */
+  /* line 104, ../sass/elements/_forms.scss */
   section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
     max-width: 180px;
   }
 }
-@media (orientation: landscape) {
-  /* line 100, ../sass/elements/_forms.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 104, ../sass/elements/_forms.scss */
   section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
     padding: 3px;
     border: solid #1a1a1a 3px;
   }
 }
-/* line 117, ../sass/elements/_forms.scss */
+/* line 121, ../sass/elements/_forms.scss */
 section[role="main"] form button {
   border: solid #1a1a1a 5px;
   max-width: 256px;
@@ -418,15 +436,15 @@ section[role="main"] form button {
   padding-left: 13px;
   padding-right: 13px;
 }
-@media (orientation: landscape) {
-  /* line 117, ../sass/elements/_forms.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 121, ../sass/elements/_forms.scss */
   section[role="main"] form button {
     padding: 6px;
     border: solid #1a1a1a 3px;
     margin-right: 5px;
   }
 }
-/* line 133, ../sass/elements/_forms.scss */
+/* line 137, ../sass/elements/_forms.scss */
 section[role="main"] form button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -434,7 +452,7 @@ section[role="main"] form button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 137, ../sass/elements/_forms.scss */
+/* line 141, ../sass/elements/_forms.scss */
 section[role="main"] form button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -445,7 +463,7 @@ section[role="main"] form button:active {
   -o-box-shadow: 0px 0px 0px #1a1a1a;
   color: #fff;
 }
-/* line 143, ../sass/elements/_forms.scss */
+/* line 147, ../sass/elements/_forms.scss */
 section[role="main"] form .checkbox_wrapper {
   margin: 10px;
   margin-top: 5px;
@@ -453,12 +471,12 @@ section[role="main"] form .checkbox_wrapper {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 148, ../sass/elements/_forms.scss */
+/* line 152, ../sass/elements/_forms.scss */
 section[role="main"] form .checkbox_wrapper input[type="checkbox"] {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-/* line 154, ../sass/elements/_forms.scss */
+/* line 158, ../sass/elements/_forms.scss */
 section[role="main"] #passengers_selection {
   width: 1000px;
 }
@@ -492,7 +510,7 @@ ul {
     justify-content: flex-start;
   }
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 600px) {
   /* line 2, ../sass/elements/_nav.scss */
   ul {
     justify-content: flex-start;
@@ -506,7 +524,14 @@ ul {
     height: 52px;
   }
 }
-/* line 30, ../sass/elements/_nav.scss */
+@media (min-width: 1200px) {
+  /* line 2, ../sass/elements/_nav.scss */
+  ul {
+    justify-content: flex-start;
+    height: 100px;
+  }
+}
+/* line 34, ../sass/elements/_nav.scss */
 ul li {
   margin: 0px;
   -webkit-background-color: #FFFF00;
@@ -516,25 +541,31 @@ ul li {
   color: #1a1a1a;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 30, ../sass/elements/_nav.scss */
+  /* line 34, ../sass/elements/_nav.scss */
   ul li {
     margin-left: 25px;
     max-width: 60px;
   }
 }
-@media (orientation: landscape) {
-  /* line 30, ../sass/elements/_nav.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 34, ../sass/elements/_nav.scss */
   ul li {
     margin-left: 8px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 30, ../sass/elements/_nav.scss */
+  /* line 34, ../sass/elements/_nav.scss */
   ul li {
     margin-left: 8px;
   }
 }
-/* line 49, ../sass/elements/_nav.scss */
+@media (min-width: 1200px) {
+  /* line 34, ../sass/elements/_nav.scss */
+  ul li {
+    margin-left: 8px;
+  }
+}
+/* line 56, ../sass/elements/_nav.scss */
 ul li #active {
   color: black !important;
   cursor: pointer;
@@ -563,7 +594,7 @@ ul li #active:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 57, ../sass/elements/_nav.scss */
+/* line 64, ../sass/elements/_nav.scss */
 ul li button {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -589,55 +620,55 @@ ul li button:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 62, ../sass/elements/_nav.scss */
+/* line 69, ../sass/elements/_nav.scss */
 ul li button p {
   margin-top: 6px;
   margin-bottom: 6px;
 }
-/* line 70, ../sass/elements/_nav.scss */
+/* line 77, ../sass/elements/_nav.scss */
 ul li button .logo {
   max-width: 70%;
   margin: 0px;
   margin-top: 5px;
 }
 @media (min-width: 350px) {
-  /* line 70, ../sass/elements/_nav.scss */
+  /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 60%;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 70, ../sass/elements/_nav.scss */
+  /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 37%;
   }
 }
-@media (orientation: landscape) {
-  /* line 70, ../sass/elements/_nav.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 60%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 70, ../sass/elements/_nav.scss */
+  /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 60%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 70, ../sass/elements/_nav.scss */
+  /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 20%;
   }
 }
-@media (min-width: 1200px) and (orientation: portrait) {
-  /* line 70, ../sass/elements/_nav.scss */
+@media (min-width: 1200px) {
+  /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 20%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 90, ../sass/elements/_nav.scss */
+  /* line 97, ../sass/elements/_nav.scss */
   ul li:first-child {
     margin-left: 10px;
   }
@@ -674,7 +705,7 @@ body, html {
 section[role="main"] {
   margin: 10px;
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 600px) {
   /* line 32, ../sass/main/_layout.scss */
   section[role="main"] {
     justify-content: flex-start;
@@ -713,7 +744,7 @@ section[role="main"]:after {
     margin-left: 14px;
   }
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 600px) {
   /* line 49, ../sass/main/_layout.scss */
   #discount {
     margin-left: 10px;
@@ -751,7 +782,7 @@ section[role="main"]:after {
     min-width: 250;
   }
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 600px) {
   /* line 64, ../sass/main/_layout.scss */
   #discount p.callout {
     margin: 10px;
@@ -767,7 +798,7 @@ section[role="main"]:after {
   margin-bottom: 10px;
   width: 50px;
 }
-/* line 100, ../sass/main/_layout.scss */
+/* line 101, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-left: 10px;
@@ -778,20 +809,20 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 100, ../sass/main/_layout.scss */
+  /* line 101, ../sass/main/_layout.scss */
   #discount button:before {
     max-width: 100%;
     min-width: 250;
     display: inline;
   }
 }
-@media (orientation: landscape) {
-  /* line 100, ../sass/main/_layout.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 101, ../sass/main/_layout.scss */
   #discount button:before {
     display: none;
   }
 }
-/* line 117, ../sass/main/_layout.scss */
+/* line 118, ../sass/main/_layout.scss */
 #discount button {
   border: solid black 6px;
   -webkit-background-color: #FFFF00;
@@ -808,27 +839,28 @@ section[role="main"]:after {
   margin-bottom: 0px;
   max-width: 100%;
   min-width: 250;
+  padding-right: 4%;
 }
 @media (min-width: 350px) {
-  /* line 117, ../sass/main/_layout.scss */
+  /* line 118, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
     height: 6em;
   }
 }
-@media (orientation: landscape) {
-  /* line 117, ../sass/main/_layout.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 118, ../sass/main/_layout.scss */
   #discount button {
     margin-top: 10px;
   }
 }
-/* line 136, ../sass/main/_layout.scss */
+/* line 138, ../sass/main/_layout.scss */
 #discount button p {
   padding: 10px;
 }
 @media (min-width: 350px) {
-  /* line 136, ../sass/main/_layout.scss */
+  /* line 138, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -881,7 +913,7 @@ form input {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 600px) {
   /* line 28, ../sass/main/_typography.scss */
   .callout {
     font-size: 1em;
@@ -894,8 +926,7 @@ form input {
 
 /* line 40, ../sass/main/_typography.scss */
 #discount button p {
-  margin: 0px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
@@ -922,7 +953,7 @@ form input {
   }
 }
 
-/* line 58, ../sass/main/_typography.scss */
+/* line 57, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;
@@ -940,7 +971,7 @@ header {
   min-width: 100%;
   height: 65px;
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 600px) {
   /* line 1, ../sass/main/_header.scss */
   header {
     height: 50px;
@@ -976,7 +1007,7 @@ footer {
     height: 142px;
   }
 }
-/* line 11, ../sass/main/_footer.scss */
+/* line 13, ../sass/main/_footer.scss */
 footer h1 {
   margin-top: 25px;
 }

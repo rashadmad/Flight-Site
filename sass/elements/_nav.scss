@@ -5,7 +5,7 @@ ul{
   @extend %full_width;
   @extend %flex;
   @extend %flex_center;
-  background-color: $black;
+    background-color: $black;
     height: $ul_height;
 
     @include media_query(min-mobile){
@@ -26,6 +26,10 @@ ul{
       justify-content: flex-start;
       height: 52px;
     }
+    @include media_query(huge){
+      justify-content: flex-start;
+      height: 100px;
+    }
 
   li{
     @extend %center;
@@ -43,6 +47,9 @@ ul{
       margin-left: 8px;
     }
     @include media_query(desktop){
+      margin-left: 8px;
+    }
+    @include media_query(huge){
       margin-left: 8px;
     }
 

@@ -17,11 +17,11 @@
             @content;
             }
           } @else if $screen_type == "huge" {
-            @media (min-width: #{$huge}) and (orientation: portrait) {
+            @media (min-width: #{$huge}) {
               @content;
           }
         }  @else if $screen_type == "landscape" {
-          @media (orientation: landscape){
+          @media (orientation: landscape) and (max-height:600px){
               @content;
             }
           } @else {

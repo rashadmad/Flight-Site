@@ -118,11 +118,11 @@
 
   @if $E_W {
     @if is-percentage($E_W) {
-      padding-top: $E_W;
-      padding-bottom: $E_W;
+      padding-left: $E_W;
+      padding-right: $E_W;
     } @else {
-      padding-top: $E_W * $pixels;
-      padding-bottom: $E_W * $pixels;
+      padding-left: $E_W * $pixels;
+      padding-right: $E_W * $pixels;
     }
   }
 }
@@ -155,7 +155,7 @@
   }
 }
 
-@mixin background-color($maincolor) {
+@mixin background_color($maincolor) {
   -webkit-background-color: $maincolor ;
   -moz-background-color: $maincolor ;
   -ms-background-color: $maincolor ;
