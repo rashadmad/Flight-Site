@@ -20,7 +20,7 @@ ul{
     }
     @include media_query(landscape){
       justify-content: flex-start;
-      height: 52px;
+      height: $ul_height_landscape;
     }
     @include media_query(desktop){
       justify-content: flex-start;
@@ -82,11 +82,11 @@ ul{
          } @include media_query(mobile){
              @include width_maxNmin(37%);
          } @include media_query(landscape){
-             @include width_maxNmin(60%);
+             @include width_maxNmin(30%);
          } @include media_query(tablet){
              @include width_maxNmin(60%);
          } @include media_query(desktop){
-              @include width_maxNmin(20%);
+             @include width_maxNmin(20%);
         } @include media_query(huge){
              @include width_maxNmin(20%);
         }

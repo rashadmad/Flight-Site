@@ -101,11 +101,6 @@ ul li button {
   content: "";
 }
 
-/* line 21, ../sass/placeholders/_defaults.scss */
-#discount button:before {
-  display: none;
-}
-
 /* line 26, ../sass/placeholders/_defaults.scss */
 section[role="main"] form table tr label {
   position: absolute !important;
@@ -135,6 +130,11 @@ section[role="main"] form .checkbox_wrapper {
 /* line 8, ../sass/placeholders/_display.scss */
 #discount p.callout, #discount .discount_p {
   display: inline-block;
+}
+
+/* line 11, ../sass/placeholders/_display.scss */
+footer {
+  z-index: 2147483647;
 }
 
 /* line 2, ../sass/placeholders/_flexBox.scss */
@@ -186,7 +186,7 @@ header h1 {
 }
 
 /* line 18, ../sass/placeholders/_text_positioning.scss */
-section[role="main"] form, section[role="main"] form table, #discount, #discount p.callout, footer h1 {
+section[role="main"] form, section[role="main"] form table, #discount, #discount p.callout, #discount button p, footer h1 {
   margin: 0 auto;
 }
 
@@ -251,7 +251,7 @@ section[role="main"] form {
     margin-left: 5px;
     margin-right: 0px;
     max-width: 280px;
-    height: 218px;
+    height: 200px;
     margin-right: 0;
   }
 }
@@ -286,7 +286,7 @@ section[role="main"] form table {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-@media (min-width: 350px) {
+@media (min-width: 350px) and (max-width: 480px) {
   /* line 36, ../sass/elements/_forms.scss */
   section[role="main"] form table {
     margin: 0 auto;
@@ -306,7 +306,7 @@ section[role="main"] form table tbody td {
   padding: 4px;
   max-width: 115px;
 }
-@media (min-width: 350px) {
+@media (min-width: 350px) and (max-width: 480px) {
   /* line 48, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 143px;
@@ -491,7 +491,7 @@ ul {
   background-color: #1a1a1a;
   height: 70px;
 }
-@media (min-width: 350px) {
+@media (min-width: 350px) and (max-width: 480px) {
   /* line 2, ../sass/elements/_nav.scss */
   ul {
     justify-content: space-between;
@@ -514,7 +514,7 @@ ul {
   /* line 2, ../sass/elements/_nav.scss */
   ul {
     justify-content: flex-start;
-    height: 52px;
+    height: 55px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
@@ -631,7 +631,7 @@ ul li button .logo {
   margin: 0px;
   margin-top: 5px;
 }
-@media (min-width: 350px) {
+@media (min-width: 350px) and (max-width: 480px) {
   /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
     max-width: 60%;
@@ -646,7 +646,7 @@ ul li button .logo {
 @media (orientation: landscape) and (max-height: 600px) {
   /* line 77, ../sass/elements/_nav.scss */
   ul li button .logo {
-    max-width: 60%;
+    max-width: 30%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -674,18 +674,13 @@ ul li button .logo {
   }
 }
 
-/* line 2, ../sass/main/_layout.scss */
-* {
-  margin: 0;
-}
-
-/* line 7, ../sass/main/_layout.scss */
+/* line 4, ../sass/main/_layout.scss */
 body, html {
   height: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 11, ../sass/main/_layout.scss */
+  /* line 8, ../sass/main/_layout.scss */
   .page-wrap {
     min-height: 100%;
     /* equal to footer height */
@@ -693,7 +688,7 @@ body, html {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 11, ../sass/main/_layout.scss */
+  /* line 8, ../sass/main/_layout.scss */
   .page-wrap {
     min-height: 100%;
     /* equal to footer height */
@@ -701,26 +696,40 @@ body, html {
   }
 }
 
-/* line 32, ../sass/main/_layout.scss */
+/* line 29, ../sass/main/_layout.scss */
 section[role="main"] {
   margin: 10px;
 }
 @media (orientation: landscape) and (max-height: 600px) {
-  /* line 32, ../sass/main/_layout.scss */
+  /* line 29, ../sass/main/_layout.scss */
   section[role="main"] {
     justify-content: flex-start;
     display: flex;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 32, ../sass/main/_layout.scss */
+  /* line 29, ../sass/main/_layout.scss */
+  section[role="main"] {
+    justify-content: flex-start;
+    display: flex;
+  }
+}
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 568px) {
+  /* line 29, ../sass/main/_layout.scss */
+  section[role="main"] {
+    justify-content: flex-start;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 29, ../sass/main/_layout.scss */
   section[role="main"] {
     justify-content: flex-start;
     display: flex;
   }
 }
 
-/* line 45, ../sass/main/_layout.scss */
+/* line 48, ../sass/main/_layout.scss */
 section[role="main"]:after {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
@@ -728,62 +737,75 @@ section[role="main"]:after {
   background-color: #fff;
 }
 
-/* line 49, ../sass/main/_layout.scss */
+/* line 52, ../sass/main/_layout.scss */
 #discount {
   max-width: 370px;
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 49, ../sass/main/_layout.scss */
+  /* line 52, ../sass/main/_layout.scss */
+  #discount {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 52, ../sass/main/_layout.scss */
   #discount {
     margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 49, ../sass/main/_layout.scss */
+  /* line 52, ../sass/main/_layout.scss */
   #discount {
     margin-left: 14px;
   }
 }
 @media (orientation: landscape) and (max-height: 600px) {
-  /* line 49, ../sass/main/_layout.scss */
+  /* line 52, ../sass/main/_layout.scss */
   #discount {
     margin-left: 10px;
     width: 300px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-  /* line 49, ../sass/main/_layout.scss */
+  /* line 52, ../sass/main/_layout.scss */
   #discount {
     margin-left: 10px;
     width: 300px;
   }
 }
-/* line 64, ../sass/main/_layout.scss */
+@media (min-width: 1200px) {
+  /* line 52, ../sass/main/_layout.scss */
+  #discount {
+    margin-left: 10px;
+  }
+}
+/* line 74, ../sass/main/_layout.scss */
 #discount p.callout {
   font-size: 1em;
   line-height: 1.3;
   color: black;
+  margin-top: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100%;
   height: 3.5em;
 }
-@media (min-width: 350px) {
-  /* line 64, ../sass/main/_layout.scss */
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 64, ../sass/main/_layout.scss */
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (orientation: landscape) and (max-height: 600px) {
-  /* line 64, ../sass/main/_layout.scss */
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     margin: 10px;
     font-size: 1.1em;
@@ -793,23 +815,55 @@ section[role="main"]:after {
     height: 7em;
   }
 }
-/* line 92, ../sass/main/_layout.scss */
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 568px) {
+  /* line 74, ../sass/main/_layout.scss */
+  #discount p.callout {
+    margin-top: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.9;
+    color: black;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
+  /* line 74, ../sass/main/_layout.scss */
+  #discount p.callout {
+    max-width: 100%;
+    min-width: 250;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 74, ../sass/main/_layout.scss */
+  #discount p.callout {
+    max-width: 100%;
+    min-width: 250;
+  }
+}
+/* line 112, ../sass/main/_layout.scss */
 #discount .discount_p {
   margin-bottom: 10px;
   width: 50px;
 }
-/* line 101, ../sass/main/_layout.scss */
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 568px) {
+  /* line 112, ../sass/main/_layout.scss */
+  #discount .discount_p {
+    width: 50px;
+  }
+}
+/* line 123, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-left: 10px;
+  margin-bottom: 10px;
   content: "\f155";
   font-family: 'FontAwesome';
   font-size: 2.5em;
   top: 0;
   left: 0;
 }
-@media (min-width: 350px) {
-  /* line 101, ../sass/main/_layout.scss */
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 123, ../sass/main/_layout.scss */
   #discount button:before {
     max-width: 100%;
     min-width: 250;
@@ -817,12 +871,12 @@ section[role="main"]:after {
   }
 }
 @media (orientation: landscape) and (max-height: 600px) {
-  /* line 101, ../sass/main/_layout.scss */
+  /* line 123, ../sass/main/_layout.scss */
   #discount button:before {
     display: none;
   }
 }
-/* line 118, ../sass/main/_layout.scss */
+/* line 139, ../sass/main/_layout.scss */
 #discount button {
   border: solid black 6px;
   -webkit-background-color: #FFFF00;
@@ -839,28 +893,21 @@ section[role="main"]:after {
   margin-bottom: 0px;
   max-width: 100%;
   min-width: 250;
-  padding-right: 4%;
 }
-@media (min-width: 350px) {
-  /* line 118, ../sass/main/_layout.scss */
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 139, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
     height: 6em;
   }
 }
-@media (orientation: landscape) and (max-height: 600px) {
-  /* line 118, ../sass/main/_layout.scss */
-  #discount button {
-    margin-top: 10px;
-  }
-}
-/* line 138, ../sass/main/_layout.scss */
+/* line 158, ../sass/main/_layout.scss */
 #discount button p {
   padding: 10px;
 }
-@media (min-width: 350px) {
-  /* line 138, ../sass/main/_layout.scss */
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 158, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -923,17 +970,28 @@ form input {
     font-weight: 800;
   }
 }
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 568px) {
+  /* line 28, ../sass/main/_typography.scss */
+  .callout {
+    font-size: 1em;
+    line-height: 1;
+    color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    display: none;
+  }
+}
 
-/* line 40, ../sass/main/_typography.scss */
+/* line 42, ../sass/main/_typography.scss */
 #discount button p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-@media (min-width: 350px) {
-  /* line 40, ../sass/main/_typography.scss */
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 42, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.45em;
     line-height: 1;
@@ -943,7 +1001,7 @@ form input {
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 40, ../sass/main/_typography.scss */
+  /* line 42, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.4em;
     line-height: 1;
@@ -952,8 +1010,19 @@ form input {
     font-weight: 800;
   }
 }
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 568px) {
+  /* line 42, ../sass/main/_typography.scss */
+  #discount button p {
+    font-size: 1.1em;
+    line-height: 1;
+    color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    width: 190px;
+  }
+}
 
-/* line 57, ../sass/main/_typography.scss */
+/* line 63, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;
@@ -1007,7 +1076,19 @@ footer {
     height: 142px;
   }
 }
-/* line 13, ../sass/main/_footer.scss */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* line 2, ../sass/main/_footer.scss */
+  footer {
+    height: 142px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 2, ../sass/main/_footer.scss */
+  footer {
+    height: 142px;
+  }
+}
+/* line 16, ../sass/main/_footer.scss */
 footer h1 {
   margin-top: 25px;
 }

@@ -1,13 +1,16 @@
 
 footer {
+  @extend %index_high;
   @include background_color($maincolor);
   height: 142px;
   @include media_query(tablet){
     height: 142px;
   }   @include media_query(desktop){
       height: 142px;
-    }  @include media_query(hugr){
+    }   @include media_query(landscape){
         height: 142px;
+      }   @include media_query(huge){
+          height: 142px;
       }
 
   h1 {

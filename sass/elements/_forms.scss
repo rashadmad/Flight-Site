@@ -20,7 +20,7 @@ form{
     @include media_query(landscape){
       @include margin_system($top:0,$right:0,$left:5);
       @include width_maxNmin(280);
-        height: 218px;
+        height: $form_height_landscape;
         margin-right: 0;
     } @include media_query(tablet){
         @include margin_system($left:5);
