@@ -15,7 +15,7 @@ $iphone5: 568px;
           @content;
         }
       } @else if $screen_type == "desktop" {
-        @media (min-width: #{$desktop}) and (max-width: #{$huge}) and (orientation: portrait) {
+        @media (min-width: #{$desktop}) and (max-width: #{$huge}) {
             @content;
             }
           } @else if $screen_type == "huge" {

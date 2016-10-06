@@ -33,14 +33,12 @@ section[role="main"] {
       justify-content: flex-start;
       display: flex;
     }   @include media_query(desktop){
-        justify-content: flex-start;
-        display: flex;
+
       }   @include media_query(landscapeSmall){
           justify-content: flex-start;
           display: flex;
         }   @include media_query(huge){
-            justify-content: flex-start;
-            display: flex;
+
           }
 
 }
@@ -60,14 +58,11 @@ section[role="main"]:after {
          @include margin_system($left:14);
       } @include media_query(landscape){
          @include margin_system($left:10);
-         width: 300px;
+         @include width_maxNmin(300);
       } @include media_query(desktop){
          @include margin_system($left:10);
-         width: 300px;
       } @include media_query(huge){
          @include margin_system($left:10);
-
-
       }
 
 
@@ -98,10 +93,10 @@ p.callout {
       @include text(1.1,1.9);
     }
     @include media_query(desktop){
-        @include width_maxNmin(100%,$callout_width_MIN);
+
     }
     @include media_query(huge){
-        @include width_maxNmin(100%,$callout_width_MIN);
+
     }
 }
   .discount_button {
@@ -116,6 +111,8 @@ p.callout {
       width: 50px;
       @include media_query(landscapeSmall){
         width: 50px;
+      } @include media_query(huge){
+        @include width_maxNmin(100%);
       }
   }
 
@@ -131,7 +128,10 @@ p.callout {
           @include width_maxNmin(100%,$callout_width_MIN);
           display: inline;
         }
-        @include media_query(landscape){
+        @include media_query(landscapeSmall){
+          display: none;
+        }
+        @include media_query(min-mobile, $min-mobile:200px, $mobile:315px){
           display: none;
         }
     }
@@ -145,11 +145,12 @@ p.callout {
     @include padding_system(10,$N_S:15);
     @include margin_system($N_S:5,$bottom:20,$E_W:0);
     @include width_maxNmin(100%,$callout_width_MIN);
-
       @include media_query(min-mobile){
         @include width_maxNmin(100%,$callout_width_MIN);
         height:6em;
     } @include media_query(landscape){
+
+    } @include media_query(desktop){
 
     }
 
