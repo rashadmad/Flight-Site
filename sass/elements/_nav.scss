@@ -5,6 +5,7 @@ ul{
   @extend %full_width;
   @extend %flex;
   @extend %flex_center;
+  @include margin_system($bottom:0);
     background-color: $black;
     height: $ul_height;
 
@@ -49,7 +50,7 @@ ul{
       @include width_maxNmin(60);
     }
     @include media_query(landscape){
-      margin-left: 8px;
+      @include margin_system($left:8);
     }
     @include media_query(desktop){
       @include margin_system($left:25);

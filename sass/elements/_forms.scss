@@ -18,7 +18,7 @@ form{
   @include width_maxNmin($mobile_width_MAX,$form_min_width);
 
     @include media_query(landscape){
-      @include margin_system($top:0,$right:0,$left:5);
+
       @include width_maxNmin(280);
         height: $form_height_landscape;
         margin-right: 0;
@@ -62,7 +62,7 @@ form{
           } @include media_query(landscape){
               @include width_maxNmin(100);
           } @include media_query(landscapeSmall){
-              @include width_maxNmin(155);
+              @include width_maxNmin(110);
           }  @include media_query(huge){
               @include width_maxNmin(175);
           }
