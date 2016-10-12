@@ -6,9 +6,8 @@ body,html {
 }
 
 .page-wrap{
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -142px;
+
+
 }
 
 .page-wrap:after {
@@ -45,6 +44,7 @@ section[role="main"]:after {
 
 #discount {
     @extend %margin_center;
+    @include padding_system(10);
     @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
       @include media_query(mobile){
         margin: 0 auto;
@@ -68,7 +68,7 @@ p.callout {
     @extend %resize_none;
     @extend %margin_center;
     @include text(1,1.3);
-    @include margin_system($top:12,$N_S:10);
+    @include margin_system(10,$top:12,$N_S:10);
     @include width_maxNmin(100%);
       height:3.5em;
 
@@ -127,7 +127,7 @@ p.callout {
         @include media_query(landscapeSmall){
           display: none;
         }
-        @include media_query(min-mobile, $min-mobile:200px, $mobile:315px){
+        @include media_query(modular, $min-width:200px, $max-width:315px){
           display: none;
         }
     }

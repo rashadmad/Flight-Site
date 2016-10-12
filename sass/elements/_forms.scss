@@ -13,12 +13,11 @@ form{
   @extend %clear_fix;
   @extend %margin_center;
   @include padding_system(10);
-  @include margin_system($top:5,$bottom:7);
+  @include margin_system(10,$top:15,$bottom:7);
   @include background_color($maincolor);
   @include width_maxNmin($mobile_width_MAX,$form_min_width);
 
     @include media_query(landscape){
-
       @include width_maxNmin(280);
         height: $form_height_landscape;
         margin-right: 0;
