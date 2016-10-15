@@ -6,8 +6,11 @@ body,html {
 }
 
 .page-wrap{
-
-
+  @include media_query(modular,$min_width:480px){
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+  }
 }
 
 .page-wrap:after {
@@ -101,10 +104,13 @@ p.callout {
   }
 
   .discount_p {
-    @extend %right;
     @extend %inline_block;
-    @include margin_system($bottom:10);
-      width: 50px;
+    @include margin_system($left:70%,$bottom:5);
+    @include width_maxNmin(100%);
+        width: 50px;
+      @include media_query(modular,$min_width:$min_mobile,$max_width:$huge){
+        float:right;
+      }
       @include media_query(landscapeSmall){
         width: 50px;
       } @include media_query(huge){
@@ -114,6 +120,7 @@ p.callout {
 
 
     button:before {
+      @extend %no_display;
       @extend %left;
       @include margin_system(5,$bottom:10,$left:10);
         content: "\f155";
@@ -122,13 +129,9 @@ p.callout {
         top: 0; left: 0;
         @include media_query(min-mobile) {
           @include width_maxNmin(100%,$callout_width_MIN);
-          display: inline;
         }
-        @include media_query(landscapeSmall){
-          display: none;
-        }
-        @include media_query(modular, $min-width:200px, $max-width:315px){
-          display: none;
+        @include media_query(modular,$min_width:$min-mobile,$max_width:$huge) {
+            display: inline;
         }
     }
 

@@ -17,11 +17,6 @@
   content: "";
 }
 
-//my go_to to make sure my selectors are working
-%no_display {
-  display: none;
-}
-
 //hideing things but keeping them there for accessibility purposes
 %hide {
    position: absolute !important;

@@ -1,5 +1,3 @@
-@mixin media_query($screen_type, $min_width:null, $max_width:null, $min_height:null, $max_height:null) {
- 
 $min_mobile:350px;
 $mobile:480px;
 $tablet:768px;
@@ -7,14 +5,27 @@ $desktop:992px;
 $landscape:360px;
 $huge:1200px;
 
-$iphone5: 568px;
+@mixin media_query($screen_type, $min_width:null, $max_width:null, $min_height:null, $max_height:null) {
+
+  $iphone5: 568px;
 
 @if $screen_type == "modular" {
 
-    min-width: #{$min_width};
-    max-width: #{$max_width};
-    min-height: #{$min_height};
-    max-height: #{$max_height};
+  @if $min_width and $max_width {
+    @media (min-width: #{$min_width}) and (max-width: #{$max_width}){
+      @content;
+    }
+  }
+  @else if $min_width {
+    @media (min-width: #{$min_width}){
+      @content;
+    }
+  }
+  @else if $max_width {
+    @media (max-width: #{$max_width}){
+      @content;
+    }
+  }
 
 } @else if $screen_type == "min-mobile" {
   @media (min-width: #{$min_mobile}) and (max-width: #{$mobile}){
