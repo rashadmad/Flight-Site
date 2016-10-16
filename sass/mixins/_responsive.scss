@@ -4,11 +4,36 @@ $tablet:768px;
 $desktop:992px;
 $landscape:360px;
 $huge:1200px;
+$iphone5: 568px;
 
+//mixin for makeing media queries less repetative and easier to use
+//(usage example) @include media_query(//what screen type are you building for) { //her goes your content }
 @mixin media_query($screen_type, $min_width:null, $max_width:null, $min_height:null, $max_height:null) {
 
-  $iphone5: 568px;
+//choose your screen type then
+  @if $screen_type == "min-mobile" {
+    @media (min-width: #{$min_mobile}) and (max-width: #{$mobile}){
+      @content;
+    }
+  } @else if $screen_type == "mobile" {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet}){
+          @content;
+        }
+      } @else if $screen_type == "tablet" {
+        @media (min-width: #{$tablet}) and (max-width: #{$desktop}){
+          @content;
+          }
+        } @else if $screen_type == "desktop" {
+          @media (min-width: #{$desktop}) and (max-width: #{$huge}) {
+              @content;
+              }
+            } @else if $screen_type == "huge" {
+              @media (min-width: #{$huge}) {
+                @content;
+                }
+              }
 
+//use the modular screen type when you w
 @if $screen_type == "modular" {
 
   @if $min_width and $max_width {
@@ -26,39 +51,26 @@ $huge:1200px;
       @content;
     }
   }
+}
 
-} @else if $screen_type == "min-mobile" {
-  @media (min-width: #{$min_mobile}) and (max-width: #{$mobile}){
-    @content;
-  }
-} @else if $screen_type == "mobile" {
-  @media (min-width: #{$mobile}) and (max-width: #{$tablet}){
+
+
+  @if $screen_type == "landscape" {
+    @if $min_width and $max_width {
+        @media (orientation: landscape) and (max_width:#{$max_width}) and (min_width:#{$min_width}){
+          @content;
+      }
+    } @else if $min_width {
+        @media (orientation: landscape) and (max-height:600px) and (min_width:#{$min_width}){
+          @content;
+     }
+   } @else if $max_width {
+      @media (orientation: landscape) and (max-height:600px) and (max_width:#{$max_width}){
         @content;
       }
-    } @else if $screen_type == "tablet" {
-      @media (min-width: #{$tablet}) and (max-width: #{$desktop}){
-          @content;
-        }
-      } @else if $screen_type == "desktop" {
-        @media (min-width: #{$desktop}) and (max-width: #{$huge}) {
-            @content;
-            }
-          } @else if $screen_type == "huge" {
-            @media (min-width: #{$huge}) {
-              @content;
-              }
-            } @else if $screen_type == "landscape" {
-              @media (orientation: landscape) and (max-height:600px){
-                @content;
-                }
-              } @else if $screen_type == "landscapeSmall" {
-                  @media (orientation: landscape) and (max-height:600px) and (max-width:$iphone5){
-                    @content;
-                    }
-              } @else {
-                @debug "The varible screen-type equals #{$screen-type} when it should either equal mobile, tablet or desktop";
-      }
+    }
   }
+}
 
   @mixin width_maxNmin($max:null,$min:null){
 

@@ -1,12 +1,8 @@
 
 section[role="main"]{
   @extend %flex_center;
-  @include media_query(tablet){
-    @include margin_system($left:5);
-  }@include media_query(desktop){
-    @include margin_system($left:5);
-  }@include media_query(huge){
-    @include margin_system($left:5);
+  @include media_query(modular,$tablet,$huge){
+    @include padding_system($left:15);
   }
 
 form{
@@ -22,7 +18,7 @@ form{
             margin: 10px auto;
       }
   h1{
-      @include margin_system(10, $N_S:20, $E_W:8, $bottom:10);
+    @include margin_system(10, $N_S:20, $E_W:8, $bottom:10);
   }
   table{
     @extend %margin_center;

@@ -1,18 +1,10 @@
 
 footer {
+  z-index: -1;
   @extend %index_high;
   @include background_color($maincolor);
   height: 142px;
-  @include media_query(tablet){
-    height: 142px;
-  }   @include media_query(desktop){
-      height: 142px;
-    }   @include media_query(landscape){
-        height: 142px;
-      }   @include media_query(huge){
-          height: 142px;
-      }
-
+  
   h1 {
     @extend %margin_center;
     @include margin_system($top:25);

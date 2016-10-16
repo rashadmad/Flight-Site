@@ -92,13 +92,9 @@ ul{
              @include width_maxNmin(37%);
          } @include media_query(landscape){
              @include width_maxNmin(30%);
-         } @include media_query(tablet){
-             @include width_maxNmin(75%);
-         } @include media_query(desktop){
-             @include width_maxNmin(75%);
-        } @include media_query(huge){
-             @include width_maxNmin(75%);
-        }
+         } @include media_query(modular,$tablet,$huge){
+            @include width_maxNmin(75%);
+         }
       }
     }
   }
@@ -106,6 +102,8 @@ ul{
       li:first-child {
         @include media_query(tablet){
             @include margin_system($left:10);
+      } @include media_query(huge){
+          @include margin_system($left:10);
       }
     }
   }
