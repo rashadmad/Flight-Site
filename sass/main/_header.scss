@@ -4,9 +4,7 @@ header {
   @include width_maxNmin(100%,100%);
     height: $header_height;
 
-    @include media_query(landscape){
-        height: 50px;
-    }
+    
   h1 {
     @extend %text_right;
     @extend %no_margin;

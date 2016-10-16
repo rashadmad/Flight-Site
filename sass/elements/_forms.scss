@@ -1,9 +1,7 @@
 
 section[role="main"]{
   @extend %flex_center;
-  @include media_query(modular,$tablet,$huge){
-    @include padding_system($left:15);
-  }
+
 
 form{
   @extend %clear_fix;
@@ -46,16 +44,11 @@ form{
               @include width_maxNmin(175);
           } @include media_query(desktop){
               @include width_maxNmin(175);
-          } @include media_query(landscape){
-              @include width_maxNmin(100);
-          } @include media_query(landscapeSmall){
-              @include width_maxNmin(110);
-          }  @include media_query(huge){
+          } @include media_query(huge){
               @include width_maxNmin(175);
           }
         }
       }
-
 
     tr {
       @include margin_system($N_S:5, $E_W:5);
@@ -74,11 +67,6 @@ form{
         @include width_maxNmin(100%,100%);
           color: $white;
 
-          @include media_query(landscape){
-            @include border_system(solid,$black,4);
-            @include padding_system(3);
-          }
-
           &:focus{
             @include background_color($black);
             color: $white !important;
@@ -86,12 +74,6 @@ form{
       }select{
 
         @include border_system(solid,$black,5);
-
-        @include media_query(landscape){
-          @include border_system(solid,$black,4);
-          @include padding_system(3);
-
-        }
 
       }#passengers_selection,#economy_selection{
         @include margin_system($N_S:1, $E_W:5);
@@ -101,9 +83,6 @@ form{
 
           @include media_query(mobile){
             @include width_maxNmin(180);
-          }@include media_query(landscape){
-            @include padding_system(3);
-            @include border_system(solid,$black,4);
           }
       }
     }
@@ -118,12 +97,6 @@ form{
     @include background_color($white);
     @include margin_system(10, $N_S:5, $E_W:5, $right:10);
     @include padding_system(7,$left:13,$right:13);
-
-    @include media_query(landscape){
-      @include padding_system(6);
-      @include border_system(solid,$black,3);
-      @include margin_system($right:5);
-    }
 
     &:visited{
       @include background_color($black);

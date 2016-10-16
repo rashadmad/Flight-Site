@@ -27,18 +27,6 @@ section[role="main"] {
     -o-background-size: cover;
     background-size: cover;
 
-    @include media_query(landscape){
-      justify-content: flex-start;
-      display: flex;
-    }   @include media_query(desktop){
-
-      }   @include media_query(landscapeSmall){
-          justify-content: flex-start;
-          display: flex;
-        }   @include media_query(huge){
-
-          }
-
 }
 
 section[role="main"]:after {
@@ -55,9 +43,6 @@ section[role="main"]:after {
         margin: 0 auto;
       } @include media_query(tablet){
          @include margin_system($left:14);
-      } @include media_query(landscape){
-         @include margin_system($left:10);
-         @include width_maxNmin(300);
       } @include media_query(desktop){
          @include margin_system($left:10);
       } @include media_query(huge){
@@ -81,16 +66,6 @@ p.callout {
     @include media_query(mobile) {
       @include width_maxNmin(100%,$callout_width_MIN);
     }
-    @include media_query(landscape){
-      @include margin_system(10);
-      @include text(1.1,2);
-      text-align: justify;
-      height: 7em;
-    }
-    @include media_query(landscapeSmall){
-      @include margin_system($top:12,$N_S:10);
-      @include text(1.1,1.9);
-    }
 }
   .discount_button {
     @extend %center;
@@ -107,9 +82,7 @@ p.callout {
         @include margin_system($left:10);
         float:right;
       }
-      @include media_query(landscapeSmall){
-        width: 50px;
-      } @include media_query(huge){
+      @include media_query(huge){
         @include width_maxNmin(100%);
       }
   }
@@ -143,8 +116,6 @@ p.callout {
       @include media_query(min-mobile){
         @include width_maxNmin(100%,$callout_width_MIN);
         height:6em;
-    } @include media_query(landscape){
-
     } @include media_query(desktop){
 
     }
