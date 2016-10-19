@@ -2,64 +2,27 @@
 ul{
   @extend %no_margin;
   @extend %bye_bullets;
-  @extend %full_width;
   @extend %flex;
   @extend %flex_center;
+    @include media_query(min-mobile){
+      width: 100%;
+      justify-content: center;
+    }
   @include margin_system($bottom:0);
     background-color: $black;
     height: $ul_height;
 
-    @include media_query(min-mobile){
-        justify-content: space-between;
-    }
-    @include media_query(mobile){
-        justify-content: space-between;
-        justify-content: flex-start;
-    }
-    @include media_query(tablet){
-        justify-content: flex-start;
-    }
-    @include media_query(landscape){
-      justify-content: flex-start;
-      height: $ul_height_landscape;
-    }
-    @include media_query(desktop){
-      justify-content: flex-start;
 
-    }
-    @include media_query(huge){
-      justify-content: flex-start;
-
-    }
 
   li{
     @extend %center;
     @extend %flex;
     @extend %flex_center;
-    @extend %full_width;
     @include margin_system(0);
     @include background_color($maincolor);
       color: $black;
 
-    @include media_query(min-mobile){
-    }
-    @include media_query(mobile){
-    }
-    @include media_query(tablet){
-      @include margin_system($left:25);
-      @include width_maxNmin(60);
-    }
-    @include media_query(landscape){
-      @include margin_system($left:8);
-    }
-    @include media_query(desktop){
-      @include margin_system($left:25);
-      @include width_maxNmin(60);
-    }
-    @include media_query(huge){
-      @include margin_system($left:25);
-      @include width_maxNmin(60);
-    }
+
 
     #active {
         color: black !important;
@@ -84,17 +47,9 @@ ul{
          }
 
         .logo{
-          @include width_maxNmin(70%);
+          @include width_maxNmin(40,70%);
+            @include media_query($min_mobile){@include width_maxNmin(50,70%);}
           @include margin_system($img_margin,$top:$img_margin_bottom);
-          @include media_query(min-mobile){
-             @include width_maxNmin(60%);
-         } @include media_query(mobile){
-             @include width_maxNmin(37%);
-         } @include media_query(landscape){
-             @include width_maxNmin(30%);
-         } @include media_query(modular,$tablet,$huge){
-            @include width_maxNmin(75%);
-         }
       }
     }
   }
