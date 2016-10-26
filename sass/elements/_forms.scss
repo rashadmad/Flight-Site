@@ -1,28 +1,31 @@
 
 section[role="main"]{
   @extend %flex_center;
-  @include media_query(modular,$tablet,$huge){
+  @include media_query(modular,$tablet){
     @include padding_system($left:15);
   }
 
 form{
   @extend %clear_fix;
   @extend %margin_center;
-  @include padding_system(10);
-  @include margin_system(15,$top:15,$bottom:7);
+  @extend %block;
+  @include padding_system(8);
+  @include margin_system($top:20);
   @include background_color($maincolor);
   @include width_maxNmin($mobile_width_MAX,$form_min_width);
 
-  
+    @include media_query(modular, $min_width:$tablet){
+      @include margin_system($left:20);
+      float: left;
+    }
+
   h1{
-    @include margin_system(10, $N_S:20, $E_W:8, $bottom:10);
+    @include margin_system(10, $bottom:10);
   }
   table{
     @extend %margin_center;
     @include margin_system($N_S:7);
-    @include media_query(min-mobile){
-      margin: 0 auto;
-    }
+
 
     tbody{
 
@@ -33,10 +36,10 @@ form{
 
         @include margin_system(4);
         @include padding_system(4);
-        @include width_maxNmin(115);
+        @include width_maxNmin(125);
 
-        @include media_query(modular,$min_mobile,$huge){
-            @include width_maxNmin(150);
+        @include media_query(modular,$min_mobile,$desktop){
+            @include width_maxNmin(155);
         }
       }
     }
@@ -68,12 +71,10 @@ form{
         @include border_system(solid,$black,5);
 
       }#passengers_selection,#economy_selection{
-        @include padding_system($N_S:7, $E_W:7);
+        @include padding_system(7);
         @include width_maxNmin($input_width);
 
-          @include media_query(mobile){
-            @include width_maxNmin(180);
-          }
+
       }
     }
   }
@@ -85,7 +86,7 @@ form{
     @include width_maxNmin(256);
     @include easy_dropShadow(3px,3px,0px,$black);
     @include background_color($white);
-    @include margin_system(10, $N_S:5, $E_W:5, $right:10);
+    @include margin_system(10, $right:10);
     @include padding_system(7,$left:13,$right:13);
 
     &:visited{
@@ -101,7 +102,7 @@ form{
   .checkbox_wrapper{
     @extend %left;
     @extend %inline;
-    @include margin_system(10, $N_S:5, $E_W:5);
+    @include margin_system(10);
 
     input[type="checkbox"]{
       @include margin_system($N_S:2);

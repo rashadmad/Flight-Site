@@ -45,8 +45,6 @@ section[role="main"]:after {
          @include margin_system($left:14);
       } @include media_query(desktop){
          @include margin_system($left:10);
-      } @include media_query(huge){
-         @include margin_system($left:10);
       }
 
 
@@ -78,12 +76,9 @@ p.callout {
     @include width_maxNmin(100%);
         z-index: 10000000;
         width: 50px;
-      @include media_query(modular,$min_width:$min_mobile,$max_width:$huge){
+      @include media_query(modular,$min_width:$min_mobile){
         @include margin_system($left:10);
-        float:right;
-      }
-      @include media_query(huge){
-        @include width_maxNmin(100%);
+          float:right;
       }
   }
 
@@ -96,10 +91,8 @@ p.callout {
         font-family: 'FontAwesome';
         font-size: 2.5em;
         top: 0; left: 0;
-        @include media_query(min-mobile) {
-          @include width_maxNmin(100%,$callout_width_MIN);
-        }
-        @include media_query(modular,$min_width:$min-mobile,$max_width:$huge) {
+
+        @include media_query(modular,$min_width:$min-mobile) {
             display: inline;
         }
     }
@@ -113,11 +106,9 @@ p.callout {
     @include padding_system(10,$N_S:15);
     @include margin_system($N_S:5,$bottom:20,$E_W:0);
     @include width_maxNmin(100%,$callout_width_MIN);
-      @include media_query(min-mobile){
+      @include media_query(modular,$min_width:$min-mobile){
         @include width_maxNmin(100%,$callout_width_MIN);
         height:6em;
-    } @include media_query(desktop){
-
     }
 
 

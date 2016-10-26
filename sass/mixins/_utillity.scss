@@ -7,8 +7,8 @@
     @if is-percentage($all_side){
       margin: #{$all_side};
     } @else {
-      margin: #{$all_side * $pixels};
-    }
+       margin: $all_side * $pixels;
+     }
   }
 
   @if $top {
@@ -55,11 +55,11 @@
 
   @if $E_W {
     @if is-percentage($E_W) {
-      margin-top: $E_W;
-      margin-bottom: $E_W;
+      margin-left: $E_W;
+      margin-right: $E_W;
     } @else {
-      margin-top: $E_W * $pixels;
-      margin-bottom: $E_W * $pixels;
+      margin-left: $E_W * $pixels;
+      margin-right: $E_W * $pixels;
     }
   }
 }
@@ -68,7 +68,7 @@
 
   @if $all_side {
     @if is-percentage($all_side){
-      padding:  #{$all_side};
+      padding: #{$all_side};
     } @else {
       padding: #{$all_side * $pixels};
     }
@@ -103,26 +103,6 @@
       padding-right: $right;
     } @else {
       padding-right: $right * $pixels;
-    }
-  }
-
-  @if $N_S {
-    @if is-percentage($N_S) {
-      padding-top: $N_S;
-      padding-bottom: $N_S;
-    } @else {
-      padding-top: $N_S * $pixels;
-      padding-bottom: $N_S * $pixels;
-    }
-  }
-
-  @if $E_W {
-    @if is-percentage($E_W) {
-      padding-left: $E_W;
-      padding-right: $E_W;
-    } @else {
-      padding-left: $E_W * $pixels;
-      padding-right: $E_W * $pixels;
     }
   }
 }

@@ -1,0 +1,4 @@
+$: -314601779
+BuildCommand: build.bat
+RunCommand: run.bat
+Product: flight_site.apk
