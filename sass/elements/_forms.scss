@@ -7,16 +7,22 @@ section[role="main"]{
 
 form{
   @extend %clear_fix;
-  @extend %margin_center;
   @extend %block;
   @include padding_system(8);
-  @include margin_system($top:20);
+  @include margin_system(10,$top:20);
   @include background_color($maincolor);
-  @include width_maxNmin($mobile_width_MAX,$form_min_width);
+  @include width_maxNmin($form_min_width);
+
+    @include media_query(modular, $min_mobile, $tablet){
+      @include width_maxNmin(325);
+        margin: 20px auto;
+        @include margin_system($N_S:20);
+    }
 
     @include media_query(modular, $min_width:$tablet){
+      @include width_maxNmin(400);
       @include margin_system($left:20);
-      float: left;
+        float: left;
     }
 
   h1{
@@ -25,7 +31,6 @@ form{
   table{
     @extend %margin_center;
     @include margin_system($N_S:7);
-
 
     tbody{
 

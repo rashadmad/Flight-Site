@@ -28,6 +28,10 @@ $picas: 1pc;
 // @author Hugo Giraudel
 ////
 
+@function is-automatic($value) {
+  @return type-of($value) == 'auto';
+}
+
 @function is-number($value) {
   @return type-of($value) == 'number';
 }

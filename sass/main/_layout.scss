@@ -6,11 +6,10 @@ body,html {
 }
 
 .page-wrap{
-  @include media_query(modular,$min_width:480px){
+
     min-height: 100%;
     /* equal to footer height */
     margin-bottom: -142px;
-  }
 }
 
 .page-wrap:after {

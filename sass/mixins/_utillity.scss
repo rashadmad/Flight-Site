@@ -5,8 +5,10 @@
 
   @if $all_side {
     @if is-percentage($all_side){
-      margin: #{$all_side};
-    } @else {
+       margin: #{$all_side};
+     } @else if is-automatic($all_side){
+       margin: auto;
+     } @else {
        margin: $all_side * $pixels;
      }
   }
@@ -14,6 +16,8 @@
   @if $top {
     @if is-percentage($top){
       margin-top: $top;
+    } @else if is-automatic($top){
+      margin-top: auto;
     } @else {
       margin-top: $top * $pixels;
     }
@@ -22,6 +26,8 @@
   @if $left {
     @if is-percentage($left){
       margin-left: $left;
+    } @else if is-automatic($left){
+      margin-left: auto;
     } @else {
       margin-left: $left * $pixels;
     }
@@ -30,6 +36,8 @@
   @if $bottom {
     @if is-percentage($bottom){
       margin-bottom: $bottom;
+    } @else if is-automatic($bottom){
+      margin-bottom: auto;
     } @else {
       margin-bottom: $bottom * $pixels;
     }
@@ -38,6 +46,8 @@
   @if $right {
     @if is-percentage($right){
       margin-right: $right;
+    } @else if is-automatic($right){
+      margin-right: auto;
     } @else {
       margin-right: $right * $pixels;
     }
@@ -47,6 +57,9 @@
     @if is-percentage($N_S) {
       margin-top: $N_S;
       margin-bottom: $N_S;
+    } @else if is-automatic($N_S){
+      margin-top: auto;
+      margin-bottom: auto;
     } @else {
       margin-top: $N_S * $pixels;
       margin-bottom: $N_S * $pixels;
@@ -57,6 +70,9 @@
     @if is-percentage($E_W) {
       margin-left: $E_W;
       margin-right: $E_W;
+    } @else if is-automatic($E_W){
+      margin-left: auto;
+      margin-right: auto;
     } @else {
       margin-left: $E_W * $pixels;
       margin-right: $E_W * $pixels;
@@ -68,15 +84,19 @@
 
   @if $all_side {
     @if is-percentage($all_side){
-      padding: #{$all_side};
-    } @else {
-      padding: #{$all_side * $pixels};
-    }
+       padding: #{$all_side};
+     } @else if is-automatic($all_side){
+       padding: auto;
+     } @else {
+       padding: $all_side * $pixels;
+     }
   }
 
   @if $top {
     @if is-percentage($top){
       padding-top: $top;
+    } @else if is-automatic($top){
+      padding-top: auto;
     } @else {
       padding-top: $top * $pixels;
     }
@@ -85,6 +105,8 @@
   @if $left {
     @if is-percentage($left){
       padding-left: $left;
+    } @else if is-automatic($left){
+      padding-left: auto;
     } @else {
       padding-left: $left * $pixels;
     }
@@ -93,6 +115,8 @@
   @if $bottom {
     @if is-percentage($bottom){
       padding-bottom: $bottom;
+    } @else if is-automatic($bottom){
+      padding-bottom: auto;
     } @else {
       padding-bottom: $bottom * $pixels;
     }
@@ -101,12 +125,39 @@
   @if $right {
     @if is-percentage($right){
       padding-right: $right;
+    } @else if is-automatic($right){
+      padding-right: auto;
     } @else {
       padding-right: $right * $pixels;
     }
   }
-}
 
+  @if $N_S {
+    @if is-percentage($N_S) {
+      padding-top: $N_S;
+      padding-bottom: $N_S;
+    } @else if is-automatic($N_S){
+      padding-top: auto;
+      padding-bottom: auto;
+    } @else {
+      padding-top: $N_S * $pixels;
+      padding-bottom: $N_S * $pixels;
+    }
+  }
+
+  @if $E_W {
+    @if is-percentage($E_W) {
+      padding-left: $E_W;
+      padding-right: $E_W;
+    } @else if is-automatic($E_W){
+      padding-left: auto;
+      padding-right: auto;
+    } @else {
+      padding-left: $E_W * $pixels;
+      padding-right: $E_W * $pixels;
+    }
+  }
+}
 
 @mixin easy_dropShadow($N,$W,$blur,$color) {
 
