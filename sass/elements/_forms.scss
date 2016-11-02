@@ -12,6 +12,7 @@ form{
   @include margin_system(10,$top:20);
   @include background_color($maincolor);
   @include width_maxNmin($form_min_width);
+  @debug 10em + 12em;
 
     @include media_query(modular, $min_mobile, $tablet){
       @include width_maxNmin(325);
@@ -43,7 +44,7 @@ form{
         @include padding_system(4);
         @include width_maxNmin(125);
 
-        @include media_query(modular,$min_mobile,$desktop){
+        @include media_query(modular,$min_mobile){
             @include width_maxNmin(155);
         }
       }

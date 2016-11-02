@@ -24,12 +24,21 @@ $points: 1pt;
 $picas: 1pc;
 
 ////
+//turns a unit into another unit
+////
+
+@function make-pixel($number){
+  @return $number * $pixels;
+}
+
+
+////
 // A collection of function for advanced type checking
 // @author Hugo Giraudel
 ////
 
 @function is-automatic($value) {
-  @return type-of($value) == 'auto';
+  @return ($value) == 'auto';
 }
 
 @function is-number($value) {

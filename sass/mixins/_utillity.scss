@@ -5,11 +5,11 @@
 
   @if $all_side {
     @if is-percentage($all_side){
-       margin: #{$all_side};
+       margin: $all_side;
      } @else if is-automatic($all_side){
        margin: auto;
      } @else {
-       margin: $all_side * $pixels;
+       margin: make-pixel($all_side);
      }
   }
 
@@ -19,7 +19,7 @@
     } @else if is-automatic($top){
       margin-top: auto;
     } @else {
-      margin-top: $top * $pixels;
+      margin-right: make-pixel($top);
     }
   }
 
@@ -29,7 +29,7 @@
     } @else if is-automatic($left){
       margin-left: auto;
     } @else {
-      margin-left: $left * $pixels;
+      margin-left: make-pixel($left);
     }
   }
 
@@ -39,7 +39,7 @@
     } @else if is-automatic($bottom){
       margin-bottom: auto;
     } @else {
-      margin-bottom: $bottom * $pixels;
+      margin-right: make-pixel($bottom);
     }
   }
 
@@ -49,7 +49,7 @@
     } @else if is-automatic($right){
       margin-right: auto;
     } @else {
-      margin-right: $right * $pixels;
+      margin-right: make-pixel($right);
     }
   }
 
@@ -61,8 +61,8 @@
       margin-top: auto;
       margin-bottom: auto;
     } @else {
-      margin-top: $N_S * $pixels;
-      margin-bottom: $N_S * $pixels;
+      margin-top: make-pixel($N_S);
+      margin-bottom: make-pixel($N_S);
     }
   }
 
@@ -74,8 +74,8 @@
       margin-left: auto;
       margin-right: auto;
     } @else {
-      margin-left: $E_W * $pixels;
-      margin-right: $E_W * $pixels;
+      margin-left: make-pixel($E_W);
+      margin-right: make-pixel($E_W);
     }
   }
 }
@@ -84,11 +84,11 @@
 
   @if $all_side {
     @if is-percentage($all_side){
-       padding: #{$all_side};
+       padding: $all_side;
      } @else if is-automatic($all_side){
        padding: auto;
      } @else {
-       padding: $all_side * $pixels;
+       padding: make-pixel($all_side);
      }
   }
 
@@ -98,7 +98,7 @@
     } @else if is-automatic($top){
       padding-top: auto;
     } @else {
-      padding-top: $top * $pixels;
+      padding-right: make-pixel($top);
     }
   }
 
@@ -108,7 +108,7 @@
     } @else if is-automatic($left){
       padding-left: auto;
     } @else {
-      padding-left: $left * $pixels;
+      padding-left: make-pixel($left);
     }
   }
 
@@ -118,7 +118,7 @@
     } @else if is-automatic($bottom){
       padding-bottom: auto;
     } @else {
-      padding-bottom: $bottom * $pixels;
+      padding-right: make-pixel($bottom);
     }
   }
 
@@ -128,7 +128,7 @@
     } @else if is-automatic($right){
       padding-right: auto;
     } @else {
-      padding-right: $right * $pixels;
+      padding-right: make-pixel($right);
     }
   }
 
@@ -140,8 +140,8 @@
       padding-top: auto;
       padding-bottom: auto;
     } @else {
-      padding-top: $N_S * $pixels;
-      padding-bottom: $N_S * $pixels;
+      padding-top: make-pixel($N_S);
+      padding-bottom: make-pixel($N_S);
     }
   }
 
@@ -153,11 +153,12 @@
       padding-left: auto;
       padding-right: auto;
     } @else {
-      padding-left: $E_W * $pixels;
-      padding-right: $E_W * $pixels;
+      padding-left: make-pixel($E_W);
+      padding-right: make-pixel($E_W);
     }
   }
 }
+
 
 @mixin easy_dropShadow($N,$W,$blur,$color) {
 
