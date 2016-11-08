@@ -22,6 +22,7 @@ $millimeters: 1mm;
 $inches: 1in;
 $points: 1pt;
 $picas: 1pc;
+$negative: -1;
 
 ////
 //turns a unit into another unit
@@ -31,6 +32,10 @@ $picas: 1pc;
   @return $number * $pixels;
 }
 
+@function make-negative($value){
+  $value:-$value;
+  @return $value;
+}
 
 ////
 // A collection of function for advanced type checking

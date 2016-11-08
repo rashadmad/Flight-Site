@@ -78,7 +78,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 2, ../sass/placeholders/_defaults.scss */
-section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form button, #discount button {
+section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection, section[role="main"] form button, #discount button {
   outline: 0;
 }
 
@@ -108,7 +108,7 @@ section[role="main"] form table tr label {
 }
 
 /* line 27, ../sass/placeholders/_defaults.scss */
-section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"] {
+section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -190,7 +190,7 @@ header h1 {
 }
 
 /* line 18, ../sass/placeholders/_text_positioning.scss */
-section[role="main"] form table, #discount, #discount p.callout, #discount button p, footer h1 {
+section[role="main"] form table, section[role="main"] form table tr, #discount, #discount p.callout, #discount button p, footer h1 {
   margin: 0 auto;
 }
 
@@ -228,12 +228,12 @@ ul li button, ul li button button:target, #discount button {
 section[role="main"] form {
   padding: 8px;
   margin: 10px;
-  margin-right: 20px;
+  margin-top: 20px;
   -webkit-background-color: yellow;
   -moz-background-color: yellow;
   -ms-background-color: yellow;
   background-color: yellow;
-  max-width: 265px;
+  max-width: 290px;
 }
 @media (min-width: 350px) and (max-width: 768px) {
   /* line 8, ../sass/elements/_forms.scss */
@@ -252,17 +252,17 @@ section[role="main"] form {
     float: left;
   }
 }
-/* line 29, ../sass/elements/_forms.scss */
+/* line 28, ../sass/elements/_forms.scss */
 section[role="main"] form h1 {
   margin: 10px;
-  margin-right: 10px;
+  margin-bottom: 10px;
 }
-/* line 32, ../sass/elements/_forms.scss */
+/* line 31, ../sass/elements/_forms.scss */
 section[role="main"] form table {
   margin-top: 7px;
   margin-bottom: 7px;
 }
-/* line 36, ../sass/elements/_forms.scss */
+/* line 35, ../sass/elements/_forms.scss */
 section[role="main"] form table tbody {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -270,19 +270,19 @@ section[role="main"] form table tbody {
   padding-right: 7px;
   margin: 4px;
 }
-/* line 41, ../sass/elements/_forms.scss */
+/* line 40, ../sass/elements/_forms.scss */
 section[role="main"] form table tbody td {
   margin: 4px;
   padding: 4px;
-  max-width: 125px;
+  max-width: 115px;
 }
 @media (min-width: 350px) {
-  /* line 41, ../sass/elements/_forms.scss */
+  /* line 40, ../sass/elements/_forms.scss */
   section[role="main"] form table tbody td {
     max-width: 155px;
   }
 }
-/* line 53, ../sass/elements/_forms.scss */
+/* line 52, ../sass/elements/_forms.scss */
 section[role="main"] form table tr {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -302,30 +302,24 @@ section[role="main"] form table tr label {
   margin-right: 3px;
 }
 /* line 62, ../sass/elements/_forms.scss */
-section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"] {
+section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
   border: solid #1a1a1a 5px;
   padding: 8px;
   max-width: 100%;
-  color: white;
 }
-/* line 71, ../sass/elements/_forms.scss */
-section[role="main"] form table tr input[type="text"]:focus, section[role="main"] form table tr input[type="number"]:focus {
+/* line 70, ../sass/elements/_forms.scss */
+section[role="main"] form table tr input[type="text"]:focus, section[role="main"] form table tr input[type="number"]:focus, section[role="main"] form table tr #passengers_selection:focus, section[role="main"] form table tr #economy_selection:focus {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
   background-color: #1a1a1a;
   color: white !important;
 }
-/* line 75, ../sass/elements/_forms.scss */
+/* line 74, ../sass/elements/_forms.scss */
 section[role="main"] form table tr select {
   border: solid #1a1a1a 5px;
 }
-/* line 79, ../sass/elements/_forms.scss */
-section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
-  padding: 7px;
-  max-width: 100%;
-}
-/* line 88, ../sass/elements/_forms.scss */
+/* line 82, ../sass/elements/_forms.scss */
 section[role="main"] form button {
   border: solid #1a1a1a 5px;
   max-width: 256px;
@@ -342,7 +336,7 @@ section[role="main"] form button {
   padding-left: 13px;
   padding-right: 13px;
 }
-/* line 98, ../sass/elements/_forms.scss */
+/* line 92, ../sass/elements/_forms.scss */
 section[role="main"] form button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -350,7 +344,7 @@ section[role="main"] form button:visited {
   background-color: #1a1a1a;
   color: white;
 }
-/* line 102, ../sass/elements/_forms.scss */
+/* line 96, ../sass/elements/_forms.scss */
 section[role="main"] form button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -361,17 +355,17 @@ section[role="main"] form button:active {
   -o-box-shadow: 0px 0px 0px #1a1a1a;
   color: white;
 }
-/* line 108, ../sass/elements/_forms.scss */
+/* line 102, ../sass/elements/_forms.scss */
 section[role="main"] form .checkbox_wrapper {
   margin: 10px;
 }
-/* line 113, ../sass/elements/_forms.scss */
+/* line 107, ../sass/elements/_forms.scss */
 section[role="main"] form .checkbox_wrapper input[type="checkbox"] {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-/* line 119, ../sass/elements/_forms.scss */
-section[role="main"] #passengers_selection {
+/* line 113, ../sass/elements/_forms.scss */
+section[role="main"] #passengers_selection, section[role="main"] #economy_selection {
   width: 1000px;
 }
 
@@ -382,7 +376,7 @@ body {
 
 /* line 2, ../sass/elements/_nav.scss */
 ul {
-  margin-right: 0px;
+  margin-bottom: 0px;
   background-color: #1a1a1a;
   height: 80px;
 }
@@ -479,8 +473,6 @@ ul li button p {
 /* line 54, ../sass/elements/_nav.scss */
 ul li button .logo {
   max-width: 40px;
-  margin: 0px;
-  margin-right: 5px;
 }
 @media (min-width: 768px) {
   /* line 62, ../sass/elements/_nav.scss */
@@ -498,10 +490,27 @@ body, html {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  margin-bottom: -146px;
+}
+@media (max-height: 780px) {
+  /* line 8, ../sass/main/_layout.scss */
+  .page-wrap {
+    margin-bottom: -85px;
+  }
 }
 
-/* line 20, ../sass/main/_layout.scss */
+/* line 19, ../sass/main/_layout.scss */
+.page-wrap:after {
+  margin-bottom: -146px;
+}
+@media (max-height: 780px) {
+  /* line 19, ../sass/main/_layout.scss */
+  .page-wrap:after {
+    margin-bottom: -85px;
+  }
+}
+
+/* line 29, ../sass/main/_layout.scss */
 section[role="main"] {
   margin: 0px;
   max-width: 100%;
@@ -512,7 +521,7 @@ section[role="main"] {
   background-size: cover;
 }
 
-/* line 31, ../sass/main/_layout.scss */
+/* line 40, ../sass/main/_layout.scss */
 section[role="main"]:after {
   -webkit-background-color: white;
   -moz-background-color: white;
@@ -520,81 +529,81 @@ section[role="main"]:after {
   background-color: white;
 }
 
-/* line 35, ../sass/main/_layout.scss */
+/* line 44, ../sass/main/_layout.scss */
 #discount {
   padding: 10px;
   max-width: 350px;
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 35, ../sass/main/_layout.scss */
+  /* line 44, ../sass/main/_layout.scss */
   #discount {
     margin: 0 auto;
   }
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 35, ../sass/main/_layout.scss */
+  /* line 44, ../sass/main/_layout.scss */
   #discount {
     margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 35, ../sass/main/_layout.scss */
+  /* line 44, ../sass/main/_layout.scss */
   #discount {
     margin-left: 14px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 35, ../sass/main/_layout.scss */
+  /* line 44, ../sass/main/_layout.scss */
   #discount {
     margin-left: 10px;
   }
 }
-/* line 50, ../sass/main/_layout.scss */
+/* line 59, ../sass/main/_layout.scss */
 #discount p.callout {
   font-size: 1em;
   line-height: 1.3;
   color: black;
   margin: 10px;
-  margin-right: 12px;
+  margin-top: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100%;
   height: 3.5em;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 50, ../sass/main/_layout.scss */
+  /* line 59, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 50, ../sass/main/_layout.scss */
+  /* line 59, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 72, ../sass/main/_layout.scss */
+/* line 81, ../sass/main/_layout.scss */
 #discount .discount_p {
   margin-left: 82%;
-  margin-right: 5px;
+  margin-bottom: 5px;
   max-width: 100%;
   z-index: 10000000;
   width: 50px;
 }
 @media (min-width: 350px) {
-  /* line 72, ../sass/main/_layout.scss */
+  /* line 81, ../sass/main/_layout.scss */
   #discount .discount_p {
     margin-left: 10px;
     float: right;
   }
 }
-/* line 85, ../sass/main/_layout.scss */
+/* line 94, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 10px;
   content: "\f155";
   font-family: 'FontAwesome';
   font-size: 2.5em;
@@ -602,12 +611,12 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 85, ../sass/main/_layout.scss */
+  /* line 94, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 99, ../sass/main/_layout.scss */
+/* line 108, ../sass/main/_layout.scss */
 #discount button {
   border: solid black 6px;
   -webkit-background-color: yellow;
@@ -617,7 +626,7 @@ section[role="main"]:after {
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 20px;
+  margin-bottom: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 0px;
@@ -626,19 +635,19 @@ section[role="main"]:after {
   min-width: 250;
 }
 @media (min-width: 350px) {
-  /* line 99, ../sass/main/_layout.scss */
+  /* line 108, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
     height: 6em;
   }
 }
-/* line 115, ../sass/main/_layout.scss */
+/* line 124, ../sass/main/_layout.scss */
 #discount button p {
   padding: 10px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 115, ../sass/main/_layout.scss */
+  /* line 124, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -771,16 +780,27 @@ header .main-logo, header .logo {
 
 /* line 2, ../sass/main/_footer.scss */
 footer {
-  z-index: -1;
   -webkit-background-color: yellow;
   -moz-background-color: yellow;
   -ms-background-color: yellow;
   background-color: yellow;
-  height: 142px;
+  height: 146px;
 }
-/* line 8, ../sass/main/_footer.scss */
+@media (max-height: 780px) {
+  /* line 2, ../sass/main/_footer.scss */
+  footer {
+    height: 85px;
+  }
+}
+@media (max-height: 720px) {
+  /* line 2, ../sass/main/_footer.scss */
+  footer {
+    display: none;
+  }
+}
+/* line 14, ../sass/main/_footer.scss */
 footer h1 {
-  margin-right: 25px;
+  margin-top: 25px;
 }
 
 /*

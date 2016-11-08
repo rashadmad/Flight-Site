@@ -9,12 +9,21 @@ body,html {
 
     min-height: 100%;
     /* equal to footer height */
-    margin-bottom: -142px;
+    @include sticky_footer(true,146);
+
+    @include media_query(height,$height:780px){
+      @include sticky_footer(true,85);
+    }
 }
 
 .page-wrap:after {
   @extend %content_clear;
   @extend %block;
+  @include sticky_footer(true,146);
+
+  @include media_query(height,$height:780px){
+    @include sticky_footer(true,85);
+  }
 }
 
 section[role="main"] {

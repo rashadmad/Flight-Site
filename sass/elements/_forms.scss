@@ -12,7 +12,6 @@ form{
   @include margin_system(10,$top:20);
   @include background_color($maincolor);
   @include width_maxNmin($form_min_width);
-  @debug 10em + 12em;
 
     @include media_query(modular, $min_mobile, $tablet){
       @include width_maxNmin(325);
@@ -42,7 +41,7 @@ form{
 
         @include margin_system(4);
         @include padding_system(4);
-        @include width_maxNmin(125);
+        @include width_maxNmin(115);
 
         @include media_query(modular,$min_mobile){
             @include width_maxNmin(155);
@@ -51,6 +50,7 @@ form{
     }
 
     tr {
+      @extend %margin_center;
       @include margin_system($N_S:5, $E_W:5);
       @include padding_system($N_S:5, $E_W:5);
       @include width_maxNmin(100);
@@ -59,14 +59,13 @@ form{
         @extend %hide;
         @include margin_system($N_S:3, $E_W:3);
       }
-      input[type="text"],input[type="number"]{
+      input[type="text"],input[type="number"],#passengers_selection,#economy_selection{
         @extend %no_outline;
         @extend %border_box;
         @include border_system(solid,$black,5);
         @include padding_system(8);
         @include width_maxNmin($input_width);
 
-          color: $white;
 
           &:focus{
             @include background_color($black);
@@ -75,11 +74,6 @@ form{
       }select{
 
         @include border_system(solid,$black,5);
-
-      }#passengers_selection,#economy_selection{
-        @include padding_system(7);
-        @include width_maxNmin($input_width);
-
 
       }
     }
@@ -116,7 +110,7 @@ form{
   }
 }
 
-#passengers_selection{
+#passengers_selection,#economy_selection{
     width:1000px;
   }
 }

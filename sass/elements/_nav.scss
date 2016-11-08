@@ -54,7 +54,7 @@ ul{
         .logo{
           @include width_maxNmin(40,70%);
             @include media_query($min_mobile){@include width_maxNmin(50,70%);}
-          @include margin_system($img_margin,$top:$img_margin_bottom);
+          
       }
     }
   }
@@ -62,6 +62,6 @@ ul{
       li:first-child {
         @include media_query(modular,$min-width: $tablet){
             @include margin_system($left:43);
-      } 
+      }
     }
   }

@@ -19,3 +19,11 @@
       color: $color !important;
     }
 }
+
+@mixin sticky_footer($element,$footer_height){
+    @if $element == true{
+    margin-bottom: make-negative($footer_height * $pixels);
+  } @else {
+    height: $footer_height * $pixels;
+  }
+}

@@ -19,7 +19,7 @@
     } @else if is-automatic($top){
       margin-top: auto;
     } @else {
-      margin-right: make-pixel($top);
+      margin-top: make-pixel($top);
     }
   }
 
@@ -39,7 +39,7 @@
     } @else if is-automatic($bottom){
       margin-bottom: auto;
     } @else {
-      margin-right: make-pixel($bottom);
+      margin-bottom: make-pixel($bottom);
     }
   }
 

@@ -5,7 +5,7 @@ $desktop:1200px;
 
 //mixin for makeing media queries less repetative and easier to use
 //(usage example) @include media_query(//what screen type are you building for) { //her goes your content }
-@mixin media_query($screen_type, $min_width:null, $max_width:null, $min_height:null, $max_height:null) {
+@mixin media_query($screen_type, $min_width:null, $max_width:null, $min_height:null, $height:null) {
 
   //use the modular screen type when you w
   @if $screen_type == "modular" {
@@ -42,6 +42,12 @@ $desktop:1200px;
           } @else if $screen_type == "desktop" {
             @media (min-width: #{$desktop}) {
                 @content;
+    }
+  }
+
+      @if $screen_type == "height" {
+        @media (max-height: #{$height}){
+              @content;
     }
   }
 }

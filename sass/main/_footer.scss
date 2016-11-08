@@ -1,10 +1,16 @@
 
 footer {
-  z-index: -1;
+
   @extend %index_high;
   @include background_color($maincolor);
-  height: 142px;
-  
+  @include sticky_footer(false,146);
+    @include media_query(height,$height:780px){
+       @include sticky_footer(false,85);
+    } @include media_query(height,$height:720px){
+        display: none;
+      }
+
+
   h1 {
     @extend %margin_center;
     @include margin_system($top:25);
