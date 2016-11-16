@@ -78,7 +78,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 2, ../sass/placeholders/_defaults.scss */
-section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection, section[role="main"] form button, #discount button {
+section[role="main"] form fieldset input[type="number"],
+section[role="main"] form fieldset input[type="text"],
+section[role="main"] form fieldset select, section[role="main"] form fieldset button, #discount button {
   outline: 0;
 }
 
@@ -100,15 +102,10 @@ ul li button {
   content: "";
 }
 
-/* line 21, ../sass/placeholders/_defaults.scss */
-section[role="main"] form table tr label {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
 /* line 27, ../sass/placeholders/_defaults.scss */
-section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
+section[role="main"] form fieldset input[type="number"],
+section[role="main"] form fieldset input[type="text"],
+section[role="main"] form fieldset select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -116,13 +113,8 @@ section[role="main"] form table tr input[type="text"], section[role="main"] form
   box-sizing: border-box;
 }
 
-/* line 2, ../sass/placeholders/_display.scss */
-section[role="main"] form .checkbox_wrapper {
-  display: inline;
-}
-
 /* line 5, ../sass/placeholders/_display.scss */
-section[role="main"] form, .page-wrap:after, #discount button {
+.page-wrap:after, #discount button {
   display: block;
 }
 
@@ -152,20 +144,13 @@ section[role="main"], ul, ul li {
 }
 
 /* line 2, ../sass/placeholders/_float.scss */
-section[role="main"] form table tr label, section[role="main"] form .checkbox_wrapper, #discount button:before, header .main-logo, header .logo {
+section[role="main"] form fieldset legend, #discount button:before, header .main-logo, header .logo {
   float: left;
 }
 
 /* line 5, ../sass/placeholders/_float.scss */
-section[role="main"] form button, #discount button p {
+section[role="main"] form fieldset button, #discount button p {
   float: right;
-}
-
-/* line 9, ../sass/placeholders/_float.scss */
-section[role="main"] form:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* line 5, ../sass/placeholders/_overflow.scss */
@@ -174,7 +159,7 @@ section[role="main"] form:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-ul li, #discount .discount_button, .callout, #discount button p, footer div.wrapper h1 {
+section[role="main"] form fieldset.centered, ul li, #discount .discount_button, .callout, #discount button p, footer div.wrapper h1 {
   text-align: center;
 }
 
@@ -190,7 +175,7 @@ header h1 {
 }
 
 /* line 18, ../sass/placeholders/_text_positioning.scss */
-section[role="main"] form table, section[role="main"] form table tr, #discount, #discount p.callout, #discount button p, footer h1 {
+#discount, #discount p.callout, #discount button p, footer h1 {
   margin: 0 auto;
 }
 
@@ -219,12 +204,12 @@ ul li button, ul li button button:target, #discount button {
 * For printers and high resolution screens 1px implies multiple device pixels.
 */
 @media (min-width: 768px) {
-  /* line 2, ../sass/elements/_forms.scss */
+  /* line 1, ../sass/elements/_forms.scss */
   section[role="main"] {
     padding-left: 15px;
   }
 }
-/* line 8, ../sass/elements/_forms.scss */
+/* line 7, ../sass/elements/_forms.scss */
 section[role="main"] form {
   padding: 8px;
   margin: 10px;
@@ -233,96 +218,124 @@ section[role="main"] form {
   -moz-background-color: yellow;
   -ms-background-color: yellow;
   background-color: yellow;
-  max-width: 290px;
+  max-width: 300px;
 }
 @media (min-width: 350px) and (max-width: 768px) {
-  /* line 8, ../sass/elements/_forms.scss */
+  /* line 7, ../sass/elements/_forms.scss */
   section[role="main"] form {
     max-width: 325px;
-    margin: 20px auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 768px) {
-  /* line 8, ../sass/elements/_forms.scss */
+  /* line 7, ../sass/elements/_forms.scss */
   section[role="main"] form {
     max-width: 400px;
     margin-left: 20px;
     float: left;
+    transition: left 1s;
   }
 }
-/* line 28, ../sass/elements/_forms.scss */
-section[role="main"] form h1 {
+/* line 27, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset.bottom {
+  margin: 10px;
+}
+/* line 33, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset .row {
+  font-size: 0;
+}
+/* line 36, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset .row div,
+section[role="main"] form fieldset .row input[type="number"],
+section[role="main"] form fieldset .row input[type="text"],
+section[role="main"] form fieldset .row select {
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/* line 44, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset .checkbox_wrapper {
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/* line 50, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset legend {
   margin: 10px;
   margin-bottom: 10px;
 }
-/* line 31, ../sass/elements/_forms.scss */
-section[role="main"] form table {
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
-/* line 35, ../sass/elements/_forms.scss */
-section[role="main"] form table tbody {
+/* line 55, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset tbody {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 7px;
   padding-right: 7px;
   margin: 4px;
 }
-/* line 40, ../sass/elements/_forms.scss */
-section[role="main"] form table tbody td {
-  margin: 4px;
-  padding: 4px;
-  max-width: 115px;
-}
-@media (min-width: 350px) {
-  /* line 40, ../sass/elements/_forms.scss */
-  section[role="main"] form table tbody td {
-    max-width: 155px;
-  }
-}
-/* line 52, ../sass/elements/_forms.scss */
-section[role="main"] form table tr {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  max-width: 100px;
-}
-/* line 57, ../sass/elements/_forms.scss */
-section[role="main"] form table tr label {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-/* line 62, ../sass/elements/_forms.scss */
-section[role="main"] form table tr input[type="text"], section[role="main"] form table tr input[type="number"], section[role="main"] form table tr #passengers_selection, section[role="main"] form table tr #economy_selection {
+/* line 61, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset input[type="number"],
+section[role="main"] form fieldset input[type="text"],
+section[role="main"] form fieldset select {
   border: solid #1a1a1a 5px;
   padding: 8px;
-  max-width: 100%;
+  margin: 8px;
+  max-width: 105px;
 }
-/* line 70, ../sass/elements/_forms.scss */
-section[role="main"] form table tr input[type="text"]:focus, section[role="main"] form table tr input[type="number"]:focus, section[role="main"] form table tr #passengers_selection:focus, section[role="main"] form table tr #economy_selection:focus {
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 61, ../sass/elements/_forms.scss */
+  section[role="main"] form fieldset input[type="number"],
+  section[role="main"] form fieldset input[type="text"],
+  section[role="main"] form fieldset select {
+    max-width: 120px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 61, ../sass/elements/_forms.scss */
+  section[role="main"] form fieldset input[type="number"],
+  section[role="main"] form fieldset input[type="text"],
+  section[role="main"] form fieldset select {
+    max-width: 145px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* line 61, ../sass/elements/_forms.scss */
+  section[role="main"] form fieldset input[type="number"],
+  section[role="main"] form fieldset input[type="text"],
+  section[role="main"] form fieldset select {
+    max-width: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 61, ../sass/elements/_forms.scss */
+  section[role="main"] form fieldset input[type="number"],
+  section[role="main"] form fieldset input[type="text"],
+  section[role="main"] form fieldset select {
+    max-width: 160px;
+  }
+}
+/* line 83, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset input[type="number"]:focus,
+section[role="main"] form fieldset input[type="text"]:focus,
+section[role="main"] form fieldset select:focus {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
   background-color: #1a1a1a;
   color: white !important;
 }
-/* line 74, ../sass/elements/_forms.scss */
-section[role="main"] form table tr select {
+/* line 89, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset button {
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
   border: solid #1a1a1a 5px;
-}
-/* line 82, ../sass/elements/_forms.scss */
-section[role="main"] form button {
-  border: solid #1a1a1a 5px;
-  max-width: 256px;
+  max-width: 80px;
   -webkit-box-shadow: 3px 3px 0px #1a1a1a;
   -moz-box-shadow: 3px 3px 0px #1a1a1a;
   -o-box-shadow: 3px 3px 0px #1a1a1a;
@@ -330,22 +343,21 @@ section[role="main"] form button {
   -moz-background-color: white;
   -ms-background-color: white;
   background-color: white;
-  margin: 10px;
-  margin-right: 10px;
-  padding: 7px;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-/* line 92, ../sass/elements/_forms.scss */
-section[role="main"] form button:visited {
+/* line 100, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
   background-color: #1a1a1a;
   color: white;
 }
-/* line 96, ../sass/elements/_forms.scss */
-section[role="main"] form button:active {
+/* line 105, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
@@ -355,18 +367,10 @@ section[role="main"] form button:active {
   -o-box-shadow: 0px 0px 0px #1a1a1a;
   color: white;
 }
-/* line 102, ../sass/elements/_forms.scss */
-section[role="main"] form .checkbox_wrapper {
-  margin: 10px;
-}
-/* line 107, ../sass/elements/_forms.scss */
-section[role="main"] form .checkbox_wrapper input[type="checkbox"] {
+/* line 112, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset input[type="checkbox"] {
   margin-top: 2px;
   margin-bottom: 2px;
-}
-/* line 113, ../sass/elements/_forms.scss */
-section[role="main"] #passengers_selection, section[role="main"] #economy_selection {
-  width: 1000px;
 }
 
 /* line 7, ../sass/elements/_img.scss */
@@ -676,7 +680,7 @@ li button img {
 }
 
 /* line 20, ../sass/main/_typography.scss */
-form h1 {
+form legend {
   font-size: 1.3em;
   line-height: 1;
   color: #1a1a1a;
@@ -798,7 +802,7 @@ footer {
     display: none;
   }
 }
-/* line 14, ../sass/main/_footer.scss */
+/* line 15, ../sass/main/_footer.scss */
 footer h1 {
   margin-top: 25px;
 }

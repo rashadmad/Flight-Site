@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan your next trip or vaction at your finger tips</title>
+      <!--fontawesome-->
+    <script src="https://use.fontawesome.com/9f1342aee5.js"></script>
+      <!--JQuery install-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
+      <!--PLUGIN vendor(Slick):css-->
+    <script src="js/custom.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+</head>
+
+  <body>
+    <div class="page-wrap">
+    <header>
+        <img id="main-logo" class="logo" src="logo.svg" alt="logo">
+        <h1>FLIGHT SITE</h1>
+    </header>
+
+      <ul>
+        <li><button id="active" href="#"><img class="logo" src="img/airplane_icon.svg" alt="flight logo"><br><p>FLIGHTS</p></button></li>
+        <li><button href="#"><img class="logo" src="img/car_icon.svg" alt="rental logo"><br><p>RENTALS</p></button></li>
+        <li><button href="#"><img class="logo" src="img/hotel_icon.svg" alt="hotel logo"><br><p>HOTELS</p></button></li>
+        <li><button href="#"><img class="logo" src="img/packages_icon.svg" alt="package logo"><br><p>PACKAGES</p></button></li>
+        <li><button href="#"><img class="logo" src="img/cruise_icon.svg" alt="cruise logo"><br><p>CRUISES</p></button></li>
+      </ul>
+      <section role="main">
+        <form>
+          <table>
+            <h1>Car rentals at low rates</h1>
+            <tr>
+              <div>
+                <label>Departing City</label>
+                <input type="text" name="departing" placeholder="Departing">
+              </div>
+
+            <div>
+              <label>Passengers</label>
+              <select class="input_field">
+                <option value="one">fare/1 Adult</option>
+                <option value="two">2 Adults</option>
+                <option value="three">3 Adults</option>
+                <option value="four">4 Adults</option>
+                <option value="five">5 Adults</option>
+                <option value="six">6 Adults</option>
+                <option value="seven">7 Adults</option>
+                <option value="eight">8 Adults</option>
+              </select>
+            </div>
+            <div>
+              <label>Economy</label>
+              <select class="input_field">
+                <option value="volvo">Economy/Coach</option>
+                <option value="saab">Premium</option>
+                <option value="mercedes">Business</option>
+                <option value="audi">First</option>
+              </select>
+            </div>
+
+
+      </table>
+      <div class="checkbox_wrapper">
+        <input type="checkbox" name="one_way" value="one_way" class="form_checkbox"><label>One way</label><br>
+        <input type="checkbox" name="non_stop" value="non_stop" class="form_checkbox"><label>Non-stop</label><br>
+      </div>
+        <button type="submit">Search</button>
+    </form>
+      <section id="discount">
+        <p class="callout">From LA to Australia we have all the flights you need for the prices you can afford.</p>
+        <div class="discount_button">
+          <div id="button_wrapper">
+            <button>
+              <div class="discount_p"><p>Discounts on flights to Vegas</p></div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    </div>
+    <footer>
+
+        <h1>Flight Site developed by rashad madison &copy;</h1>
+
+    </footer>
+
+  </body>
+
+
+</html>

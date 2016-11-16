@@ -1,110 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan your next trip or vaction at your finger tips</title>
-      <!--fontawesome-->
+    <!--fontawesome-->
     <script src="https://use.fontawesome.com/9f1342aee5.js"></script>
-      <!--JQuery install-->
+    <!--JQuery install-->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
-      <!--PLUGIN vendor(Slick):css-->
+    <!--PLUGIN vendor(Slick):css-->
     <script src="js/custom.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 </head>
 
-  <body>
+<body>
     <div class="page-wrap">
-    <header>
-        <img id="main-logo" class="logo" src="logo.svg" alt="logo">
-        <h1>FLIGHT SITE</h1>
-    </header>
+        <header>
+            <img id="main-logo" class="logo" src="logo.svg" alt="logo">
+            <h1>FLIGHT SITE</h1>
+        </header>
 
-      <ul>
-        <li><button id="active" href="#"><img class="logo" src="img/airplane_icon.svg" alt="flight logo"><br><p>FLIGHTS</p></button></li>
-        <li><button href="#"><img class="logo" src="img/car_icon.svg" alt="rental logo"><br><p>RENTALS</p></button></li>
-        <li><button href="#"><img class="logo" src="img/hotel_icon.svg" alt="hotel logo"><br><p>HOTELS</p></button></li>
-        <li><button href="#"><img class="logo" src="img/packages_icon.svg" alt="package logo"><br><p>PACKAGES</p></button></li>
-        <li><button href="#"><img class="logo" src="img/cruise_icon.svg" alt="cruise logo"><br><p>CRUISES</p></button></li>
-      </ul>
-      <section role="main">
-        <form>
-          <table>
-            <h1>Flights At Low Rates</h1>
-            <tr>
-              <td>
-                <label>Departing City</label>
-                <input type="text" name="departing" placeholder="Departing">
-              </td>
-              <td>
-                <label>Ariving City</label>
-                <input type="text" name="arrival" placeholder="Arrival">
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Departure Date</label>
-                <input type="number" name="arrival_date" placeholder="Mar 12">
-              </td>
-              <td>
-                <label>Arrival Date</label>
-                <input type="number" name="arrival_date" placeholder="Mar 13">
-              </td>
-            </tr>
-            <tr>
-            <td>
-              <label>Passengers</label>
-              <select id="passengers_selection">
-                <option value="one">fare/1 Adult</option>
-                <option value="two">2 Adults</option>
-                <option value="three">3 Adults</option>
-                <option value="four">4 Adults</option>
-                <option value="five">5 Adults</option>
-                <option value="six">6 Adults</option>
-                <option value="seven">7 Adults</option>
-                <option value="eight">8 Adults</option>
-              </select>
-            </td>
-            <td>
-              <label>Economy</label>
-              <select id="economy_selection">
-                <option value="volvo">Economy/Coach</option>
-                <option value="saab">Premium</option>
-                <option value="mercedes">Business</option>
-                <option value="audi">First</option>
-              </select>
-            </td>
-          </tr>
+        <ul>
+            <li><button id="active" href="#"><img class="logo" src="img/airplane_icon.svg" alt="flight logo"><br><p>FLIGHTS</p></button></li>
+            <li><button href="#"><img class="logo" src="img/car_icon.svg" alt="rental logo"><br><p>RENTALS</p></button></li>
+            <li><button href="#"><img class="logo" src="img/hotel_icon.svg" alt="hotel logo"><br><p>HOTELS</p></button></li>
+            <li><button href="#"><img class="logo" src="img/packages_icon.svg" alt="package logo"><br><p>PACKAGES</p></button></li>
+            <li><button href="#"><img class="logo" src="img/cruise_icon.svg" alt="cruise logo"><br><p>CRUISES</p></button></li>
+        </ul>
+        <section role="main">
+            <form>
+                <fieldset class="centered">
+                    <legend>Flights At Low Rates</legend>
 
-      </table>
-      <div class="checkbox_wrapper">
-        <input type="checkbox" name="one_way" value="one_way" class="form_checkbox"><label>One way</label><br>
-        <input type="checkbox" name="non_stop" value="non_stop" class="form_checkbox"><label>Non-stop</label><br>
-      </div>
-        <button type="submit">Search</button>
-    </form>
-      <section id="discount">
-        <p class="callout">From LA to Australia we have all the flights you need for the prices you can afford.</p>
-        <div class="discount_button">
-          <div id="button_wrapper">
-            <button>
+                    <div class="row">
+                        <label class="hidden">Departing City</label>
+                        <input type="text" name="departing" placeholder="Departing">
+                        <label class="hidden">Ariving City</label>
+                        <input type="text" name="arrival" placeholder="Arrival">
+                    </div>
+                    <div class="row">
+                        <label class="hidden">Departure Date</label>
+                        <input type="number" name="arrival_date" placeholder="Mar 12">
+                        <label class="hidden">Arrival Date</label>
+                        <input type="number" name="arrival_date" placeholder="Mar 13">
+                    </div>
+                    <div class="row">
+                        <label>Passengers</label>
+                        <select id="passengers_selection">
+                  <option value="one">fare/1 Adult</option>
+                  <option value="two">2 Adults</option>
+                  <option value="three">3 Adults</option>
+                  <option value="four">4 Adults</option>
+                  <option value="five">5 Adults</option>
+                  <option value="six">6 Adults</option>
+                  <option value="seven">7 Adults</option>
+                  <option value="eight">8 Adults</option>
+                </select>
+                        <label class="hidden">Economy</label>
+                        <select id="economy_selection">
+                  <option value="volvo">Economy/Coach</option>
+                  <option value="saab">Premium</option>
+                  <option value="mercedes">Business</option>
+                  <option value="audi">First</option>
+                </select>
+                    </div>
+                    <div>
+                </fieldset>
+                <fieldset class="bottom">
+                    <div class="checkbox_wrapper">
+                        <div class="row">
+                            <button type="submit">Search</button>
+                            <input type="checkbox" name="one_way" value="one_way"><label>One way</label>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+            <section id="discount">
+                <p class="callout">From LA to Australia we have all the flights you need for the prices you can afford.</p>
+                <div class="discount_button">
+                    <div id="button_wrapper">
+                        <button>
               <div class="discount_p"><p>Discounts on flights to Vegas</p></div>
             </button>
-          </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
         </div>
-      </section>
-    </section>
+        <footer>
 
-    </div>
-    <footer>
+            <h1>Flight Site developed by rashad madison &copy;</h1>
 
-        <h1>Flight Site developed by rashad madison &copy;</h1>
+        </footer>
 
-    </footer>
-
-  </body>
+</body>
 
 
 </html>

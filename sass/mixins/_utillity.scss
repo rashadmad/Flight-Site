@@ -3,6 +3,8 @@
 
 @mixin margin_system($all_side: null, $top: null, $left: null, $bottom: null, $right: null, $N_S: null, $E_W: null) {
 
+$margin: "margin:";
+
   @if $all_side {
     @if is-percentage($all_side){
        margin: $all_side;

@@ -1,9 +1,10 @@
 
 footer {
-
   @extend %index_high;
   @include background_color($maincolor);
   @include sticky_footer(false,146);
+
+
     @include media_query(height,$height:780px){
        @include sticky_footer(false,85);
     } @include media_query(height,$height:720px){

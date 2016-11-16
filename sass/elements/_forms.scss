@@ -1,116 +1,117 @@
-
-section[role="main"]{
-  @extend %flex_center;
-  @include media_query(modular,$tablet){
-    @include padding_system($left:15);
-  }
-
-form{
-  @extend %clear_fix;
-  @extend %block;
-  @include padding_system(8);
-  @include margin_system(10,$top:20);
-  @include background_color($maincolor);
-  @include width_maxNmin($form_min_width);
-
-    @include media_query(modular, $min_mobile, $tablet){
-      @include width_maxNmin(325);
-        margin: 20px auto;
-        @include margin_system($N_S:20);
+section[role="main"] {
+    @extend %flex_center;
+    @include media_query(modular,$tablet) {
+         @include padding_system($left:15);
     }
 
-    @include media_query(modular, $min_width:$tablet){
-      @include width_maxNmin(400);
-      @include margin_system($left:20);
-        float: left;
-    }
-
-  h1{
-    @include margin_system(10, $bottom:10);
-  }
-  table{
-    @extend %margin_center;
-    @include margin_system($N_S:7);
-
-    tbody{
-
-      @include padding_system($N_S:7, $E_W:7);
-      @include margin_system(4);
-
-      td{
-
-        @include margin_system(4);
-        @include padding_system(4);
-        @include width_maxNmin(115);
-
-        @include media_query(modular,$min_mobile){
-            @include width_maxNmin(155);
-        }
-      }
-    }
-
-    tr {
-      @extend %margin_center;
-      @include margin_system($N_S:5, $E_W:5);
-      @include padding_system($N_S:5, $E_W:5);
-      @include width_maxNmin(100);
-      label{
-        @extend %left;
-        @extend %hide;
-        @include margin_system($N_S:3, $E_W:3);
-      }
-      input[type="text"],input[type="number"],#passengers_selection,#economy_selection{
-        @extend %no_outline;
-        @extend %border_box;
-        @include border_system(solid,$black,5);
+    form {
         @include padding_system(8);
-        @include width_maxNmin($input_width);
+        @include margin_system(10,$top:20);
+        @include background_color($maincolor);
+        @include width_maxNmin(300);
+        @include media_query(modular, $min_mobile, $tablet) {
+             @include width_maxNmin(325);
+            @include margin_system($N_S:20,$E_W:auto);
+        }
+        @include media_query(modular, $min_width:$tablet) {
+             @include width_maxNmin(400);
+            @include margin_system($left:20);
+            float: left;
+            transition: left 1s;
+        }
+
+        fieldset.centered {
+            @extend %center;
+        }
+
+        fieldset.bottom {
+            @include margin_system(10);
+        }
 
 
-          &:focus{
-            @include background_color($black);
-            color: $white !important;
-          }
-      }select{
+        fieldset {
+            .row {
+                @include row;
 
-        @include border_system(solid,$black,5);
+                div,
+                input[type="number"],
+                input[type="text"],
+                select {
+                    @include col(1,2);
+                }
+            }
 
-      }
+            .checkbox_wrapper {
+
+                @include col(1,2);
+
+              }
+
+            legend {
+                @extend %left;
+                @include margin_system(10, $bottom:10);
+            }
+
+            tbody {
+                @include padding_system($N_S:7, $E_W:7);
+                @include margin_system(4);
+            }
+
+
+            input[type="number"],
+            input[type="text"],
+            select {
+                @extend %no_outline;
+                @extend %border_box;
+                @include border_system(solid,$black,5);
+                @include padding_system(8);
+                @include margin_system(8);
+                @include width_maxNmin(105);
+                @include media_query(min-mobile) {
+                     @include width_maxNmin(120);
+                }
+                @include media_query(mobile) {
+                     @include width_maxNmin(145);
+                }
+                @include media_query(tablet) {
+                     @include width_maxNmin(160);
+                }
+                @include media_query(desktop) {
+                     @include width_maxNmin(160);
+                }
+
+                &:focus {
+                    @include background_color($black);
+                    color: $white !important;
+                }
+            }
+
+            button {
+                @extend %no_outline;
+                @extend %right;
+                @include col(1,2);
+                @include border_system(solid,$black,5);
+                @include width_maxNmin(80);
+                @include easy_dropShadow(3px,3px,0px,$black);
+                @include background_color($white);
+                @include padding_system($N_S:5,$E_W:5);
+
+
+                &:visited {
+                    @include background_color($black);
+                    color: $white;
+                }
+
+                &:active {
+                    @include background_color($black);
+                    @include easy_dropShadow(0px,0px,0px,$black);
+                    color: $white;
+                }
+            }
+
+            input[type="checkbox"] {
+                @include margin_system($N_S:2);
+            }
+        }
     }
-  }
-
-  button{
-    @extend %right;
-    @extend %no_outline;
-    @include border_system(solid,$black,5);
-    @include width_maxNmin(256);
-    @include easy_dropShadow(3px,3px,0px,$black);
-    @include background_color($white);
-    @include margin_system(10, $right:10);
-    @include padding_system(7,$left:13,$right:13);
-
-    &:visited{
-      @include background_color($black);
-        color: $white;
-    }
-    &:active{
-      @include background_color($black);
-      @include easy_dropShadow(0px,0px,0px,$black);
-        color: $white;
-    }
-  }
-  .checkbox_wrapper{
-    @extend %left;
-    @extend %inline;
-    @include margin_system(10);
-
-    input[type="checkbox"]{
-      @include margin_system($N_S:2);
-    }
-  }
-}
-
-#passengers_selection,#economy_selection{
-    width:1000px;
-  }
 }
