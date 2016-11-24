@@ -26,16 +26,6 @@ body,html {
   }
 }
 
-section[role="main"] {
-  @include margin_system(0);
-  @include width_maxNmin(100%);
-  @include background_img($hero-img);
-  background-position: left 20px;
-  background-image: url("../img/city.jpg");
-  
-
-}
-
 section[role="main"]:after {
   @include background_color($white);
 }

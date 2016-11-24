@@ -189,16 +189,28 @@ $margin: "margin:";
   }
 }
 
-@mixin background_img($image,$size:cover){
-  background-image: url($image);
-  -webkit-background-image: url($image);
-  -moz-background-image: url($image);
-  -o-background-image: url($image);
+@mixin background_img($name,$size:cover,$repeat:null,$position:null){
+
+  $url:"../img/#{$name}.jpg";
+  background: url($url);
+  -webkit-background: url($url);
+  -moz-background: url($url);
+  -o-background: url($url);
 
   -webkit-background-size: $size;
   -moz-background-size: $size;
   -o-background-size: $size;
   background-size: $size;
+
+  -webkit-background-position: $position;
+  -moz-background-position: $position;
+  -o-background-position: $position;
+  background-position: $position;
+
+  -webkit-background-repeat: $repeat;
+  -moz-background-repeat: $repeat;
+  -o-background-repeat: $repeat;
+  background-repeat: $repeat;
 
 }
 
