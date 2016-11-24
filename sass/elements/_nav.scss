@@ -22,9 +22,7 @@ ul{
     @extend %flex;
     @extend %flex_center;
     @include background_color($maincolor);
-      @include media_query(modular,$min_width:$mobile){
-        @include margin_system(0,$E_W:10);
-      };
+
       color: $black;
 
 
@@ -42,6 +40,10 @@ ul{
         @extend %clear_button_defaults;
         @include background_color($black);
         @include flat_ui_buttons($white, 5px, $black);
+        @include padding_system(0,$E_W:5);
+          @include media_query(modular,$min_width:$mobile){
+            @include padding_system(0,$E_W:13);
+          };
 
           p{
             @include margin_system($N_S:6);
@@ -54,14 +56,14 @@ ul{
         .logo{
           @include width_maxNmin(40,70%);
             @include media_query($min_mobile){@include width_maxNmin(50,70%);}
-          
+
       }
     }
   }
 
       li:first-child {
         @include media_query(modular,$min-width: $tablet){
-            @include margin_system($left:43);
+            @include margin_system($left:64);
       }
     }
   }

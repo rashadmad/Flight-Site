@@ -37,46 +37,46 @@
 
                     <div class="row">
                         <label class="hidden">Departing City</label>
-                        <input type="text" name="departing" placeholder="Departing">
+                        <input type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Departure'>
                         <label class="hidden">Ariving City</label>
-                        <input type="text" name="arrival" placeholder="Arrival">
+                        <input type="text" name="arrival" id="arrival" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a8; Arrival'>
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input type="number" name="arrival_date" placeholder="Mar 12">
+                        <input type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
                         <label class="hidden">Arrival Date</label>
-                        <input type="number" name="arrival_date" placeholder="Mar 13">
+                        <input type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
                     </div>
                     <div class="row">
                         <label>Passengers</label>
                         <select id="passengers_selection">
-                  <option value="one">fare/1 Adult</option>
-                  <option value="two">2 Adults</option>
-                  <option value="three">3 Adults</option>
-                  <option value="four">4 Adults</option>
-                  <option value="five">5 Adults</option>
-                  <option value="six">6 Adults</option>
-                  <option value="seven">7 Adults</option>
-                  <option value="eight">8 Adults</option>
-                </select>
+                          <option value="one">fare/1 Adult</option>
+                          <option value="two">2 Adults</option>
+                          <option value="three">3 Adults</option>
+                          <option value="four">4 Adults</option>
+                          <option value="five">5 Adults</option>
+                          <option value="six">6 Adults</option>
+                          <option value="seven">7 Adults</option>
+                          <option value="eight">8 Adults</option>
+                        </select>
                         <label class="hidden">Economy</label>
-                        <select id="economy_selection">
-                  <option value="volvo">Economy/Coach</option>
-                  <option value="saab">Premium</option>
-                  <option value="mercedes">Business</option>
-                  <option value="audi">First</option>
-                </select>
+                        <select id="economy_selection" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf155; Arrival'>
+                          <option value="volvo">Economy/Coach</option>
+                          <option value="saab">Premium</option>
+                          <option value="mercedes">Business</option>
+                          <option value="audi">First</option>
+                        </select>
                     </div>
                     <div>
                 </fieldset>
                 <fieldset class="bottom">
                     <div class="checkbox_wrapper">
-                        <div class="row">
+                        <div>
                             <button type="submit">Search</button>
-                            <input type="checkbox" name="one_way" value="one_way"><label>One way</label>
+                            <input class="row" type="checkbox" name="one_way" value="one_way"><label>One way</label>
                         </div>
-                        <div class="row">
-                            <input type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label>
+                        <div>
+                            <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label>
                         </div>
 
                     </div>

@@ -20,7 +20,7 @@
     }
 }
 
-@mixin sticky_footer($element,$footer_height){
+@mixin sticky_footer($element,$footer_height:130){
     @if $element == true{
     margin-bottom: make-negative($footer_height * $pixels);
   } @else {

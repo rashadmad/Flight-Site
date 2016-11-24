@@ -195,3 +195,17 @@ $margin: "margin:";
   -ms-background-color: $maincolor ;
    background-color: $maincolor ;
 }
+
+@mixin transition_system($property:width, $delay:null, $duration:null, $timing:null) {
+  transition-property: $property;
+  transition-delay: $delay;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+}
+
+@mixin fontAwesome_icon($content:"\f069",$Size:2.5em,$top:0,$left:0){
+  content: $content;
+  font-family: 'FontAwesome';
+  font-size: $Size;
+  top: $top; left: $left;
+}
