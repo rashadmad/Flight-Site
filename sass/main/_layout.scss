@@ -29,11 +29,10 @@ body,html {
 section[role="main"] {
   @include margin_system(0);
   @include width_maxNmin(100%);
-    background-image: url("../../img/city.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  @include background_img($hero-img);
+  background-position: left 20px;
+  background-image: url("../img/city.jpg");
+  
 
 }
 

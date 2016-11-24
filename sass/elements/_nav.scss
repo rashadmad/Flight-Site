@@ -4,6 +4,7 @@ ul{
   @extend %bye_bullets;
   @extend %flex;
   @extend %flex_center;
+  @extend %full_width;
     @include media_query(min-mobile){
       width: 100%;
       justify-content: center;

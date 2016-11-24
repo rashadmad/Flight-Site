@@ -163,7 +163,7 @@ $margin: "margin:";
 
 
 @mixin easy_dropShadow($N,$W,$blur,$color) {
-
+  box-shadow: $N $W $blur $color;
   -webkit-box-shadow: $N $W $blur $color;
   -moz-box-shadow: $N $W $blur $color;
   -o-box-shadow: $N $W $blur $color;
@@ -187,6 +187,19 @@ $margin: "margin:";
   } @else {
     border:$border
   }
+}
+
+@mixin background_img($image,$size:cover){
+  background-image: url($image);
+  -webkit-background-image: url($image);
+  -moz-background-image: url($image);
+  -o-background-image: url($image);
+
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+
 }
 
 @mixin background_color($maincolor) {

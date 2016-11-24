@@ -1,10 +1,12 @@
 section[role="main"] {
     @extend %flex_center;
+    @include background_img($hero-img,cover);
     @include media_query(modular,$tablet) {
          @include padding_system($left:30);
     }
 
     form {
+        
         @include padding_system(8);
         @include margin_system(10,$top:20);
         @include background_color($maincolor);

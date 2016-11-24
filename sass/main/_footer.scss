@@ -4,13 +4,13 @@ footer {
   @include background_color($maincolor);
   @include sticky_footer(false);
 
-
-    @include media_query(height,$height:780px){
-       @include sticky_footer(false,85);
-    } @include media_query(height,$height:750px){
-        display: none;
-      }
-
+  @include media_query(height,$height:730px){
+      display: none;
+    }
+  @include media_query(height,$height:780px){
+       @include sticky_footer(false);
+       @include sticky_footer(true,85);
+    }
 
   h1 {
     @extend %margin_center;
