@@ -1,29 +1,23 @@
 section[role="main"] {
-  @extend %flex_center;
-  @include margin_system(0);
-  @include width_maxNmin(100%);
-  @include background_img(city);
-
-    @include media_query(modular,$tablet) {
-         @include padding_system($left:30);
+    @extend %margin_center;
+    @include padding_system(7,$top:10);
+    @include width_maxNmin(345);
+      background-color: $white;
+      background-repeat: no-repeat;
+    @include media_query(modular, $min_width:$tablet) {
+         @include margin_system($left:20);
+          height: 70%;
+          float: left;
+          transition: left 1s;
     }
 
     form {
-
+        @extend %margin_center;
+        @include margin_system($top:20);
         @include padding_system(8);
-        @include margin_system(10,$top:20);
         @include background_color($maincolor);
         @include width_maxNmin(300);
-        @include media_query(modular, $min_mobile, $tablet) {
-             @include width_maxNmin(325);
-            @include margin_system($N_S:20,$E_W:auto);
-        }
-        @include media_query(modular, $min_width:$tablet) {
-             @include width_maxNmin(400);
-            @include margin_system($left:20);
-            float: left;
-            transition: left 1s;
-        }
+
 
         fieldset.centered {
             @extend %center;
@@ -32,7 +26,6 @@ section[role="main"] {
         fieldset.bottom {
             @include margin_system(10);
         }
-
 
         fieldset {
             .row {
@@ -47,10 +40,8 @@ section[role="main"] {
             }
 
             .checkbox_wrapper {
-
                 @include col(1,2);
-
-              }
+            }
 
             legend {
                 @extend %left;
@@ -63,11 +54,12 @@ section[role="main"] {
             }
 
             input[type="number"]:after {
-
-                  @include fontAwesome_icon("\f0a9");
+                @include fontAwesome_icon("\f0a9");
             }
 
-            input { font-family: 'FontAwesome' YourFont; }
+            input {
+                font-family: 'FontAwesome' YourFont;
+            }
 
             input[type="number"],
             input[type="text"],
@@ -76,44 +68,33 @@ section[role="main"] {
                 @extend %border_box;
                 @include border_system(solid,$black,5);
                 @include padding_system(8);
-                @include margin_system(8);
-                @include width_maxNmin(105);
-                @include media_query(min-mobile) {
-                     @include width_maxNmin(120);
-                }
-                @include media_query(mobile) {
-                     @include width_maxNmin(145);
-                }
-                @include media_query(tablet) {
-                     @include width_maxNmin(160);
-                }
-                @include media_query(desktop) {
-                     @include width_maxNmin(160);
-                }
+                @include margin_system(5);
+                @include width_maxNmin(130);
 
 
-              &:focus{
-                @include background_color($black);
-                transition: all 0.5s ease;
-                color: $white !important;
-              }
+
+
+                &:focus {
+                    @include background_color($black);
+                    transition: all 0.5s ease;
+                    color: $white !important;
+                }
             }
 
             input[type="text"] {
-              position: relative;
+                position: relative;
             }
 
             input[type="text"]:after {
-              font-family: 'FontAwesome';
-              color:$black;
-              position: relative;
-              content: "\f007";
+
+                font-family: 'FontAwesome';
+                color: $black;
+                position: relative;
+                content: "\f007";
             }
 
-
-
-            input[type="checkbox"]{
-              @include margin_system(3.5);
+            input[type="checkbox"] {
+                @include margin_system(3.5);
             }
 
             button {
@@ -125,7 +106,6 @@ section[role="main"] {
                 @include easy_dropShadow(3px,3px,0px,$black);
                 @include background_color($white);
                 @include padding_system($N_S:5,$E_W:5);
-
 
                 &:visited {
                     @include background_color($black);

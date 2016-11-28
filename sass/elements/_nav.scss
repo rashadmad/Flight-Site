@@ -64,7 +64,7 @@ ul{
 
       li:first-child {
         @include media_query(modular,$min-width: $tablet){
-            @include margin_system($left:64);
+            @include margin_system($left:40);
       }
     }
   }
