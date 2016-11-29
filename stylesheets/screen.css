@@ -153,6 +153,13 @@ section[role="main"] form fieldset button, #discount button p {
   float: right;
 }
 
+/* line 9, ../sass/placeholders/_float.scss */
+section[role="main"]:after, footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* line 5, ../sass/placeholders/_overflow.scss */
 #discount p.callout {
   overflow: hidden;
@@ -215,7 +222,6 @@ section[role="main"] {
   /* line 1, ../sass/elements/_forms.scss */
   section[role="main"] {
     margin-left: 20px;
-    height: 70%;
     float: left;
     transition: left 1s;
   }
@@ -287,9 +293,17 @@ section[role="main"] form fieldset select {
   border: solid #1a1a1a 5px;
   padding: 8px;
   margin: 5px;
-  max-width: 130px;
+  max-width: 110px;
 }
-/* line 77, ../sass/elements/_forms.scss */
+@media (min-width: 350px) {
+  /* line 64, ../sass/elements/_forms.scss */
+  section[role="main"] form fieldset input[type="number"],
+  section[role="main"] form fieldset input[type="text"],
+  section[role="main"] form fieldset select {
+    max-width: 140px;
+  }
+}
+/* line 80, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"]:focus,
 section[role="main"] form fieldset input[type="text"]:focus,
 section[role="main"] form fieldset select:focus {
@@ -300,22 +314,22 @@ section[role="main"] form fieldset select:focus {
   transition: all 0.5s ease;
   color: white !important;
 }
-/* line 84, ../sass/elements/_forms.scss */
+/* line 87, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"] {
   position: relative;
 }
-/* line 88, ../sass/elements/_forms.scss */
+/* line 91, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 96, ../sass/elements/_forms.scss */
+/* line 99, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="checkbox"] {
   margin: 3.5px;
 }
-/* line 100, ../sass/elements/_forms.scss */
+/* line 103, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button {
   width: 100%;
   font-size: 16px;
@@ -336,7 +350,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 110, ../sass/elements/_forms.scss */
+/* line 113, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -344,7 +358,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: white;
 }
-/* line 115, ../sass/elements/_forms.scss */
+/* line 118, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -807,7 +821,7 @@ footer {
     margin-bottom: -85px;
   }
 }
-/* line 15, ../sass/main/_footer.scss */
+/* line 16, ../sass/main/_footer.scss */
 footer h1 {
   margin-top: 25px;
 }

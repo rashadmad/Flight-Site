@@ -1,6 +1,7 @@
 
 footer {
   @extend %index_high;
+  @extend %clear_fix; 
   @include background_color($maincolor);
   @include sticky_footer(false);
 

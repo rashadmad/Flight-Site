@@ -1,4 +1,5 @@
 section[role="main"] {
+    @extend %clear_fix;
     @extend %margin_center;
     @include padding_system(7,$top:10);
     @include width_maxNmin(345);
@@ -6,7 +7,6 @@ section[role="main"] {
       background-repeat: no-repeat;
     @include media_query(modular, $min_width:$tablet) {
          @include margin_system($left:20);
-          height: 70%;
           float: left;
           transition: left 1s;
     }
@@ -69,8 +69,11 @@ section[role="main"] {
                 @include border_system(solid,$black,5);
                 @include padding_system(8);
                 @include margin_system(5);
-                @include width_maxNmin(130);
+                @include width_maxNmin(110);
 
+                @include media_query(modular, $min_width:$min-mobile) {
+                     @include width_maxNmin(140);
+                }
 
 
 
