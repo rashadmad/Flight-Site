@@ -233,6 +233,22 @@ $margin: "margin:";
   transition-timing-function: $timing;
 }
 
+@function calculation($first,$operators,$second){
+
+  @if $operators == "+" {
+    @return $first + $second;
+  }
+  @if $operators == "-" {
+    @return $first + $second;
+  }
+  @if $operators == "*" {
+    @return $first + $second;
+  }
+  @if $operators == "/" {
+    @return $first + $second;
+  }
+}
+
 @mixin fontAwesome_icon($content:"\f069",$Size:2.5em,$top:0,$left:0){
   content: $content;
   font-family: 'FontAwesome';

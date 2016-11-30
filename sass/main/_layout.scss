@@ -7,7 +7,8 @@ html {
 
 body {
     @include background_img(city);
-    background-repeat: no-repeat;
+    background:cover;
+    background-position: 5px 100px;
 }
 
 .page-wrap {
