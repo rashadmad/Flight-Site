@@ -92,7 +92,7 @@ ul {
 }
 
 /* line 11, ../sass/placeholders/_defaults.scss */
-ul li button {
+ul li button, #discount button {
   border: none;
   outline: none;
 }
@@ -166,7 +166,7 @@ footer:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-section[role="main"] form fieldset.centered, ul li, #discount .discount_button, .callout, #discount button p, footer div.wrapper h1 {
+section[role="main"] form fieldset.centered, ul li, #discount .discount_button, #discount button p, footer div.wrapper h1 {
   text-align: center;
 }
 
@@ -182,7 +182,7 @@ header h1 {
 }
 
 /* line 18, ../sass/placeholders/_text_positioning.scss */
-section[role="main"], section[role="main"] form, #discount, #discount p.callout, #discount button p, footer h1 {
+section[role="main"], section[role="main"] form, #discount, #discount button p, footer h1 {
   margin: 0 auto;
 }
 
@@ -495,45 +495,49 @@ html {
   height: 100%;
 }
 
-/* line 8, ../sass/main/_layout.scss */
-body {
-  background: url("../img/city.jpg");
-  -webkit-background: url("../img/city.jpg");
-  -moz-background: url("../img/city.jpg");
-  -o-background: url("../img/city.jpg");
-  -webkit-background-size: fit;
-  -moz-background-size: fit;
-  -o-background-size: fit;
-  background-size: fit;
-  background: cover;
-  background-position: 5px 100px;
+@media (min-width: 768px) {
+  /* line 8, ../sass/main/_layout.scss */
+  body {
+    background: url("../img/city.jpg");
+    -webkit-background: url("../img/city.jpg");
+    -moz-background: url("../img/city.jpg");
+    -o-background: url("../img/city.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+  }
 }
 
-/* line 14, ../sass/main/_layout.scss */
+/* line 15, ../sass/main/_layout.scss */
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -85px;
 }
 @media (max-height: 780px) {
-  /* line 14, ../sass/main/_layout.scss */
+  /* line 15, ../sass/main/_layout.scss */
   .page-wrap {
     margin-bottom: -85px;
   }
 }
 
-/* line 23, ../sass/main/_layout.scss */
+/* line 24, ../sass/main/_layout.scss */
 .page-wrap:after {
   margin-bottom: -85px;
 }
 @media (max-height: 780px) {
-  /* line 23, ../sass/main/_layout.scss */
+  /* line 24, ../sass/main/_layout.scss */
   .page-wrap:after {
     margin-bottom: -85px;
   }
 }
 
-/* line 32, ../sass/main/_layout.scss */
+/* line 33, ../sass/main/_layout.scss */
 section[role="main"]:after {
   -webkit-background-color: white;
   -moz-background-color: white;
@@ -541,36 +545,36 @@ section[role="main"]:after {
   background-color: white;
 }
 
-/* line 36, ../sass/main/_layout.scss */
+/* line 37, ../sass/main/_layout.scss */
 #discount {
   padding: 10px;
   max-width: 350px;
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 36, ../sass/main/_layout.scss */
+  /* line 37, ../sass/main/_layout.scss */
   #discount {
     margin: 0 auto;
   }
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 36, ../sass/main/_layout.scss */
+  /* line 37, ../sass/main/_layout.scss */
   #discount {
     margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 36, ../sass/main/_layout.scss */
+  /* line 37, ../sass/main/_layout.scss */
   #discount {
     margin-left: 14px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 36, ../sass/main/_layout.scss */
+  /* line 37, ../sass/main/_layout.scss */
   #discount {
     margin-left: 10px;
   }
 }
-/* line 53, ../sass/main/_layout.scss */
+/* line 54, ../sass/main/_layout.scss */
 #discount p.callout {
   margin: 10px;
   margin-top: 12px;
@@ -580,28 +584,28 @@ section[role="main"]:after {
   height: 3.5em;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 53, ../sass/main/_layout.scss */
+  /* line 54, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 53, ../sass/main/_layout.scss */
+  /* line 54, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 53, ../sass/main/_layout.scss */
+  /* line 54, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 1200px) {
-  /* line 53, ../sass/main/_layout.scss */
+  /* line 54, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
@@ -621,8 +625,12 @@ section[role="main"]:after {
     margin-left: 10px;
     float: right;
   }
+  /* line 89, ../sass/main/_layout.scss */
+  #discount .discount_p p {
+    margin-top: 5px;
+  }
 }
-/* line 91, ../sass/main/_layout.scss */
+/* line 96, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-left: 10px;
@@ -634,21 +642,22 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 480px) {
-  /* line 91, ../sass/main/_layout.scss */
+  /* line 96, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 101, ../sass/main/_layout.scss */
+/* line 106, ../sass/main/_layout.scss */
 #discount button {
-  border: solid black 6px;
+  border: solid #1a1a1a 5px;
+  box-shadow: 3px 3px 0px #1a1a1a;
+  -webkit-box-shadow: 3px 3px 0px #1a1a1a;
+  -moz-box-shadow: 3px 3px 0px #1a1a1a;
+  -o-box-shadow: 3px 3px 0px #1a1a1a;
   -webkit-background-color: yellow;
   -moz-background-color: yellow;
   -ms-background-color: yellow;
   background-color: yellow;
-  padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   margin-bottom: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -658,19 +667,19 @@ section[role="main"]:after {
   min-width: 250;
 }
 @media (min-width: 350px) {
-  /* line 101, ../sass/main/_layout.scss */
+  /* line 106, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
-    height: 6em;
+    height: 5em;
   }
 }
-/* line 115, ../sass/main/_layout.scss */
+/* line 121, ../sass/main/_layout.scss */
 #discount button p {
-  padding: 10px;
+  padding: 20px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 115, ../sass/main/_layout.scss */
+  /* line 121, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -732,7 +741,7 @@ form input {
   font-weight: 800;
 }
 
-/* line 38, ../sass/main/_typography.scss */
+/* line 37, ../sass/main/_typography.scss */
 #discount button p {
   font-size: 1.3em;
   line-height: 1;
@@ -741,7 +750,7 @@ form input {
   font-weight: 800;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 38, ../sass/main/_typography.scss */
+  /* line 37, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.45em;
     line-height: 1;
@@ -751,7 +760,7 @@ form input {
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 38, ../sass/main/_typography.scss */
+  /* line 37, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.35em;
     line-height: 1;
@@ -761,7 +770,7 @@ form input {
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 38, ../sass/main/_typography.scss */
+  /* line 37, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.3em;
     line-height: 1;
@@ -771,7 +780,7 @@ form input {
   }
 }
 @media (min-width: 1200px) {
-  /* line 38, ../sass/main/_typography.scss */
+  /* line 37, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.3em;
     line-height: 1;
@@ -781,7 +790,7 @@ form input {
   }
 }
 
-/* line 60, ../sass/main/_typography.scss */
+/* line 59, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;

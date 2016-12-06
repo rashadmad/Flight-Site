@@ -194,13 +194,21 @@ $margin: "margin:";
 
 }
 
-@mixin background_img($name,$size:fit,$repeat:null,$position:null){
+@mixin background_img($name,$size:cover,$repeat:no-repeat,$position:null,$png:false){
 
-  $url:"../img/#{$name}.jpg";
-  background: url($url);
-  -webkit-background: url($url);
-  -moz-background: url($url);
-  -o-background: url($url);
+  @if $png {
+    $url:"../img/#{$name}.png";
+      background: url($url);
+      -webkit-background: url($url);
+      -moz-background: url($url);
+      -o-background: url($url);
+  } @else {
+    $url:"../img/#{$name}.jpg";
+      background: url($url);
+      -webkit-background: url($url);
+      -moz-background: url($url);
+      -o-background: url($url);
+  }
 
   -webkit-background-size: $size;
   -moz-background-size: $size;
