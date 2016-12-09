@@ -29,7 +29,8 @@ ul{
 
 
     #active {
-        color: black !important;
+        fill: $black;
+        color: $black !important;
         @include flat_ui_buttons($white, 5px, $black, $auto_active:true);
 
     }
@@ -44,10 +45,11 @@ ul{
         @include padding_system(0,$E_W:5);
           @include media_query(modular,$min_width:$mobile){
             @include padding_system(0,$E_W:13);
-          };
+          }
 
-          p{
-            @include margin_system($N_S:6);
+          span{
+            color: $white;
+            @include margin_system(10);
           }
 
          button:target{
@@ -55,12 +57,15 @@ ul{
          }
 
         .logo{
-          @include width_maxNmin(40,70%);
-            @include media_query($min_mobile){@include width_maxNmin(50,70%);}
+            fill: $white;
 
+
+             &:active{
+               fill: $black;
+            }
+          }
+        }
       }
-    }
-  }
 
       li:first-child {
         @include media_query(modular,$min-width: $tablet){
