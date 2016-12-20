@@ -29,7 +29,6 @@ form{
 }
 
 .callout{
-  @extend %center;
   @include text(1, 1.3,$black, $family:font_a_Bold);
 }
 

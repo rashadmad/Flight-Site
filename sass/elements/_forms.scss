@@ -1,12 +1,19 @@
 section[role="main"] {
-    @extend %clear_fix;
     @extend %margin_center;
-    @include padding_system(7,$top:10);
+    @include padding_system(7);
     @include width_maxNmin(345);
+      min-height: 500px;
+      max-height: 510px;
+      height: 65vh;
+
       background-color: $white;
       background-repeat: no-repeat;
+      @include media_query(height, $height:500px) {
+           background-color: $black;
+      }
+
     @include media_query(modular, $min_width:$tablet) {
-         @include margin_system($left:20);
+         @include margin_system($left:$form_gutter);
           float: left;
           transition: left 1s;
     }
