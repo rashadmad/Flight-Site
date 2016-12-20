@@ -402,7 +402,7 @@ ul li {
 }
 /* line 31, ../sass/elements/_nav.scss */
 ul li #active {
-  color: black !important;
+  color: #1a1a1a !important;
   cursor: pointer;
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
@@ -439,6 +439,7 @@ ul li button {
   padding: 0px;
   padding-left: 5px;
   padding-right: 5px;
+  max-width: 60px;
 }
 /* line 11, ../sass/mixins/_sectionSpecific.scss */
 ul li button:visited {
@@ -466,21 +467,22 @@ ul li button:active {
     padding-right: 13px;
   }
 }
-/* line 49, ../sass/elements/_nav.scss */
+/* line 51, ../sass/elements/_nav.scss */
 ul li button span {
   color: #fff;
   margin: 10px;
 }
-/* line 58, ../sass/elements/_nav.scss */
+/* line 60, ../sass/elements/_nav.scss */
 ul li button .logo {
   fill: #fff;
+  margin: 0px;
 }
-/* line 62, ../sass/elements/_nav.scss */
+/* line 64, ../sass/elements/_nav.scss */
 ul li button .logo:active {
   fill: #1a1a1a;
 }
 @media (min-width: 768px) {
-  /* line 69, ../sass/elements/_nav.scss */
+  /* line 71, ../sass/elements/_nav.scss */
   ul li:first-child {
     margin-left: 40px;
   }
