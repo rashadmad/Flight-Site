@@ -64,9 +64,6 @@ section[role="main"] {
                 @include fontAwesome_icon("\f0a9");
             }
 
-            input {
-                font-family: 'FontAwesome' YourFont;
-            }
 
             input[type="number"],
             input[type="text"],
@@ -76,7 +73,7 @@ section[role="main"] {
                 @include border_system(solid,$black,5);
                 @include padding_system(8);
                 @include margin_system(5);
-                @include width_maxNmin(110);
+                @include width_maxNmin(100);
 
                 @include media_query(modular, $min_width:$min-mobile) {
                      @include width_maxNmin(140);

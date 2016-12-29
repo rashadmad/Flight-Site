@@ -167,7 +167,7 @@ footer:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-section[role="main"] form fieldset.centered, ul li, #discount .discount_button, #discount button p, footer div.wrapper h1 {
+section[role="main"] form fieldset.centered, ul li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1 {
   text-align: center;
 }
 
@@ -291,28 +291,24 @@ section[role="main"] form fieldset input[type="number"]:after {
   top: 0;
   left: 0;
 }
-/* line 67, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset input {
-  font-family: 'FontAwesome' YourFont;
-}
-/* line 71, ../sass/elements/_forms.scss */
+/* line 68, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"],
 section[role="main"] form fieldset input[type="text"],
 section[role="main"] form fieldset select {
   border: solid #1a1a1a 5px;
   padding: 8px;
   margin: 5px;
-  max-width: 110px;
+  max-width: 100px;
 }
 @media (min-width: 350px) {
-  /* line 71, ../sass/elements/_forms.scss */
+  /* line 68, ../sass/elements/_forms.scss */
   section[role="main"] form fieldset input[type="number"],
   section[role="main"] form fieldset input[type="text"],
   section[role="main"] form fieldset select {
     max-width: 140px;
   }
 }
-/* line 87, ../sass/elements/_forms.scss */
+/* line 84, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"]:focus,
 section[role="main"] form fieldset input[type="text"]:focus,
 section[role="main"] form fieldset select:focus {
@@ -323,22 +319,22 @@ section[role="main"] form fieldset select:focus {
   transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 94, ../sass/elements/_forms.scss */
+/* line 91, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"] {
   position: relative;
 }
-/* line 98, ../sass/elements/_forms.scss */
+/* line 95, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 106, ../sass/elements/_forms.scss */
+/* line 103, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="checkbox"] {
   margin: 3.5px;
 }
-/* line 110, ../sass/elements/_forms.scss */
+/* line 107, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button {
   width: 100%;
   font-size: 16px;
@@ -359,7 +355,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 121, ../sass/elements/_forms.scss */
+/* line 118, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -367,7 +363,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 126, ../sass/elements/_forms.scss */
+/* line 123, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -617,7 +613,7 @@ section[role="main"]:after {
     min-width: 250;
   }
 }
-/* line 78, ../sass/main/_layout.scss */
+/* line 79, ../sass/main/_layout.scss */
 #discount .discount_p {
   margin-left: 82%;
   margin-bottom: 5px;
@@ -626,17 +622,17 @@ section[role="main"]:after {
   width: 50px;
 }
 @media (min-width: 350px) {
-  /* line 78, ../sass/main/_layout.scss */
+  /* line 79, ../sass/main/_layout.scss */
   #discount .discount_p {
     margin-left: 10px;
     float: right;
   }
-  /* line 88, ../sass/main/_layout.scss */
+  /* line 89, ../sass/main/_layout.scss */
   #discount .discount_p p {
     margin-top: 5px;
   }
 }
-/* line 95, ../sass/main/_layout.scss */
+/* line 96, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-top: 10px;
@@ -649,41 +645,35 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 480px) {
-  /* line 95, ../sass/main/_layout.scss */
+  /* line 96, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 105, ../sass/main/_layout.scss */
+/* line 106, ../sass/main/_layout.scss */
 #discount button {
   border: solid #1a1a1a 5px;
   margin: 5px;
-  padding: 10px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  width: 325px;
-  height: 100px;
+  width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 105, ../sass/main/_layout.scss */
+  /* line 106, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
-    height: 5em;
+    width: 320px;
   }
 }
-/* line 120, ../sass/main/_layout.scss */
+/* line 119, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 120, ../sass/main/_layout.scss */
+  /* line 119, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -747,7 +737,7 @@ form input {
 
 /* line 37, ../sass/main/_typography.scss */
 #discount button p {
-  font-size: 1.3em;
+  font-size: 1.15em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
