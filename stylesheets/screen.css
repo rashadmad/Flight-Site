@@ -13,7 +13,7 @@ body {
   box-sizing: content-box;
 }
 
-/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,45 +35,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -130,7 +130,7 @@ footer {
 }
 
 /* line 15, ../sass/placeholders/_display.scss */
-#discount button:before {
+section[role="main"] form fieldset button, #discount button:before {
   display: none;
 }
 
@@ -193,7 +193,7 @@ ul, header, header h1 {
 }
 
 /* line 24, ../sass/placeholders/_text_positioning.scss */
-ul, ul li button, ul li button button:target, #discount button {
+ul, ul li button, ul li button button:target {
   width: 100%;
 }
 
@@ -214,15 +214,11 @@ ul, ul li button, ul li button button:target, #discount button {
 /* line 1, ../sass/elements/_forms.scss */
 section[role="main"] {
   padding: 7px;
-  max-width: 345px;
-<<<<<<< HEAD
-  background-color: #fff;
-=======
+  max-width: 545px;
   min-height: 500px;
   max-height: 510px;
   height: 65vh;
-  background-color: white;
->>>>>>> origin/master
+  background-color: #fff;
   background-repeat: no-repeat;
 }
 @media (max-height: 500px) {
@@ -363,7 +359,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 120, ../sass/elements/_forms.scss */
+/* line 121, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -371,7 +367,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 125, ../sass/elements/_forms.scss */
+/* line 126, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -558,7 +554,6 @@ section[role="main"]:after {
 
 /* line 37, ../sass/main/_layout.scss */
 #discount {
-  padding: 10px;
   max-width: 350px;
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -585,7 +580,7 @@ section[role="main"]:after {
     margin-left: 10px;
   }
 }
-/* line 54, ../sass/main/_layout.scss */
+/* line 53, ../sass/main/_layout.scss */
 #discount p.callout {
   margin: 10px;
   margin-top: 12px;
@@ -595,34 +590,34 @@ section[role="main"]:after {
   height: 3.5em;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 54, ../sass/main/_layout.scss */
+  /* line 53, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 54, ../sass/main/_layout.scss */
+  /* line 53, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 54, ../sass/main/_layout.scss */
+  /* line 53, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 1200px) {
-  /* line 54, ../sass/main/_layout.scss */
+  /* line 53, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 79, ../sass/main/_layout.scss */
+/* line 78, ../sass/main/_layout.scss */
 #discount .discount_p {
   margin-left: 82%;
   margin-bottom: 5px;
@@ -631,19 +626,20 @@ section[role="main"]:after {
   width: 50px;
 }
 @media (min-width: 350px) {
-  /* line 79, ../sass/main/_layout.scss */
+  /* line 78, ../sass/main/_layout.scss */
   #discount .discount_p {
     margin-left: 10px;
     float: right;
   }
-  /* line 89, ../sass/main/_layout.scss */
+  /* line 88, ../sass/main/_layout.scss */
   #discount .discount_p p {
     margin-top: 5px;
   }
 }
-/* line 96, ../sass/main/_layout.scss */
+/* line 95, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
+  margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
   content: "";
@@ -653,55 +649,41 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 480px) {
-  /* line 96, ../sass/main/_layout.scss */
+  /* line 95, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 106, ../sass/main/_layout.scss */
+/* line 105, ../sass/main/_layout.scss */
 #discount button {
-<<<<<<< HEAD
-  border: solid black 6px;
+  border: solid #1a1a1a 5px;
+  margin: 5px;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
   background-color: #FFFF00;
-  padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-=======
-  border: solid #1a1a1a 5px;
-  box-shadow: 3px 3px 0px #1a1a1a;
-  -webkit-box-shadow: 3px 3px 0px #1a1a1a;
-  -moz-box-shadow: 3px 3px 0px #1a1a1a;
-  -o-box-shadow: 3px 3px 0px #1a1a1a;
-  -webkit-background-color: yellow;
-  -moz-background-color: yellow;
-  -ms-background-color: yellow;
-  background-color: yellow;
->>>>>>> origin/master
-  margin-bottom: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0px;
-  margin-right: 0px;
-  max-width: 100%;
-  min-width: 250;
+  width: 325px;
+  height: 100px;
 }
 @media (min-width: 350px) {
-  /* line 106, ../sass/main/_layout.scss */
+  /* line 105, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
     height: 5em;
   }
 }
-/* line 121, ../sass/main/_layout.scss */
+/* line 120, ../sass/main/_layout.scss */
 #discount button p {
-  padding: 20px;
+  padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 121, ../sass/main/_layout.scss */
+  /* line 120, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
