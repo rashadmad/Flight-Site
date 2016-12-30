@@ -37,26 +37,14 @@ section[role="main"]:after {
 #discount {
     @extend %margin_center;
     @include width_maxNmin($mobile_width_MAX,$mobile_width_MIN);
-    @include media_query(mobile) {
-        margin: 0 auto;
-    }
-    @include media_query(min-mobile) {
-        margin: 0 auto;
-    }
-    @include media_query(tablet) {
-         @include margin_system($left:14);
-    }
-    @include media_query(desktop) {
-         @include margin_system($left:10);
-    }
+
 
     p.callout {
-        @extend %inline_block;
         @extend %center;
+        @extend %inline_block;
         @extend %overflow_hidden;
         @extend %resize_none;
         @include margin_system(10,$top:12,$N_S:10);
-        @include width_maxNmin(100%);
           height: 3.5em;
         @include media_query(min-mobile) {
              @include width_maxNmin(100%,$callout_width_MIN);
@@ -77,14 +65,14 @@ section[role="main"]:after {
     }
 
     .discount_p {
-        @extend %inline_block;
-        @include margin_system($left:82%,$bottom:5);
+        @extend %right;
         @include width_maxNmin(100%);
+        @include margin_system($left:20);
           z-index: 10000000;
           width: 50px;
         @include media_query(modular,$min_width:$min_mobile) {
              @include margin_system($left:10);
-            float: right;
+             float: right;
 
             p{
               @include margin_system($top:5);
@@ -104,16 +92,16 @@ section[role="main"]:after {
     }
 
     button {
+        @include padding_system(10);
         @extend %block;
         @extend %no_outline;
         @extend %clear_button_defaults;
         @include border_system(solid,$black,5);
-        @include margin_system(5);
         @include background_color($maincolor);
           width:100%;
           @include media_query(modular,$min_width:$min-mobile) {
                @include width_maxNmin(100%,$callout_width_MIN);
-               width:320px;
+
           }
 
         p {
