@@ -1,6 +1,6 @@
 section[role="main"] {
     @extend %margin_center;
-    @include padding_system(7);
+    @include padding_system(8);
       @include width_maxNmin($form_width,$form_width);
       min-height: 500px;
       max-height: 510px;
@@ -20,7 +20,7 @@ section[role="main"] {
 
     form {
         @extend %margin_center;
-        @include margin_system($top:20);
+        @include margin_system($top:10);
         @include padding_system(8);
         @include background_color($maincolor);
         @include width_maxNmin(300);
