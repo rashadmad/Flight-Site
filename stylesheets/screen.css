@@ -130,7 +130,7 @@ footer {
 }
 
 /* line 15, ../sass/placeholders/_display.scss */
-section[role="main"] form fieldset button, #discount button:before {
+section[role="main"] form fieldset button {
   display: none;
 }
 
@@ -635,7 +635,7 @@ section[role="main"]:after {
     display: inline;
   }
 }
-/* line 94, ../sass/main/_layout.scss */
+/* line 93, ../sass/main/_layout.scss */
 #discount button {
   padding: 10px;
   border: solid #1a1a1a 5px;
@@ -646,18 +646,18 @@ section[role="main"]:after {
   width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 94, ../sass/main/_layout.scss */
+  /* line 93, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 107, ../sass/main/_layout.scss */
+/* line 106, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 107, ../sass/main/_layout.scss */
+  /* line 106, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
