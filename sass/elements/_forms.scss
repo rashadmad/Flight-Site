@@ -74,7 +74,7 @@ section[role="main"] {
                 @include padding_system(8);
                 @include margin_system(5);
                 @include width_maxNmin(100);
-
+                transition: all 0.5s ease;
                 @include media_query(modular, $min_width:$min-mobile) {
                      @include width_maxNmin(140);
                 }
@@ -83,7 +83,6 @@ section[role="main"] {
 
                 &:focus {
                     @include background_color($black);
-                    transition: all 0.5s ease;
                     color: $white !important;
                 }
             }
