@@ -41,7 +41,7 @@ form{
       @extend %center;
       @extend %text_no_wrap;
       @extend %margin_center;
-      @include text(1.2, $color:$black, $family:font_a_Bold);
+      @include text(1, $color:$black, $family:font_a_Bold);
       @include media_query(modular,$min_width:$min_mobile) {
         @include text(1.24, $color:$black, $family:font_a_Bold);
       }

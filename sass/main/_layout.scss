@@ -82,10 +82,11 @@ section[role="main"]:after {
     }
 
     button:before {
+        @extend %no_display;
         @extend %left;
         @include margin_system(5,$bottom:10,$left:10,$top:10);
         @include fontAwesome_icon("\f155");
-        @include media_query(modular,$min_width:$mobile) {
+        @include media_query(modular,$min_width:$min-mobile) {
             display: inline;
         }
     }
