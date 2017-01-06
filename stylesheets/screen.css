@@ -150,7 +150,7 @@ section[role="main"] form fieldset legend, #discount button:before, header .main
 }
 
 /* line 5, ../sass/placeholders/_float.scss */
-section[role="main"] form fieldset button, #discount .discount_p, #discount button p {
+section[role="main"] form fieldset button, #discount button p {
   float: right;
 }
 
@@ -183,7 +183,7 @@ header h1 {
 }
 
 /* line 18, ../sass/placeholders/_text_positioning.scss */
-section[role="main"], section[role="main"] form, #discount, #discount button p, footer h1 {
+section[role="main"], section[role="main"] form, #discount, #discount .discount_p, #discount button p, footer h1 {
   margin: 0 auto;
 }
 
@@ -601,23 +601,21 @@ section[role="main"]:after {
 }
 /* line 67, ../sass/main/_layout.scss */
 #discount .discount_p {
-  max-width: 100%;
-  margin-left: 20px;
-  z-index: 10000000;
-  width: 50px;
+  width: 220px;
 }
 @media (min-width: 350px) {
   /* line 67, ../sass/main/_layout.scss */
   #discount .discount_p {
     margin-left: 10px;
+    max-width: 100%;
     float: right;
   }
-  /* line 77, ../sass/main/_layout.scss */
+  /* line 75, ../sass/main/_layout.scss */
   #discount .discount_p p {
     margin-top: 5px;
   }
 }
-/* line 84, ../sass/main/_layout.scss */
+/* line 82, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-top: 10px;
@@ -630,12 +628,12 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 84, ../sass/main/_layout.scss */
+  /* line 82, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 94, ../sass/main/_layout.scss */
+/* line 92, ../sass/main/_layout.scss */
 #discount button {
   padding: 10px;
   border: solid #1a1a1a 5px;
@@ -646,18 +644,18 @@ section[role="main"]:after {
   width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 94, ../sass/main/_layout.scss */
+  /* line 92, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 107, ../sass/main/_layout.scss */
+/* line 105, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 107, ../sass/main/_layout.scss */
+  /* line 105, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -731,7 +729,7 @@ form input {
 
 /* line 40, ../sass/main/_typography.scss */
 #discount button p {
-  font-size: 1em;
+  font-size: 1.15em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
@@ -748,7 +746,7 @@ form input {
   }
 }
 
-/* line 56, ../sass/main/_typography.scss */
+/* line 57, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;
