@@ -1,6 +1,6 @@
 section[role="main"] {
     @extend %margin_center;
-    @include padding_system(8);
+    @include padding_system(7);
       @include width_maxNmin($form_width,$form_width);
       min-height: 500px;
       max-height: 510px;
@@ -20,7 +20,7 @@ section[role="main"] {
 
     form {
         @extend %margin_center;
-        @include margin_system($top:10);
+        @include margin_system($top:20);
         @include padding_system(8);
         @include background_color($maincolor);
         @include width_maxNmin(300);
@@ -42,12 +42,10 @@ section[role="main"] {
                 input[type="number"],
                 input[type="text"],
                 select {
-                    @include col(1,2);
                 }
             }
 
             .checkbox_wrapper {
-                @include col(1,2);
             }
 
             legend {
@@ -73,21 +71,22 @@ section[role="main"] {
                 @include border_system(solid,$black,5);
                 @include padding_system(8);
                 @include margin_system(5);
-                @include width_maxNmin(100);
-                transition: all 0.5s ease;
+
+
                 @include media_query(modular, $min_width:$min-mobile) {
-                     @include width_maxNmin(140);
+
                 }
 
 
 
                 &:focus {
                     @include background_color($black);
+                    transition: all 0.5s ease;
                     color: $white !important;
                 }
             }
 
-            input[type="text"] {
+            [type="text"] {
                 position: relative;
             }
 
@@ -107,7 +106,7 @@ section[role="main"] {
                 @extend %no_display;
                 @extend %no_outline;
                 @extend %right;
-                @include col(1,2);
+                @extend .full;
                 @include border_system(solid,$black,5);
                 @include width_maxNmin(80);
                 @include easy_dropShadow(3px,3px,0px,$black);

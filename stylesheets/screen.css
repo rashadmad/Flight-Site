@@ -202,6 +202,50 @@ ul, ul li button, ul li button button:target {
   resize: none;
 }
 
+/* line 15, ../sass/mixins/_grid.scss */
+.full, section[role="main"] form fieldset button {
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* line 19, ../sass/mixins/_grid.scss */
+.half {
+  width: 50%;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* line 23, ../sass/mixins/_grid.scss */
+.third {
+  width: 33.33333%;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* line 27, ../sass/mixins/_grid.scss */
+.fourth {
+  width: 25%;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 /* Tip:
 * The em and rem units are practical in creating perfectly scalable layout!
 * Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
@@ -213,7 +257,7 @@ ul, ul li button, ul li button button:target {
 */
 /* line 1, ../sass/elements/_forms.scss */
 section[role="main"] {
-  padding: 8px;
+  padding: 7px;
   max-width: 500px;
   min-height: 500px;
   max-height: 510px;
@@ -237,7 +281,7 @@ section[role="main"] {
 }
 /* line 21, ../sass/elements/_forms.scss */
 section[role="main"] form {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 8px;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
@@ -253,29 +297,12 @@ section[role="main"] form fieldset.bottom {
 section[role="main"] form fieldset .row {
   font-size: 0;
 }
-/* line 41, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset .row div,
-section[role="main"] form fieldset .row input[type="number"],
-section[role="main"] form fieldset .row input[type="text"],
-section[role="main"] form fieldset .row select {
-  width: 100%;
-  font-size: 16px;
-  display: inline-block;
-  box-sizing: border-box;
-}
-/* line 49, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset .checkbox_wrapper {
-  width: 100%;
-  font-size: 16px;
-  display: inline-block;
-  box-sizing: border-box;
-}
-/* line 53, ../sass/elements/_forms.scss */
+/* line 51, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset legend {
   margin: 10px;
   margin-bottom: 10px;
 }
-/* line 58, ../sass/elements/_forms.scss */
+/* line 56, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset tbody {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -283,7 +310,7 @@ section[role="main"] form fieldset tbody {
   padding-right: 7px;
   margin: 4px;
 }
-/* line 63, ../sass/elements/_forms.scss */
+/* line 61, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"]:after {
   content: "";
   font-family: 'FontAwesome';
@@ -291,25 +318,15 @@ section[role="main"] form fieldset input[type="number"]:after {
   top: 0;
   left: 0;
 }
-/* line 68, ../sass/elements/_forms.scss */
+/* line 66, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"],
 section[role="main"] form fieldset input[type="text"],
 section[role="main"] form fieldset select {
   border: solid #1a1a1a 5px;
   padding: 8px;
   margin: 5px;
-  max-width: 100px;
-  transition: all 0.5s ease;
 }
-@media (min-width: 350px) {
-  /* line 68, ../sass/elements/_forms.scss */
-  section[role="main"] form fieldset input[type="number"],
-  section[role="main"] form fieldset input[type="text"],
-  section[role="main"] form fieldset select {
-    max-width: 140px;
-  }
-}
-/* line 84, ../sass/elements/_forms.scss */
+/* line 82, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"]:focus,
 section[role="main"] form fieldset input[type="text"]:focus,
 section[role="main"] form fieldset select:focus {
@@ -317,29 +334,26 @@ section[role="main"] form fieldset select:focus {
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
   background-color: #1a1a1a;
+  transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 90, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset input[type="text"] {
+/* line 89, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset [type="text"] {
   position: relative;
 }
-/* line 94, ../sass/elements/_forms.scss */
+/* line 93, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 102, ../sass/elements/_forms.scss */
+/* line 101, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="checkbox"] {
   margin: 3.5px;
 }
-/* line 106, ../sass/elements/_forms.scss */
+/* line 105, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button {
-  width: 100%;
-  font-size: 16px;
-  display: inline-block;
-  box-sizing: border-box;
   border: solid #1a1a1a 5px;
   max-width: 80px;
   box-shadow: 3px 3px 0px #1a1a1a;
@@ -355,7 +369,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 117, ../sass/elements/_forms.scss */
+/* line 116, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -363,7 +377,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 122, ../sass/elements/_forms.scss */
+/* line 121, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
