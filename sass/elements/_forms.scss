@@ -26,22 +26,20 @@ section[role="main"] {
         @include width_maxNmin(300);
 
 
-        fieldset.centered {
-            @extend %center;
-        }
-
         fieldset.bottom {
             @include margin_system(10);
         }
 
         fieldset {
+          @include margin_system($right:6);
+          @extend %margin_center;
             .row {
                 @include row;
-
-                div,
+                white-space:nowrap;
                 input[type="number"],
                 input[type="text"],
                 select {
+                  @include margin_system(2);
                 }
             }
 
@@ -49,8 +47,9 @@ section[role="main"] {
             }
 
             legend {
-                @extend %left;
-                @include margin_system(10, $bottom:10);
+                @include margin_system(5);
+                @include padding_system(5);
+                @extend %text_left;
             }
 
             tbody {
@@ -70,8 +69,6 @@ section[role="main"] {
                 @extend %border_box;
                 @include border_system(solid,$black,5);
                 @include padding_system(8);
-                @include margin_system(5);
-
 
                 @include media_query(modular, $min_width:$min-mobile) {
 
