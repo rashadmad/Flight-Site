@@ -35,11 +35,10 @@ section[role="main"] {
           @extend %margin_center;
             .row {
                 @include row;
-                white-space:nowrap;
                 input[type="number"],
                 input[type="text"],
                 select {
-                  @include margin_system(2);
+                  
                 }
             }
 
