@@ -207,91 +207,102 @@ ul, ul li button, ul li button button:target {
   resize: none;
 }
 
-/* line 22, ../sass/mixins/_grid.scss */
+/* line 25, ../sass/mixins/_grid.scss */
 .row {
   font-size: 0 !important;
   white-space: nowrap;
 }
 
-/* line 26, ../sass/mixins/_grid.scss */
+/* line 29, ../sass/mixins/_grid.scss */
 .full, section[role="main"] form fieldset button {
-  width: 100%;
+  width: 99.1%;
+  padding: 8px;
   font-size: 16px !important;
   display: inline-block;
   vertical-align: top;
+  margin-top: 0.9%;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: 2px !important;
-  margin-right: 0px !important;
-}
-/* line 14, ../sass/mixins/_grid.scss */
-.full:first-child, section[role="main"] form fieldset button:first-child {
-  padding-left: 0;
 }
 /* line 17, ../sass/mixins/_grid.scss */
+.full:first-child, section[role="main"] form fieldset button:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/mixins/_grid.scss */
 .full:last-child, section[role="main"] form fieldset button:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
-/* line 32, ../sass/mixins/_grid.scss */
+/* line 33, ../sass/mixins/_grid.scss */
 .half {
-  width: 50%;
+  width: 49.1%;
+  padding: 8px;
   font-size: 16px !important;
   display: inline-block;
   vertical-align: top;
+  margin-top: 0.9%;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: 2px !important;
-}
-/* line 14, ../sass/mixins/_grid.scss */
-.half:first-child {
-  padding-left: 0;
 }
 /* line 17, ../sass/mixins/_grid.scss */
+.half:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/mixins/_grid.scss */
 .half:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 /* line 37, ../sass/mixins/_grid.scss */
 .third {
-  width: 33.33333%;
+  width: 32.43333%;
+  padding: 8px;
   font-size: 16px !important;
   display: inline-block;
   vertical-align: top;
+  margin-top: 0.9%;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: 2px !important;
-}
-/* line 14, ../sass/mixins/_grid.scss */
-.third:first-child {
-  padding-left: 0;
 }
 /* line 17, ../sass/mixins/_grid.scss */
+.third:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/mixins/_grid.scss */
 .third:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
-/* line 42, ../sass/mixins/_grid.scss */
+/* line 41, ../sass/mixins/_grid.scss */
 .fourth {
-  width: 25%;
+  width: 24.1%;
+  padding: 8px;
   font-size: 16px !important;
   display: inline-block;
   vertical-align: top;
+  margin-top: 0.9%;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: 2px !important;
-}
-/* line 14, ../sass/mixins/_grid.scss */
-.fourth:first-child {
-  padding-left: 0;
 }
 /* line 17, ../sass/mixins/_grid.scss */
+.fourth:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/mixins/_grid.scss */
 .fourth:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 /* Tip:
@@ -343,19 +354,19 @@ section[role="main"] form fieldset.bottom {
 }
 /* line 33, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset {
-  margin-right: 6px;
+  max-width: 100%;
 }
 /* line 36, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset .row {
   font-size: 0 !important;
   white-space: nowrap;
 }
-/* line 48, ../sass/elements/_forms.scss */
+/* line 44, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset legend {
   margin: 5px;
   padding: 5px;
 }
-/* line 54, ../sass/elements/_forms.scss */
+/* line 50, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset tbody {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -363,7 +374,7 @@ section[role="main"] form fieldset tbody {
   padding-right: 7px;
   margin: 4px;
 }
-/* line 59, ../sass/elements/_forms.scss */
+/* line 55, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"]:after {
   content: "";
   font-family: 'FontAwesome';
@@ -371,14 +382,13 @@ section[role="main"] form fieldset input[type="number"]:after {
   top: 0;
   left: 0;
 }
-/* line 64, ../sass/elements/_forms.scss */
+/* line 60, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"],
 section[role="main"] form fieldset input[type="text"],
 section[role="main"] form fieldset select {
   border: solid #1a1a1a 5px;
-  padding: 8px;
 }
-/* line 78, ../sass/elements/_forms.scss */
+/* line 68, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="number"]:focus,
 section[role="main"] form fieldset input[type="text"]:focus,
 section[role="main"] form fieldset select:focus {
@@ -389,22 +399,22 @@ section[role="main"] form fieldset select:focus {
   transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 85, ../sass/elements/_forms.scss */
+/* line 75, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset [type="text"] {
   position: relative;
 }
-/* line 89, ../sass/elements/_forms.scss */
+/* line 79, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 97, ../sass/elements/_forms.scss */
+/* line 87, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="checkbox"] {
   margin: 3.5px;
 }
-/* line 101, ../sass/elements/_forms.scss */
+/* line 91, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button {
   border: solid #1a1a1a 5px;
   max-width: 80px;
@@ -421,7 +431,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 112, ../sass/elements/_forms.scss */
+/* line 102, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -429,7 +439,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 117, ../sass/elements/_forms.scss */
+/* line 107, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;

@@ -31,15 +31,11 @@ section[role="main"] {
         }
 
         fieldset {
-          @include margin_system($right:6);
+          @include width_maxNmin(100%);
           @extend %margin_center;
             .row {
                 @include row;
-                input[type="number"],
-                input[type="text"],
-                select {
-                  
-                }
+              
             }
 
             .checkbox_wrapper {
@@ -67,12 +63,6 @@ section[role="main"] {
                 @extend %no_outline;
                 @extend %border_box;
                 @include border_system(solid,$black,5);
-                @include padding_system(8);
-
-                @include media_query(modular, $min_width:$min-mobile) {
-
-                }
-
 
 
                 &:focus {

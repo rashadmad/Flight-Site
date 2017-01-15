@@ -3,19 +3,22 @@
   white-space:nowrap;
 }
 
-@mixin col($col, $sum, $gap: 1em, $align: top) {
-  width: percentage($col/$sum);
+@mixin col($col, $sum, $gap: .9%, $align: top, $padding: 8px) {
+  width: percentage($col/$sum) - ($gap);
+  padding: $padding;
   font-size: 16px !important;
   display: inline-block;
   vertical-align: $align;
-  box-sizing: border-box;
-  padding-left: $gap;
-  padding-right: $gap;
+  @include margin_system($top:.9%,$bottom:.9%);
+  margin-right: $gap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   &:first-child{
-    padding-left: 0;
+    margin-left: 0;
   }
   &:last-child{
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -25,21 +28,16 @@
 
 .full{
   @include col(1,1);
-  margin:2px !important;
-  margin-right:0px !important;
 }
 
 .half{
   @include col(1,2);
-  margin:2px !important;
 }
 
 .third{
   @include col(1,3);
-  margin:2px !important;
 }
 
 .fourth{
   @include col(1,4);
-  margin:2px !important;
 }
