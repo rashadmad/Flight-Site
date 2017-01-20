@@ -35,7 +35,20 @@ section[role="main"] {
           @extend %margin_center;
             .row {
                 @include row;
-              
+                .close {
+
+                  content: "\f007";
+                  font-size: 1em !important;
+                  margin-left: -55px;
+                  margin-top: 4px;
+                  height: 46px;
+                  width: 50px;
+                  color: white;
+                  background-color: $black;
+                  border: 0px solid;
+                  -webkit-appearance: none;
+
+                }
             }
 
             .checkbox_wrapper {
