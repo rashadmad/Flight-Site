@@ -33,20 +33,49 @@
         <section role="main">
             <form>
                 <fieldset>
-                    <legend>Flights At Low Rates</legend>
+                    <legend>Cruises At low Rates</legend>
                     <div class="row">
-                        <label class="hidden">Departing City</label>
-                        <input class="half" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Departure'>
-                        <label class="hidden">Ariving City</label>
-                        <input class="half" type="text" name="arrival" id="arrival" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a8; Arrival'>
+                        <label class="hidden">Destination</label>
+                        <input class="full" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Destination'>
                     </div>
                     <div class="row">
-                        <label class="hidden">Departure Date</label>
-                        <input class="full" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf13d; Mar 1'>
+                        <label class="hidden">Cruise</label>
+                        <select class="full" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf13d; Mar 1'>
+                          <option>Azamara Club Cruises</option>
+                          <option>Carnival Cruise Lines</option>
+                          <option>Celebrity Cruises</option>
+                          <option>Costa Cruises</option>
+                          <option>Crystal Cruises</option>
+                          <option>Cunard Line</option>
+                          <option>Disney Cruise Line</option>
+                        </select>
                     </div>
                     <div class="row">
                       <label class="hidden">Arrival Date</label>
-                      <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Month'>
+                      <select class="half" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Month'>
+                        <option>Month/January<option/>
+                        <option>Febuary<option/>
+                        <option>March<option/>
+                        <option>April<option/>
+                        <option>May<option/>
+                        <option>June<option/>
+                        <option>July<option/>
+                        <option>August<option/>
+                        <option>September<option/>
+                        <option>November<option/>
+                        <option>December<option/>
+                      </select>
+                      <label class="hidden">year</label>
+                      <select class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Year'>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                      </select>
+                    </div>
+                    <div class="row">
+                      <label class="hidden">Arrival Date</label>
+                      <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Zip Code'>
                       <label class="hidden">Departure Date</label>
                       <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='Length'>
                     </div>
@@ -65,11 +94,11 @@
                 </fieldset>
             </form>
             <section id="discount">
-                <p class="callout">Vacation Packages On Trips To The Bahamas, And Puerto Rico</p>
+                <p class="callout">If You Find Lower Prices We Will Refund The Diffrence</p>
                 <div class="discount_button">
                     <div id="button_wrapper">
                       <button>
-                        <div class="discount_p"><p>Discounts on flights to Vegas</p></div>
+                        <div class="discount_p"><p>Save On Onboard Credit</p></div>
                       </button>
                     </div>
                 </div>
