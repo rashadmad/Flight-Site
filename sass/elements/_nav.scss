@@ -75,7 +75,7 @@ ul{
         } button.three{
 
           @extend %button;
-          width: 90px;
+          width: 77px;
             @include media_query($min_mobile){@include width_maxNmin(50,70%);}
             @include media_query(modular,$min_width:$mobile){
               @include padding_system(0,$E_W:13);
