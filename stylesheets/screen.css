@@ -93,7 +93,7 @@ ul {
 }
 
 /* line 11, ../sass/placeholders/_defaults.scss */
-ul li button, #discount button {
+ul li button.five, ul li button.three, #discount button {
   border: none;
   outline: none;
 }
@@ -198,7 +198,7 @@ ul, header, header h1 {
 }
 
 /* line 24, ../sass/placeholders/_text_positioning.scss */
-ul, ul li button, ul li button button:target {
+ul li button.five, ul li button.three, ul, ul li button.five button:target, ul li button.three button:target {
   width: 100%;
 }
 
@@ -302,6 +302,29 @@ ul, ul li button, ul li button button:target {
 }
 /* line 20, ../sass/mixins/_grid.scss */
 .fourth:last-child {
+  margin-right: 0;
+}
+
+/* line 45, ../sass/mixins/_grid.scss */
+.fith {
+  width: 19.1%;
+  padding: 8px;
+  font-size: 16px !important;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.9%;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 17, ../sass/mixins/_grid.scss */
+.fith:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/mixins/_grid.scss */
+.fith:last-child {
   margin-right: 0;
 }
 
@@ -478,26 +501,56 @@ ul .logo {
 }
 
 /* line 2, ../sass/elements/_nav.scss */
+ul li button.five, ul li button.three {
+  -webkit-background-color: #1a1a1a;
+  -moz-background-color: #1a1a1a;
+  -ms-background-color: #1a1a1a;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 11, ../sass/mixins/_sectionSpecific.scss */
+ul li button.five:visited, ul li button.three:visited {
+  -webkit-background-color: #fff;
+  -moz-background-color: #fff;
+  -ms-background-color: #fff;
+  background-color: #fff;
+  border-bottom: 5px solid #FFFF00;
+  color: #1a1a1a !important;
+}
+/* line 16, ../sass/mixins/_sectionSpecific.scss */
+ul li button.five:active, ul li button.three:active {
+  -webkit-background-color: #fff;
+  -moz-background-color: #fff;
+  -ms-background-color: #fff;
+  background-color: #fff;
+  border-bottom: 5px solid #FFFF00;
+  color: #1a1a1a !important;
+}
+
+/* line 13, ../sass/elements/_nav.scss */
 ul {
   margin-bottom: 0px;
   background-color: #1a1a1a;
   height: 80px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 2, ../sass/elements/_nav.scss */
+  /* line 13, ../sass/elements/_nav.scss */
   ul {
     width: 100%;
     justify-content: center;
   }
 }
 @media (min-width: 768px) {
-  /* line 2, ../sass/elements/_nav.scss */
+  /* line 13, ../sass/elements/_nav.scss */
   ul {
     display: flex;
     justify-content: flex-start;
   }
 }
-/* line 21, ../sass/elements/_nav.scss */
+/* line 32, ../sass/elements/_nav.scss */
 ul li {
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
@@ -505,7 +558,7 @@ ul li {
   background-color: #FFFF00;
   color: #1a1a1a;
 }
-/* line 31, ../sass/elements/_nav.scss */
+/* line 42, ../sass/elements/_nav.scss */
 ul li #active {
   color: #1a1a1a !important;
   cursor: pointer;
@@ -534,59 +587,58 @@ ul li #active:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 39, ../sass/elements/_nav.scss */
-ul li button {
-  -webkit-background-color: #1a1a1a;
-  -moz-background-color: #1a1a1a;
-  -ms-background-color: #1a1a1a;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  padding: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
-  max-width: 60px;
-}
-/* line 11, ../sass/mixins/_sectionSpecific.scss */
-ul li button:visited {
-  -webkit-background-color: #fff;
-  -moz-background-color: #fff;
-  -ms-background-color: #fff;
-  background-color: #fff;
-  border-bottom: 5px solid #FFFF00;
-  color: #1a1a1a !important;
-}
-/* line 16, ../sass/mixins/_sectionSpecific.scss */
-ul li button:active {
-  -webkit-background-color: #fff;
-  -moz-background-color: #fff;
-  -ms-background-color: #fff;
-  background-color: #fff;
-  border-bottom: 5px solid #FFFF00;
-  color: #1a1a1a !important;
+/* line 50, ../sass/elements/_nav.scss */
+ul li button.five {
+  width: 60px;
 }
 @media (min-width: 480px) {
-  /* line 39, ../sass/elements/_nav.scss */
-  ul li button {
+  /* line 50, ../sass/elements/_nav.scss */
+  ul li button.five {
     padding: 0px;
     padding-left: 13px;
     padding-right: 13px;
   }
 }
-/* line 51, ../sass/elements/_nav.scss */
-ul li button span {
+/* line 58, ../sass/elements/_nav.scss */
+ul li button.five span {
   color: #fff;
   margin: 0px;
 }
-/* line 60, ../sass/elements/_nav.scss */
-ul li button .logo {
+/* line 67, ../sass/elements/_nav.scss */
+ul li button.five .logo {
   fill: #fff;
 }
-/* line 64, ../sass/elements/_nav.scss */
-ul li button .logo:active {
+/* line 71, ../sass/elements/_nav.scss */
+ul li button.five .logo:active {
+  fill: #1a1a1a;
+}
+/* line 75, ../sass/elements/_nav.scss */
+ul li button.three {
+  width: 90px;
+}
+@media (min-width: 480px) {
+  /* line 75, ../sass/elements/_nav.scss */
+  ul li button.three {
+    padding: 0px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+/* line 84, ../sass/elements/_nav.scss */
+ul li button.three span {
+  color: #fff;
+  margin: 0px;
+}
+/* line 93, ../sass/elements/_nav.scss */
+ul li button.three .logo {
+  fill: #fff;
+}
+/* line 97, ../sass/elements/_nav.scss */
+ul li button.three .logo:active {
   fill: #1a1a1a;
 }
 @media (min-width: 768px) {
-  /* line 71, ../sass/elements/_nav.scss */
+  /* line 104, ../sass/elements/_nav.scss */
   ul li:first-child {
     margin-left: 55px;
   }

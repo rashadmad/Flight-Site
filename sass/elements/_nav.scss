@@ -1,3 +1,14 @@
+//button place holder
+%button {
+  @extend %full_width;
+  @extend %clear_button_defaults;
+  @include background_color($black);
+  @include flat_ui_buttons($white, 5px, $black);
+  @include padding_system(0,$E_W:5);
+}
+
+
+
 //nav
 ul{
   @extend %no_margin;
@@ -36,13 +47,9 @@ ul{
 
 
       //ui buttons at the top of the page
-      button{
-        @extend %full_width;
-        @extend %clear_button_defaults;
-        @include background_color($black);
-        @include flat_ui_buttons($white, 5px, $black);
-        @include padding_system(0,$E_W:5);
-        @include width_maxNmin(60,70%);
+      button.five{
+        @extend %button;
+        width: 60px;
             @include media_query($min_mobile){@include width_maxNmin(50,70%);}
           @include media_query(modular,$min_width:$mobile){
             @include padding_system(0,$E_W:13);
@@ -59,13 +66,39 @@ ul{
 
         .logo{
             fill: $white;
-            
+
 
              &:active{
                fill: $black;
             }
           }
-        }
+        } button.three{
+
+          @extend %button;
+          width: 90px;
+            @include media_query($min_mobile){@include width_maxNmin(50,70%);}
+            @include media_query(modular,$min_width:$mobile){
+              @include padding_system(0,$E_W:13);
+            }
+
+            span{
+              color: $white;
+              @include margin_system(0);
+            }
+
+           button:target{
+             @extend %full_width;
+           }
+
+          .logo{
+              fill: $white;
+
+
+               &:active{
+                 fill: $black;
+              }
+            }
+          }
       }
 
       li:first-child {
