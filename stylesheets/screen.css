@@ -636,7 +636,7 @@ ul li button.three .logo:active {
 @media (min-width: 768px) {
   /* line 116, ../sass/elements/_nav.scss */
   ul li:first-child {
-    margin-left: 55px;
+    margin-left: 50px;
   }
 }
 
