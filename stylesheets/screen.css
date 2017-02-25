@@ -93,7 +93,7 @@ ul {
 }
 
 /* line 11, ../sass/placeholders/_defaults.scss */
-ul li button.five, ul li button.three, #discount button {
+ul li button.five, ul li .three, #discount button {
   border: none;
   outline: none;
 }
@@ -198,7 +198,7 @@ ul, header, header h1 {
 }
 
 /* line 24, ../sass/placeholders/_text_positioning.scss */
-ul li button.five, ul li button.three, ul, ul li button.five button:target, ul li button.three button:target {
+ul li button.five, ul li .three, ul, ul li button.five button:target, ul li .three button:target {
   width: 100%;
 }
 
@@ -489,7 +489,7 @@ section[role="main"] form fieldset button:active {
 }
 
 /* line 2, ../sass/elements/_nav.scss */
-ul li button.five, ul li button.three {
+ul li button.five, ul li .three {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
@@ -500,7 +500,7 @@ ul li button.five, ul li button.three {
   padding-right: 5px;
 }
 /* line 11, ../sass/mixins/_sectionSpecific.scss */
-ul li button.five:visited, ul li button.three:visited {
+ul li button.five:visited, ul li .three:visited {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
   -ms-background-color: #fff;
@@ -509,7 +509,7 @@ ul li button.five:visited, ul li button.three:visited {
   color: #1a1a1a !important;
 }
 /* line 16, ../sass/mixins/_sectionSpecific.scss */
-ul li button.five:active, ul li button.three:active {
+ul li button.five:active, ul li .three:active {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
   -ms-background-color: #fff;
@@ -609,28 +609,28 @@ ul li button.five .logo:active {
   fill: #1a1a1a;
 }
 /* line 87, ../sass/elements/_nav.scss */
-ul li button.three {
+ul li .three {
   width: 77px;
 }
 @media (min-width: 480px) {
   /* line 87, ../sass/elements/_nav.scss */
-  ul li button.three {
+  ul li .three {
     padding: 0px;
     padding-left: 13px;
     padding-right: 13px;
   }
 }
 /* line 96, ../sass/elements/_nav.scss */
-ul li button.three span {
+ul li .three span {
   color: #fff;
   margin: 0px;
 }
 /* line 105, ../sass/elements/_nav.scss */
-ul li button.three .logo {
+ul li .three .logo {
   fill: #fff;
 }
 /* line 109, ../sass/elements/_nav.scss */
-ul li button.three .logo:active {
+ul li .three .logo:active {
   fill: #1a1a1a;
 }
 @media (min-width: 768px) {
