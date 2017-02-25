@@ -488,18 +488,6 @@ section[role="main"] form fieldset button:active {
   color: #fff;
 }
 
-/* line 8, ../sass/elements/_img.scss */
-ul .logo {
-  padding: 4px;
-  max-width: 70%;
-}
-@media (min-width: 480px) {
-  /* line 8, ../sass/elements/_img.scss */
-  ul .logo {
-    max-width: 100%;
-  }
-}
-
 /* line 2, ../sass/elements/_nav.scss */
 ul li button.five, ul li button.three {
   -webkit-background-color: #1a1a1a;
@@ -536,6 +524,12 @@ ul {
   background-color: #1a1a1a;
   height: 80px;
 }
+/* line 15, ../sass/elements/_nav.scss */
+ul a {
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
+}
 @media (min-width: 350px) and (max-width: 480px) {
   /* line 13, ../sass/elements/_nav.scss */
   ul {
@@ -550,15 +544,17 @@ ul {
     justify-content: flex-start;
   }
 }
-/* line 32, ../sass/elements/_nav.scss */
+/* line 41, ../sass/elements/_nav.scss */
 ul li {
-  -webkit-background-color: #FFFF00;
-  -moz-background-color: #FFFF00;
-  -ms-background-color: #FFFF00;
-  background-color: #FFFF00;
+  padding: 2px;
   color: #1a1a1a;
 }
-/* line 42, ../sass/elements/_nav.scss */
+/* line 49, ../sass/elements/_nav.scss */
+ul li .fa {
+  margin: 0px;
+  margin: 5px;
+}
+/* line 54, ../sass/elements/_nav.scss */
 ul li #active {
   color: #1a1a1a !important;
   cursor: pointer;
@@ -587,58 +583,58 @@ ul li #active:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 50, ../sass/elements/_nav.scss */
+/* line 62, ../sass/elements/_nav.scss */
 ul li button.five {
   width: 60px;
 }
 @media (min-width: 480px) {
-  /* line 50, ../sass/elements/_nav.scss */
+  /* line 62, ../sass/elements/_nav.scss */
   ul li button.five {
     padding: 0px;
     padding-left: 13px;
     padding-right: 13px;
   }
 }
-/* line 58, ../sass/elements/_nav.scss */
+/* line 70, ../sass/elements/_nav.scss */
 ul li button.five span {
+  margin-top: 10px;
   color: #fff;
-  margin: 0px;
 }
-/* line 67, ../sass/elements/_nav.scss */
+/* line 79, ../sass/elements/_nav.scss */
 ul li button.five .logo {
   fill: #fff;
 }
-/* line 71, ../sass/elements/_nav.scss */
+/* line 83, ../sass/elements/_nav.scss */
 ul li button.five .logo:active {
   fill: #1a1a1a;
 }
-/* line 75, ../sass/elements/_nav.scss */
+/* line 87, ../sass/elements/_nav.scss */
 ul li button.three {
   width: 77px;
 }
 @media (min-width: 480px) {
-  /* line 75, ../sass/elements/_nav.scss */
+  /* line 87, ../sass/elements/_nav.scss */
   ul li button.three {
     padding: 0px;
     padding-left: 13px;
     padding-right: 13px;
   }
 }
-/* line 84, ../sass/elements/_nav.scss */
+/* line 96, ../sass/elements/_nav.scss */
 ul li button.three span {
   color: #fff;
   margin: 0px;
 }
-/* line 93, ../sass/elements/_nav.scss */
+/* line 105, ../sass/elements/_nav.scss */
 ul li button.three .logo {
   fill: #fff;
 }
-/* line 97, ../sass/elements/_nav.scss */
+/* line 109, ../sass/elements/_nav.scss */
 ul li button.three .logo:active {
   fill: #1a1a1a;
 }
 @media (min-width: 768px) {
-  /* line 104, ../sass/elements/_nav.scss */
+  /* line 116, ../sass/elements/_nav.scss */
   ul li:first-child {
     margin-left: 55px;
   }

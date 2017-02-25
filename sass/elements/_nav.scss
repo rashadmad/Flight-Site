@@ -11,6 +11,15 @@
 
 //nav
 ul{
+
+a {
+  color:$white;
+  outline: 0;
+  text-decoration: none;
+
+
+}
+
   @extend %no_margin;
   @extend %bye_bullets;
   @extend %flex;
@@ -33,11 +42,14 @@ ul{
     @extend %center;
     @extend %flex;
     @extend %flex_center;
-    @include background_color($maincolor);
+    @include padding_system(2);
 
       color: $black;
 
-
+      .fa{
+        @include margin_system(0);
+        margin:5px;
+      }
 
     #active {
         color: $black !important;
@@ -56,8 +68,8 @@ ul{
           }
 
           span{
+            margin-top: 10px;
             color: $white;
-            @include margin_system(0);
           }
 
          button:target{

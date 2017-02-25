@@ -3,16 +3,3 @@
 $img_path: "../img";
 $css-path: "../css";
 $js-path: "../js";
-
-ul{
-  .logo{
-    @include padding_system(4);
-    @include width_maxNmin(70%);
-
-    @include media_query(modular,$min_width:$mobile) {
-      @include width_maxNmin(100%);
-    }
-
-  }
-
-}
