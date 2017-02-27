@@ -48,7 +48,7 @@ a {
 
       .fa{
         @include margin_system(0);
-        margin:5px;
+
       }
 
     #active {
@@ -59,12 +59,12 @@ a {
 
 
       //ui buttons at the top of the page
-      button.five{
+      .five{
         @extend %button;
         width: 60px;
             @include media_query($min_mobile){@include width_maxNmin(50,70%);}
           @include media_query(modular,$min_width:$mobile){
-            @include padding_system(0,$E_W:13);
+
           }
 
           span{
@@ -86,12 +86,21 @@ a {
           }
         }.three{
 
+          div.info{
+            text-align: center;
+            @include padding_system(10);
+            width: 30%;
+            span,p {
+              color:$white;
+            }
+          }
+
           @extend %button;
           width: 77px;
-            @include media_query($min_mobile){@include width_maxNmin(50,70%);}
-            @include media_query(modular,$min_width:$mobile){
-              @include padding_system(0,$E_W:13);
+            @include media_query($min_mobile){
+              @include width_maxNmin(50,70%);
             }
+
 
             span{
               color: $white;
@@ -115,7 +124,7 @@ a {
 
       li:first-child {
         @include media_query(modular,$min-width: $tablet){
-            @include margin_system($left:calculation($form_gutter,"+",10));
+            @include margin_system($left:calculation($form_gutter,"+",5));
       }
     }
   }
