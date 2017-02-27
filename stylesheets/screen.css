@@ -167,7 +167,7 @@ footer:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-ul li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1 {
+ul .info span, ul .info p, ul li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1 {
   text-align: center;
 }
 
@@ -544,16 +544,29 @@ ul a {
     justify-content: flex-start;
   }
 }
+/* line 38, ../sass/elements/_nav.scss */
+ul .info {
+  padding: 5px;
+  margin-top: 8px;
+}
 /* line 41, ../sass/elements/_nav.scss */
+ul .info span, ul .info p {
+  margin-top: 3px;
+  margin-left: 17px;
+  margin-bottom: 3px;
+  margin-right: 17px;
+  color: #fff;
+}
+/* line 49, ../sass/elements/_nav.scss */
 ul li {
   padding: 2px;
   color: #1a1a1a;
 }
-/* line 49, ../sass/elements/_nav.scss */
+/* line 57, ../sass/elements/_nav.scss */
 ul li .fa {
   margin: 0px;
 }
-/* line 54, ../sass/elements/_nav.scss */
+/* line 62, ../sass/elements/_nav.scss */
 ul li #active {
   color: #1a1a1a !important;
   cursor: pointer;
@@ -582,52 +595,48 @@ ul li #active:active {
   border-bottom: 5px solid #FFFF00;
   color: #1a1a1a !important;
 }
-/* line 62, ../sass/elements/_nav.scss */
+/* line 70, ../sass/elements/_nav.scss */
 ul li .five {
   width: 60px;
 }
-/* line 70, ../sass/elements/_nav.scss */
+/* line 78, ../sass/elements/_nav.scss */
 ul li .five span {
   margin-top: 10px;
   color: #fff;
 }
-/* line 79, ../sass/elements/_nav.scss */
+/* line 87, ../sass/elements/_nav.scss */
 ul li .five .logo {
   fill: #fff;
 }
-/* line 83, ../sass/elements/_nav.scss */
+/* line 91, ../sass/elements/_nav.scss */
 ul li .five .logo:active {
   fill: #1a1a1a;
 }
-/* line 87, ../sass/elements/_nav.scss */
+/* line 95, ../sass/elements/_nav.scss */
 ul li .three {
   width: 77px;
 }
-/* line 89, ../sass/elements/_nav.scss */
+/* line 97, ../sass/elements/_nav.scss */
 ul li .three div.info {
   text-align: center;
   padding: 10px;
   width: 30%;
 }
-/* line 93, ../sass/elements/_nav.scss */
-ul li .three div.info span, ul li .three div.info p {
-  color: #fff;
-}
-/* line 105, ../sass/elements/_nav.scss */
+/* line 111, ../sass/elements/_nav.scss */
 ul li .three span {
   color: #fff;
   margin: 0px;
 }
-/* line 114, ../sass/elements/_nav.scss */
+/* line 120, ../sass/elements/_nav.scss */
 ul li .three .logo {
   fill: #fff;
 }
-/* line 118, ../sass/elements/_nav.scss */
+/* line 124, ../sass/elements/_nav.scss */
 ul li .three .logo:active {
   fill: #1a1a1a;
 }
 @media (min-width: 768px) {
-  /* line 125, ../sass/elements/_nav.scss */
+  /* line 131, ../sass/elements/_nav.scss */
   ul li:first-child {
     margin-left: 45px;
   }
@@ -811,19 +820,36 @@ header h1 {
 }
 
 /* line 13, ../sass/main/_typography.scss */
-li button span {
-  font-size: 0.7em;
+ul .info span {
+  font-size: 1.1em;
+  line-height: 1;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+/* line 15, ../sass/main/_typography.scss */
+ul .info p {
+  font-size: 1.1em;
   line-height: 1;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
 }
-/* line 16, ../sass/main/_typography.scss */
+
+/* line 23, ../sass/main/_typography.scss */
+li button span {
+  font-size: 0.75em;
+  line-height: 1;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+/* line 26, ../sass/main/_typography.scss */
 li button img {
   margin: 0;
 }
 
-/* line 23, ../sass/main/_typography.scss */
+/* line 33, ../sass/main/_typography.scss */
 form legend {
   font-size: 1.3em;
   line-height: 1;
@@ -831,7 +857,7 @@ form legend {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-/* line 26, ../sass/main/_typography.scss */
+/* line 36, ../sass/main/_typography.scss */
 form label {
   font-size: 0.8em;
   line-height: 1;
@@ -839,7 +865,7 @@ form label {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-/* line 29, ../sass/main/_typography.scss */
+/* line 39, ../sass/main/_typography.scss */
 form input {
   font-size: 0.08em;
   line-height: 1;
@@ -848,7 +874,7 @@ form input {
   font-weight: 800;
 }
 
-/* line 34, ../sass/main/_typography.scss */
+/* line 44, ../sass/main/_typography.scss */
 .callout {
   font-size: 1em;
   line-height: 1.3;
@@ -857,7 +883,7 @@ form input {
   font-weight: 800;
 }
 
-/* line 40, ../sass/main/_typography.scss */
+/* line 50, ../sass/main/_typography.scss */
 #discount button p {
   font-size: 1.15em;
   line-height: 1;
@@ -866,7 +892,7 @@ form input {
   font-weight: 800;
 }
 @media (min-width: 350px) {
-  /* line 40, ../sass/main/_typography.scss */
+  /* line 50, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.24em;
     line-height: 1;
@@ -876,7 +902,7 @@ form input {
   }
 }
 
-/* line 57, ../sass/main/_typography.scss */
+/* line 67, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;

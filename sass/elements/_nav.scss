@@ -17,7 +17,6 @@ a {
   outline: 0;
   text-decoration: none;
 
-
 }
 
   @extend %no_margin;
@@ -36,6 +35,15 @@ a {
     background-color: $black;
     height: $ul_height;
 
+    .info {
+      @include padding_system(5);
+      @include margin_system($top:8);
+      span,p {
+        @include margin_system($top:3, $bottom:3, $right:17, $left:17);
+        @extend %center;
+        color:$white;
+      }
+    }
 
 
   li{
@@ -90,9 +98,7 @@ a {
             text-align: center;
             @include padding_system(10);
             width: 30%;
-            span,p {
-              color:$white;
-            }
+
           }
 
           @extend %button;

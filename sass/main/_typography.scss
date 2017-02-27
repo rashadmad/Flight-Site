@@ -7,11 +7,21 @@ header {
     }
   }
 }
+//fonts in nav
+ul{
+  .info{
+    span{
+      @include text(1.1, $color:$white, $family:font_a_Bold);
+    } p {
+      @include text(1.1, $color:$white, $family:font_a_slim);
+    }
+  }
+}
 //fonts in main nav
 li {
   button {
       span {
-        @include text(.7, $color:$white, $family:font_a_slim);
+        @include text(.75, $color:$white, $family:font_a_slim);
       }
     img {
       margin: 0;
