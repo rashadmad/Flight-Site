@@ -20,7 +20,6 @@ section[role="main"] {
 
     form {
         @extend %margin_center;
-        @include margin_system($top:20);
         @include padding_system(8);
         @include background_color($maincolor);
         @include width_maxNmin(300);
