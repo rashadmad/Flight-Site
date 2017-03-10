@@ -24,62 +24,39 @@
             <h1>FLIGHT SITE</h1>
         </header>
 
-        <ul>
+        <ul id="main">
             <li><button class="three" id="active"><i class="fa fa-usd fa-4x logo" aria-hidden="true"></i><br><span>CHEAPEST</span></button></li>
             <li><button class="three"><a href="rentals.html"><i class="fa fa-fast-forward fa-4x logo" aria-hidden="true"></i><span>FASTEST</span></button></a></li>
             <li><button class="three"><a href="rentals.html"><i class="fa fa-star fa-4x logo" aria-hidden="true"></i><span>BEST</span></button></a></li>
             <div class="info"><span>SYD</span><p>-to-</p><span>LAX</span></div>
         </ul>
         <section role="main">
-            <form>
-                <fieldset>
-                    <legend>Flights At Low Rates</legend>
-                    <div class="row">
-                        <label class="hidden">Departing City</label>
-                        <input class="half" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Departure'>
-                        <lqabel class="hidden">Ariving City</label>
-                        <input class="half" type="text" name="arrival" id="arrival" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a8; Arrival'>
-                    </div>
-                    <div class="row">
-                        <label class="hidden">Departure Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
-                        <label class="hidden">Arrival Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'><input class="close" type="submit" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf00d;'>
-                    </div>
-                    <div class="row">
-                        <label>Passengers</label>
-                        <select class="half">
-                          <option value="one">fare/1 Adult</option>
-                          <option value="two">2 Adults</option>
-                          <option value="three">3 Adults</option>
-                          <option value="four">4 Adults</option>
-                          <option value="five">5 Adults</option>
-                          <option value="six">6 Adults</option>
-                          <option value="seven">7 Adults</option>
-                          <option value="eight">8 Adults</option>
-                        </select>
-                        <label class="hidden">Economy</label>
-                        <select class="half">
-                          <option value="volvo">Economy/Coach</option>
-                          <option value="saab">Premium</option>
-                          <option value="mercedes">Business</option>
-                          <option value="audi">First</option>
-                        </select>
-                    </div>
-                    <div>
-                </fieldset>
-                <fieldset class="bottom">
-                    <div class="checkbox_wrapper">
-                        <div>
-                            <button type="submit">Search</button>
-                            <input class="row" type="checkbox" name="one_way" value="one_way"><label>One way</label>
+              <div class="results">
+                  <fieldset>
+                    <div class="block">
+                      <div class="row">
+                        <div class="third">
+                          <p>Oceanic Airlines</p>
+                          <img class="airlineImg" src="airlineImg" alt="airline image">
                         </div>
-                        <div>
-                            <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label>
+                        <div class="third">
+                          <ul>
+                            <li><p>1 Stop</p></li>
+                            <li class="black"><p>SYD</p></li>
+                            <li><p>1:45 PM</p></li>
+                          </ul>
                         </div>
+                        <div class="third">
+                          <ul>
+                            <li><p>55hr 00mm</p></li>
+                            <li class="black"><p>LAX</p></li>
+                            <li><p>1:45 PM</p></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                </fieldset>
-            </form>
+                  </fieldset>
+              </div>
             <section id="discount">
                 <p class="callout">From LA to Australia we have all the flights you need for the prices you can afford.</p>
                 <div class="discount_button">

@@ -1,0 +1,22 @@
+//results page
+.results {
+
+  .third {
+    background-color: $maincolor;
+    @include margin_system(2);
+    @extend %center;
+      li.black{
+        background-color: black;
+        p {
+
+          color: white;
+        }
+      }
+
+
+  }
+  .block {
+    background-color: darken($maincolor,50%);
+    @include padding_system(2);
+  }
+}

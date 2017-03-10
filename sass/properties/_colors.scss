@@ -7,3 +7,18 @@ $black: #1a1a1a;
 $white: #fff;
 
 $maincolor: $yellow;
+
+@mixin color_manipulator($property_name,$base_color,$property:null,$percentage:null) {
+
+  @if $property == darken {
+    $property_name:darken($base_color,$percentage);
+  }@if $property == lighten {
+    $property_name:lighten($base_color,$percentage);
+  }@if $property == saturate {
+    $property_name:saturate($base_color,$percentage);
+  }@if $property == desaturate {
+    $property_name:desaturate($base_color,$percentage);
+  }@if $property == adjust-hue {
+    $property_name:adjust-hue($base_color,$percentage);
+  }
+}

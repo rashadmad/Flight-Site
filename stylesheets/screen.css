@@ -86,14 +86,14 @@ section[role="main"] form fieldset select, section[role="main"] form fieldset bu
 }
 
 /* line 5, ../sass/placeholders/_defaults.scss */
-ul {
+ul#main {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 /* line 11, ../sass/placeholders/_defaults.scss */
-ul li .five, ul li .three, #discount button {
+ul#main li .five, ul#main li .three, #discount button {
   border: none;
   outline: none;
 }
@@ -135,12 +135,12 @@ section[role="main"] form fieldset button, #discount button:before {
 }
 
 /* line 2, ../sass/placeholders/_flexBox.scss */
-ul, ul li, footer {
+ul#main, ul#main li, footer {
   display: flex;
 }
 
 /* line 17, ../sass/placeholders/_flexBox.scss */
-ul, ul li {
+ul#main, ul#main li {
   justify-content: center;
 }
 
@@ -167,7 +167,7 @@ footer:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-ul .info span, ul .info p, ul li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1 {
+ul#main .info span, ul#main .info p, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1, .results .third {
   text-align: center;
 }
 
@@ -193,12 +193,12 @@ section[role="main"], section[role="main"] form, section[role="main"] form field
 }
 
 /* line 21, ../sass/placeholders/_text_positioning.scss */
-ul, header, header h1 {
+ul#main, header, header h1 {
   margin: 0;
 }
 
 /* line 24, ../sass/placeholders/_text_positioning.scss */
-ul li .five, ul li .three, ul, ul li .five button:target, ul li .three button:target {
+ul#main li .five, ul#main li .three, ul#main, ul#main li .five button:target, ul#main li .three button:target {
   width: 100%;
 }
 
@@ -488,7 +488,7 @@ section[role="main"] form fieldset button:active {
 }
 
 /* line 2, ../sass/elements/_nav.scss */
-ul li .five, ul li .three {
+ul#main li .five, ul#main li .three {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
   -ms-background-color: #1a1a1a;
@@ -499,7 +499,7 @@ ul li .five, ul li .three {
   padding-right: 5px;
 }
 /* line 11, ../sass/mixins/_sectionSpecific.scss */
-ul li .five:visited, ul li .three:visited {
+ul#main li .five:visited, ul#main li .three:visited {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
   -ms-background-color: #fff;
@@ -508,7 +508,7 @@ ul li .five:visited, ul li .three:visited {
   color: #1a1a1a !important;
 }
 /* line 16, ../sass/mixins/_sectionSpecific.scss */
-ul li .five:active, ul li .three:active {
+ul#main li .five:active, ul#main li .three:active {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
   -ms-background-color: #fff;
@@ -518,38 +518,38 @@ ul li .five:active, ul li .three:active {
 }
 
 /* line 13, ../sass/elements/_nav.scss */
-ul {
+ul#main {
   margin-bottom: 0px;
   background-color: #1a1a1a;
   height: 80px;
 }
 /* line 15, ../sass/elements/_nav.scss */
-ul a {
+ul#main a {
   color: #fff;
   outline: 0;
   text-decoration: none;
 }
 @media (min-width: 350px) and (max-width: 480px) {
   /* line 13, ../sass/elements/_nav.scss */
-  ul {
+  ul#main {
     width: 100%;
     justify-content: center;
   }
 }
 @media (min-width: 768px) {
   /* line 13, ../sass/elements/_nav.scss */
-  ul {
+  ul#main {
     display: flex;
     justify-content: flex-start;
   }
 }
 /* line 38, ../sass/elements/_nav.scss */
-ul .info {
+ul#main .info {
   padding: 5px;
   margin-top: 8px;
 }
 /* line 41, ../sass/elements/_nav.scss */
-ul .info span, ul .info p {
+ul#main .info span, ul#main .info p {
   margin-top: 3px;
   margin-left: 17px;
   margin-bottom: 3px;
@@ -557,16 +557,16 @@ ul .info span, ul .info p {
   color: #fff;
 }
 /* line 49, ../sass/elements/_nav.scss */
-ul li {
+ul#main li {
   padding: 2px;
   color: #1a1a1a;
 }
 /* line 57, ../sass/elements/_nav.scss */
-ul li .fa {
+ul#main li .fa {
   margin: 0px;
 }
 /* line 62, ../sass/elements/_nav.scss */
-ul li #active {
+ul#main li #active {
   color: #1a1a1a !important;
   cursor: pointer;
   -webkit-background-color: #fff;
@@ -577,7 +577,7 @@ ul li #active {
   color: #1a1a1a !important;
 }
 /* line 11, ../sass/mixins/_sectionSpecific.scss */
-ul li #active:visited {
+ul#main li #active:visited {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
   -ms-background-color: #fff;
@@ -586,7 +586,7 @@ ul li #active:visited {
   color: #1a1a1a !important;
 }
 /* line 16, ../sass/mixins/_sectionSpecific.scss */
-ul li #active:active {
+ul#main li #active:active {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
   -ms-background-color: #fff;
@@ -595,48 +595,48 @@ ul li #active:active {
   color: #1a1a1a !important;
 }
 /* line 70, ../sass/elements/_nav.scss */
-ul li .five {
+ul#main li .five {
   width: 60px;
 }
 /* line 78, ../sass/elements/_nav.scss */
-ul li .five span {
+ul#main li .five span {
   margin-top: 10px;
   color: #fff;
 }
 /* line 87, ../sass/elements/_nav.scss */
-ul li .five .logo {
+ul#main li .five .logo {
   fill: #fff;
 }
 /* line 91, ../sass/elements/_nav.scss */
-ul li .five .logo:active {
+ul#main li .five .logo:active {
   fill: #1a1a1a;
 }
 /* line 95, ../sass/elements/_nav.scss */
-ul li .three {
+ul#main li .three {
   width: 77px;
 }
 /* line 97, ../sass/elements/_nav.scss */
-ul li .three div.info {
+ul#main li .three div.info {
   text-align: center;
   padding: 10px;
   width: 30%;
 }
 /* line 111, ../sass/elements/_nav.scss */
-ul li .three span {
+ul#main li .three span {
   color: #fff;
   margin: 0px;
 }
 /* line 120, ../sass/elements/_nav.scss */
-ul li .three .logo {
+ul#main li .three .logo {
   fill: #fff;
 }
 /* line 124, ../sass/elements/_nav.scss */
-ul li .three .logo:active {
+ul#main li .three .logo:active {
   fill: #1a1a1a;
 }
 @media (min-width: 768px) {
   /* line 131, ../sass/elements/_nav.scss */
-  ul li:first-child {
+  ul#main li:first-child {
     margin-left: 46px;
   }
 }
@@ -953,6 +953,25 @@ footer {
 /* line 16, ../sass/main/_footer.scss */
 footer h1 {
   margin-top: 25px;
+}
+
+/* line 4, ../sass/main/_results.scss */
+.results .third {
+  background-color: #FFFF00;
+  margin: 2px;
+}
+/* line 8, ../sass/main/_results.scss */
+.results .third li.black {
+  background-color: black;
+}
+/* line 10, ../sass/main/_results.scss */
+.results .third li.black p {
+  color: white;
+}
+/* line 18, ../sass/main/_results.scss */
+.results .block {
+  background-color: black;
+  padding: 2px;
 }
 
 /*!
