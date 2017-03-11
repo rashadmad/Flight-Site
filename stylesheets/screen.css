@@ -959,16 +959,26 @@ footer h1 {
 .results .third {
   background-color: #FFFF00;
   margin: 2px;
-}
-/* line 8, ../sass/main/_results.scss */
-.results .third li.black {
-  background-color: black;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /* line 10, ../sass/main/_results.scss */
-.results .third li.black p {
+.results .third ul {
+  width: 100%;
+}
+/* line 12, ../sass/main/_results.scss */
+.results .third ul li.black {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 7px;
+  background-color: black;
+}
+/* line 16, ../sass/main/_results.scss */
+.results .third ul li.black p {
+  width: 100%;
   color: white;
 }
-/* line 18, ../sass/main/_results.scss */
+/* line 23, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;

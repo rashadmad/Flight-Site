@@ -4,16 +4,21 @@
   .third {
     background-color: $maincolor;
     @include margin_system(2);
+    @include padding_system($left:0,$right:0);
     @extend %center;
+
+    ul{
+      width:100%;
       li.black{
+        @include margin_system($top:5,$bottom:5);
+        @include padding_system(7);
         background-color: black;
         p {
-
+          width: 100%;
           color: white;
         }
       }
-
-
+    }
   }
   .block {
     background-color: darken($maincolor,50%);
