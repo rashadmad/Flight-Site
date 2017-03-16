@@ -8,11 +8,10 @@ header {
   }
 }
 //fonts in nav
+
 ul{
   .info{
-    span{
-      @include text(1.1, $color:$white, $family:font_a_Bold);
-    } p {
+    p {
       @include text(1.1, $color:$white, $family:font_a_slim);
     }
   }
@@ -26,6 +25,19 @@ li {
     img {
       margin: 0;
     }
+  }
+}
+
+.location{
+  @include text(1.1, $color:$white, $family:font_a_Bold);
+}
+
+.results {
+  .block {
+    @include text(1, 1,$black, $family:font_a);
+  }
+  .usd {
+    @include text(1.5, 1,$black, $family:font_a_Bold);
   }
 }
 

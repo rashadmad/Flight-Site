@@ -1,7 +1,7 @@
 //results page
 .results {
 
-  .third {
+  .third, .full{
     background-color: $maincolor;
     @include margin_system(2);
     @include padding_system($left:0,$right:0);
@@ -23,5 +23,16 @@
   .block {
     background-color: darken($maincolor,50%);
     @include padding_system(2);
+
+    .full {
+      button {
+        float: right;
+        @include margin_system(5,$right:10);
+      }
+      .left {
+        @extend %left;
+        @include margin_system(5,$left:10);
+      }
+    }
   }
 }
