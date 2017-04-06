@@ -101,7 +101,6 @@ section[role="main"] {
             }
 
             button {
-                @extend %no_display;
                 @extend %no_outline;
                 @extend %right;
                 @extend .full;

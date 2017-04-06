@@ -1,6 +1,11 @@
 //results page
 .results {
 
+.usd{
+@extend %text_left;
+@include margin_system(5);
+}
+
   .third, .full{
     background-color: $maincolor;
     @include margin_system(2);
@@ -25,13 +30,30 @@
     @include padding_system(2);
 
     .full {
-      button {
-        float: right;
-        @include margin_system(5,$right:10);
-      }
       .left {
         @extend %left;
         @include margin_system(5,$left:10);
+      }
+      button {
+        @extend %no_outline;
+        @extend %right;
+        @extend .full;
+        @include border_system(solid,$black,5);
+        @include width_maxNmin(80);
+        @include easy_dropShadow(3px,3px,0px,$black);
+        @include background_color($white);
+        @include padding_system($N_S:5,$E_W:5);
+
+        &:visited {
+            @include background_color($black);
+            color: $white;
+        }
+
+        &:active {
+            @include background_color($black);
+            @include easy_dropShadow(0px,0px,0px,$black);
+            color: $white;
+        }
       }
     }
   }

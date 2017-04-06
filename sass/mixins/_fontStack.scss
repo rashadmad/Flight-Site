@@ -41,6 +41,10 @@ $default_font: 'Lora', serif;
 
       @else if $family == font_b_italic {
         font-family:'Lora', serif;
-    }
+      }
+
+      @else if $family == font_b_Bold {
+        font-family:'Lora', serif;
+      }
   }
 }

@@ -81,7 +81,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 2, ../sass/placeholders/_defaults.scss */
 section[role="main"] form fieldset input[type="number"],
 section[role="main"] form fieldset input[type="text"],
-section[role="main"] form fieldset select, section[role="main"] form fieldset button, #discount button {
+section[role="main"] form fieldset select, section[role="main"] form fieldset button, #discount button, .results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
   outline: 0;
 }
 
@@ -130,7 +130,7 @@ footer {
 }
 
 /* line 15, ../sass/placeholders/_display.scss */
-section[role="main"] form fieldset button, #discount button:before {
+#discount button:before {
   display: none;
 }
 
@@ -150,7 +150,7 @@ ul#main, ul#main li {
 }
 
 /* line 5, ../sass/placeholders/_float.scss */
-section[role="main"] form fieldset button, #discount button p {
+section[role="main"] form fieldset button, #discount button p, .results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
   float: right;
 }
 
@@ -167,12 +167,12 @@ footer:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-ul#main .info span, ul#main .info p, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1, .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button {
+ul#main .info span, ul#main .info p, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1, .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
   text-align: center;
 }
 
 /* line 5, ../sass/placeholders/_text_positioning.scss */
-section[role="main"] form fieldset legend {
+section[role="main"] form fieldset legend, .results .usd {
   text-align: left;
 }
 
@@ -214,7 +214,7 @@ ul#main li .five, ul#main li .three, ul#main, ul#main li .five button:target, ul
 }
 
 /* line 29, ../sass/mixins/_grid.scss */
-.full, section[role="main"] form fieldset button {
+.full, section[role="main"] form fieldset button, .results .block .full button {
   width: 99.1%;
   padding: 8px;
   font-size: 16px !important;
@@ -228,11 +228,11 @@ ul#main li .five, ul#main li .three, ul#main, ul#main li .five button:target, ul
   box-sizing: border-box;
 }
 /* line 17, ../sass/mixins/_grid.scss */
-.full:first-child, section[role="main"] form fieldset button:first-child {
+.full:first-child, section[role="main"] form fieldset button:first-child, .results .block .full button:first-child {
   margin-left: 0;
 }
 /* line 20, ../sass/mixins/_grid.scss */
-.full:last-child, section[role="main"] form fieldset button:last-child {
+.full:last-child, section[role="main"] form fieldset button:last-child, .results .block .full button:last-child {
   margin-right: 0;
 }
 
@@ -466,7 +466,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 114, ../sass/elements/_forms.scss */
+/* line 113, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -474,7 +474,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 119, ../sass/elements/_forms.scss */
+/* line 118, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -974,43 +974,78 @@ footer h1 {
 }
 
 /* line 4, ../sass/main/_results.scss */
-.results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button {
+.results .usd {
+  margin: 5px;
+}
+/* line 9, ../sass/main/_results.scss */
+.results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
   background-color: #FFFF00;
   margin: 2px;
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 10, ../sass/main/_results.scss */
-.results .third ul, .results .full ul, .results section[role="main"] form fieldset button ul, section[role="main"] form fieldset .results button ul {
+/* line 15, ../sass/main/_results.scss */
+.results .third ul, .results .full ul, .results section[role="main"] form fieldset button ul, section[role="main"] form fieldset .results button ul, .results .block .full button ul {
   width: 100%;
 }
-/* line 12, ../sass/main/_results.scss */
+/* line 17, ../sass/main/_results.scss */
 .results .third ul li.black, .results .full ul li.black, .results section[role="main"] form fieldset button ul li.black, section[role="main"] form fieldset .results button ul li.black {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 7px;
   background-color: black;
 }
-/* line 16, ../sass/main/_results.scss */
+/* line 21, ../sass/main/_results.scss */
 .results .third ul li.black p, .results .full ul li.black p, .results section[role="main"] form fieldset button ul li.black p, section[role="main"] form fieldset .results button ul li.black p {
   width: 100%;
   color: white;
 }
-/* line 23, ../sass/main/_results.scss */
+/* line 28, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;
 }
-/* line 28, ../sass/main/_results.scss */
-.results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
-  float: right;
-  margin: 5px;
-  margin-right: 10px;
-}
-/* line 32, ../sass/main/_results.scss */
+/* line 33, ../sass/main/_results.scss */
 .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
   margin: 5px;
   margin-left: 10px;
+}
+/* line 37, ../sass/main/_results.scss */
+.results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
+  border: solid #1a1a1a 5px;
+  max-width: 80px;
+  box-shadow: 3px 3px 0px #1a1a1a;
+  -webkit-box-shadow: 3px 3px 0px #1a1a1a;
+  -moz-box-shadow: 3px 3px 0px #1a1a1a;
+  -o-box-shadow: 3px 3px 0px #1a1a1a;
+  -webkit-background-color: #fff;
+  -moz-background-color: #fff;
+  -ms-background-color: #fff;
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 47, ../sass/main/_results.scss */
+.results .block .full button:visited, .results .block section[role="main"] form fieldset button button:visited, section[role="main"] form fieldset .results .block button button:visited {
+  -webkit-background-color: #1a1a1a;
+  -moz-background-color: #1a1a1a;
+  -ms-background-color: #1a1a1a;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+/* line 52, ../sass/main/_results.scss */
+.results .block .full button:active, .results .block section[role="main"] form fieldset button button:active, section[role="main"] form fieldset .results .block button button:active {
+  -webkit-background-color: #1a1a1a;
+  -moz-background-color: #1a1a1a;
+  -ms-background-color: #1a1a1a;
+  background-color: #1a1a1a;
+  box-shadow: 0px 0px 0px #1a1a1a;
+  -webkit-box-shadow: 0px 0px 0px #1a1a1a;
+  -moz-box-shadow: 0px 0px 0px #1a1a1a;
+  -o-box-shadow: 0px 0px 0px #1a1a1a;
+  color: #fff;
 }
 
 /*!
