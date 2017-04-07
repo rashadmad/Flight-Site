@@ -19,9 +19,9 @@ ul{
 //fonts in main nav
 li {
   button {
-      span {
+      
         @include text(.75, $color:$white, $family:font_a_slim);
-      }
+
     img {
       margin: 0;
     }

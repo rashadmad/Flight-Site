@@ -1,6 +1,5 @@
-function init() {
-  document.getElementsByTagName("button").style.color = 'blue';
-  console.log("log");
-}
 
-init();
+
+myFunction(){
+  document.getElementBytagName("span").style.color = "red";
+}

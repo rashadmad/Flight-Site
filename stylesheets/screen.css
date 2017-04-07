@@ -827,8 +827,8 @@ ul .info p {
   font-weight: 100;
 }
 
-/* line 22, ../sass/main/_typography.scss */
-li button span {
+/* line 21, ../sass/main/_typography.scss */
+li button {
   font-size: 0.75em;
   line-height: 1;
   color: #fff;
