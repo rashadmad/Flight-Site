@@ -23,6 +23,18 @@
           color: white;
         }
       }
+
+      .black:nth-child(2n+2):before {
+        content: "\f07e";
+        font-family: 'FontAwesome';
+        font-size: 1em !important;
+        margin-left: -58px;
+        margin-top: 4px;
+        height: 46px;
+        width: 50px;
+        color: $white;
+
+      }
     }
   }
   .block {

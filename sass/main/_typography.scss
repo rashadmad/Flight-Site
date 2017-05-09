@@ -28,6 +28,11 @@ li {
   }
 }
 
+//grid fonts
+.third {
+  font-size: 4vw;
+}
+
 .location{
   @include text(1.1, $color:$white, $family:font_a_Bold);
 }
