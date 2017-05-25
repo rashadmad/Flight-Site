@@ -1,5 +1,10 @@
 //results page
+
 .results {
+
+.airLineData {
+  white-space:nowrap;
+}
 
 .usd{
 @extend %text_left;
@@ -8,7 +13,7 @@
 
   .third, .full{
     background-color: $maincolor;
-    @include margin_system(2);
+    @include margin_system($left:.7);
     @include padding_system($left:0,$right:0);
     @extend %center;
 
@@ -20,16 +25,18 @@
         background-color: black;
         p {
           width: 100%;
+          word-wrap: normal;
           color: white;
         }
       }
 
-      .black:nth-child(2n+2):before {
+//connection sign
+    li.black.A:after {
+        position: absolute;
         content: "\f07e";
         font-family: 'FontAwesome';
-        font-size: 1em !important;
-        margin-left: -58px;
-        margin-top: 4px;
+        font-size: 1.5em !important;
+        @include margin_system($top:-17,$left:25);
         height: 46px;
         width: 50px;
         color: $white;

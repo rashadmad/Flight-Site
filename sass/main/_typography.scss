@@ -1,4 +1,5 @@
 //title font at top of the page
+
 header {
   h1 {
     @include text(1.5, $color:$black, $family:font_a_slim);
@@ -29,18 +30,22 @@ li {
 }
 
 //grid fonts
-.third {
-  font-size: 4vw;
-}
+
+  .airLineTitle{
+    word-wrap: break-word;
+  }
 
 .location{
   @include text(1.1, $color:$white, $family:font_a_Bold);
 }
 
 .results {
-  .block {
-    @include text(1, 1,$black, $family:font_a);
-  }
+
+.third{
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
   .usd {
     @include text(1.5, 1,$black, $family:font_a_Bold);
   }

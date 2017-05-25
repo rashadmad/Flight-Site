@@ -5,7 +5,7 @@
 
 $default_font: 'Lora', serif;
 
-@mixin text($size, $l_height: 1, $color: black, $family: null){
+@mixin text($size, $l_height: 1, $color: $black, $family: null){
 
     font-size: $size + 0em;
     line-height: $l_height;
