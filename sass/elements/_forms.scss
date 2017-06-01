@@ -2,10 +2,8 @@ section[role="main"] {
     @extend %margin_center;
     @include padding_system(7);
       @include width_maxNmin($form_width,$form_width);
-      min-height: 500px;
-      max-height: 510px;
-      height: 65vh;
-
+      height:100%;
+      padding-bottom: 20px;
       background-color: $white;
       background-repeat: no-repeat;
       @include media_query(height, $height:500px) {
