@@ -2,6 +2,10 @@
 
 .results {
 
+li {
+  height:100%;
+}
+
 .airLineData {
   white-space:nowrap;
 }
@@ -11,8 +15,16 @@
 @include margin_system(5);
 }
 
-  .third, .full{
+.solid-background {
     background-color: $maincolor;
+}
+
+.solid-background-darker {
+    background-color: darken($maincolor,10%);
+}
+
+
+  .third, .full{
     @include margin_system($left:.7);
     @include padding_system($left:0,$right:0);
     @extend %center;
@@ -35,7 +47,6 @@
         position: absolute;
         content: "\f07e";
         font-family: 'FontAwesome';
-        font-size: 1.5em !important;
         @include margin_system($top:-17,$left:25);
         height: 46px;
         width: 50px;
@@ -49,6 +60,21 @@
     @include padding_system(2);
 
     .full {
+      padding:10px;
+      .third {
+
+        background-color:none !important;
+        margin:0;
+        padding:0;
+        p.user {
+          @include margin_system($top:4,$left:3);
+        }
+        p.user:before  {
+          font-size: 1.5em !important;
+          @include fontAwesome_icon("\f007" );
+          @include margin_system($left:5);
+        }
+      }
       .left {
         @extend %left;
         @include margin_system(5,$left:10);

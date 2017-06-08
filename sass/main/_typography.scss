@@ -47,7 +47,15 @@ li {
 }
 
   .usd {
-    @include text(1.5, 1,$black, $family:font_a_Bold);
+    @include text(1.9, 1,$white, $family:font_a_Bold, $weight: 900);
+  }
+  p.user {
+    font-size: 1em !important;
+    @include padding_system(2);
+    color: $white;
+  }
+  p.user:before  {
+    color: $white;
   }
 }
 
