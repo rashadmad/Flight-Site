@@ -39,19 +39,29 @@ li {
   @include text(1.1, $color:$white, $family:font_a_Bold);
 }
 
+//results page
 .results {
+
+button{
+  @include text(.5);
+}
 
 .third{
   font-family:'Open Sans', sans-serif;
   font-weight: 400;
+
+  li {
+    font-size: 1.1em !important;
+    @include padding_system(3);
+  }
 }
 
   .usd {
     @include text(1.9, 1,$white, $family:font_a_Bold, $weight: 900);
   }
   p.user {
-    font-size: 1em !important;
     @include padding_system(2);
+    font-size: 1em !important;
     color: $white;
   }
   p.user:before  {
@@ -87,6 +97,32 @@ form{
 
       }
     }
+  }
+}
+
+#testimonials{
+
+@include media_query(mobile){
+  display:none;
+}
+
+  div.wrapper {
+
+    @include margin_system($top:15);
+  }
+    .fa{
+      @include margin_system($top:20,$bottom:30);
+    }
+    p.callout{
+        background-color: rgba(2,2,2,0.3);
+        @include text(1.15, $color:$white, $l_height:1.5, $family:font_a_Bold);
+        @include margin_system($top:35,$left:10%);
+        @include padding_system(10,$top:10);
+        @extend %left;
+        @extend %center;
+        width: 40%;
+        max-width: 400px;
+
   }
 }
 

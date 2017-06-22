@@ -1,6 +1,13 @@
 //results page
 
 .results {
+.main {
+
+}
+
+fieldset {
+  @include margin_system($top:3,$bottom:3);
+}
 
 li {
   height:100%;
@@ -47,7 +54,8 @@ li {
         position: absolute;
         content: "\f07e";
         font-family: 'FontAwesome';
-        @include margin_system($top:-17,$left:25);
+        font-size: 2em;
+        @include margin_system($top:-23,$left:25);
         height: 46px;
         width: 50px;
         color: $white;
@@ -58,6 +66,8 @@ li {
   .block {
     background-color: darken($maincolor,50%);
     @include padding_system(2);
+    @include margin_system(0);
+    width:100%;
 
     .full {
       padding:10px;
@@ -81,13 +91,11 @@ li {
       }
       button {
         @extend %no_outline;
-        @extend %right;
         @extend .full;
         @include border_system(solid,$black,5);
-        @include width_maxNmin(80);
         @include easy_dropShadow(3px,3px,0px,$black);
         @include background_color($white);
-        @include padding_system($N_S:5,$E_W:5);
+        @include padding_system($N_S:6,$E_W:40%);
 
         &:visited {
             @include background_color($black);

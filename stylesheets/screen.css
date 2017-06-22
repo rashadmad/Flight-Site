@@ -145,12 +145,12 @@ ul#main, ul#main li {
 }
 
 /* line 2, ../sass/placeholders/_float.scss */
-#discount button:before, header .main-logo, header .logo, .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
+#discount button:before, #testimonials p.callout, header .main-logo, header .logo, .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
   float: left;
 }
 
 /* line 5, ../sass/placeholders/_float.scss */
-section[role="main"] form fieldset button, #discount button p, .results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
+section[role="main"] form fieldset button, #discount button p {
   float: right;
 }
 
@@ -167,7 +167,7 @@ footer:after {
 }
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
-ul#main .info span, ul#main .info p, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, footer div.wrapper h1, .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
+ul#main .info span, ul#main .info p, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, #testimonials p.callout, footer div.wrapper h1, .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
   text-align: center;
 }
 
@@ -519,7 +519,7 @@ ul#main li .five:active, ul#main li .three:active {
   color: #1a1a1a !important;
 }
 
-/* line 13, ../sass/elements/_nav.scss */
+/* line 11, ../sass/elements/_nav.scss */
 ul#main {
   margin-bottom: 0px;
   background-color: #1a1a1a;
@@ -532,14 +532,14 @@ ul#main a {
   text-decoration: none;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 13, ../sass/elements/_nav.scss */
+  /* line 11, ../sass/elements/_nav.scss */
   ul#main {
     width: 100%;
     justify-content: center;
   }
 }
 @media (min-width: 768px) {
-  /* line 13, ../sass/elements/_nav.scss */
+  /* line 11, ../sass/elements/_nav.scss */
   ul#main {
     display: flex;
     justify-content: flex-start;
@@ -851,12 +851,23 @@ li button img {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 44, ../sass/main/_typography.scss */
+/* line 45, ../sass/main/_typography.scss */
+.results button {
+  font-size: 0.5em;
+  line-height: 1;
+  color: #1a1a1a;
+}
+/* line 49, ../sass/main/_typography.scss */
 .results .third {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-/* line 49, ../sass/main/_typography.scss */
+/* line 53, ../sass/main/_typography.scss */
+.results .third li {
+  font-size: 1.1em !important;
+  padding: 3px;
+}
+/* line 59, ../sass/main/_typography.scss */
 .results .usd {
   font-size: 1.9em;
   line-height: 1;
@@ -864,32 +875,32 @@ li button img {
   font-weight: 900;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 52, ../sass/main/_typography.scss */
+/* line 62, ../sass/main/_typography.scss */
 .results p.user {
-  font-size: 1em !important;
   padding: 2px;
+  font-size: 1em !important;
   color: #fff;
 }
-/* line 57, ../sass/main/_typography.scss */
+/* line 67, ../sass/main/_typography.scss */
 .results p.user:before {
   color: #fff;
 }
 
-/* line 63, ../sass/main/_typography.scss */
+/* line 73, ../sass/main/_typography.scss */
 form legend {
   font-size: 1.3em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 66, ../sass/main/_typography.scss */
+/* line 76, ../sass/main/_typography.scss */
 form label {
   font-size: 0.8em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 69, ../sass/main/_typography.scss */
+/* line 79, ../sass/main/_typography.scss */
 form input {
   font-size: 0.08em;
   line-height: 1;
@@ -897,7 +908,7 @@ form input {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 74, ../sass/main/_typography.scss */
+/* line 84, ../sass/main/_typography.scss */
 .callout {
   font-size: 1em;
   line-height: 1.3;
@@ -905,7 +916,7 @@ form input {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 80, ../sass/main/_typography.scss */
+/* line 90, ../sass/main/_typography.scss */
 #discount button p {
   font-size: 1.15em;
   line-height: 1;
@@ -913,7 +924,7 @@ form input {
   font-family: 'Open Sans', sans-serif;
 }
 @media (min-width: 350px) {
-  /* line 80, ../sass/main/_typography.scss */
+  /* line 90, ../sass/main/_typography.scss */
   #discount button p {
     font-size: 1.24em;
     line-height: 1;
@@ -922,7 +933,37 @@ form input {
   }
 }
 
-/* line 97, ../sass/main/_typography.scss */
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 103, ../sass/main/_typography.scss */
+  #testimonials {
+    display: none;
+  }
+}
+/* line 109, ../sass/main/_typography.scss */
+#testimonials div.wrapper {
+  margin-top: 15px;
+}
+/* line 113, ../sass/main/_typography.scss */
+#testimonials .fa {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 116, ../sass/main/_typography.scss */
+#testimonials p.callout {
+  background-color: rgba(2, 2, 2, 0.3);
+  font-size: 1.15em;
+  line-height: 1.5;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 35px;
+  margin-left: 10%;
+  padding: 10px;
+  padding-right: 10px;
+  width: 40%;
+  max-width: 400px;
+}
+
+/* line 133, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;
@@ -932,6 +973,7 @@ footer div.wrapper h1 {
 
 /* line 1, ../sass/main/_header.scss */
 header {
+  postion: fixed;
   -webkit-background-color: #FFFF00;
   -moz-background-color: #FFFF00;
   -ms-background-color: #FFFF00;
@@ -940,12 +982,12 @@ header {
   min-width: 100%;
   height: 65px;
 }
-/* line 8, ../sass/main/_header.scss */
+/* line 9, ../sass/main/_header.scss */
 header h1 {
   padding: 10px;
   padding-right: 15px;
 }
-/* line 15, ../sass/main/_header.scss */
+/* line 16, ../sass/main/_header.scss */
 header .main-logo, header .logo {
   padding: 10px;
 }
@@ -976,81 +1018,89 @@ footer h1 {
   margin-top: 25px;
 }
 
-/* line 5, ../sass/main/_results.scss */
+/* line 8, ../sass/main/_results.scss */
+.results fieldset {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+/* line 12, ../sass/main/_results.scss */
 .results li {
   height: 100%;
 }
-/* line 9, ../sass/main/_results.scss */
+/* line 16, ../sass/main/_results.scss */
 .results .airLineData {
   white-space: nowrap;
 }
-/* line 13, ../sass/main/_results.scss */
+/* line 20, ../sass/main/_results.scss */
 .results .usd {
   margin: 5px;
 }
-/* line 18, ../sass/main/_results.scss */
+/* line 25, ../sass/main/_results.scss */
 .results .solid-background {
   background-color: #FFFF00;
 }
-/* line 22, ../sass/main/_results.scss */
+/* line 29, ../sass/main/_results.scss */
 .results .solid-background-darker {
   background-color: #cccc00;
 }
-/* line 27, ../sass/main/_results.scss */
+/* line 34, ../sass/main/_results.scss */
 .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
   margin-left: 0.7px;
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 32, ../sass/main/_results.scss */
+/* line 39, ../sass/main/_results.scss */
 .results .third ul, .results .full ul, .results section[role="main"] form fieldset button ul, section[role="main"] form fieldset .results button ul, .results .block .full button ul {
   width: 100%;
 }
-/* line 34, ../sass/main/_results.scss */
+/* line 41, ../sass/main/_results.scss */
 .results .third ul li.black, .results .full ul li.black, .results section[role="main"] form fieldset button ul li.black, section[role="main"] form fieldset .results button ul li.black {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 7px;
   background-color: black;
 }
-/* line 38, ../sass/main/_results.scss */
+/* line 45, ../sass/main/_results.scss */
 .results .third ul li.black p, .results .full ul li.black p, .results section[role="main"] form fieldset button ul li.black p, section[role="main"] form fieldset .results button ul li.black p {
   width: 100%;
   word-wrap: normal;
   color: white;
 }
-/* line 46, ../sass/main/_results.scss */
+/* line 53, ../sass/main/_results.scss */
 .results .third ul li.black.A:after, .results .full ul li.black.A:after, .results section[role="main"] form fieldset button ul li.black.A:after, section[role="main"] form fieldset .results button ul li.black.A:after {
   position: absolute;
   content: "\f07e";
   font-family: 'FontAwesome';
-  margin-top: -17px;
+  font-size: 2em;
+  margin-top: -23px;
   margin-left: 25px;
   height: 46px;
   width: 50px;
   color: #fff;
 }
-/* line 58, ../sass/main/_results.scss */
+/* line 66, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;
+  margin: 0px;
+  width: 100%;
 }
-/* line 62, ../sass/main/_results.scss */
+/* line 72, ../sass/main/_results.scss */
 .results .block .full, .results .block section[role="main"] form fieldset button, section[role="main"] form fieldset .results .block button, .results .block .full button {
   padding: 10px;
 }
-/* line 64, ../sass/main/_results.scss */
+/* line 74, ../sass/main/_results.scss */
 .results .block .full .third, .results .block section[role="main"] form fieldset button .third, section[role="main"] form fieldset .results .block button .third {
   background-color: none !important;
   margin: 0;
   padding: 0;
 }
-/* line 69, ../sass/main/_results.scss */
+/* line 79, ../sass/main/_results.scss */
 .results .block .full .third p.user, .results .block section[role="main"] form fieldset button .third p.user, section[role="main"] form fieldset .results .block button .third p.user {
   margin-top: 4px;
   margin-left: 3px;
 }
-/* line 72, ../sass/main/_results.scss */
+/* line 82, ../sass/main/_results.scss */
 .results .block .full .third p.user:before, .results .block section[role="main"] form fieldset button .third p.user:before, section[role="main"] form fieldset .results .block button .third p.user:before {
   font-size: 1.5em !important;
   content: "";
@@ -1060,15 +1110,14 @@ footer h1 {
   left: 0;
   margin-left: 5px;
 }
-/* line 78, ../sass/main/_results.scss */
+/* line 88, ../sass/main/_results.scss */
 .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
   margin: 5px;
   margin-left: 10px;
 }
-/* line 82, ../sass/main/_results.scss */
+/* line 92, ../sass/main/_results.scss */
 .results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
   border: solid #1a1a1a 5px;
-  max-width: 80px;
   box-shadow: 3px 3px 0px #1a1a1a;
   -webkit-box-shadow: 3px 3px 0px #1a1a1a;
   -moz-box-shadow: 3px 3px 0px #1a1a1a;
@@ -1077,12 +1126,12 @@ footer h1 {
   -moz-background-color: #fff;
   -ms-background-color: #fff;
   background-color: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 40%;
+  padding-right: 40%;
 }
-/* line 92, ../sass/main/_results.scss */
+/* line 100, ../sass/main/_results.scss */
 .results .block .full button:visited, .results .block section[role="main"] form fieldset button button:visited, section[role="main"] form fieldset .results .block button button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -1090,7 +1139,7 @@ footer h1 {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 97, ../sass/main/_results.scss */
+/* line 105, ../sass/main/_results.scss */
 .results .block .full button:active, .results .block section[role="main"] form fieldset button button:active, section[role="main"] form fieldset .results .block button button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
