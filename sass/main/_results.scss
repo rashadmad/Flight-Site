@@ -23,6 +23,11 @@ li {
 }
 
 .solid-background {
+  P.airline_title{
+    @extend %margin_center;
+    max-width: 50%;
+
+  }
     background-color: $maincolor;
 }
 
@@ -70,8 +75,10 @@ li {
     width:100%;
 
     .full {
+
       padding:10px;
       .third {
+
 
         background-color:none !important;
         margin:0;

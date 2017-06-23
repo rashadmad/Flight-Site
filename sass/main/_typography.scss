@@ -116,13 +116,16 @@ form{
     p.callout{
         background-color: rgba(2,2,2,0.3);
         @include text(1.15, $color:$white, $l_height:1.5, $family:font_a_Bold);
-        @include margin_system($top:35,$left:10%);
+        @include margin_system($top:35,$right:5%,$left:5%);
         @include padding_system(10,$top:10);
-        @extend %left;
+        @extend %right;
         @extend %center;
         width: 40%;
-        max-width: 400px;
+        max-width: 600px;
 
+        @include media_query(mobile){
+          display:none;
+      }
   }
 }
 

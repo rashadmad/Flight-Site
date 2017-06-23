@@ -145,12 +145,12 @@ ul#main, ul#main li {
 }
 
 /* line 2, ../sass/placeholders/_float.scss */
-#discount button:before, #testimonials p.callout, header .main-logo, header .logo, .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
+#discount button:before, header .main-logo, header .logo, .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
   float: left;
 }
 
 /* line 5, ../sass/placeholders/_float.scss */
-section[role="main"] form fieldset button, #discount button p {
+section[role="main"] form fieldset button, #discount button p, #testimonials p.callout {
   float: right;
 }
 
@@ -188,7 +188,7 @@ header h1 {
 }
 
 /* line 18, ../sass/placeholders/_text_positioning.scss */
-section[role="main"], section[role="main"] form, section[role="main"] form fieldset, #discount, #discount .discount_p, #discount button p, footer h1 {
+section[role="main"], section[role="main"] form, section[role="main"] form fieldset, #discount, #discount .discount_p, #discount button p, footer h1, .results .solid-background P.airline_title {
   margin: 0 auto;
 }
 
@@ -956,14 +956,21 @@ form input {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   margin-top: 35px;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 10px;
   padding-right: 10px;
   width: 40%;
-  max-width: 400px;
+  max-width: 600px;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 116, ../sass/main/_typography.scss */
+  #testimonials p.callout {
+    display: none;
+  }
 }
 
-/* line 133, ../sass/main/_typography.scss */
+/* line 136, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;
@@ -1039,34 +1046,38 @@ footer h1 {
 .results .solid-background {
   background-color: #FFFF00;
 }
-/* line 29, ../sass/main/_results.scss */
+/* line 26, ../sass/main/_results.scss */
+.results .solid-background P.airline_title {
+  max-width: 50%;
+}
+/* line 34, ../sass/main/_results.scss */
 .results .solid-background-darker {
   background-color: #cccc00;
 }
-/* line 34, ../sass/main/_results.scss */
+/* line 39, ../sass/main/_results.scss */
 .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
   margin-left: 0.7px;
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 39, ../sass/main/_results.scss */
+/* line 44, ../sass/main/_results.scss */
 .results .third ul, .results .full ul, .results section[role="main"] form fieldset button ul, section[role="main"] form fieldset .results button ul, .results .block .full button ul {
   width: 100%;
 }
-/* line 41, ../sass/main/_results.scss */
+/* line 46, ../sass/main/_results.scss */
 .results .third ul li.black, .results .full ul li.black, .results section[role="main"] form fieldset button ul li.black, section[role="main"] form fieldset .results button ul li.black {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 7px;
   background-color: black;
 }
-/* line 45, ../sass/main/_results.scss */
+/* line 50, ../sass/main/_results.scss */
 .results .third ul li.black p, .results .full ul li.black p, .results section[role="main"] form fieldset button ul li.black p, section[role="main"] form fieldset .results button ul li.black p {
   width: 100%;
   word-wrap: normal;
   color: white;
 }
-/* line 53, ../sass/main/_results.scss */
+/* line 58, ../sass/main/_results.scss */
 .results .third ul li.black.A:after, .results .full ul li.black.A:after, .results section[role="main"] form fieldset button ul li.black.A:after, section[role="main"] form fieldset .results button ul li.black.A:after {
   position: absolute;
   content: "\f07e";
@@ -1078,29 +1089,29 @@ footer h1 {
   width: 50px;
   color: #fff;
 }
-/* line 66, ../sass/main/_results.scss */
+/* line 71, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;
   margin: 0px;
   width: 100%;
 }
-/* line 72, ../sass/main/_results.scss */
+/* line 77, ../sass/main/_results.scss */
 .results .block .full, .results .block section[role="main"] form fieldset button, section[role="main"] form fieldset .results .block button, .results .block .full button {
   padding: 10px;
 }
-/* line 74, ../sass/main/_results.scss */
+/* line 80, ../sass/main/_results.scss */
 .results .block .full .third, .results .block section[role="main"] form fieldset button .third, section[role="main"] form fieldset .results .block button .third {
   background-color: none !important;
   margin: 0;
   padding: 0;
 }
-/* line 79, ../sass/main/_results.scss */
+/* line 86, ../sass/main/_results.scss */
 .results .block .full .third p.user, .results .block section[role="main"] form fieldset button .third p.user, section[role="main"] form fieldset .results .block button .third p.user {
   margin-top: 4px;
   margin-left: 3px;
 }
-/* line 82, ../sass/main/_results.scss */
+/* line 89, ../sass/main/_results.scss */
 .results .block .full .third p.user:before, .results .block section[role="main"] form fieldset button .third p.user:before, section[role="main"] form fieldset .results .block button .third p.user:before {
   font-size: 1.5em !important;
   content: "";
@@ -1110,12 +1121,12 @@ footer h1 {
   left: 0;
   margin-left: 5px;
 }
-/* line 88, ../sass/main/_results.scss */
+/* line 95, ../sass/main/_results.scss */
 .results .block .full .left, .results .block section[role="main"] form fieldset button .left, section[role="main"] form fieldset .results .block button .left {
   margin: 5px;
   margin-left: 10px;
 }
-/* line 92, ../sass/main/_results.scss */
+/* line 99, ../sass/main/_results.scss */
 .results .block .full button, .results .block section[role="main"] form fieldset button button, section[role="main"] form fieldset .results .block button button {
   border: solid #1a1a1a 5px;
   box-shadow: 3px 3px 0px #1a1a1a;
@@ -1131,7 +1142,7 @@ footer h1 {
   padding-left: 40%;
   padding-right: 40%;
 }
-/* line 100, ../sass/main/_results.scss */
+/* line 107, ../sass/main/_results.scss */
 .results .block .full button:visited, .results .block section[role="main"] form fieldset button button:visited, section[role="main"] form fieldset .results .block button button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -1139,7 +1150,7 @@ footer h1 {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 105, ../sass/main/_results.scss */
+/* line 112, ../sass/main/_results.scss */
 .results .block .full button:active, .results .block section[role="main"] form fieldset button button:active, section[role="main"] form fieldset .results .block button button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
