@@ -1,136 +1,123 @@
-//button place holder
+  //button place holder
 %button {
-  @extend %full_width;
-  @extend %clear_button_defaults;
-  @include background_color($black);
-  @include flat_ui_buttons($white, 5px, $black);
-  @include padding_system(0,$E_W:5);
+    @extend %full_width;
+    @extend %clear_button_defaults;
+    @include background_color($white);
+    @include flat_ui_buttons($black, 5px, $white);
+    @include padding_system(0,$E_W:5);
 }
-
 //nav
-ul#main{
-
-
-
-a {
-  color:$white;
-  outline: 0;
-  text-decoration: none;
-
-}
-
-  @extend %no_margin;
-  @extend %bye_bullets;
-  @extend %flex;
-  @extend %flex_center;
-  @extend %full_width;
-    @include media_query(min-mobile){
-      width: 100%;
-      justify-content: center;
-    } @include media_query(modular,$min_width:$tablet){
-          display: flex;
-          justify-content: flex-start;
+ul#main {
+    a {
+        @extend %button;
+        outline: 0;
+        text-decoration: none;
     }
-  @include margin_system($bottom:0);
+    @extend %no_margin;
+    @extend %bye_bullets;
+    @extend %flex;
+    @extend %flex_center;
+    @extend %full_width;
+    @include media_query(min-mobile) {
+        width: 100%;
+        justify-content: center;
+    }
+    @include media_query(modular,$min_width:$tablet) {
+        display: flex;
+        justify-content: flex-start;
+    }
+    @include margin_system($bottom:0);
     background-color: $black;
     height: $ul_height;
 
     .info {
-      @include padding_system(5);
-      @include margin_system($top:8);
-      span,p {
-        @include margin_system($top:3, $bottom:3, $right:17, $left:17);
-        @extend %center;
-        color:$white;
-      }
-    }
+        @include padding_system(5);
+        @include margin_system($top:8);
 
-
-  li{
-    @extend %center;
-    @extend %flex;
-    @extend %flex_center;
-    @include padding_system(2);
-
-      color: $black;
-
-      .fa{
-        @include margin_system(0);
-
-      }
-
-    #active {
-        color: $black !important;
-        @include flat_ui_buttons($white, 5px, $black, $auto_active:true);
-
-    }
-
-
-      //ui buttons at the top of the page
-      .five{
-        @extend %button;
-        width: 60px;
-            @include media_query($min_mobile){@include width_maxNmin(50,70%);}
-          @include media_query(modular,$min_width:$mobile){
-
-          }
-
-          span{
-            margin-top: 10px;
+        p,
+        span {
+            @include margin_system($top:3, $bottom:3, $right:17, $left:17);
+            @extend %center;
             color: $white;
-          }
-
-         button:target{
-           @extend %full_width;
-         }
-
-        .logo{
-            fill: $white;
-
-
-             &:active{
-               fill: $black;
-            }
-          }
-        }.three{
-
-          div.info{
-            text-align: center;
-            @include padding_system(10);
-            width: 30%;
-
-          }
-
-          @extend %button;
-          width: 77px;
-            @include media_query($min_mobile){
-              @include width_maxNmin(50,70%);
-            }
-
-
-            span{
-              color: $white;
-              @include margin_system(0);
-            }
-
-           button:target{
-             @extend %full_width;
-           }
-
-          .logo{
-              fill: $white;
-
-
-               &:active{
-                 fill: $black;
-              }
-            }
-          }
-      }
-
-      li:first-child {
-        @include media_query(modular,$min-width: $tablet){
-            @include margin_system($left:calculation($form_gutter,"+",6));
-      }
+        }
     }
-  }
+
+    li {
+        @extend %center;
+        @extend %flex;
+        @extend %flex_center;
+        @include padding_system(2.5);
+        color: $black;
+
+        .fa {
+            @include margin_system(7,$top:12);
+        }
+
+        #active {
+            color: $black !important;
+            @include flat_ui_buttons($white, 5px, $black, $auto_active:true);
+        }
+        //ui buttons at the top of the page
+        .five {
+            @extend %button;
+            width: 50px;
+            @include media_query($min_mobile) {
+                 @include width_maxNmin(50,70%);
+            }
+            @include media_query(modular,$min_width:$mobile) {}
+
+            span {
+                margin-top: 10px;
+                color: $white;
+            }
+
+            button:target {
+                @extend %full_width;
+            }
+
+            .logo {
+                fill: $white;
+
+                &:active {
+                    fill: $black;
+                }
+            }
+        }
+
+        .three {
+            div.info {
+                text-align: center;
+                @include padding_system(10);
+                width: 30%;
+            }
+            @extend %button;
+            width: 77px;
+            @include media_query($min_mobile) {
+                 @include width_maxNmin(50,70%);
+            }
+
+            span {
+                color: $white;
+                @include margin_system(0);
+            }
+
+            button:target {
+                @extend %full_width;
+            }
+
+            .logo {
+                fill: $white;
+
+                &:active {
+                    fill: $black;
+                }
+            }
+        }
+    }
+
+    li:first-child {
+        @include media_query(modular,$min-width: $tablet) {
+             @include margin_system($left:calculation($form_gutter,"+",6));
+        }
+    }
+}
