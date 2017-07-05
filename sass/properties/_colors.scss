@@ -9,3 +9,8 @@ $black: #1a1a1a;
 $white: #fff;
 
 $maincolor: $yellow;
+$darken-maincolor: darken($maincolor,10%);
+
+html {
+  background-color: $maincolor;
+}

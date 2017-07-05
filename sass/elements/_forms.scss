@@ -1,19 +1,19 @@
 section[role="main"] {
+    box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @extend %margin_center;
     @include padding_system(7);
-      @include width_maxNmin($form_width,$form_width);
-      height:100%;
-      padding-bottom: 20px;
-      background-color: $white;
-      background-repeat: no-repeat;
-      @include media_query(height, $height:500px) {
-           background-color: $black;
-      }
-
+    @include width_maxNmin($form_width,$form_width);
+    height: 100%;
+    padding-bottom: 20px;
+    background-color: $white;
+    background-repeat: no-repeat;
+    @include media_query(height, $height:500px) {
+        background-color: $black;
+    }
     @include media_query(modular, $min_width:$tablet) {
          @include margin_system($left:$form_gutter);
-          float: left;
-          transition: left 1s;
+        float: left;
+        transition: left 1s;
     }
 
     form {
@@ -22,34 +22,32 @@ section[role="main"] {
         @include background_color($maincolor);
         @include width_maxNmin(300);
 
-
         fieldset.bottom {
             @include margin_system(10);
         }
 
         fieldset {
-          @include width_maxNmin(100%);
-          @extend %margin_center;
+            @include width_maxNmin(100%);
+            @extend %margin_center;
+
             .row {
                 @include row;
+
                 .close {
-
-                  content: "\f007";
-                  font-size: 1em !important;
-                  margin-left: -58px;
-                  margin-top: 4px;
-                  height: 46px;
-                  width: 50px;
-                  color: $white;
-                  background-color: $black;
-                  border: 0px solid;
-                  -webkit-appearance: none;
-
+                    content: "\f007";
+                    font-size: 1em !important;
+                    margin-left: -58px;
+                    margin-top: 4px;
+                    height: 46px;
+                    width: 50px;
+                    color: $white;
+                    background-color: $black;
+                    border: 0 solid;
+                    -webkit-appearance: none;
                 }
             }
 
-            .checkbox_wrapper {
-            }
+            .checkbox_wrapper {}
 
             legend {
                 @include margin_system(5);
@@ -66,14 +64,12 @@ section[role="main"] {
                 @include fontAwesome_icon("\f0a9");
             }
 
-
             input[type="number"],
             input[type="text"],
             select {
                 @extend %no_outline;
                 @extend %border_box;
                 @include border_system(solid,$black,5);
-
 
                 &:focus {
                     @include background_color($black);
@@ -86,8 +82,11 @@ section[role="main"] {
                 position: relative;
             }
 
-            input[type="text"]:after {
+            label.red {
+              @include margin_system($E_W:6,$bottom:10);
+            }
 
+            input[type="text"]:after {
                 font-family: 'FontAwesome';
                 color: $black;
                 position: relative;
@@ -96,6 +95,25 @@ section[role="main"] {
 
             input[type="checkbox"] {
                 @include margin_system(3.5);
+                @extend %no_display;
+            }
+
+            input[type=checkbox] + label.blue {
+                @include border_system(solid,$black,5);
+                background: $white;
+                height: 12px;
+                width: 12px;
+                display: inline-block;
+                padding: 0;
+            }
+
+            input[type=checkbox]:checked + label.blue {
+                @include border_system(double,$white,5);
+                background: $black;
+                height: 12px;
+                width: 12px;
+                display: inline-block;
+                padding: 0;
             }
 
             button {
