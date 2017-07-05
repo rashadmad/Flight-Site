@@ -443,7 +443,7 @@ section[role="main"] form fieldset [type="text"] {
   position: relative;
 }
 /* line 85, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset label.red {
+section[role="main"] form fieldset label.real {
   margin-bottom: 10px;
   margin-left: 6px;
   margin-right: 6px;
@@ -455,12 +455,8 @@ section[role="main"] form fieldset input[type="text"]:after {
   position: relative;
   content: "\f007";
 }
-/* line 96, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset input[type="checkbox"] {
-  margin: 3.5px;
-}
-/* line 101, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset input[type=checkbox] + label.blue {
+/* line 100, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset input[type=checkbox] + label.mock {
   border: solid #1a1a1a 5px;
   background: #fff;
   height: 12px;
@@ -468,8 +464,8 @@ section[role="main"] form fieldset input[type=checkbox] + label.blue {
   display: inline-block;
   padding: 0;
 }
-/* line 110, ../sass/elements/_forms.scss */
-section[role="main"] form fieldset input[type=checkbox]:checked + label.blue {
+/* line 109, ../sass/elements/_forms.scss */
+section[role="main"] form fieldset input[type=checkbox]:checked + label.mock {
   border: double #fff 5px;
   background: #1a1a1a;
   height: 12px;
@@ -477,7 +473,7 @@ section[role="main"] form fieldset input[type=checkbox]:checked + label.blue {
   display: inline-block;
   padding: 0;
 }
-/* line 119, ../sass/elements/_forms.scss */
+/* line 118, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button {
   border: solid #1a1a1a 5px;
   max-width: 80px;
@@ -494,7 +490,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 129, ../sass/elements/_forms.scss */
+/* line 128, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -502,7 +498,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 134, ../sass/elements/_forms.scss */
+/* line 133, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
