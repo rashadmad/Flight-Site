@@ -1,9 +1,16 @@
+@import "compass/css3";
+
 //colors to be used trough out rest of program, background colors, rollovers as well
 $yellow: #FFFF00;
 $green: #51B848;
 $red: #DD2222;
-$blue: #426FB6;
+$blue: #3884ff;
 $black: #1a1a1a;
 $white: #fff;
 
 $maincolor: $yellow;
+$darken-maincolor: darken($maincolor,10%);
+
+html {
+  background-color: $maincolor;
+}

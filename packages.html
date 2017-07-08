@@ -23,12 +23,12 @@
             <h1>FLIGHT SITE</h1>
         </header>
 
-        <ul>
-            <li><button class="five"><a href="index.html"><i class="fa fa-plane fa-2x logo" aria-hidden="true"></i><span>FLIGHTS</span></a></button></li>
-            <li><button class="five"><a href="rentals.html"><i class="fa fa-car fa-2x logo" aria-hidden="true"></i><span>RENTALS</span></a></button></li>
-            <li><button class="five"><a href="hotels.html"><i class="fa fa-building fa-2x logo" aria-hidden="true"></i><span>HOTELS</span></a></button></li>
-            <li><button class="five" id="active"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i><span>PACKAGES</span></button></li>
-            <li><button class="five"><a href="cruises.html"><i class="fa fa-ship fa-2x logo" aria-hidden="true"></i><span>CRUISES</span></a></button></li>
+        <ul id="main">
+          <li><a class="five" href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
+          <li><a class="five" href="rentals.html"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
+          <li><a class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
+          <li><a id="active" class="five"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
+          <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
         </ul>
         <section role="main">
             <form>
@@ -58,11 +58,11 @@
                     <div class="checkbox_wrapper">
                         <div>
                             <button type="submit">Search</button>
-                            <input class="row" type="checkbox" name="one_way" value="one_way"><label>Flight</label>
+                            <input class="row" type="checkbox" name="flights" value="flights" id="flights"/><label class="mock" for="flights"></label><label class="real">Flight</label>
                         </div>
                         <div>
-                            <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>Hotel</label>
-                            <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>Car</label>
+                            <input class="row" type="checkbox" name="hotel" value="hotel" id="hotel"/><label class="mock" for="hotel"></label><label class="real">Hotel</label>
+                            <input class="row" type="checkbox" name="car" value="car" id="car"/><label class="mock" for="car"></label><label class="real">Car</label>
                         </div>
                     </div>
                 </fieldset>

@@ -10,9 +10,11 @@
     <!--JQuery install-->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
     <!--PLUGIN vendor(Slick):css-->
-    <script src="js/custom.js"></script>
-
+    <script type="text/javascript" src="js/custom.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 </head>
 
@@ -23,12 +25,12 @@
             <h1>FLIGHT SITE</h1>
         </header>
 
-        <ul>
-            <li><button class="five" id="active"><i class="fa fa-plane fa-2x logo" aria-hidden="true"></i><span>FLIGHTS</span></a></button></li>
-            <li><button class="five"><a href="rentals.html"><i class="fa fa-car fa-2x logo" aria-hidden="true"></i><span>RENTALS</span></a></button></li>
-            <li><button class="five"><a href="hotels.html"><i class="fa fa-building fa-2x logo" aria-hidden="true"></i><span>HOTELS</span></a></button></li>
-            <li><button class="five"><a href="packages.html"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i><span>PACKAGES</span></a></button></li>
-            <li><button class="five"><a href="cruises.html"><i class="fa fa-ship fa-2x logo" aria-hidden="true"></i><span>CRUISES</span></a></button></li>
+        <ul id="main">
+            <li><a id="active" class="five"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
+            <li><a class="five" href="rentals.html"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
+            <li><a class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
+            <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
+            <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
         </ul>
 
         <section role="main">
@@ -45,7 +47,7 @@
                         <label class="hidden">Departure Date</label>
                         <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
                         <label class="hidden">Arrival Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'><input class="close" type="submit" style="font-family:'Open Sans', sans-serif, FontAwesome"placeholder='&#xf00d;'>
+                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
                     </div>
                     <div class="row">
                         <label>Passengers</label>
@@ -72,11 +74,11 @@
                 <fieldset class="bottom">
                     <div class="checkbox_wrapper">
                         <div>
-                            <button type="submit">Search</button>
-                            <input class="row" type="checkbox" name="one_way" value="one_way"><label>One way</label>
+                            <button class="submit" type="submit"><a href="flight_deals_page.html  ">Search</a></button>
+                            <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway"/><label class="mock" for="oneway"></label><label class="real">One Way</label>
                         </div>
                         <div>
-                            <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>Non-stop</label>
+                            <input class="row" type="checkbox" name="non_stop" value="non_stop" id="nonstop"/><label class="mock" for="nonstop"></label><label class="real">Non-stop</label>
                         </div>
                     </div>
                 </fieldset>
@@ -91,6 +93,12 @@
                     </div>
                 </div>
             </section>
+        </section>
+
+        <section id="testimonials">
+          <div class="wrapper">
+            <p class="callout"><i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+          </div>
         </section>
 
         </div>

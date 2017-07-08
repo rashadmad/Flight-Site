@@ -1,0 +1,120 @@
+//results page
+
+.results {
+.main {
+
+}
+
+fieldset {
+  @include margin_system($top:3,$bottom:3);
+}
+
+li {
+  height:100%;
+}
+
+.airLineData {
+  white-space:nowrap;
+}
+
+.usd{
+@extend %text_left;
+@include margin_system(5);
+}
+
+.solid-background {
+  P.airline_title{
+    @extend %margin_center;
+    max-width: 50%;
+
+  }
+    background-color: $maincolor;
+}
+
+.solid-background-darker {
+    background-color: darken($maincolor,10%);
+}
+
+
+  .third, .full{
+    @include margin_system($left:.7);
+    @include padding_system($left:0,$right:0);
+    @extend %center;
+
+    ul{
+      width:100%;
+      li.black{
+        @include margin_system($top:5,$bottom:5);
+        @include padding_system(7);
+        background-color: black;
+        p {
+          width: 100%;
+          word-wrap: normal;
+          color: white;
+        }
+      }
+
+//connection sign
+    li.black.A:after {
+        position: absolute;
+        content: "\f07e";
+        font-family: 'FontAwesome';
+        font-size: 2em;
+        @include margin_system($top:-23,$left:25);
+        height: 46px;
+        width: 50px;
+        color: $white;
+
+      }
+    }
+  }
+  .block {
+    background-color: darken($maincolor,50%);
+    @include padding_system(2);
+    @include margin_system(0);
+    width:100%;
+
+    .full {
+
+      padding:10px;
+      .third {
+
+
+        background-color:none !important;
+        margin:0;
+        padding:0;
+        p.user {
+          @include margin_system($top:4,$left:3);
+        }
+        p.user:before  {
+          font-size: 1.5em !important;
+          @include fontAwesome_icon("\f007" );
+          @include margin_system($left:5);
+        }
+      }
+      .left {
+        @extend %left;
+        @include margin_system(5,$left:10);
+      }
+      button {
+        @extend %no_outline;
+        @extend .full;
+        @include border_system(solid,$black,5);
+        @include easy_dropShadow(3px,3px,0px,$black);
+        @include background_color($white);
+        @include padding_system($N_S:6,$E_W:40%);
+
+        &:visited {
+            @include background_color($black);
+            color: $white;
+        }
+
+        &:active {
+            @include background_color($black);
+            @include easy_dropShadow(0px,0px,0px,$black);
+            color: $white;
+        }
+      }
+    }
+  }
+}

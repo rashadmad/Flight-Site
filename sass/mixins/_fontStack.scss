@@ -5,32 +5,33 @@
 
 $default_font: 'Lora', serif;
 
-@mixin text($size, $l_height: 1, $color: black, $family: null){
+@mixin text($size, $l_height: 1, $color: $black, $family: null, $weight: null){
 
     font-size: $size + 0em;
     line-height: $l_height;
     color: $color;
+    font-weight: $weight;
 
     @if $family {
 
       @if $family == font_a {
         font-family:'Open Sans', sans-serif;
-        font-weight: 400;
+        $weight: 400;
       }
 
       @else if $family == font_a_Bold {
         font-family:'Open Sans', sans-serif;
-        font-weight: 800;
+        $weight: 800;
       }
 
       @else if $family == font_a_slim {
         font-family:'Open Sans', sans-serif;
-        font-weight: 100;
+        $weight: 100;
       }
 
       @else if $family == font_a_em {
         font-family:'Open Sans', sans-serif;
-        font-weight: 100;
+        $weight: 100;
         font-style: italic;
       }
 
@@ -41,6 +42,10 @@ $default_font: 'Lora', serif;
 
       @else if $family == font_b_italic {
         font-family:'Lora', serif;
-    }
+      }
+
+      @else if $family == font_b_Bold {
+        font-family:'Lora', serif;
+      }
   }
 }

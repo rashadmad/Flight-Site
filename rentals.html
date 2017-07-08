@@ -23,13 +23,13 @@
             <h1>FLIGHT SITE</h1>
         </header>
 
-        <ul>
-          <li><button class="five"><a href="index.html"><i class="fa fa-plane fa-2x logo" aria-hidden="true"></i><span>FLIGHTS</span></a></button></li>
-          <li><button class="five" id="active"><i class="fa fa-car fa-2x logo" aria-hidden="true"></i><span>RENTALS</span></button></li>
-          <li><button class="five"><a href="hotels.html"><i class="fa fa-building fa-2x logo" aria-hidden="true"></i><span>HOTELS</span></a></button></li>
-          <li><button class="five"><a href="packages.html"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i><span>PACKAGES</span></a></button></li>
-          <li><button class="five"><a href="cruises.html"><i class="fa fa-ship fa-2x logo" aria-hidden="true"></i><span>CRUISES</span></a></button></li>
-      </ul>
+        <ul id="main">
+          <li><a class="five"  href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
+          <li><a id="active" class="five"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
+          <li><a class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
+          <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
+          <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
+        </ul>
         <section role="main">
             <form>
                 <fieldset class="center">
@@ -68,7 +68,7 @@
                             <button type="submit">Search</button>
                         </div>
                         <div>
-                          <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>Return to a diffrent location</label>
+                          <input class="row" type="checkbox" name="return" value="return" id="return"/><label class="mock" for="return"></label><label class="real">Non-stop</label
                         </div>
                     </div>
                 </fieldset>

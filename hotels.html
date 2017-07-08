@@ -23,12 +23,12 @@
             <h1>FLIGHT SITE</h1>
         </header>
 
-        <ul>
-          <li><button class="five"><a href="index.html"><i class="fa fa-plane fa-2x logo" aria-hidden="true"></i><span>FLIGHTS</span></a></button></li>
-          <li><button class="five"><a href="rentals.html"><i class="fa fa-car fa-2x logo" aria-hidden="true"></i><span>RENTALS</span></a></button></li>
-          <li><button class="five" id="active"><i class="fa fa-building fa-2x logo" aria-hidden="true"></i><span>HOTELS</span></button></li>
-          <li><button class="five"><a href="packages.html"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i><span>PACKAGES</span></a></button></li>
-          <li><button class="five"><a href="cruises.html"><i class="fa fa-ship fa-2x logo" aria-hidden="true"></i><span>CRUISES</span></a></button></li>
+        <ul id="main">
+          <li><a class="five" href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
+          <li><a class="five" href="rentals.html"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
+          <li><a id="active" class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
+          <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
+          <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
         </ul>
         <section role="main">
             <form>
@@ -60,7 +60,7 @@
                             <button type="submit">Search</button>
                         </div>
                         <div>
-                          <input class="row" type="checkbox" name="non_stop" value="non_stop"><label>I Don't Have Specific Dates.</label>
+                          <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway"/><label class="mock" for="oneway"></label><label class="real">I Don't Have Specific Dates.</label>
                         </div>
                     </div>
                 </fieldset>

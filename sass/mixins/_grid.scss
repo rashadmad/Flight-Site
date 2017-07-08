@@ -1,12 +1,11 @@
 @mixin row() {
   font-size: 0 !important;
-  white-space:nowrap;
 }
 
 @mixin col($col, $sum, $gap: .9%, $align: top, $padding: 8px) {
   width: percentage($col/$sum) - ($gap);
   padding: $padding;
-  font-size: 16px !important;
+  font-size: 14px;
   display: inline-block;
   vertical-align: $align;
   @include margin_system($top:.9%,$bottom:.9%);

@@ -1,10 +1,11 @@
 header {
+  postion: fixed;
   @extend %no_margin;
   @include background_color($maincolor);
   @include width_maxNmin(100%,100%);
     height: $header_height;
 
-    
+
   h1 {
     @extend %text_right;
     @extend %no_margin;

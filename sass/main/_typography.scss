@@ -1,4 +1,5 @@
 //title font at top of the page
+
 header {
   h1 {
     @include text(1.5, $color:$black, $family:font_a_slim);
@@ -7,15 +8,64 @@ header {
     }
   }
 }
+//fonts in nav
+
+ul{
+  .info{
+    p {
+      @include text(1.1, $color:$white, $family:font_a_slim);
+    }
+  }
+}
 //fonts in main nav
 li {
-  button {
-      span {
-        @include text(.7, $color:$white, $family:font_a_slim);
-      }
+  padding:10px;
+  a {
+        @include text(.68, $color:$white, $family:font_a_slim);
+
     img {
-      margin: 0;
+
     }
+  }
+}
+
+//grid fonts
+
+  .airLineTitle{
+    word-wrap: break-word;
+  }
+
+.location{
+  @include text(1.1, $color:$white, $family:font_a_Bold);
+}
+
+//results page
+.results {
+
+button{
+  @include text(.5);
+}
+
+.third{
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+
+  li {
+    font-size: 1.1em !important;
+    @include padding_system(3);
+  }
+}
+
+  .usd {
+    @include text(1.9, 1,$white, $family:font_a_Bold, $weight: 900);
+  }
+  p.user {
+    @include padding_system(2);
+    font-size: 1em !important;
+    color: $white;
+  }
+  p.user:before  {
+    color: $white;
   }
 }
 
@@ -47,6 +97,40 @@ form{
 
       }
     }
+  }
+}
+
+#testimonials{
+@include media_query(mobile){
+  display:none;
+}
+@include media_query(tablet){
+  display:none;
+}
+@include media_query(min-mobile){
+  display:none;
+}
+
+  div.wrapper {
+
+    @include margin_system($top:15);
+  }
+    .fa{
+      @include margin_system($top:20,$bottom:30);
+    }
+    p.callout{
+        background-color: rgba(2,2,2,0.3);
+        @include text(1.15, $color:$white, $l_height:1.5, $family:font_a_Bold);
+        @include margin_system($top:35,$right:5%,$left:5%);
+        @include padding_system(10,$top:10);
+        @extend %right;
+        @extend %center;
+        width: 40%;
+        max-width: 600px;
+
+        @include media_query(mobile){
+          display:none;
+      }
   }
 }
 
