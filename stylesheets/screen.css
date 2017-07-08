@@ -767,23 +767,23 @@ section[role="main"]:after {
     min-width: 250;
   }
 }
-/* line 67, ../sass/main/_layout.scss */
+/* line 68, ../sass/main/_layout.scss */
 #discount .discount_p {
   width: 220px;
 }
 @media (min-width: 350px) {
-  /* line 67, ../sass/main/_layout.scss */
+  /* line 68, ../sass/main/_layout.scss */
   #discount .discount_p {
     margin-left: 10px;
     max-width: 100%;
     float: right;
   }
-  /* line 75, ../sass/main/_layout.scss */
+  /* line 76, ../sass/main/_layout.scss */
   #discount .discount_p p {
     margin-top: 5px;
   }
 }
-/* line 82, ../sass/main/_layout.scss */
+/* line 83, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-top: 10px;
@@ -796,12 +796,12 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 82, ../sass/main/_layout.scss */
+  /* line 83, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 92, ../sass/main/_layout.scss */
+/* line 93, ../sass/main/_layout.scss */
 #discount button {
   padding: 10px;
   border: solid #1a1a1a 5px;
@@ -812,18 +812,18 @@ section[role="main"]:after {
   width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 92, ../sass/main/_layout.scss */
+  /* line 93, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 105, ../sass/main/_layout.scss */
+/* line 106, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 105, ../sass/main/_layout.scss */
+  /* line 106, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -967,16 +967,28 @@ form input {
     display: none;
   }
 }
-/* line 109, ../sass/main/_typography.scss */
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* line 103, ../sass/main/_typography.scss */
+  #testimonials {
+    display: none;
+  }
+}
+@media (min-width: 350px) and (max-width: 480px) {
+  /* line 103, ../sass/main/_typography.scss */
+  #testimonials {
+    display: none;
+  }
+}
+/* line 114, ../sass/main/_typography.scss */
 #testimonials div.wrapper {
   margin-top: 15px;
 }
-/* line 113, ../sass/main/_typography.scss */
+/* line 118, ../sass/main/_typography.scss */
 #testimonials .fa {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-/* line 116, ../sass/main/_typography.scss */
+/* line 121, ../sass/main/_typography.scss */
 #testimonials p.callout {
   background-color: rgba(2, 2, 2, 0.3);
   font-size: 1.15em;
@@ -992,13 +1004,13 @@ form input {
   max-width: 600px;
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 116, ../sass/main/_typography.scss */
+  /* line 121, ../sass/main/_typography.scss */
   #testimonials p.callout {
     display: none;
   }
 }
 
-/* line 136, ../sass/main/_typography.scss */
+/* line 141, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;

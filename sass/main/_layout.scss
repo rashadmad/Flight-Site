@@ -40,6 +40,7 @@ section[role="main"]:after {
 
 
     p.callout {
+
         @extend %center;
         @extend %inline_block;
         @extend %overflow_hidden;

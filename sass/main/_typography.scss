@@ -101,8 +101,13 @@ form{
 }
 
 #testimonials{
-
 @include media_query(mobile){
+  display:none;
+}
+@include media_query(tablet){
+  display:none;
+}
+@include media_query(min-mobile){
   display:none;
 }
 
