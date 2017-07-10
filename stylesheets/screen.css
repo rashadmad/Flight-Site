@@ -466,7 +466,7 @@ section[role="main"] form fieldset input[type=checkbox] + label.mock {
 }
 /* line 109, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type=checkbox]:checked + label.mock {
-  border: double #fff 5px;
+  border: solid #1a1a1a 5px;
   background: #1a1a1a;
   height: 12px;
   width: 12px;

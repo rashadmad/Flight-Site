@@ -107,7 +107,7 @@ section[role="main"] {
             }
 
             input[type=checkbox]:checked + label.mock {
-                @include border_system(double,$white,5);
+                @include border_system(solid,$black,5);
                 background: $black;
                 height: 12px;
                 width: 12px;
