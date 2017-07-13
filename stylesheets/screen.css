@@ -679,7 +679,7 @@ html {
 
 @media (min-width: 768px) {
   /* line 8, ../sass/main/_layout.scss */
-  body {
+  body#index {
     background: url("../img/city.jpg");
     -webkit-background: url("../img/city.jpg");
     -moz-background: url("../img/city.jpg");
@@ -692,34 +692,115 @@ html {
     -moz-background-repeat: no-repeat;
     -o-background-repeat: no-repeat;
     background-repeat: no-repeat;
+    background-position: center;
+    background-position: 40% 20%;
   }
 }
 
-/* line 15, ../sass/main/_layout.scss */
+@media (min-width: 768px) {
+  /* line 16, ../sass/main/_layout.scss */
+  body#rentals {
+    background: url("../img/city2.jpg");
+    -webkit-background: url("../img/city2.jpg");
+    -moz-background: url("../img/city2.jpg");
+    -o-background: url("../img/city2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 40% 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 24, ../sass/main/_layout.scss */
+  body#hotels {
+    background: url("../img/city3.jpg");
+    -webkit-background: url("../img/city3.jpg");
+    -moz-background: url("../img/city3.jpg");
+    -o-background: url("../img/city3.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 40% 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 31, ../sass/main/_layout.scss */
+  body#packages {
+    background: url("../img/city4.jpg");
+    -webkit-background: url("../img/city4.jpg");
+    -moz-background: url("../img/city4.jpg");
+    -o-background: url("../img/city4.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 40% 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 38, ../sass/main/_layout.scss */
+  body#cruises {
+    background: url("../img/city5.jpg");
+    -webkit-background: url("../img/city5.jpg");
+    -moz-background: url("../img/city5.jpg");
+    -o-background: url("../img/city5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/* line 48, ../sass/main/_layout.scss */
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -85px;
 }
 @media (max-height: 780px) {
-  /* line 15, ../sass/main/_layout.scss */
+  /* line 48, ../sass/main/_layout.scss */
   .page-wrap {
     margin-bottom: -85px;
   }
 }
 
-/* line 24, ../sass/main/_layout.scss */
+/* line 57, ../sass/main/_layout.scss */
 .page-wrap:after {
   margin-bottom: -85px;
 }
 @media (max-height: 780px) {
-  /* line 24, ../sass/main/_layout.scss */
+  /* line 57, ../sass/main/_layout.scss */
   .page-wrap:after {
     margin-bottom: -85px;
   }
 }
 
-/* line 33, ../sass/main/_layout.scss */
+/* line 66, ../sass/main/_layout.scss */
 section[role="main"]:after {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
@@ -727,11 +808,11 @@ section[role="main"]:after {
   background-color: #fff;
 }
 
-/* line 37, ../sass/main/_layout.scss */
+/* line 70, ../sass/main/_layout.scss */
 #discount {
   max-width: 300px;
 }
-/* line 42, ../sass/main/_layout.scss */
+/* line 75, ../sass/main/_layout.scss */
 #discount p.callout {
   margin: 10px;
   margin-top: 12px;
@@ -740,50 +821,50 @@ section[role="main"]:after {
   height: 3.5em;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 42, ../sass/main/_layout.scss */
+  /* line 75, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 42, ../sass/main/_layout.scss */
+  /* line 75, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 42, ../sass/main/_layout.scss */
+  /* line 75, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 1200px) {
-  /* line 42, ../sass/main/_layout.scss */
+  /* line 75, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 68, ../sass/main/_layout.scss */
+/* line 101, ../sass/main/_layout.scss */
 #discount .discount_p {
   width: 220px;
 }
 @media (min-width: 350px) {
-  /* line 68, ../sass/main/_layout.scss */
+  /* line 101, ../sass/main/_layout.scss */
   #discount .discount_p {
     margin-left: 10px;
     max-width: 100%;
     float: right;
   }
-  /* line 76, ../sass/main/_layout.scss */
+  /* line 109, ../sass/main/_layout.scss */
   #discount .discount_p p {
     margin-top: 5px;
   }
 }
-/* line 83, ../sass/main/_layout.scss */
+/* line 116, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-top: 10px;
@@ -796,12 +877,12 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 83, ../sass/main/_layout.scss */
+  /* line 116, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 93, ../sass/main/_layout.scss */
+/* line 126, ../sass/main/_layout.scss */
 #discount button {
   padding: 10px;
   border: solid #1a1a1a 5px;
@@ -812,18 +893,18 @@ section[role="main"]:after {
   width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 93, ../sass/main/_layout.scss */
+  /* line 126, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 106, ../sass/main/_layout.scss */
+/* line 139, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 106, ../sass/main/_layout.scss */
+  /* line 139, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }

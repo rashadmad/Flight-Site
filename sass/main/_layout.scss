@@ -5,12 +5,45 @@ html {
     height: 100%;
 }
 
-body {
+body#index {
 
     @include media_query(modular,$min_width:$tablet) {
       @include background_img(city);
+      background-position: center;
+      background-position: 40% 20%;
     }
 }
+body#rentals {
+
+    @include media_query(modular,$min_width:$tablet) {
+      @include background_img(city2);
+      background-position: center;
+      background-position: 40% 5%;
+    }
+}
+body#hotels {
+
+    @include media_query(modular,$min_width:$tablet) {
+      @include background_img(city3);
+      background-position: center;
+      background-position: 40% 70%;
+    }
+}body#packages {
+
+    @include media_query(modular,$min_width:$tablet) {
+      @include background_img(city4);
+      background-position: center;
+      background-position: 40% 20%;
+    }
+}body#cruises {
+
+    @include media_query(modular,$min_width:$tablet) {
+      @include background_img(city5);
+      background-position: center;
+    }
+}
+
+
 
 .page-wrap {
     min-height: 100%;
