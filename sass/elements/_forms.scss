@@ -49,7 +49,7 @@ section[role="main"] {
 
             .checkbox_wrapper {}
 
-            legend {
+            h1 {
                 @include margin_system(5);
                 @include padding_system(5);
                 @extend %text_left;

@@ -10,9 +10,7 @@
     <!--JQuery install-->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <!--PLUGIN vendor(Slick):css-->
     <script type="text/javascript" src="js/custom.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
@@ -30,22 +28,22 @@
             <li><a class="five" href="rentals.html"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
             <li><a class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
             <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
-            <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
+            <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a></li>
         </ul>
 
         <section role="main">
             <form>
                 <fieldset>
-                    <legend>Flights At Low Rates</legend>
+                    <h1>Flights At Low Rates</h1>
                     <div class="row">
                         <label class="hidden">Departing City</label>
                         <input class="half" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Departure'>
-                        <lqabel class="hidden">Ariving City</label>
+                        <label class="hidden">Ariving City</label>
                         <input class="half" type="text" name="arrival" id="arrival" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a8; Arrival'>
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
+                        <input class="half" type="number" name="departure_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
                         <label class="hidden">Arrival Date</label>
                         <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
                     </div>
@@ -74,32 +72,33 @@
                 <fieldset class="bottom">
                     <div class="checkbox_wrapper">
                         <div>
-                            <button class="submit" type="submit"><a href="flight_deals_page.html  ">Search</a></button>
-                            <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway"/><label class="mock" for="oneway"></label><label class="real">One Way</label>
+                            <button class="submit" type="submit">Search</button>
+                            <a class="submit" href="flight_deals_page.html"></a>
+                            <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway" /><label class="mock" for="oneway"></label><label class="real">One Way</label>
                         </div>
                         <div>
-                            <input class="row" type="checkbox" name="non_stop" value="non_stop" id="nonstop"/><label class="mock" for="nonstop"></label><label class="real">Non-stop</label>
+                            <input class="row" type="checkbox" name="non_stop" value="non_stop" id="nonstop" /><label class="mock" for="nonstop"></label><label class="real">Non-stop</label>
                         </div>
                     </div>
                 </fieldset>
             </form>
-            <section id="discount">
+            <div id="discount">
                 <p class="callout">From LA to Australia we have all the flights you need for the prices you can afford.</p>
                 <div class="discount_button">
                     <div id="button_wrapper">
-                      <button>
-                        <div class="discount_p"><p>Discounts on flights to Vegas</p></div>
+                        <button>
+                          <p class="discount_p">Discounts on flights to Vegas</p>
                       </button>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
 
-        <section id="testimonials">
-          <div class="wrapper">
-            <p class="callout"><i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-          </div>
-        </section>
+        <div id="testimonials">
+            <div class="wrapper">
+                <p class="callout"><i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            </div>
+        </div>
 
         </div>
         <footer>
