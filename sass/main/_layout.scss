@@ -99,16 +99,13 @@ section[role="main"]:after {
     }
 
     .discount_p {
-        width: 220px;
+        width: 195px;
         @extend %margin_center;
         @include media_query(modular,$min_width:$min_mobile) {
-             @include margin_system($left:10);
+             
              @include width_maxNmin(100%);
              float: right;
 
-            p{
-              @include margin_system($top:5);
-            }
 
         }
     }

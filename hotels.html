@@ -24,29 +24,30 @@
         </header>
 
         <ul id="main">
-          <li><a class="five" href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
-          <li><a class="five" href="rentals.html"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
-          <li><a id="active" class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
-          <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
-          <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
+            <li><a class="five" href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
+            <li><a class="five" href="rentals.html"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
+            <li><a id="active" class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
+            <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
+            <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a>
+                <</li>
         </ul>
         <section role="main">
             <form>
                 <fieldset class="center">
-                    <legend>Hotels At Low Rates</legend>
+                    <h1>Hotels At Low Rates</h1>
                     <div class="row">
                         <label class="hidden">City</label>
-                        <input class="full" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf041; Chicago illinois'>
+                        <input class="full" type="text" name="city" id="city" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf041; Chicago illinois'>
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
+                        <input class="half" type="number" name="departure_date" id="departure_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
                         <label class="hidden">Arrival Date</label>
                         <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
                     </div>
                     <div class="row">
                         <label class="hidden">City</label>
-                        <select class="full" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf041; Chicago illinois'>
+                        <select class="full" type="text" name="city" id="city" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf041; Chicago illinois'>
                           <option>1 Adult, 1 Room</option>
                           <option>2 Adults, 1 Room</option>
                           <option></option>
@@ -58,23 +59,22 @@
                     <div class="checkbox_wrapper">
                         <div>
                             <button type="submit">Search</button>
-                        </div>
-                        <div>
-                          <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway"/><label class="mock" for="oneway"></label><label class="real">I Don't Have Specific Dates.</label>
+                            <a class="submit" href="flight_deals_page.html"></a>
+                            <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway" /><label class="mock" for="oneway"></label><label class="real">I Don't Have Specific Dates.</label>
                         </div>
                     </div>
                 </fieldset>
             </form>
-            <section id="discount">
+            <div id="discount">
                 <p class="callout">We search all corners of the internet from the major booking sites to individual hotel websites.</p>
                 <div class="discount_button">
                     <div id="button_wrapper">
-                      <button>
-                        <div class="discount_p"><p>Try An Executive Suite</p></div>
+                        <button>
+                        <p class="discount_p">Try An Executive Suite</p>
                       </button>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
 
         </div>
