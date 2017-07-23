@@ -812,7 +812,6 @@ section[role="main"]:after {
   margin-top: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 3.5em;
 }
 @media (min-width: 350px) and (max-width: 480px) {
   /* line 75, ../sass/main/_layout.scss */
@@ -842,18 +841,18 @@ section[role="main"]:after {
     min-width: 250;
   }
 }
-/* line 101, ../sass/main/_layout.scss */
+/* line 100, ../sass/main/_layout.scss */
 #discount .discount_p {
   width: 195px;
 }
 @media (min-width: 350px) {
-  /* line 101, ../sass/main/_layout.scss */
+  /* line 100, ../sass/main/_layout.scss */
   #discount .discount_p {
     max-width: 100%;
     float: right;
   }
 }
-/* line 113, ../sass/main/_layout.scss */
+/* line 112, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-top: 10px;
@@ -866,12 +865,12 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 113, ../sass/main/_layout.scss */
+  /* line 112, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 123, ../sass/main/_layout.scss */
+/* line 122, ../sass/main/_layout.scss */
 #discount button {
   padding: 10px;
   border: solid #1a1a1a 5px;
@@ -882,18 +881,18 @@ section[role="main"]:after {
   width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 123, ../sass/main/_layout.scss */
+  /* line 122, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 136, ../sass/main/_layout.scss */
+/* line 135, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 136, ../sass/main/_layout.scss */
+  /* line 135, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
