@@ -79,7 +79,6 @@ section[role="main"]:after {
         @extend %overflow_hidden;
         @extend %resize_none;
         @include margin_system(10,$top:12,$N_S:10);
-          height: 3.5em;
         @include media_query(min-mobile) {
              @include width_maxNmin(100%,$callout_width_MIN);
         }
@@ -102,7 +101,7 @@ section[role="main"]:after {
         width: 195px;
         @extend %margin_center;
         @include media_query(modular,$min_width:$min_mobile) {
-             
+
              @include width_maxNmin(100%);
              float: right;
 
