@@ -56,6 +56,11 @@ section[role="main"] {
             }
 
             tbody {
+              background-color: black;
+            }
+
+            tbody {
+                background-color: $white;
                 @include padding_system($N_S:7, $E_W:7);
                 @include margin_system(4);
             }
@@ -64,6 +69,7 @@ section[role="main"] {
                 @include fontAwesome_icon("\f0a9");
             }
 
+            input,
             input[type="number"],
             input[type="text"],
             select {

@@ -8,9 +8,19 @@
     <!--fontawesome-->
     <script src="https://use.fontawesome.com/9f1342aee5.js"></script>
     <!--JQuery install-->
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+      <script>
+        $( function() {
+        $( ".datepicker" ).datepicker();  } );
+      </script>
+    <style>
+
+    </style>
+
     <!--PLUGIN vendor(Slick):css-->
     <script type="text/javascript" src="js/custom.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
@@ -43,9 +53,9 @@
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input class="half" type="number" name="departure_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
+                        <input class="half datepicker" type="input" name="departure_date" id="departure_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
                         <label class="hidden">Arrival Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
+                        <input class="half datepicker" type="input" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
                     </div>
                     <div class="row">
                         <label>Passengers</label>
