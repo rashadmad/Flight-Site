@@ -8,19 +8,19 @@
     <!--fontawesome-->
     <script src="https://use.fontawesome.com/9f1342aee5.js"></script>
     <!--JQuery install-->
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
       <script>
-        $( function() {
-        $( ".datepicker" ).datepicker();  } );
+        $(function(){
+          $('.datepicker').datepicker({
+            inline: true,
+            showOtherMonths: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+          });
+        });
       </script>
-    <style>
-
-    </style>
-
     <!--PLUGIN vendor(Slick):css-->
     <script type="text/javascript" src="js/custom.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
