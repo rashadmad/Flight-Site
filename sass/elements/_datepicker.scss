@@ -8,118 +8,116 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 
     a {
-      text-decoration: none;
+        text-decoration: none;
     }
 
     table {
-      width: 100%;
+        width: 100%;
 
-      thead {
+        thead {
+            text-align: center;
+            background-color: $maincolor;
 
-        text-align: center;
-        background-color: $maincolor;
-
-        tr {
-          height: 30px;
+            tr {
+                height: 30px;
+            }
         }
-      }
-
     }
+
     tbody {
-      background-color: lighten($maincolor,10%);
+        background-color: lighten($maincolor,10%);
 
-
-                 td span, td a {
-                  display: inline-block;
-                  padding:2px;
-                  font-weight: bold;
-                  text-align: center;
-                  width: 20px;
-                  height: 20px;
-                  line-height: 20px;
-                  color: $black;
-                }
+        td a,
+        td span {
+            display: inline-block;
+            padding: 2px;
+            font-weight: bold;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            color: $black;
+        }
     }
-
 }
 
-
 .ui-datepicker-header {
-  text-align: center;
-  padding: 5px;
-  background-color: $black;
-  color: $white;
-  font-weight: bold;
-  line-height: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: $black;
+    color: $white;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .ui-datepicker-prev {
-  float: left;
-  background-position: center -30px;
+    float: left;
+    background-position: center -30px;
 }
+
 .ui-datepicker-next {
-  float: right;
-  background-position: center 0px;
+    float: right;
+    background-position: center 0;
 }
 
-.ui-datepicker-prev, .ui-datepicker-next {
-  font-size: 1em;
-  color: $white;
-  cursor: pointer;
+.ui-datepicker-next,
+.ui-datepicker-prev {
+    font-size: 1em;
+    color: $white;
+    cursor: pointer;
 }
 
-.ui-datepicker-prev::before{
-  @include margin_system($right:10);
-  font-size: 1.5em;
-  content: "\f0d9";
-  font-family: 'FontAwesome';
-  color:$white;
-}
-.ui-datepicker-next::after{
-  @include margin_system($left:10);
-  font-size: 1.5em;
-  content: "\f0da";
-  font-family: 'FontAwesome';
-  color:$white;
+.ui-datepicker-prev::before {
+    @include margin_system($right:10);
+    font-size: 1.5em;
+    content: "\f0d9";
+    font-family: 'FontAwesome';
+    color: $white;
 }
 
-#ui-datepicker-div table thead tr{
-  padding:20px;
+.ui-datepicker-next::after {
+    @include margin_system($left:10);
+    font-size: 1.5em;
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    color: $white;
+}
+
+#ui-datepicker-div table thead tr {
+    padding: 20px;
 }
 
 .ui-datepicker-calendar .ui-state-default {
-  background-color: $white;
-}
-.ui-datepicker-unselectable .ui-state-default {
-  background: darken($maincolor, 10%);
-  color: $maincolor;
+    background-color: $white;
 }
 
+.ui-datepicker-unselectable .ui-state-default {
+    background: darken($maincolor, 10%);
+    color: $maincolor;
+}
 
 .ui-datepicker-title {
-  @include margin_system($top:5);
-  text-align: center;
+    @include margin_system($top:5);
+    text-align: center;
 }
 
 .ui-datepicker-calendar .ui-state-active {
-  background: lighten($maincolor,10%);
-
-  position: relative;
-  margin: -1px;
+    background: lighten($maincolor,10%);
+    position: relative;
+    margin: -1px;
 }
 
 .ui-datepicker tbody td {
-  @extend %no_outline;
-  @extend %border_box;
-  @include border_system(solid,$black,3.5);
-  padding: 2px;
+    @extend %no_outline;
+    @extend %border_box;
+    @include border_system(solid,$black,3.5);
+    padding: 2px;
 }
 
 .ui-datepicker tbody th {
-display: none;
+    display: none;
 }
 
-
 .ui-datepicker-calendar .ui-state-hover {
-  background: $maincolor;
+    background: $maincolor;
 }
