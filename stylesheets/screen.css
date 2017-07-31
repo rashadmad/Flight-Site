@@ -697,16 +697,17 @@ ul#main li .three .logo:active {
   text-align: center;
   background-color: #FFFF00;
 }
-/* line 22, ../sass/elements/_datepicker.scss */
+/* line 21, ../sass/elements/_datepicker.scss */
 .ui-datepicker table thead tr {
   height: 30px;
 }
-/* line 28, ../sass/elements/_datepicker.scss */
+/* line 27, ../sass/elements/_datepicker.scss */
 .ui-datepicker tbody {
   background-color: #ffff33;
 }
-/* line 32, ../sass/elements/_datepicker.scss */
-.ui-datepicker tbody td span, .ui-datepicker tbody td a {
+/* line 30, ../sass/elements/_datepicker.scss */
+.ui-datepicker tbody td a,
+.ui-datepicker tbody td span {
   display: inline-block;
   padding: 2px;
   font-weight: bold;
@@ -717,7 +718,7 @@ ul#main li .three .logo:active {
   color: #1a1a1a;
 }
 
-/* line 47, ../sass/elements/_datepicker.scss */
+/* line 44, ../sass/elements/_datepicker.scss */
 .ui-datepicker-header {
   text-align: center;
   padding: 5px;
@@ -727,26 +728,27 @@ ul#main li .three .logo:active {
   line-height: 30px;
 }
 
-/* line 56, ../sass/elements/_datepicker.scss */
+/* line 53, ../sass/elements/_datepicker.scss */
 .ui-datepicker-prev {
   float: left;
   background-position: center -30px;
 }
 
-/* line 60, ../sass/elements/_datepicker.scss */
+/* line 58, ../sass/elements/_datepicker.scss */
 .ui-datepicker-next {
   float: right;
-  background-position: center 0px;
+  background-position: center 0;
 }
 
-/* line 65, ../sass/elements/_datepicker.scss */
-.ui-datepicker-prev, .ui-datepicker-next {
+/* line 63, ../sass/elements/_datepicker.scss */
+.ui-datepicker-next,
+.ui-datepicker-prev {
   font-size: 1em;
   color: #fff;
   cursor: pointer;
 }
 
-/* line 71, ../sass/elements/_datepicker.scss */
+/* line 70, ../sass/elements/_datepicker.scss */
 .ui-datepicker-prev::before {
   margin-right: 10px;
   font-size: 1.5em;
@@ -774,7 +776,7 @@ ul#main li .three .logo:active {
   background-color: #fff;
 }
 
-/* line 93, ../sass/elements/_datepicker.scss */
+/* line 94, ../sass/elements/_datepicker.scss */
 .ui-datepicker-unselectable .ui-state-default {
   background: #cccc00;
   color: #FFFF00;
@@ -793,18 +795,18 @@ ul#main li .three .logo:active {
   margin: -1px;
 }
 
-/* line 111, ../sass/elements/_datepicker.scss */
+/* line 110, ../sass/elements/_datepicker.scss */
 .ui-datepicker tbody td {
   border: solid #1a1a1a 3.5px;
   padding: 2px;
 }
 
-/* line 118, ../sass/elements/_datepicker.scss */
+/* line 117, ../sass/elements/_datepicker.scss */
 .ui-datepicker tbody th {
   display: none;
 }
 
-/* line 123, ../sass/elements/_datepicker.scss */
+/* line 121, ../sass/elements/_datepicker.scss */
 .ui-datepicker-calendar .ui-state-hover {
   background: #FFFF00;
 }
@@ -1176,7 +1178,7 @@ form input {
 
 /* line 103, ../sass/main/_typography.scss */
 .ui-datepicker {
-  font-size: 1.3em;
+  font-size: 0.8em;
   line-height: 1;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
