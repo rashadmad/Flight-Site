@@ -170,7 +170,7 @@ footer:after {
 
 /* line 2, ../sass/placeholders/_text_positioning.scss */
 ul#main .info p,
-ul#main .info span, ul#main li, th, #discount p.callout, #discount .discount_button, #discount button p, #testimonials p.callout, footer div.wrapper h1, .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
+ul#main .info span, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, #testimonials p.callout, footer div.wrapper h1, .results .third, .results .full, .results section[role="main"] form fieldset button, section[role="main"] form fieldset .results button, .results .block .full button {
   text-align: center;
 }
 
@@ -692,71 +692,21 @@ ul#main li .three .logo:active {
 .ui-datepicker table {
   width: 100%;
 }
-
-/* line 19, ../sass/elements/_datepicker.scss */
-tbody {
-  background-color: #ffff33;
+/* line 17, ../sass/elements/_datepicker.scss */
+.ui-datepicker table thead {
+  text-align: center;
+  background-color: #FFFF00;
 }
-
-/* line 23, ../sass/elements/_datepicker.scss */
-th {
+/* line 22, ../sass/elements/_datepicker.scss */
+.ui-datepicker table thead tr {
   height: 30px;
 }
-
 /* line 28, ../sass/elements/_datepicker.scss */
-.ui-datepicker-header {
-  text-align: center;
-  padding: 5px;
-  background-color: #1a1a1a;
-  color: #fff;
-  font-weight: bold;
-  line-height: 30px;
+.ui-datepicker tbody {
+  background-color: #ffff33;
 }
-
-/* line 37, ../sass/elements/_datepicker.scss */
-.ui-datepicker-prev {
-  float: left;
-  background-position: center -30px;
-}
-
-/* line 41, ../sass/elements/_datepicker.scss */
-.ui-datepicker-next {
-  float: right;
-  background-position: center 0px;
-}
-
-/* line 46, ../sass/elements/_datepicker.scss */
-.ui-datepicker-prev, .ui-datepicker-next {
-  font-size: 1em;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* line 52, ../sass/elements/_datepicker.scss */
-.ui-datepicker-prev::before {
-  margin-right: 10px;
-  font-size: 1.5em;
-  content: "\f0d9";
-  font-family: 'FontAwesome';
-  color: #fff;
-}
-
-/* line 59, ../sass/elements/_datepicker.scss */
-.ui-datepicker-next::after {
-  margin-left: 10px;
-  font-size: 1.5em;
-  content: "\f0da";
-  font-family: 'FontAwesome';
-  color: #fff;
-}
-
-/* line 67, ../sass/elements/_datepicker.scss */
-#ui-datepicker-div table thead tr {
-  padding: 20px;
-}
-
-/* line 71, ../sass/elements/_datepicker.scss */
-.ui-datepicker td span, .ui-datepicker td a {
+/* line 32, ../sass/elements/_datepicker.scss */
+.ui-datepicker tbody td span, .ui-datepicker tbody td a {
   display: inline-block;
   padding: 2px;
   font-weight: bold;
@@ -767,30 +717,73 @@ th {
   color: #1a1a1a;
 }
 
-/* line 81, ../sass/elements/_datepicker.scss */
+/* line 47, ../sass/elements/_datepicker.scss */
+.ui-datepicker-header {
+  text-align: center;
+  padding: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* line 56, ../sass/elements/_datepicker.scss */
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+}
+
+/* line 60, ../sass/elements/_datepicker.scss */
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+}
+
+/* line 65, ../sass/elements/_datepicker.scss */
+.ui-datepicker-prev, .ui-datepicker-next {
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 71, ../sass/elements/_datepicker.scss */
+.ui-datepicker-prev::before {
+  margin-right: 10px;
+  font-size: 1.5em;
+  content: "\f0d9";
+  font-family: 'FontAwesome';
+  color: #fff;
+}
+
+/* line 78, ../sass/elements/_datepicker.scss */
+.ui-datepicker-next::after {
+  margin-left: 10px;
+  font-size: 1.5em;
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  color: #fff;
+}
+
+/* line 86, ../sass/elements/_datepicker.scss */
+#ui-datepicker-div table thead tr {
+  padding: 20px;
+}
+
+/* line 90, ../sass/elements/_datepicker.scss */
 .ui-datepicker-calendar .ui-state-default {
   background-color: #fff;
 }
 
-/* line 84, ../sass/elements/_datepicker.scss */
+/* line 93, ../sass/elements/_datepicker.scss */
 .ui-datepicker-unselectable .ui-state-default {
   background: #cccc00;
   color: #FFFF00;
 }
 
-/* line 90, ../sass/elements/_datepicker.scss */
+/* line 99, ../sass/elements/_datepicker.scss */
 .ui-datepicker-title {
   margin-top: 5px;
   text-align: center;
-}
-
-/* line 96, ../sass/elements/_datepicker.scss */
-.ui-datepicker thead {
-  text-align: center;
-  padding: 5px;
-  background-color: #FFFF00;
-  text-align: center;
-  padding: 5px;
 }
 
 /* line 104, ../sass/elements/_datepicker.scss */
@@ -1181,34 +1174,42 @@ form input {
   }
 }
 
+/* line 103, ../sass/main/_typography.scss */
+.ui-datepicker {
+  font-size: 1.3em;
+  line-height: 1;
+  color: #1a1a1a;
+  font-family: 'Open Sans', sans-serif;
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 103, ../sass/main/_typography.scss */
+  /* line 108, ../sass/main/_typography.scss */
   #testimonials {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 103, ../sass/main/_typography.scss */
+  /* line 108, ../sass/main/_typography.scss */
   #testimonials {
     display: none;
   }
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 103, ../sass/main/_typography.scss */
+  /* line 108, ../sass/main/_typography.scss */
   #testimonials {
     display: none;
   }
 }
-/* line 114, ../sass/main/_typography.scss */
+/* line 119, ../sass/main/_typography.scss */
 #testimonials div.wrapper {
   margin-top: 15px;
 }
-/* line 118, ../sass/main/_typography.scss */
+/* line 123, ../sass/main/_typography.scss */
 #testimonials .fa {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-/* line 121, ../sass/main/_typography.scss */
+/* line 126, ../sass/main/_typography.scss */
 #testimonials p.callout {
   background-color: rgba(2, 2, 2, 0.3);
   font-size: 1.15em;
@@ -1224,13 +1225,13 @@ form input {
   max-width: 600px;
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 121, ../sass/main/_typography.scss */
+  /* line 126, ../sass/main/_typography.scss */
   #testimonials p.callout {
     display: none;
   }
 }
 
-/* line 141, ../sass/main/_typography.scss */
+/* line 146, ../sass/main/_typography.scss */
 footer div.wrapper h1 {
   font-size: 0.5em;
   line-height: 1;

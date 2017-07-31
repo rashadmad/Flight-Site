@@ -13,17 +13,36 @@
 
     table {
       width: 100%;
+
+      thead {
+
+        text-align: center;
+        background-color: $maincolor;
+
+        tr {
+          height: 30px;
+        }
+      }
+
     }
+    tbody {
+      background-color: lighten($maincolor,10%);
+
+
+                 td span, td a {
+                  display: inline-block;
+                  padding:2px;
+                  font-weight: bold;
+                  text-align: center;
+                  width: 20px;
+                  height: 20px;
+                  line-height: 20px;
+                  color: $black;
+                }
+    }
+
 }
 
-tbody {
-  background-color: lighten($maincolor,10%);
-}
-
-th {
-  height: 30px;
-  @extend %center;
-}
 
 .ui-datepicker-header {
   text-align: center;
@@ -68,16 +87,6 @@ th {
   padding:20px;
 }
 
-.ui-datepicker td span, .ui-datepicker td a {
-  display: inline-block;
-  padding:2px;
-  font-weight: bold;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  color: $black;
-}
 .ui-datepicker-calendar .ui-state-default {
   background-color: $white;
 }
@@ -90,15 +99,6 @@ th {
 .ui-datepicker-title {
   @include margin_system($top:5);
   text-align: center;
-}
-
-
-.ui-datepicker thead {
-  text-align: center;
-  padding: 5px;
-  background-color: $maincolor;
-  text-align: center;
-  padding: 5px;
 }
 
 .ui-datepicker-calendar .ui-state-active {
