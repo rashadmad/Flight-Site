@@ -8,11 +8,11 @@
     <!--fontawesome-->
     <script src="https://use.fontawesome.com/9f1342aee5.js"></script>
     <!--JQuery install-->
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!--PLUGIN vendor(Slick):css-->
-    <script src="js/custom.js"></script>
-
+    <script type="text/javascript" src="js/custom.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 </head>
 
@@ -24,11 +24,12 @@
         </header>
 
         <ul id="main">
-          <li><a class="five"  href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
-          <li><a id="active" class="five"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
-          <li><a class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
-          <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
-          <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a><</li>
+            <li><a class="five" href="index.html"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>FLIGHTS</a></li>
+            <li><a id="active" class="five"><i class="fa fa-car fa-3x logo" aria-hidden="true"></i>RENTALS</a></li>
+            <li><a class="five" href="hotels.html"><i class="fa fa-building fa-3x logo" aria-hidden="true"></i>HOTELS</a></li>
+            <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
+            <li><a class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a>
+                <</li>
         </ul>
         <section role="main">
             <form>
@@ -40,26 +41,213 @@
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf073; Mar 1'>
+                        <input class="half datepicker" type="text" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf073; Departure date'>
                         <label class="hidden">Arrival Date</label>
-                        <input class="fourth" type="number" name="arrival_date" placeholder='8:00'>
-                        <label class="hidden">Arrival Date</label>
-                        <select class="fourth">
-                          <option value="AM">AM</option>
-                          <option value="PM">PM</option>
+                        <select class="half" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xF017; Departure time'>
+                          <option value="one">00:15</option>
+                          <option value="two">00:30</option>
+                          <option value="three">00:45</option>
+                          <option value="four">1:15</option>
+                          <option value="five">1:30</option>
+                          <option value="six">1:45</option>
+                          <option value="seven">2:00</option>
+                          <option value="eight">2:15</option>
+                          <option value="one">2:30</option>
+                          <option value="two">2:45</option>
+                          <option value="three">3:00</option>
+                          <option value="one">3:15</option>
+                          <option value="two">3:30</option>
+                          <option value="three">3:45</option>
+                          <option value="three">4:00</option>
+                          <option value="one">4:15</option>
+                          <option value="two">4:30</option>
+                          <option value="three">4:45</option>
+                          <option value="three">5:00</option>
+                          <option value="one">5:15</option>
+                          <option value="two">5:30</option>
+                          <option value="three">5:45</option>
+                          <option value="three">6:00</option>
+                          <option value="one">6:15</option>
+                          <option value="two">6:30</option>
+                          <option value="three">6:45</option>
+                          <option value="three">7:00</option>
+                          <option value="one">7:15</option>
+                          <option value="two">7:30</option>
+                          <option value="three">7:45</option>
+                          <option value="three">8:00</option>
+                          <option value="one">8:15</option>
+                          <option value="two">8:30</option>
+                          <option value="three">8:45</option>
+                          <option value="three">9:00</option>
+                          <option value="one">9:15</option>
+                          <option value="two">9:30</option>
+                          <option value="three">9:45</option>
+                          <option value="three">10:00</option>
+                          <option value="one">10:15</option>
+                          <option value="two">10:30</option>
+                          <option value="three">10:45</option>
+                          <option value="three">11:00</option>
+                          <option value="one">11:15</option>
+                          <option value="two">11:30</option>
+                          <option value="three">11:45</option>
+                          <option value="three">12:00</option>
+                          <option value="one">12:15</option>
+                          <option value="two">12:30</option>
+                          <option value="three">12:45</option>
+                          <option value="three">13:00</option>
+                          <option value="one">13:15</option>
+                          <option value="two">13:30</option>
+                          <option value="three">13:45</option>
+                          <option value="three">14:00</option>
+                          <option value="one">14:15</option>
+                          <option value="two">14:30</option>
+                          <option value="three">14:45</option>
+                          <option value="three">15:00</option>
+                          <option value="one">15:15</option>
+                          <option value="two">15:30</option>
+                          <option value="three">15:45</option>
+                          <option value="three">16:00</option>
+                          <option value="one">16:15</option>
+                          <option value="two">16:30</option>
+                          <option value="three">16:45</option>
+                          <option value="three">17:00</option>
+                          <option value="one">17:15</option>
+                          <option value="two">17:30</option>
+                          <option value="three">17:45</option>
+                          <option value="three">18:00</option>
+                          <option value="one">18:15</option>
+                          <option value="two">18:30</option>
+                          <option value="three">18:45</option>
+                          <option value="three">19:00</option>
+                          <option value="one">19:15</option>
+                          <option value="two">19:30</option>
+                          <option value="three">19:45</option>
+                          <option value="three">20:00</option>
+                          <option value="one">20:15</option>
+                          <option value="two">20:30</option>
+                          <option value="three">20:45</option>
+                          <option value="three">21:00</option>
+                          <option value="one">21:15</option>
+                          <option value="two">21:30</option>
+                          <option value="three">21:45</option>
+                          <option value="three">22:00</option>
+                          <option value="one">22:15</option>
+                          <option value="two">22:30</option>
+                          <option value="three">22:45</option>
+                          <option value="three">23:00</option>
+                          <option value="one">23:15</option>
+                          <option value="two">23:30</option>
+                          <option value="three">23:45</option>
+                          <option value="three">24:00</option>
+                          <option value="one">24:15</option>
+                          <option value="two">24:30</option>
+                          <option value="three">24:45</option>
                         </select>
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf073; Mar 1'>
+                        <input class="half datepicker" type="text" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf073; Arrival date'>
                         <label class="hidden">Arrival Date</label>
-                        <input class="fourth" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='7:00'>
-                        <label class="hidden">Arrival Date</label>
-                        <select class="fourth">
-                          <option value="AM">AM</option>
-                          <option value="PM">PM</option>
-                        </select>
-                    </div>
+                          <select class="half" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xF017; Departure time'>
+                            <option value="one">00:15</option>
+                            <option value="two">00:30</option>
+                            <option value="three">00:45</option>
+                            <option value="four">1:15</option>
+                            <option value="five">1:30</option>
+                            <option value="six">1:45</option>
+                            <option value="seven">2:00</option>
+                            <option value="eight">2:15</option>
+                            <option value="one">2:30</option>
+                            <option value="two">2:45</option>
+                            <option value="three">3:00</option>
+                            <option value="one">3:15</option>
+                            <option value="two">3:30</option>
+                            <option value="three">3:45</option>
+                            <option value="three">4:00</option>
+                            <option value="one">4:15</option>
+                            <option value="two">4:30</option>
+                            <option value="three">4:45</option>
+                            <option value="three">5:00</option>
+                            <option value="one">5:15</option>
+                            <option value="two">5:30</option>
+                            <option value="three">5:45</option>
+                            <option value="three">6:00</option>
+                            <option value="one">6:15</option>
+                            <option value="two">6:30</option>
+                            <option value="three">6:45</option>
+                            <option value="three">7:00</option>
+                            <option value="one">7:15</option>
+                            <option value="two">7:30</option>
+                            <option value="three">7:45</option>
+                            <option value="three">8:00</option>
+                            <option value="one">8:15</option>
+                            <option value="two">8:30</option>
+                            <option value="three">8:45</option>
+                            <option value="three">9:00</option>
+                            <option value="one">9:15</option>
+                            <option value="two">9:30</option>
+                            <option value="three">9:45</option>
+                            <option value="three">10:00</option>
+                            <option value="one">10:15</option>
+                            <option value="two">10:30</option>
+                            <option value="three">10:45</option>
+                            <option value="three">11:00</option>
+                            <option value="one">11:15</option>
+                            <option value="two">11:30</option>
+                            <option value="three">11:45</option>
+                            <option value="three">12:00</option>
+                            <option value="one">12:15</option>
+                            <option value="two">12:30</option>
+                            <option value="three">12:45</option>
+                            <option value="three">13:00</option>
+                            <option value="one">13:15</option>
+                            <option value="two">13:30</option>
+                            <option value="three">13:45</option>
+                            <option value="three">14:00</option>
+                            <option value="one">14:15</option>
+                            <option value="two">14:30</option>
+                            <option value="three">14:45</option>
+                            <option value="three">15:00</option>
+                            <option value="one">15:15</option>
+                            <option value="two">15:30</option>
+                            <option value="three">15:45</option>
+                            <option value="three">16:00</option>
+                            <option value="one">16:15</option>
+                            <option value="two">16:30</option>
+                            <option value="three">16:45</option>
+                            <option value="three">17:00</option>
+                            <option value="one">17:15</option>
+                            <option value="two">17:30</option>
+                            <option value="three">17:45</option>
+                            <option value="three">18:00</option>
+                            <option value="one">18:15</option>
+                            <option value="two">18:30</option>
+                            <option value="three">18:45</option>
+                            <option value="three">19:00</option>
+                            <option value="one">19:15</option>
+                            <option value="two">19:30</option>
+                            <option value="three">19:45</option>
+                            <option value="three">20:00</option>
+                            <option value="one">20:15</option>
+                            <option value="two">20:30</option>
+                            <option value="three">20:45</option>
+                            <option value="three">21:00</option>
+                            <option value="one">21:15</option>
+                            <option value="two">21:30</option>
+                            <option value="three">21:45</option>
+                            <option value="three">22:00</option>
+                            <option value="one">22:15</option>
+                            <option value="two">22:30</option>
+                            <option value="three">22:45</option>
+                            <option value="three">23:00</option>
+                            <option value="one">23:15</option>
+                            <option value="two">23:30</option>
+                            <option value="three">23:45</option>
+                            <option value="three">24:00</option>
+                            <option value="one">24:15</option>
+                            <option value="two">24:30</option>
+                            <option value="three">24:45</option>
+                          </select>
                     <div>
                 </fieldset>
                 <fieldset class="bottom">

@@ -72,7 +72,8 @@ section[role="main"] {
             input,
             input[type="number"],
             input[type="text"],
-            select {
+            select,
+            {
                 @extend %no_outline;
                 @extend %border_box;
                 @include border_system(solid,$black,5);

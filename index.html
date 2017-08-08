@@ -11,16 +11,6 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-      <script>
-        $(function(){
-          $('.datepicker').datepicker({
-            inline: true,
-            showOtherMonths: true,
-            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-          });
-        });
-      </script>
     <!--PLUGIN vendor(Slick):css-->
     <script type="text/javascript" src="js/custom.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
@@ -47,15 +37,15 @@
                     <h1>Flights At Low Rates</h1>
                     <div class="row">
                         <label class="hidden">Departing City</label>
-                        <input class="half" type="text" name="departing" id="departing" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Departure'>
+                        <input class="half" type="text" autocomplete="off" data-country="us" name="departing" min="2019-06" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a9; Departure City'>
                         <label class="hidden">Ariving City</label>
-                        <input class="half" type="text" name="arrival" id="arrival" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a8; Arrival'>
+                        <input class="half" type="text" name="arrival" id="city" name="city" autocomplete="off" data-country="us" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf0a8; Arrival City'>
                     </div>
                     <div class="row">
                         <label class="hidden">Departure Date</label>
-                        <input class="half datepicker" type="input" name="departure_date" id="departure_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Mar 1'>
+                        <input class="half datepicker" type="text" name="departure_date" id="departure_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Departure date'>
                         <label class="hidden">Arrival Date</label>
-                        <input class="half datepicker" type="input" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Mar 2'>
+                        <input class="half datepicker" type="text" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf271; Arrival date'>
                     </div>
                     <div class="row">
                         <label>Passengers</label>
@@ -82,8 +72,8 @@
                 <fieldset class="bottom">
                     <div class="checkbox_wrapper">
                         <div>
-                            <button class="submit" type="submit">Search</button>
                             <a class="submit" href="flight_deals_page.html"></a>
+                            <button class="submit" type="submit">Search</button>
                             <input class="row" type="checkbox" name="one_way" value="one_way" id="oneway" /><label class="mock" for="oneway"></label><label class="real">One Way</label>
                         </div>
                         <div>

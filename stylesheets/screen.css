@@ -429,7 +429,7 @@ section[role="main"] form fieldset input[type="text"],
 section[role="main"] form fieldset select {
   border: solid #1a1a1a 5px;
 }
-/* line 80, ../sass/elements/_forms.scss */
+/* line 81, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input:focus,
 section[role="main"] form fieldset input[type="number"]:focus,
 section[role="main"] form fieldset input[type="text"]:focus,
@@ -441,24 +441,24 @@ section[role="main"] form fieldset select:focus {
   transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 87, ../sass/elements/_forms.scss */
+/* line 88, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset [type="text"] {
   position: relative;
 }
-/* line 91, ../sass/elements/_forms.scss */
+/* line 92, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset label.real {
   margin-bottom: 10px;
   margin-left: 6px;
   margin-right: 6px;
 }
-/* line 95, ../sass/elements/_forms.scss */
+/* line 96, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 106, ../sass/elements/_forms.scss */
+/* line 107, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type=checkbox] + label.mock {
   border: solid #1a1a1a 5px;
   background: #fff;
@@ -467,7 +467,7 @@ section[role="main"] form fieldset input[type=checkbox] + label.mock {
   display: inline-block;
   padding: 0;
 }
-/* line 115, ../sass/elements/_forms.scss */
+/* line 116, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset input[type=checkbox]:checked + label.mock {
   border: solid #1a1a1a 5px;
   background: #1a1a1a;
@@ -476,7 +476,7 @@ section[role="main"] form fieldset input[type=checkbox]:checked + label.mock {
   display: inline-block;
   padding: 0;
 }
-/* line 124, ../sass/elements/_forms.scss */
+/* line 125, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button {
   border: solid #1a1a1a 5px;
   max-width: 80px;
@@ -493,7 +493,7 @@ section[role="main"] form fieldset button {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 134, ../sass/elements/_forms.scss */
+/* line 135, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:visited {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
@@ -501,7 +501,7 @@ section[role="main"] form fieldset button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 139, ../sass/elements/_forms.scss */
+/* line 140, ../sass/elements/_forms.scss */
 section[role="main"] form fieldset button:active {
   -webkit-background-color: #1a1a1a;
   -moz-background-color: #1a1a1a;
