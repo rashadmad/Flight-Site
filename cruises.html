@@ -30,7 +30,7 @@
           <li><a class="five" href="packages.html"><i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>PACKAGES</a></li>
           <li><a id="active" class="five" href="cruises.html"><i class="fa fa-ship fa-3x logo" aria-hidden="true"></i>CRUISES</a></li>
         </ul>
-        <section role="main">
+        <section class="index">
             <form>
                 <fieldset>
                     <h1>Cruises At low Rates</h1>
@@ -75,9 +75,22 @@
                     </div>
                     <div class="row">
                       <label class="hidden">Arrival Date</label>
-                      <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Zip Code'>
+                      <input class="half" type="number" name="arrival_date" id="arrival_date" type="text" pattern="[0-9]{5}" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Zip Code'>
                       <label class="hidden">Departure Date</label>
                       <input class="half" type="number" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='Length'>
+                      <select class="half datepicker" name="arrival_date" id="arrival_date" style="font-family:'Open Sans', sans-serif, FontAwesome" placeholder='&#xf133; Month'>
+                        <option>Month/January</option>
+                        <option>Febuary</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>November</option>
+                        <option>December</option>
+                      </select>
                     </div>
                   <div>
                 </fieldset>

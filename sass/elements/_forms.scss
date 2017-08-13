@@ -1,4 +1,5 @@
-section[role="main"] {
+
+section {
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @extend %margin_center;
     @include padding_system(7);
@@ -9,11 +10,6 @@ section[role="main"] {
     background-repeat: no-repeat;
     @include media_query(height, $height:500px) {
         background-color: $black;
-    }
-    @include media_query(modular, $min_width:$tablet) {
-         @include margin_system($left:$form_gutter);
-        float: left;
-        transition: left 1s;
     }
 
     form {
@@ -122,7 +118,10 @@ section[role="main"] {
                 padding: 0;
             }
 
-            button {
+
+            button,
+            button.discount
+             {
                 @extend %no_outline;
                 @extend %right;
                 @extend .full;
@@ -131,6 +130,10 @@ section[role="main"] {
                 @include easy_dropShadow(3px,3px,0px,$black);
                 @include background_color($white);
                 @include padding_system($N_S:5,$E_W:5);
+
+                a {
+                  @extend %clear_button_defaults;
+                }
 
                 &:visited {
                     @include background_color($black);
@@ -145,4 +148,12 @@ section[role="main"] {
             }
         }
     }
+}
+
+section.index {
+  @include media_query(modular, $min_width:$tablet) {
+       @include margin_system($left:$form_gutter);
+      float: left;
+      transition: left 1s;
+  }
 }

@@ -77,7 +77,10 @@ form{
     @include text(.8, $color:$black, $family:font_a_Bold);
   }
   input{
-    @include text(.08, $family:font_a_Bold);
+    @include text(.1, $family:font_a_Bold);
+  }
+  button{
+    @include text(1.1, $color:$black, $family:font_a_slim)
   }
 }
 

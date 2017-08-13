@@ -1,9 +1,34 @@
 //results page
 
+.aside {
+  @extend %flex_start;
+  height: 486px;
+  width: 60px;
+  background-color: $white;
+}
+
+section.results_section {
+  
+  @extend %flex;
+  @extend %flex_center;
+}
+
 .results {
+  min-width: 0;
 .main {
 
 }
+
+section[role="article"] {
+    box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @extend %margin_center;
+    @include padding_system(7);
+    height: 100%;
+    padding-bottom: 20px;
+    background-color: $white;
+    background-repeat: no-repeat;
+}
+
 
 fieldset {
   @include margin_system($top:3,$bottom:3);
@@ -20,6 +45,10 @@ li {
 .usd{
 @extend %text_left;
 @include margin_system(5);
+}
+
+.results-info {
+  display: none;
 }
 
 .solid-background {
