@@ -3,18 +3,18 @@
 .aside {
   @extend %flex_start;
   height: 486px;
-  width: 60px;
+  width: 25%;
   background-color: $white;
 }
 
 section.results_section {
-  
-  @extend %flex;
-  @extend %flex_center;
+
 }
 
 .results {
-  min-width: 0;
+
+  width: 100%;
+
 .main {
 
 }
@@ -31,6 +31,8 @@ section[role="article"] {
 
 
 fieldset {
+  @extend %flex;
+  @extend %flex_center;
   @include margin_system($top:3,$bottom:3);
 }
 

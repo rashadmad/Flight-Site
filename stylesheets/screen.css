@@ -142,7 +142,7 @@ section form fieldset input[type="checkbox"], #discount button:before {
 }
 
 /* line 2, ../sass/placeholders/_flexBox.scss */
-ul#main, ul#main li, footer, section.results_section,
+ul#main, ul#main li, footer, .results fieldset,
 .flex {
   display: flex;
   min-width: 0;
@@ -169,7 +169,7 @@ ul#main, ul#main li, footer, section.results_section,
 }
 
 /* line 23, ../sass/placeholders/_flexBox.scss */
-ul#main, ul#main li, section.results_section,
+ul#main, ul#main li, .results fieldset,
 .flex_center {
   justify-content: center;
 }
@@ -397,7 +397,6 @@ html {
 section {
   box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 7px;
-  max-width: 500px;
   height: 100%;
   padding-bottom: 20px;
   background-color: #fff;
@@ -409,7 +408,7 @@ section {
     background-color: #1a1a1a;
   }
 }
-/* line 15, ../sass/elements/_forms.scss */
+/* line 14, ../sass/elements/_forms.scss */
 section form {
   padding: 8px;
   -webkit-background-color: #FFFF00;
@@ -418,19 +417,19 @@ section form {
   background-color: #FFFF00;
   max-width: 300px;
 }
-/* line 21, ../sass/elements/_forms.scss */
+/* line 20, ../sass/elements/_forms.scss */
 section form fieldset.bottom {
   margin: 10px;
 }
-/* line 25, ../sass/elements/_forms.scss */
+/* line 24, ../sass/elements/_forms.scss */
 section form fieldset {
   max-width: 100%;
 }
-/* line 29, ../sass/elements/_forms.scss */
+/* line 28, ../sass/elements/_forms.scss */
 section form fieldset .row {
   font-size: 0 !important;
 }
-/* line 32, ../sass/elements/_forms.scss */
+/* line 31, ../sass/elements/_forms.scss */
 section form fieldset .row .close {
   content: "\f007";
   font-size: 1em !important;
@@ -443,16 +442,16 @@ section form fieldset .row .close {
   border: 0 solid;
   -webkit-appearance: none;
 }
-/* line 48, ../sass/elements/_forms.scss */
+/* line 47, ../sass/elements/_forms.scss */
 section form fieldset h1 {
   margin: 5px;
   padding: 5px;
 }
-/* line 54, ../sass/elements/_forms.scss */
+/* line 53, ../sass/elements/_forms.scss */
 section form fieldset tbody {
   background-color: black;
 }
-/* line 58, ../sass/elements/_forms.scss */
+/* line 57, ../sass/elements/_forms.scss */
 section form fieldset tbody {
   background-color: #fff;
   padding-top: 7px;
@@ -461,7 +460,7 @@ section form fieldset tbody {
   padding-right: 7px;
   margin: 4px;
 }
-/* line 64, ../sass/elements/_forms.scss */
+/* line 63, ../sass/elements/_forms.scss */
 section form fieldset input[type="number"]:after {
   content: "";
   font-family: 'FontAwesome';
@@ -469,14 +468,14 @@ section form fieldset input[type="number"]:after {
   top: 0;
   left: 0;
 }
-/* line 68, ../sass/elements/_forms.scss */
+/* line 67, ../sass/elements/_forms.scss */
 section form fieldset input,
 section form fieldset input[type="number"],
 section form fieldset input[type="text"],
 section form fieldset select {
   border: solid #1a1a1a 5px;
 }
-/* line 77, ../sass/elements/_forms.scss */
+/* line 76, ../sass/elements/_forms.scss */
 section form fieldset input:focus,
 section form fieldset input[type="number"]:focus,
 section form fieldset input[type="text"]:focus,
@@ -488,24 +487,24 @@ section form fieldset select:focus {
   transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 84, ../sass/elements/_forms.scss */
+/* line 83, ../sass/elements/_forms.scss */
 section form fieldset [type="text"] {
   position: relative;
 }
-/* line 88, ../sass/elements/_forms.scss */
+/* line 87, ../sass/elements/_forms.scss */
 section form fieldset label.real {
   margin-bottom: 10px;
   margin-left: 6px;
   margin-right: 6px;
 }
-/* line 92, ../sass/elements/_forms.scss */
+/* line 91, ../sass/elements/_forms.scss */
 section form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 103, ../sass/elements/_forms.scss */
+/* line 102, ../sass/elements/_forms.scss */
 section form fieldset input[type=checkbox] + label.mock {
   border: solid #1a1a1a 5px;
   background: #fff;
@@ -514,7 +513,7 @@ section form fieldset input[type=checkbox] + label.mock {
   display: inline-block;
   padding: 0;
 }
-/* line 112, ../sass/elements/_forms.scss */
+/* line 111, ../sass/elements/_forms.scss */
 section form fieldset input[type=checkbox]:checked + label.mock {
   border: solid #1a1a1a 5px;
   background: #1a1a1a;
@@ -523,7 +522,7 @@ section form fieldset input[type=checkbox]:checked + label.mock {
   display: inline-block;
   padding: 0;
 }
-/* line 122, ../sass/elements/_forms.scss */
+/* line 121, ../sass/elements/_forms.scss */
 section form fieldset button,
 section form fieldset button.discount {
   border: solid #1a1a1a 5px;
@@ -541,7 +540,7 @@ section form fieldset button.discount {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 138, ../sass/elements/_forms.scss */
+/* line 137, ../sass/elements/_forms.scss */
 section form fieldset button:visited,
 section form fieldset button.discount:visited {
   -webkit-background-color: #1a1a1a;
@@ -550,7 +549,7 @@ section form fieldset button.discount:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 143, ../sass/elements/_forms.scss */
+/* line 142, ../sass/elements/_forms.scss */
 section form fieldset button:active,
 section form fieldset button.discount:active {
   -webkit-background-color: #1a1a1a;
@@ -565,7 +564,7 @@ section form fieldset button.discount:active {
 }
 
 @media (min-width: 768px) {
-  /* line 153, ../sass/elements/_forms.scss */
+  /* line 152, ../sass/elements/_forms.scss */
   section.index {
     margin-left: 40px;
     float: left;
@@ -576,6 +575,11 @@ section form fieldset button.discount:active {
 /* line 7, ../sass/elements/_img.scss */
 .airlineLogo {
   width: 50px;
+}
+
+/* line 12, ../sass/elements/_img.scss */
+aside img {
+  margin: 2px;
 }
 
 /* line 2, ../sass/elements/_nav.scss */
@@ -1357,13 +1361,13 @@ footer h1 {
 /* line 3, ../sass/main/_results.scss */
 .aside {
   height: 486px;
-  width: 60px;
+  width: 25%;
   background-color: #fff;
 }
 
-/* line 16, ../sass/main/_results.scss */
+/* line 14, ../sass/main/_results.scss */
 .results {
-  min-width: 0;
+  width: 100%;
 }
 /* line 22, ../sass/main/_results.scss */
 .results section[role="article"] {
@@ -1379,35 +1383,35 @@ footer h1 {
   margin-top: 3px;
   margin-bottom: 3px;
 }
-/* line 37, ../sass/main/_results.scss */
+/* line 39, ../sass/main/_results.scss */
 .results li {
   height: 100%;
 }
-/* line 41, ../sass/main/_results.scss */
+/* line 43, ../sass/main/_results.scss */
 .results .airLineData {
   white-space: nowrap;
 }
-/* line 45, ../sass/main/_results.scss */
+/* line 47, ../sass/main/_results.scss */
 .results .usd {
   margin: 5px;
 }
-/* line 50, ../sass/main/_results.scss */
+/* line 52, ../sass/main/_results.scss */
 .results .results-info {
   display: none;
 }
-/* line 54, ../sass/main/_results.scss */
+/* line 56, ../sass/main/_results.scss */
 .results .solid-background {
   background-color: #FFFF00;
 }
-/* line 55, ../sass/main/_results.scss */
+/* line 57, ../sass/main/_results.scss */
 .results .solid-background P.airline_title {
   max-width: 50%;
 }
-/* line 63, ../sass/main/_results.scss */
+/* line 65, ../sass/main/_results.scss */
 .results .solid-background-darker {
   background-color: #cccc00;
 }
-/* line 68, ../sass/main/_results.scss */
+/* line 70, ../sass/main/_results.scss */
 .results .third, .results .full, .results section form fieldset button, section form fieldset .results button,
 .results section form fieldset button.discount,
 section form fieldset .results button.discount, .results .block .full button {
@@ -1415,13 +1419,13 @@ section form fieldset .results button.discount, .results .block .full button {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 73, ../sass/main/_results.scss */
+/* line 75, ../sass/main/_results.scss */
 .results .third ul, .results .full ul, .results section form fieldset button ul, section form fieldset .results button ul,
 .results section form fieldset button.discount ul,
 section form fieldset .results button.discount ul, .results .block .full button ul {
   width: 100%;
 }
-/* line 75, ../sass/main/_results.scss */
+/* line 77, ../sass/main/_results.scss */
 .results .third ul li.black, .results .full ul li.black, .results section form fieldset button ul li.black, section form fieldset .results button ul li.black,
 .results section form fieldset button.discount ul li.black,
 section form fieldset .results button.discount ul li.black {
@@ -1430,7 +1434,7 @@ section form fieldset .results button.discount ul li.black {
   padding: 7px;
   background-color: black;
 }
-/* line 79, ../sass/main/_results.scss */
+/* line 81, ../sass/main/_results.scss */
 .results .third ul li.black p, .results .full ul li.black p, .results section form fieldset button ul li.black p, section form fieldset .results button ul li.black p,
 .results section form fieldset button.discount ul li.black p,
 section form fieldset .results button.discount ul li.black p {
@@ -1438,7 +1442,7 @@ section form fieldset .results button.discount ul li.black p {
   word-wrap: normal;
   color: white;
 }
-/* line 87, ../sass/main/_results.scss */
+/* line 89, ../sass/main/_results.scss */
 .results .third ul li.black.A:after, .results .full ul li.black.A:after, .results section form fieldset button ul li.black.A:after, section form fieldset .results button ul li.black.A:after,
 .results section form fieldset button.discount ul li.black.A:after,
 section form fieldset .results button.discount ul li.black.A:after {
@@ -1452,20 +1456,20 @@ section form fieldset .results button.discount ul li.black.A:after {
   width: 50px;
   color: #fff;
 }
-/* line 100, ../sass/main/_results.scss */
+/* line 102, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;
   margin: 0px;
   width: 100%;
 }
-/* line 106, ../sass/main/_results.scss */
+/* line 108, ../sass/main/_results.scss */
 .results .block .full, .results .block section form fieldset button, section form fieldset .results .block button,
 .results .block section form fieldset button.discount,
 section form fieldset .results .block button.discount, .results .block .full button {
   padding: 10px;
 }
-/* line 109, ../sass/main/_results.scss */
+/* line 111, ../sass/main/_results.scss */
 .results .block .full .third, .results .block section form fieldset button .third, section form fieldset .results .block button .third,
 .results .block section form fieldset button.discount .third,
 section form fieldset .results .block button.discount .third {
@@ -1473,14 +1477,14 @@ section form fieldset .results .block button.discount .third {
   margin: 0;
   padding: 0;
 }
-/* line 115, ../sass/main/_results.scss */
+/* line 117, ../sass/main/_results.scss */
 .results .block .full .third p.user, .results .block section form fieldset button .third p.user, section form fieldset .results .block button .third p.user,
 .results .block section form fieldset button.discount .third p.user,
 section form fieldset .results .block button.discount .third p.user {
   margin-top: 4px;
   margin-left: 3px;
 }
-/* line 118, ../sass/main/_results.scss */
+/* line 120, ../sass/main/_results.scss */
 .results .block .full .third p.user:before, .results .block section form fieldset button .third p.user:before, section form fieldset .results .block button .third p.user:before,
 .results .block section form fieldset button.discount .third p.user:before,
 section form fieldset .results .block button.discount .third p.user:before {
@@ -1492,14 +1496,14 @@ section form fieldset .results .block button.discount .third p.user:before {
   left: 0;
   margin-left: 5px;
 }
-/* line 124, ../sass/main/_results.scss */
+/* line 126, ../sass/main/_results.scss */
 .results .block .full .left, .results .block section form fieldset button .left, section form fieldset .results .block button .left,
 .results .block section form fieldset button.discount .left,
 section form fieldset .results .block button.discount .left {
   margin: 5px;
   margin-left: 10px;
 }
-/* line 128, ../sass/main/_results.scss */
+/* line 130, ../sass/main/_results.scss */
 .results .block .full button, .results .block section form fieldset button button, section form fieldset .results .block button button,
 .results .block section form fieldset button.discount button,
 section form fieldset .results .block button.discount button {
@@ -1517,7 +1521,7 @@ section form fieldset .results .block button.discount button {
   padding-left: 40%;
   padding-right: 40%;
 }
-/* line 136, ../sass/main/_results.scss */
+/* line 138, ../sass/main/_results.scss */
 .results .block .full button:visited, .results .block section form fieldset button button:visited, section form fieldset .results .block button button:visited,
 .results .block section form fieldset button.discount button:visited,
 section form fieldset .results .block button.discount button:visited {
@@ -1527,7 +1531,7 @@ section form fieldset .results .block button.discount button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 141, ../sass/main/_results.scss */
+/* line 143, ../sass/main/_results.scss */
 .results .block .full button:active, .results .block section form fieldset button button:active, section form fieldset .results .block button button:active,
 .results .block section form fieldset button.discount button:active,
 section form fieldset .results .block button.discount button:active {

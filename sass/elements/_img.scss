@@ -7,3 +7,9 @@ $js-path: "../js";
 .airlineLogo{
   width: 50px;
 }
+
+aside{
+   img {
+     @include margin_system(2);
+   }
+}

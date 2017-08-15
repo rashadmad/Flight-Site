@@ -3,7 +3,6 @@ section {
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @extend %margin_center;
     @include padding_system(7);
-    @include width_maxNmin($form_width,$form_width);
     height: 100%;
     padding-bottom: 20px;
     background-color: $white;
@@ -151,6 +150,7 @@ section {
 }
 
 section.index {
+  
   @include media_query(modular, $min_width:$tablet) {
        @include margin_system($left:$form_gutter);
       float: left;
