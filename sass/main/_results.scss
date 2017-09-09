@@ -1,27 +1,72 @@
 //results page
 
-.aside {
+
+
+.hundredPercent {
+  width: 100%;
+}
+
+aside {
   @extend %flex_start;
   height: 486px;
   width: 25%;
   background-color: $white;
 }
+.lrg {
+  width: 600px;
+}
+
+.ad,
+aside {
+    @include media_query(modular,$max_width:900px) {
+        display:none;
+    }
+}
 
 .filter {
   width: 40%;
+    background-color: $maincolor;
+    @include margin_system(10,$top:2);
+    @include media_query(modular,$max_width:600px) {
+        display:none;
+    }
+
+
+
+  label{
+    @include margin_system($E_W:5);
+  }
+
+  input[type="checkbox"] {
+      @extend %no_display;
+  }
+
+  input[type=checkbox] + label.mock {
+      @extend %checkbox_styeling;
+      @include border_system(solid,$black,5);
+  }
+
+  input[type=checkbox]:checked + label.mock {
+      @extend %checkbox_styeling_checked;
+      @include border_system(solid,$black,5);
+  }
+
+}
+.price {
+
+  @include margin_system($top:10);
+  @extend %right;
 }
 
-section.results_section {
 
+fieldset.flight_deal_side{
+  background-color: $maincolor;
 }
 
 .results {
 
   width: 100%;
-
-.main {
-
-}
+  @include margin_system($right:10);
 
 section[role="article"] {
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

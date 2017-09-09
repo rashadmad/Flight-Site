@@ -15,3 +15,20 @@
 %no_display {
   display: none;
 }
+
+//checkbox styleing
+%checkbox_styeling {
+  background: $white;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  padding: 0;
+}
+
+%checkbox_styeling_checked {
+      background: $black;
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      padding: 0;
+}

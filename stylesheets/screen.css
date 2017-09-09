@@ -13,6 +13,218 @@ body {
   box-sizing: content-box;
 }
 
+/* Tip:
+* The em and rem units are practical in creating perfectly scalable layout!
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+*/
+/* more then likely you wont be useing theses they arent responsive at all
+* Pixels (px) are relative to the viewing device.
+* For low-dpi devices, 1px is one device pixel (dot) of the display.
+* For printers and high resolution screens 1px implies multiple device pixels.
+*/
+/* line 14, ../sass/properties/_colors.scss */
+html {
+  background-color: #FFFF00;
+}
+
+/* line 2, ../sass/placeholders/_defaults.scss */
+section form fieldset input,
+section form fieldset input[type="number"],
+section form fieldset input[type="text"],
+section form fieldset select, section form fieldset button,
+section form fieldset button.discount, .ui-datepicker tbody td, #discount button, .results .block .full button, .results .block section form fieldset button button, section form fieldset .results .block button button,
+.results .block section form fieldset button.discount button,
+section form fieldset .results .block button.discount button {
+  outline: 0;
+}
+
+/* line 5, ../sass/placeholders/_defaults.scss */
+ul#main {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/placeholders/_defaults.scss */
+section form fieldset button a,
+section form fieldset button.discount a, ul#main a, ul#main li .five, ul#main li .three, #discount button {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/placeholders/_defaults.scss */
+.page-wrap:after {
+  content: "";
+}
+
+/* line 28, ../sass/placeholders/_defaults.scss */
+section form fieldset input,
+section form fieldset input[type="number"],
+section form fieldset input[type="text"],
+section form fieldset select, .ui-datepicker tbody td {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/placeholders/_display.scss */
+.page-wrap:after, #discount button {
+  display: block;
+}
+
+/* line 8, ../sass/placeholders/_display.scss */
+#discount p.callout {
+  display: inline-block;
+}
+
+/* line 11, ../sass/placeholders/_display.scss */
+footer {
+  z-index: 2147483647;
+}
+
+/* line 15, ../sass/placeholders/_display.scss */
+section form fieldset input[type="checkbox"], #discount button:before, .filter input[type="checkbox"] {
+  display: none;
+}
+
+/* line 20, ../sass/placeholders/_display.scss */
+section form fieldset input[type=checkbox] + label.mock, .filter input[type=checkbox] + label.mock {
+  background: #fff;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  padding: 0;
+}
+
+/* line 28, ../sass/placeholders/_display.scss */
+section form fieldset input[type=checkbox]:checked + label.mock, .filter input[type=checkbox]:checked + label.mock {
+  background: #1a1a1a;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  padding: 0;
+}
+
+/* line 2, ../sass/placeholders/_flexBox.scss */
+ul#main, ul#main li, footer, .results fieldset,
+.flex {
+  display: flex;
+  min-width: 0;
+}
+
+/* line 7, ../sass/placeholders/_flexBox.scss */
+.flex_flow {
+  flex-flow: row wrap;
+}
+
+/* line 11, ../sass/placeholders/_flexBox.scss */
+.flex_reverse {
+  flex-direction: row-reverse;
+}
+
+/* line 15, ../sass/placeholders/_flexBox.scss */
+.flex_stack {
+  flex-direction: column;
+}
+
+/* line 19, ../sass/placeholders/_flexBox.scss */
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+/* line 23, ../sass/placeholders/_flexBox.scss */
+ul#main, ul#main li, .results fieldset,
+.flex_center {
+  justify-content: center;
+}
+
+/* line 27, ../sass/placeholders/_flexBox.scss */
+.flex_vertical_center {
+  align-items: center;
+}
+
+/* line 31, ../sass/placeholders/_flexBox.scss */
+.flex_space_between {
+  justify-content: space-between;
+}
+
+/* line 35, ../sass/placeholders/_flexBox.scss */
+aside,
+.flex_start {
+  justify-content: flex-start;
+}
+
+/* line 39, ../sass/placeholders/_flexBox.scss */
+.flex_end {
+  justify-content: flex-end;
+}
+
+/* line 2, ../sass/placeholders/_float.scss */
+#discount button:before, header .main-logo, header .logo, .results .block .full .left, .results .block section form fieldset button .left, section form fieldset .results .block button .left,
+.results .block section form fieldset button.discount .left,
+section form fieldset .results .block button.discount .left {
+  float: left;
+}
+
+/* line 5, ../sass/placeholders/_float.scss */
+section form fieldset button,
+section form fieldset button.discount, #discount button p, #testimonials p.callout, .price {
+  float: right;
+}
+
+/* line 9, ../sass/placeholders/_float.scss */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 5, ../sass/placeholders/_overflow.scss */
+#discount p.callout {
+  overflow: hidden;
+}
+
+/* line 2, ../sass/placeholders/_text_positioning.scss */
+ul#main .info p,
+ul#main .info span, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, #testimonials p.callout, footer div.wrapper h1, .results .third, .results .full, .results section form fieldset button, section form fieldset .results button,
+.results section form fieldset button.discount,
+section form fieldset .results button.discount, .results .block .full button {
+  text-align: center;
+}
+
+/* line 5, ../sass/placeholders/_text_positioning.scss */
+section form fieldset h1, #discount button p, .results .usd {
+  text-align: left;
+}
+
+/* line 8, ../sass/placeholders/_text_positioning.scss */
+header h1 {
+  text-align: right;
+}
+
+/* line 18, ../sass/placeholders/_text_positioning.scss */
+section, section form, section form fieldset, #discount, #discount .discount_p, #discount button p, footer h1, .results section[role="article"], .results .solid-background P.airline_title {
+  margin: 0 auto;
+}
+
+/* line 21, ../sass/placeholders/_text_positioning.scss */
+ul#main, header, header h1 {
+  margin: 0;
+}
+
+/* line 24, ../sass/placeholders/_text_positioning.scss */
+ul#main a, ul#main li .five, ul#main li .three, ul#main, ul#main li .five button:target, ul#main li .three button:target {
+  width: 100%;
+}
+
+/* line 27, ../sass/placeholders/_text_positioning.scss */
+#discount p.callout {
+  resize: none;
+}
+
 /* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -76,186 +288,6 @@ a img {
 /* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
-}
-
-/* line 2, ../sass/placeholders/_defaults.scss */
-section form fieldset input,
-section form fieldset input[type="number"],
-section form fieldset input[type="text"],
-section form fieldset select, section form fieldset button,
-section form fieldset button.discount, .ui-datepicker tbody td, #discount button, .results .block .full button, .results .block section form fieldset button button, section form fieldset .results .block button button,
-.results .block section form fieldset button.discount button,
-section form fieldset .results .block button.discount button {
-  outline: 0;
-}
-
-/* line 5, ../sass/placeholders/_defaults.scss */
-ul#main {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 11, ../sass/placeholders/_defaults.scss */
-section form fieldset button a,
-section form fieldset button.discount a, ul#main a, ul#main li .five, ul#main li .three, #discount button {
-  border: none;
-  outline: none;
-  text-decoration: none;
-}
-
-/* line 17, ../sass/placeholders/_defaults.scss */
-.page-wrap:after {
-  content: "";
-}
-
-/* line 28, ../sass/placeholders/_defaults.scss */
-section form fieldset input,
-section form fieldset input[type="number"],
-section form fieldset input[type="text"],
-section form fieldset select, .ui-datepicker tbody td {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 5, ../sass/placeholders/_display.scss */
-.page-wrap:after, #discount button {
-  display: block;
-}
-
-/* line 8, ../sass/placeholders/_display.scss */
-#discount p.callout {
-  display: inline-block;
-}
-
-/* line 11, ../sass/placeholders/_display.scss */
-footer {
-  z-index: 2147483647;
-}
-
-/* line 15, ../sass/placeholders/_display.scss */
-section form fieldset input[type="checkbox"], #discount button:before {
-  display: none;
-}
-
-/* line 2, ../sass/placeholders/_flexBox.scss */
-ul#main, ul#main li, footer, .results fieldset,
-.flex {
-  display: flex;
-  min-width: 0;
-}
-
-/* line 7, ../sass/placeholders/_flexBox.scss */
-.flex_flow {
-  flex-flow: row wrap;
-}
-
-/* line 11, ../sass/placeholders/_flexBox.scss */
-.flex_reverse {
-  flex-direction: row-reverse;
-}
-
-/* line 15, ../sass/placeholders/_flexBox.scss */
-.flex_stack {
-  flex-direction: column;
-}
-
-/* line 19, ../sass/placeholders/_flexBox.scss */
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-/* line 23, ../sass/placeholders/_flexBox.scss */
-ul#main, ul#main li, .results fieldset,
-.flex_center {
-  justify-content: center;
-}
-
-/* line 27, ../sass/placeholders/_flexBox.scss */
-.flex_vertical_center {
-  align-items: center;
-}
-
-/* line 31, ../sass/placeholders/_flexBox.scss */
-.flex_space_between {
-  justify-content: space-between;
-}
-
-/* line 35, ../sass/placeholders/_flexBox.scss */
-.aside,
-.flex_start {
-  justify-content: flex-start;
-}
-
-/* line 39, ../sass/placeholders/_flexBox.scss */
-.flex_end {
-  justify-content: flex-end;
-}
-
-/* line 2, ../sass/placeholders/_float.scss */
-#discount button:before, header .main-logo, header .logo, .results .block .full .left, .results .block section form fieldset button .left, section form fieldset .results .block button .left,
-.results .block section form fieldset button.discount .left,
-section form fieldset .results .block button.discount .left {
-  float: left;
-}
-
-/* line 5, ../sass/placeholders/_float.scss */
-section form fieldset button,
-section form fieldset button.discount, #discount button p, #testimonials p.callout {
-  float: right;
-}
-
-/* line 9, ../sass/placeholders/_float.scss */
-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 5, ../sass/placeholders/_overflow.scss */
-#discount p.callout {
-  overflow: hidden;
-}
-
-/* line 2, ../sass/placeholders/_text_positioning.scss */
-ul#main .info p,
-ul#main .info span, ul#main li, #discount p.callout, #discount .discount_button, #discount button p, #testimonials p.callout, footer div.wrapper h1, .results .third, .results .full, .results section form fieldset button, section form fieldset .results button,
-.results section form fieldset button.discount,
-section form fieldset .results button.discount, .results .block .full button {
-  text-align: center;
-}
-
-/* line 5, ../sass/placeholders/_text_positioning.scss */
-section form fieldset h1, #discount button p, .results .usd {
-  text-align: left;
-}
-
-/* line 8, ../sass/placeholders/_text_positioning.scss */
-header h1 {
-  text-align: right;
-}
-
-/* line 18, ../sass/placeholders/_text_positioning.scss */
-section, section form, section form fieldset, #discount, #discount .discount_p, #discount button p, footer h1, .results section[role="article"], .results .solid-background P.airline_title {
-  margin: 0 auto;
-}
-
-/* line 21, ../sass/placeholders/_text_positioning.scss */
-ul#main, header, header h1 {
-  margin: 0;
-}
-
-/* line 24, ../sass/placeholders/_text_positioning.scss */
-ul#main a, ul#main li .five, ul#main li .three, ul#main, ul#main li .five button:target, ul#main li .three button:target {
-  width: 100%;
-}
-
-/* line 27, ../sass/placeholders/_text_positioning.scss */
-#discount p.callout {
-  resize: none;
 }
 
 /* line 24, ../sass/mixins/_grid.scss */
@@ -379,21 +411,7 @@ section form fieldset button.discount, .results .block .full button {
   margin-right: 0;
 }
 
-/* Tip:
-* The em and rem units are practical in creating perfectly scalable layout!
-* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
-*/
-/* more then likely you wont be useing theses they arent responsive at all
-* Pixels (px) are relative to the viewing device.
-* For low-dpi devices, 1px is one device pixel (dot) of the display.
-* For printers and high resolution screens 1px implies multiple device pixels.
-*/
-/* line 14, ../sass/properties/_colors.scss */
-html {
-  background-color: #FFFF00;
-}
-
-/* line 2, ../sass/elements/_forms.scss */
+/* line 1, ../sass/elements/_forms.scss */
 section {
   box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 7px;
@@ -403,12 +421,12 @@ section {
   background-repeat: no-repeat;
 }
 @media (max-height: 500px) {
-  /* line 2, ../sass/elements/_forms.scss */
+  /* line 1, ../sass/elements/_forms.scss */
   section {
     background-color: #1a1a1a;
   }
 }
-/* line 14, ../sass/elements/_forms.scss */
+/* line 13, ../sass/elements/_forms.scss */
 section form {
   padding: 8px;
   -webkit-background-color: #FFFF00;
@@ -417,19 +435,19 @@ section form {
   background-color: #FFFF00;
   max-width: 300px;
 }
-/* line 20, ../sass/elements/_forms.scss */
+/* line 19, ../sass/elements/_forms.scss */
 section form fieldset.bottom {
   margin: 10px;
 }
-/* line 24, ../sass/elements/_forms.scss */
+/* line 23, ../sass/elements/_forms.scss */
 section form fieldset {
   max-width: 100%;
 }
-/* line 28, ../sass/elements/_forms.scss */
+/* line 27, ../sass/elements/_forms.scss */
 section form fieldset .row {
   font-size: 0 !important;
 }
-/* line 31, ../sass/elements/_forms.scss */
+/* line 30, ../sass/elements/_forms.scss */
 section form fieldset .row .close {
   content: "\f007";
   font-size: 1em !important;
@@ -442,16 +460,16 @@ section form fieldset .row .close {
   border: 0 solid;
   -webkit-appearance: none;
 }
-/* line 47, ../sass/elements/_forms.scss */
+/* line 45, ../sass/elements/_forms.scss */
 section form fieldset h1 {
   margin: 5px;
   padding: 5px;
 }
-/* line 53, ../sass/elements/_forms.scss */
+/* line 51, ../sass/elements/_forms.scss */
 section form fieldset tbody {
   background-color: black;
 }
-/* line 57, ../sass/elements/_forms.scss */
+/* line 55, ../sass/elements/_forms.scss */
 section form fieldset tbody {
   background-color: #fff;
   padding-top: 7px;
@@ -460,7 +478,7 @@ section form fieldset tbody {
   padding-right: 7px;
   margin: 4px;
 }
-/* line 63, ../sass/elements/_forms.scss */
+/* line 61, ../sass/elements/_forms.scss */
 section form fieldset input[type="number"]:after {
   content: "";
   font-family: 'FontAwesome';
@@ -468,14 +486,14 @@ section form fieldset input[type="number"]:after {
   top: 0;
   left: 0;
 }
-/* line 67, ../sass/elements/_forms.scss */
+/* line 65, ../sass/elements/_forms.scss */
 section form fieldset input,
 section form fieldset input[type="number"],
 section form fieldset input[type="text"],
 section form fieldset select {
   border: solid #1a1a1a 5px;
 }
-/* line 76, ../sass/elements/_forms.scss */
+/* line 74, ../sass/elements/_forms.scss */
 section form fieldset input:focus,
 section form fieldset input[type="number"]:focus,
 section form fieldset input[type="text"]:focus,
@@ -487,42 +505,32 @@ section form fieldset select:focus {
   transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 83, ../sass/elements/_forms.scss */
+/* line 81, ../sass/elements/_forms.scss */
 section form fieldset [type="text"] {
   position: relative;
 }
-/* line 87, ../sass/elements/_forms.scss */
+/* line 85, ../sass/elements/_forms.scss */
 section form fieldset label.real {
   margin-bottom: 10px;
   margin-left: 6px;
   margin-right: 6px;
 }
-/* line 91, ../sass/elements/_forms.scss */
+/* line 89, ../sass/elements/_forms.scss */
 section form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 102, ../sass/elements/_forms.scss */
+/* line 100, ../sass/elements/_forms.scss */
 section form fieldset input[type=checkbox] + label.mock {
   border: solid #1a1a1a 5px;
-  background: #fff;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  padding: 0;
 }
-/* line 111, ../sass/elements/_forms.scss */
+/* line 105, ../sass/elements/_forms.scss */
 section form fieldset input[type=checkbox]:checked + label.mock {
   border: solid #1a1a1a 5px;
-  background: #1a1a1a;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  padding: 0;
 }
-/* line 121, ../sass/elements/_forms.scss */
+/* line 111, ../sass/elements/_forms.scss */
 section form fieldset button,
 section form fieldset button.discount {
   border: solid #1a1a1a 5px;
@@ -540,7 +548,7 @@ section form fieldset button.discount {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 137, ../sass/elements/_forms.scss */
+/* line 127, ../sass/elements/_forms.scss */
 section form fieldset button:visited,
 section form fieldset button.discount:visited {
   -webkit-background-color: #1a1a1a;
@@ -549,7 +557,7 @@ section form fieldset button.discount:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 142, ../sass/elements/_forms.scss */
+/* line 132, ../sass/elements/_forms.scss */
 section form fieldset button:active,
 section form fieldset button.discount:active {
   -webkit-background-color: #1a1a1a;
@@ -564,7 +572,7 @@ section form fieldset button.discount:active {
 }
 
 @media (min-width: 768px) {
-  /* line 152, ../sass/elements/_forms.scss */
+  /* line 142, ../sass/elements/_forms.scss */
   section.index {
     margin-left: 40px;
     float: left;
@@ -880,6 +888,11 @@ html {
   height: 100%;
 }
 
+/* line 8, ../sass/main/_layout.scss */
+body#index {
+  height: 100%;
+  background-color: black;
+}
 @media (min-width: 768px) {
   /* line 8, ../sass/main/_layout.scss */
   body#index {
@@ -900,9 +913,13 @@ html {
   }
 }
 
+/* line 16, ../sass/main/_layout.scss */
+#rentals {
+  height: 100%;
+}
 @media (min-width: 768px) {
   /* line 16, ../sass/main/_layout.scss */
-  body#rentals {
+  #rentals {
     background: url("../img/city2.jpg");
     -webkit-background: url("../img/city2.jpg");
     -moz-background: url("../img/city2.jpg");
@@ -920,9 +937,13 @@ html {
   }
 }
 
+/* line 23, ../sass/main/_layout.scss */
+#hotels {
+  height: 100%;
+}
 @media (min-width: 768px) {
-  /* line 24, ../sass/main/_layout.scss */
-  body#hotels {
+  /* line 23, ../sass/main/_layout.scss */
+  #hotels {
     background: url("../img/city3.jpg");
     -webkit-background: url("../img/city3.jpg");
     -moz-background: url("../img/city3.jpg");
@@ -941,8 +962,8 @@ html {
 }
 
 @media (min-width: 768px) {
-  /* line 31, ../sass/main/_layout.scss */
-  body#packages {
+  /* line 30, ../sass/main/_layout.scss */
+  #packages {
     background: url("../img/city4.jpg");
     -webkit-background: url("../img/city4.jpg");
     -moz-background: url("../img/city4.jpg");
@@ -961,8 +982,8 @@ html {
 }
 
 @media (min-width: 768px) {
-  /* line 38, ../sass/main/_layout.scss */
-  body#cruises {
+  /* line 37, ../sass/main/_layout.scss */
+  #cruises {
     background: url("../img/city5.jpg");
     -webkit-background: url("../img/city5.jpg");
     -moz-background: url("../img/city5.jpg");
@@ -979,31 +1000,31 @@ html {
   }
 }
 
-/* line 48, ../sass/main/_layout.scss */
+/* line 47, ../sass/main/_layout.scss */
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -85px;
 }
 @media (max-height: 780px) {
-  /* line 48, ../sass/main/_layout.scss */
+  /* line 47, ../sass/main/_layout.scss */
   .page-wrap {
     margin-bottom: -85px;
   }
 }
 
-/* line 57, ../sass/main/_layout.scss */
+/* line 56, ../sass/main/_layout.scss */
 .page-wrap:after {
   margin-bottom: -85px;
 }
 @media (max-height: 780px) {
-  /* line 57, ../sass/main/_layout.scss */
+  /* line 56, ../sass/main/_layout.scss */
   .page-wrap:after {
     margin-bottom: -85px;
   }
 }
 
-/* line 66, ../sass/main/_layout.scss */
+/* line 65, ../sass/main/_layout.scss */
 section[role="main"]:after {
   -webkit-background-color: #fff;
   -moz-background-color: #fff;
@@ -1011,11 +1032,11 @@ section[role="main"]:after {
   background-color: #fff;
 }
 
-/* line 70, ../sass/main/_layout.scss */
+/* line 69, ../sass/main/_layout.scss */
 #discount {
   max-width: 300px;
 }
-/* line 75, ../sass/main/_layout.scss */
+/* line 74, ../sass/main/_layout.scss */
 #discount p.callout {
   margin: 10px;
   margin-top: 12px;
@@ -1023,45 +1044,45 @@ section[role="main"]:after {
   margin-bottom: 10px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 75, ../sass/main/_layout.scss */
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 75, ../sass/main/_layout.scss */
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 75, ../sass/main/_layout.scss */
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
 @media (min-width: 1200px) {
-  /* line 75, ../sass/main/_layout.scss */
+  /* line 74, ../sass/main/_layout.scss */
   #discount p.callout {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 99, ../sass/main/_layout.scss */
+/* line 98, ../sass/main/_layout.scss */
 #discount .discount_p {
   width: 195px;
 }
 @media (min-width: 350px) {
-  /* line 99, ../sass/main/_layout.scss */
+  /* line 98, ../sass/main/_layout.scss */
   #discount .discount_p {
     max-width: 100%;
     float: right;
   }
 }
-/* line 111, ../sass/main/_layout.scss */
+/* line 110, ../sass/main/_layout.scss */
 #discount button:before {
   margin: 5px;
   margin-top: 10px;
@@ -1074,12 +1095,12 @@ section[role="main"]:after {
   left: 0;
 }
 @media (min-width: 350px) {
-  /* line 111, ../sass/main/_layout.scss */
+  /* line 110, ../sass/main/_layout.scss */
   #discount button:before {
     display: inline;
   }
 }
-/* line 121, ../sass/main/_layout.scss */
+/* line 120, ../sass/main/_layout.scss */
 #discount button {
   padding: 10px;
   border: solid #1a1a1a 5px;
@@ -1090,18 +1111,18 @@ section[role="main"]:after {
   width: 100%;
 }
 @media (min-width: 350px) {
-  /* line 121, ../sass/main/_layout.scss */
+  /* line 120, ../sass/main/_layout.scss */
   #discount button {
     max-width: 100%;
     min-width: 250;
   }
 }
-/* line 134, ../sass/main/_layout.scss */
+/* line 133, ../sass/main/_layout.scss */
 #discount button p {
   padding: 14px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-  /* line 134, ../sass/main/_layout.scss */
+  /* line 133, ../sass/main/_layout.scss */
   #discount button p {
     text-align: right;
   }
@@ -1358,23 +1379,74 @@ footer h1 {
   margin-top: 25px;
 }
 
-/* line 3, ../sass/main/_results.scss */
-.aside {
+/* line 5, ../sass/main/_results.scss */
+.hundredPercent {
+  width: 100%;
+}
+
+/* line 9, ../sass/main/_results.scss */
+aside {
   height: 486px;
   width: 25%;
   background-color: #fff;
 }
 
-/* line 10, ../sass/main/_results.scss */
-.filter {
-  width: 40%;
+/* line 15, ../sass/main/_results.scss */
+.lrg {
+  width: 600px;
 }
 
-/* line 18, ../sass/main/_results.scss */
+@media (max-width: 900px) {
+  /* line 19, ../sass/main/_results.scss */
+  .ad,
+  aside {
+    display: none;
+  }
+}
+
+/* line 26, ../sass/main/_results.scss */
+.filter {
+  width: 40%;
+  background-color: #FFFF00;
+  margin: 10px;
+  margin-top: 2px;
+}
+@media (max-width: 600px) {
+  /* line 26, ../sass/main/_results.scss */
+  .filter {
+    display: none;
+  }
+}
+/* line 36, ../sass/main/_results.scss */
+.filter label {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 44, ../sass/main/_results.scss */
+.filter input[type=checkbox] + label.mock {
+  border: solid #1a1a1a 5px;
+}
+/* line 49, ../sass/main/_results.scss */
+.filter input[type=checkbox]:checked + label.mock {
+  border: solid #1a1a1a 5px;
+}
+
+/* line 55, ../sass/main/_results.scss */
+.price {
+  margin-top: 10px;
+}
+
+/* line 62, ../sass/main/_results.scss */
+fieldset.flight_deal_side {
+  background-color: #FFFF00;
+}
+
+/* line 66, ../sass/main/_results.scss */
 .results {
   width: 100%;
+  margin-right: 10px;
 }
-/* line 26, ../sass/main/_results.scss */
+/* line 71, ../sass/main/_results.scss */
 .results section[role="article"] {
   box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 7px;
@@ -1383,40 +1455,40 @@ footer h1 {
   background-color: #fff;
   background-repeat: no-repeat;
 }
-/* line 37, ../sass/main/_results.scss */
+/* line 82, ../sass/main/_results.scss */
 .results fieldset {
   margin-top: 3px;
   margin-bottom: 3px;
 }
-/* line 43, ../sass/main/_results.scss */
+/* line 88, ../sass/main/_results.scss */
 .results li {
   height: 100%;
 }
-/* line 47, ../sass/main/_results.scss */
+/* line 92, ../sass/main/_results.scss */
 .results .airLineData {
   white-space: nowrap;
 }
-/* line 51, ../sass/main/_results.scss */
+/* line 96, ../sass/main/_results.scss */
 .results .usd {
   margin: 5px;
 }
-/* line 56, ../sass/main/_results.scss */
+/* line 101, ../sass/main/_results.scss */
 .results .results-info {
   display: none;
 }
-/* line 60, ../sass/main/_results.scss */
+/* line 105, ../sass/main/_results.scss */
 .results .solid-background {
   background-color: #FFFF00;
 }
-/* line 61, ../sass/main/_results.scss */
+/* line 106, ../sass/main/_results.scss */
 .results .solid-background P.airline_title {
   max-width: 50%;
 }
-/* line 69, ../sass/main/_results.scss */
+/* line 114, ../sass/main/_results.scss */
 .results .solid-background-darker {
   background-color: #cccc00;
 }
-/* line 74, ../sass/main/_results.scss */
+/* line 119, ../sass/main/_results.scss */
 .results .third, .results .full, .results section form fieldset button, section form fieldset .results button,
 .results section form fieldset button.discount,
 section form fieldset .results button.discount, .results .block .full button {
@@ -1424,13 +1496,13 @@ section form fieldset .results button.discount, .results .block .full button {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 79, ../sass/main/_results.scss */
+/* line 124, ../sass/main/_results.scss */
 .results .third ul, .results .full ul, .results section form fieldset button ul, section form fieldset .results button ul,
 .results section form fieldset button.discount ul,
 section form fieldset .results button.discount ul, .results .block .full button ul {
   width: 100%;
 }
-/* line 81, ../sass/main/_results.scss */
+/* line 126, ../sass/main/_results.scss */
 .results .third ul li.black, .results .full ul li.black, .results section form fieldset button ul li.black, section form fieldset .results button ul li.black,
 .results section form fieldset button.discount ul li.black,
 section form fieldset .results button.discount ul li.black {
@@ -1439,7 +1511,7 @@ section form fieldset .results button.discount ul li.black {
   padding: 7px;
   background-color: black;
 }
-/* line 85, ../sass/main/_results.scss */
+/* line 130, ../sass/main/_results.scss */
 .results .third ul li.black p, .results .full ul li.black p, .results section form fieldset button ul li.black p, section form fieldset .results button ul li.black p,
 .results section form fieldset button.discount ul li.black p,
 section form fieldset .results button.discount ul li.black p {
@@ -1447,7 +1519,7 @@ section form fieldset .results button.discount ul li.black p {
   word-wrap: normal;
   color: white;
 }
-/* line 93, ../sass/main/_results.scss */
+/* line 138, ../sass/main/_results.scss */
 .results .third ul li.black.A:after, .results .full ul li.black.A:after, .results section form fieldset button ul li.black.A:after, section form fieldset .results button ul li.black.A:after,
 .results section form fieldset button.discount ul li.black.A:after,
 section form fieldset .results button.discount ul li.black.A:after {
@@ -1461,20 +1533,20 @@ section form fieldset .results button.discount ul li.black.A:after {
   width: 50px;
   color: #fff;
 }
-/* line 106, ../sass/main/_results.scss */
+/* line 151, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;
   margin: 0px;
   width: 100%;
 }
-/* line 112, ../sass/main/_results.scss */
+/* line 157, ../sass/main/_results.scss */
 .results .block .full, .results .block section form fieldset button, section form fieldset .results .block button,
 .results .block section form fieldset button.discount,
 section form fieldset .results .block button.discount, .results .block .full button {
   padding: 10px;
 }
-/* line 115, ../sass/main/_results.scss */
+/* line 160, ../sass/main/_results.scss */
 .results .block .full .third, .results .block section form fieldset button .third, section form fieldset .results .block button .third,
 .results .block section form fieldset button.discount .third,
 section form fieldset .results .block button.discount .third {
@@ -1482,14 +1554,14 @@ section form fieldset .results .block button.discount .third {
   margin: 0;
   padding: 0;
 }
-/* line 121, ../sass/main/_results.scss */
+/* line 166, ../sass/main/_results.scss */
 .results .block .full .third p.user, .results .block section form fieldset button .third p.user, section form fieldset .results .block button .third p.user,
 .results .block section form fieldset button.discount .third p.user,
 section form fieldset .results .block button.discount .third p.user {
   margin-top: 4px;
   margin-left: 3px;
 }
-/* line 124, ../sass/main/_results.scss */
+/* line 169, ../sass/main/_results.scss */
 .results .block .full .third p.user:before, .results .block section form fieldset button .third p.user:before, section form fieldset .results .block button .third p.user:before,
 .results .block section form fieldset button.discount .third p.user:before,
 section form fieldset .results .block button.discount .third p.user:before {
@@ -1501,14 +1573,14 @@ section form fieldset .results .block button.discount .third p.user:before {
   left: 0;
   margin-left: 5px;
 }
-/* line 130, ../sass/main/_results.scss */
+/* line 175, ../sass/main/_results.scss */
 .results .block .full .left, .results .block section form fieldset button .left, section form fieldset .results .block button .left,
 .results .block section form fieldset button.discount .left,
 section form fieldset .results .block button.discount .left {
   margin: 5px;
   margin-left: 10px;
 }
-/* line 134, ../sass/main/_results.scss */
+/* line 179, ../sass/main/_results.scss */
 .results .block .full button, .results .block section form fieldset button button, section form fieldset .results .block button button,
 .results .block section form fieldset button.discount button,
 section form fieldset .results .block button.discount button {
@@ -1526,7 +1598,7 @@ section form fieldset .results .block button.discount button {
   padding-left: 40%;
   padding-right: 40%;
 }
-/* line 142, ../sass/main/_results.scss */
+/* line 187, ../sass/main/_results.scss */
 .results .block .full button:visited, .results .block section form fieldset button button:visited, section form fieldset .results .block button button:visited,
 .results .block section form fieldset button.discount button:visited,
 section form fieldset .results .block button.discount button:visited {
@@ -1536,7 +1608,7 @@ section form fieldset .results .block button.discount button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 147, ../sass/main/_results.scss */
+/* line 192, ../sass/main/_results.scss */
 .results .block .full button:active, .results .block section form fieldset button button:active, section form fieldset .results .block button button:active,
 .results .block section form fieldset button.discount button:active,
 section form fieldset .results .block button.discount button:active {

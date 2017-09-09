@@ -9,11 +9,11 @@ body{
   box-sizing:content-box;
 }
 
+@import 'properties/index';
+@import 'placeholders/index';
 @import "compass/reset";
 @import "compass/css3";
-@import 'placeholders/index';
 @import 'mixins/index';
-@import 'properties/index';
 @import 'elements/index';
 @import 'main/index';
 @import 'font_awesome/font-awesome';

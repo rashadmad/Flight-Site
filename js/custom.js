@@ -6,5 +6,3 @@ $(function() {
         defaultDate: null,
     });
 });
-
-$('input#city').cityAutocomplete();

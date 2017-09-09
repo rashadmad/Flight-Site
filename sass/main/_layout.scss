@@ -6,36 +6,35 @@ html {
 }
 
 body#index {
-
+    height: 100%;
+    background-color: rgb(0,0,0);
     @include media_query(modular,$min_width:$tablet) {
       @include background_img(city);
       background-position: center;
       background-position: 40% 20%;
     }
-}
-body#rentals {
-
+} #rentals {
+    height: 100%;
     @include media_query(modular,$min_width:$tablet) {
       @include background_img(city2);
       background-position: center;
       background-position: 40% 5%;
     }
-}
-body#hotels {
-
+} #hotels {
+    height: 100%;
     @include media_query(modular,$min_width:$tablet) {
       @include background_img(city3);
       background-position: center;
       background-position: 40% 70%;
     }
-}body#packages {
+} #packages {
 
     @include media_query(modular,$min_width:$tablet) {
       @include background_img(city4);
       background-position: center;
       background-position: 40% 20%;
     }
-}body#cruises {
+} #cruises {
 
     @include media_query(modular,$min_width:$tablet) {
       @include background_img(city5);

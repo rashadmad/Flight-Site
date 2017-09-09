@@ -1,4 +1,3 @@
-
 section {
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @extend %margin_center;
@@ -42,7 +41,6 @@ section {
                 }
             }
 
-            .checkbox_wrapper {}
 
             h1 {
                 @include margin_system(5);
@@ -100,21 +98,13 @@ section {
             }
 
             input[type=checkbox] + label.mock {
-                @include border_system(solid,$black,5);
-                background: $white;
-                height: 12px;
-                width: 12px;
-                display: inline-block;
-                padding: 0;
+              @extend %checkbox_styeling;
+              @include border_system(solid,$black,5);
             }
 
             input[type=checkbox]:checked + label.mock {
-                @include border_system(solid,$black,5);
-                background: $black;
-                height: 12px;
-                width: 12px;
-                display: inline-block;
-                padding: 0;
+              @extend %checkbox_styeling_checked;
+              @include border_system(solid,$black,5);
             }
 
 
@@ -150,7 +140,7 @@ section {
 }
 
 section.index {
-  
+
   @include media_query(modular, $min_width:$tablet) {
        @include margin_system($left:$form_gutter);
       float: left;
