@@ -419,6 +419,7 @@ section {
   padding-bottom: 20px;
   background-color: #fff;
   background-repeat: no-repeat;
+  margin: 0;
 }
 @media (max-height: 500px) {
   /* line 1, ../sass/elements/_forms.scss */
@@ -426,7 +427,7 @@ section {
     background-color: #1a1a1a;
   }
 }
-/* line 13, ../sass/elements/_forms.scss */
+/* line 14, ../sass/elements/_forms.scss */
 section form {
   padding: 8px;
   -webkit-background-color: #FFFF00;
@@ -435,19 +436,19 @@ section form {
   background-color: #FFFF00;
   max-width: 300px;
 }
-/* line 19, ../sass/elements/_forms.scss */
+/* line 20, ../sass/elements/_forms.scss */
 section form fieldset.bottom {
   margin: 10px;
 }
-/* line 23, ../sass/elements/_forms.scss */
+/* line 24, ../sass/elements/_forms.scss */
 section form fieldset {
   max-width: 100%;
 }
-/* line 27, ../sass/elements/_forms.scss */
+/* line 28, ../sass/elements/_forms.scss */
 section form fieldset .row {
   font-size: 0 !important;
 }
-/* line 30, ../sass/elements/_forms.scss */
+/* line 31, ../sass/elements/_forms.scss */
 section form fieldset .row .close {
   content: "\f007";
   font-size: 1em !important;
@@ -460,16 +461,16 @@ section form fieldset .row .close {
   border: 0 solid;
   -webkit-appearance: none;
 }
-/* line 45, ../sass/elements/_forms.scss */
+/* line 46, ../sass/elements/_forms.scss */
 section form fieldset h1 {
   margin: 5px;
   padding: 5px;
 }
-/* line 51, ../sass/elements/_forms.scss */
+/* line 52, ../sass/elements/_forms.scss */
 section form fieldset tbody {
   background-color: black;
 }
-/* line 55, ../sass/elements/_forms.scss */
+/* line 56, ../sass/elements/_forms.scss */
 section form fieldset tbody {
   background-color: #fff;
   padding-top: 7px;
@@ -478,7 +479,7 @@ section form fieldset tbody {
   padding-right: 7px;
   margin: 4px;
 }
-/* line 61, ../sass/elements/_forms.scss */
+/* line 62, ../sass/elements/_forms.scss */
 section form fieldset input[type="number"]:after {
   content: "";
   font-family: 'FontAwesome';
@@ -486,14 +487,14 @@ section form fieldset input[type="number"]:after {
   top: 0;
   left: 0;
 }
-/* line 65, ../sass/elements/_forms.scss */
+/* line 66, ../sass/elements/_forms.scss */
 section form fieldset input,
 section form fieldset input[type="number"],
 section form fieldset input[type="text"],
 section form fieldset select {
   border: solid #1a1a1a 5px;
 }
-/* line 74, ../sass/elements/_forms.scss */
+/* line 75, ../sass/elements/_forms.scss */
 section form fieldset input:focus,
 section form fieldset input[type="number"]:focus,
 section form fieldset input[type="text"]:focus,
@@ -505,32 +506,32 @@ section form fieldset select:focus {
   transition: all 0.5s ease;
   color: #fff !important;
 }
-/* line 81, ../sass/elements/_forms.scss */
+/* line 82, ../sass/elements/_forms.scss */
 section form fieldset [type="text"] {
   position: relative;
 }
-/* line 85, ../sass/elements/_forms.scss */
+/* line 86, ../sass/elements/_forms.scss */
 section form fieldset label.real {
   margin-bottom: 10px;
   margin-left: 6px;
   margin-right: 6px;
 }
-/* line 89, ../sass/elements/_forms.scss */
+/* line 90, ../sass/elements/_forms.scss */
 section form fieldset input[type="text"]:after {
   font-family: 'FontAwesome';
   color: #1a1a1a;
   position: relative;
   content: "\f007";
 }
-/* line 100, ../sass/elements/_forms.scss */
+/* line 101, ../sass/elements/_forms.scss */
 section form fieldset input[type=checkbox] + label.mock {
   border: solid #1a1a1a 5px;
 }
-/* line 105, ../sass/elements/_forms.scss */
+/* line 106, ../sass/elements/_forms.scss */
 section form fieldset input[type=checkbox]:checked + label.mock {
   border: solid #1a1a1a 5px;
 }
-/* line 111, ../sass/elements/_forms.scss */
+/* line 112, ../sass/elements/_forms.scss */
 section form fieldset button,
 section form fieldset button.discount {
   border: solid #1a1a1a 5px;
@@ -548,7 +549,7 @@ section form fieldset button.discount {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 127, ../sass/elements/_forms.scss */
+/* line 128, ../sass/elements/_forms.scss */
 section form fieldset button:visited,
 section form fieldset button.discount:visited {
   -webkit-background-color: #1a1a1a;
@@ -557,7 +558,7 @@ section form fieldset button.discount:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 132, ../sass/elements/_forms.scss */
+/* line 133, ../sass/elements/_forms.scss */
 section form fieldset button:active,
 section form fieldset button.discount:active {
   -webkit-background-color: #1a1a1a;
@@ -572,7 +573,7 @@ section form fieldset button.discount:active {
 }
 
 @media (min-width: 768px) {
-  /* line 142, ../sass/elements/_forms.scss */
+  /* line 143, ../sass/elements/_forms.scss */
   section.index {
     margin-left: 40px;
     float: left;
@@ -1528,7 +1529,7 @@ section form fieldset .results button.discount ul li.black.A:after {
   font-family: 'FontAwesome';
   font-size: 2em;
   margin-top: -23px;
-  margin-left: 25px;
+  margin-left: 30px;
   height: 46px;
   width: 50px;
   color: #fff;

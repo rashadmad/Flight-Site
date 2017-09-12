@@ -6,6 +6,7 @@ section {
     padding-bottom: 20px;
     background-color: $white;
     background-repeat: no-repeat;
+    margin:0;
     @include media_query(height, $height:500px) {
         background-color: $black;
     }

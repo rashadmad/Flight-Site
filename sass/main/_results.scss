@@ -140,7 +140,7 @@ li {
         content: "\f07e";
         font-family: 'FontAwesome';
         font-size: 2em;
-        @include margin_system($top:-23,$left:25);
+        @include margin_system($top:-23,$left:30);
         height: 46px;
         width: 50px;
         color: $white;
