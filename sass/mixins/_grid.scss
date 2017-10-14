@@ -41,6 +41,10 @@
   @include col(1,4);
 }
 
+.sixteen{
+  @include col(16,100)
+}
+
 .fith{
   @include col(1,5);
 }

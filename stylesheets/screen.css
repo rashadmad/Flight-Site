@@ -389,6 +389,29 @@ section form fieldset button.discount, .results .block .full button {
 }
 
 /* line 44, ../sass/mixins/_grid.scss */
+.sixteen {
+  width: 15.1%;
+  padding: 8px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.9%;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 16, ../sass/mixins/_grid.scss */
+.sixteen:first-child {
+  margin-left: 0;
+}
+/* line 19, ../sass/mixins/_grid.scss */
+.sixteen:last-child {
+  margin-right: 0;
+}
+
+/* line 48, ../sass/mixins/_grid.scss */
 .fith {
   width: 19.1%;
   padding: 8px;
@@ -1529,25 +1552,47 @@ section form fieldset .results button.discount ul li.black.A:after {
   font-family: 'FontAwesome';
   font-size: 2em;
   margin-top: -23px;
-  margin-left: 30px;
+  margin-left: 12px;
+  margin-top: -23px;
+  margin-left: 12px;
   height: 46px;
-  width: 50px;
+  width: 80px;
   color: #fff;
 }
-/* line 151, ../sass/main/_results.scss */
+@media (min-width: 480px) {
+  /* line 138, ../sass/main/_results.scss */
+  .results .third ul li.black.A:after, .results .full ul li.black.A:after, .results section form fieldset button ul li.black.A:after, section form fieldset .results button ul li.black.A:after,
+  .results section form fieldset button.discount ul li.black.A:after,
+  section form fieldset .results button.discount ul li.black.A:after {
+    margin-top: -23px;
+    margin-left: 10px;
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 138, ../sass/main/_results.scss */
+  .results .third ul li.black.A:after, .results .full ul li.black.A:after, .results section form fieldset button ul li.black.A:after, section form fieldset .results button ul li.black.A:after,
+  .results section form fieldset button.discount ul li.black.A:after,
+  section form fieldset .results button.discount ul li.black.A:after {
+    margin-top: -23px;
+    margin-left: 30px;
+    display: none;
+  }
+}
+/* line 162, ../sass/main/_results.scss */
 .results .block {
   background-color: black;
   padding: 2px;
   margin: 0px;
   width: 100%;
 }
-/* line 157, ../sass/main/_results.scss */
+/* line 168, ../sass/main/_results.scss */
 .results .block .full, .results .block section form fieldset button, section form fieldset .results .block button,
 .results .block section form fieldset button.discount,
 section form fieldset .results .block button.discount, .results .block .full button {
   padding: 10px;
 }
-/* line 160, ../sass/main/_results.scss */
+/* line 171, ../sass/main/_results.scss */
 .results .block .full .third, .results .block section form fieldset button .third, section form fieldset .results .block button .third,
 .results .block section form fieldset button.discount .third,
 section form fieldset .results .block button.discount .third {
@@ -1555,14 +1600,14 @@ section form fieldset .results .block button.discount .third {
   margin: 0;
   padding: 0;
 }
-/* line 166, ../sass/main/_results.scss */
+/* line 177, ../sass/main/_results.scss */
 .results .block .full .third p.user, .results .block section form fieldset button .third p.user, section form fieldset .results .block button .third p.user,
 .results .block section form fieldset button.discount .third p.user,
 section form fieldset .results .block button.discount .third p.user {
   margin-top: 4px;
   margin-left: 3px;
 }
-/* line 169, ../sass/main/_results.scss */
+/* line 180, ../sass/main/_results.scss */
 .results .block .full .third p.user:before, .results .block section form fieldset button .third p.user:before, section form fieldset .results .block button .third p.user:before,
 .results .block section form fieldset button.discount .third p.user:before,
 section form fieldset .results .block button.discount .third p.user:before {
@@ -1574,14 +1619,14 @@ section form fieldset .results .block button.discount .third p.user:before {
   left: 0;
   margin-left: 5px;
 }
-/* line 175, ../sass/main/_results.scss */
+/* line 186, ../sass/main/_results.scss */
 .results .block .full .left, .results .block section form fieldset button .left, section form fieldset .results .block button .left,
 .results .block section form fieldset button.discount .left,
 section form fieldset .results .block button.discount .left {
   margin: 5px;
   margin-left: 10px;
 }
-/* line 179, ../sass/main/_results.scss */
+/* line 190, ../sass/main/_results.scss */
 .results .block .full button, .results .block section form fieldset button button, section form fieldset .results .block button button,
 .results .block section form fieldset button.discount button,
 section form fieldset .results .block button.discount button {
@@ -1599,7 +1644,7 @@ section form fieldset .results .block button.discount button {
   padding-left: 40%;
   padding-right: 40%;
 }
-/* line 187, ../sass/main/_results.scss */
+/* line 198, ../sass/main/_results.scss */
 .results .block .full button:visited, .results .block section form fieldset button button:visited, section form fieldset .results .block button button:visited,
 .results .block section form fieldset button.discount button:visited,
 section form fieldset .results .block button.discount button:visited {
@@ -1609,7 +1654,7 @@ section form fieldset .results .block button.discount button:visited {
   background-color: #1a1a1a;
   color: #fff;
 }
-/* line 192, ../sass/main/_results.scss */
+/* line 203, ../sass/main/_results.scss */
 .results .block .full button:active, .results .block section form fieldset button button:active, section form fieldset .results .block button button:active,
 .results .block section form fieldset button.discount button:active,
 section form fieldset .results .block button.discount button:active {
