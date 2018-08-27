@@ -616,10 +616,7 @@ aside img {
 
 /* line 2, ../sass/elements/_nav.scss */
 ul#main a, ul#main li .five, ul#main li .three {
-  -webkit-background-color: #fff;
-  -moz-background-color: #fff;
-  -ms-background-color: #fff;
-  background-color: #fff;
+
   cursor: pointer;
   padding: 0px;
   padding-left: 5px;
