@@ -2,14 +2,6 @@
 
 Built this mockup for an art test for an apprenticeship with 8th light University. This is a mock-up of a travel website for the purpose of gaining an apprenticeship with 8th light University.
 
-## Table of Contents
-
-* [Intro](#Intro)
-* [view](#View)
-* [insights](#insights)
-* [Instructions](#What-I-learned-about-sass)
-* [Contributing](#Responsive-Design-&-SASS)
-
 # Intro
 
 This is a mockup for a flight booking website I created during an art test For 8th Light University. The art test asked for me to develop a flight booking website that did not have to have functionality.
